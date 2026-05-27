@@ -372,8 +372,8 @@ span[data-lang]{display:inline}
 
 <!-- ══════ TIPS ══════ -->
 <div id="tab-tips" class="tab-panel">
-  <div class="notice" data-lang="de"><strong>So funktioniert es:</strong> Fülle alle Tipps aus und wähle dann eine Option: <strong>Herunterladen</strong> und die Datei an den Admin schicken, oder direkt <strong>zu Dropbox hochladen</strong> – dann muss du nichts schicken!</div>
-  <div class="notice" data-lang="en"><strong>How it works:</strong> Fill in your tips, then choose: <strong>Download</strong> the file and send it to the admin, or <strong>upload directly to Dropbox</strong> – no need to send anything!</div>
+  <div class="notice" data-lang="de"><strong>So funktioniert es:</strong> Fülle alle Tipps aus und wähle dann eine Option: <strong>Herunterladen</strong> und die <u>Datei an den Admin schicken</u>, oder direkt <strong>zu Dropbox hochladen</strong> – dann muss du nichts schicken!<br>Auf Dropbox hochgeladene Dateien werden nach Eingang durch den Admin gelöscht. Bitte beachte, dass für Dateien in Dropbox die Datenschutzrichtlinien von Dropbox gelten. Außer dem frei wählbaren Namen werden keine weiteren persönlichen Daten übermittelt.<br><br><strong>Wichtig:</strong>Tipps können nicht zwischengespeichert werden. Es müssen daher <u>alle</u>Tipps abgegeben, und dann Hoch- oder runtergeladen werden. Wenn es einen Fehler in den Tipps gibt, muss die Eingabe komplett wiederholt werden.</div>
+  <div class="notice" data-lang="en"><strong>How it works:</strong> Fill in all your tips and then choose an option: <strong>Download</strong> and <u>send the file to the admin</u>, or directly <strong>upload to Dropbox</strong> – then you don't need to send anything!<br>Files uploaded to Dropbox will be deleted by the admin upon receipt. Please note that Dropbox's privacy policy applies to files stored there. No personal information is transmitted beyond the freely chosen display name.<br><br><strong>Important:</strong> Tips cannot be saved in between. Therefore <u>all</u> tips must be entered and then uploaded or downloaded in one go. If there is a mistake in the tips, the entire entry must be repeated completely.</div>
   <div id="tip-form-wrap">
     <div class="fsec">
       <div class="fsec-title">👤 <span data-lang="de">Dein Name</span><span data-lang="en">Your Name</span></div>
@@ -659,9 +659,9 @@ function buildForm(){
       const row=document.createElement('div');
       row.className='score-row';
       row.innerHTML=`<div class="score-team home">${m[0]}</div>
-        <input class="score-inp" type="number" min="0" max="20" id="m_${grp}_${i}_h" placeholder="–">
+        <input class="score-inp" type="number" min="0" max="20" id="m_${grp}_${i}_h" value="0">
         <div class="score-dash">:</div>
-        <input class="score-inp" type="number" min="0" max="20" id="m_${grp}_${i}_a" placeholder="–">
+        <input class="score-inp" type="number" min="0" max="20" id="m_${grp}_${i}_a" value="0">
         <div class="score-team">${m[1]}</div>`;
       wrap.appendChild(row);
     });
@@ -984,9 +984,9 @@ function buildAdminMatches(){
       row.className='res-score-row'+(done?' done':'');
       row.innerHTML=`
         <div class="score-team home" style="font-size:13px">${m[0]}</div>
-        <input class="res-inp" type="number" min="0" max="20" id="res_${key}_h" value="${done?r.h:''}" placeholder="–">
+        <input class="res-inp" type="number" min="0" max="20" id="res_${key}_h" value="${done?r.h:''}" value="0">
         <div class="score-dash" style="font-size:18px">:</div>
-        <input class="res-inp" type="number" min="0" max="20" id="res_${key}_a" value="${done?r.a:''}" placeholder="–">
+        <input class="res-inp" type="number" min="0" max="20" id="res_${key}_a" value="${done?r.a:''}" value="0">
         <div class="score-team" style="font-size:13px">${m[1]}</div>
         ${done
           ? `<div class="done-badge" onclick="editResult('${grp}',${i})" title="${currentLang==='de'?'Bearbeiten':'Edit'}">✓ ${r.h}:${r.a} ✎</div>`
