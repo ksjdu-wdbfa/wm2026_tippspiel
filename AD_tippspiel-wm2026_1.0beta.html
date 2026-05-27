@@ -1,0 +1,1216 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>WM 2026 Tippspiel</title>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+<style>
+:root{--red:#D7263D;--gold:#F5A623;--navy:#0D1B2A;--mid:#1A2F45;--slate:#2E4560;--cream:#F7F3ED;--muted:#8FA0B0;--white:#FFF;--green:#2ECC71;--mexico:#006847}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--navy);color:var(--cream);font-family:'DM Sans',sans-serif;font-weight:300;min-height:100vh;overflow-x:hidden}
+/* Quadcolor top stripe: Mexico green – white – Canada/USA red – blue */
+body::before{content:'';display:block;height:4px;background:linear-gradient(90deg, var(--mexico) 25%, rgba(255,255,255,0.85) 25%, rgba(255,255,255,0.85) 50%, var(--red) 50%, var(--red) 75%, #0033A0 75%)}
+.hero{position:relative;background:linear-gradient(160deg, #0f2318 0%, var(--mid) 50%, #1a1a2e 100%);padding:36px 40px 0;text-align:center;border-bottom:3px solid var(--white);overflow:hidden}
+.hero::before{content:'⚽';position:absolute;font-size:240px;opacity:.04;top:-20px;left:-20px;line-height:1;pointer-events:none}
+/* Subtle green glow in top-left of hero */
+.hero::after{content:'';position:absolute;width:300px;height:300px;background:radial-gradient(circle, rgba(0,104,71,.18) 0%, transparent 70%);top:-60px;left:-60px;pointer-events:none}
+.hero-eye{font-size:11px;font-weight:600;letter-spacing:.22em;text-transform:uppercase;color:var(--gold);margin-bottom:6px}
+.hero h1{font-family:'Bebas Neue',sans-serif;font-size:clamp(38px,6vw,72px);line-height:.92;color:var(--white)}
+/* WM = white, 2026 = Mexico green, Tippspiel = red */
+.hero h1 .mexico{color:#1db954}
+.hero h1 span{color:var(--red)}
+.hero-sub{margin-top:8px;font-size:13px;color:var(--muted)}
+.top-bar{display:flex;justify-content:space-between;align-items:flex-end;padding:0 4px;flex-wrap:wrap;gap:6px}
+.lang-bar{display:flex;border:1.5px solid var(--slate);border-radius:6px;overflow:hidden;margin-top:14px}
+.lang-btn{background:transparent;border:none;padding:6px 16px;font-family:'DM Sans',sans-serif;font-size:12px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);cursor:pointer;transition:background .2s,color .2s}
+.lang-btn.active{background:var(--red);color:var(--white)}
+.tab-bar{display:flex;margin-top:14px;overflow-x:auto}
+.tab-btn{background:transparent;border:none;border-bottom:3px solid transparent;padding:12px 18px;font-family:'DM Sans',sans-serif;font-size:13px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);cursor:pointer;transition:color .2s,border-color .2s;white-space:nowrap}
+.tab-btn.active{color:var(--white);border-bottom-color:var(--red)}
+.tab-btn:hover:not(.active){color:var(--cream)}
+.tab-panel{display:none;max-width:920px;margin:0 auto;padding:36px 20px 60px}
+.tab-panel.active{display:block}
+/* SECTIONS */
+.sec{margin-top:36px}.sec:first-child{margin-top:0}
+.sec-head{display:flex;align-items:center;gap:12px;margin-bottom:14px}
+.sec-num{font-family:'Bebas Neue',sans-serif;font-size:40px;color:var(--red);line-height:1;flex-shrink:0}
+.sec-num.mx{color:var(--mexico)}
+.sec-title{font-family:'Bebas Neue',sans-serif;font-size:24px;letter-spacing:.06em;color:var(--white);line-height:1.1}
+.sec-sub{font-size:11px;color:var(--muted);letter-spacing:.1em;text-transform:uppercase;margin-top:2px}
+.cards{display:grid;gap:9px}
+.card{background:var(--mid);border:1px solid var(--slate);border-radius:8px;padding:14px 18px;display:grid;grid-template-columns:auto 1fr auto;align-items:center;gap:12px;transition:border-color .2s}
+.card:hover{border-color:var(--gold)}
+.card.hl{border-color:var(--gold);background:linear-gradient(135deg,var(--mid) 60%,#2a2010 100%)}
+.card.auto{border-color:var(--green);background:linear-gradient(135deg,var(--mid) 60%,#0d2a1a 100%)}
+.c-icon{font-size:20px;width:38px;height:38px;display:flex;align-items:center;justify-content:center;background:var(--slate);border-radius:6px;flex-shrink:0}
+.c-lbl{font-size:14px;font-weight:600;color:var(--cream);margin-bottom:2px}
+.c-desc{font-size:13px;color:var(--muted);line-height:1.5}
+.c-desc strong{color:var(--cream)}
+.pts{font-family:'Bebas Neue',sans-serif;font-size:28px;color:var(--gold);white-space:nowrap;text-align:right}
+.pts-lbl{font-size:10px;text-align:right;color:var(--muted);text-transform:uppercase;letter-spacing:.08em;margin-top:-4px}
+.tag{display:inline-block;font-size:10px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;padding:2px 7px;border-radius:3px;margin-left:6px;vertical-align:middle}
+.tag-gold{background:rgba(245,166,35,.15);color:var(--gold)}
+.tag-green{background:rgba(46,204,113,.15);color:var(--green)}
+.tbl{width:100%;border-collapse:collapse;font-size:14px}
+.tbl thead th{font-weight:600;font-size:11px;text-transform:uppercase;letter-spacing:.12em;color:var(--muted);padding:0 14px 9px;text-align:left;border-bottom:1px solid var(--slate)}
+.tbl thead th:last-child{text-align:right}
+.tbl tbody td{padding:11px 14px;border-bottom:1px solid rgba(46,69,96,.5);color:var(--cream);vertical-align:middle}
+.tbl tbody tr:last-child td{border-bottom:none}
+.tbl tbody td:last-child{text-align:right;font-family:'Bebas Neue',sans-serif;font-size:22px;color:var(--gold)}
+.tbl tbody tr:hover td{background:rgba(255,255,255,.03)}
+.bbox{border:1.5px solid var(--gold);border-radius:10px;padding:18px 22px;margin-top:10px;background:linear-gradient(135deg,#1a2f3a,var(--mid))}
+.bbox.green{border-color:var(--green);background:linear-gradient(135deg,#0d2218,var(--mid))}
+.bbox-title{font-family:'Bebas Neue',sans-serif;font-size:17px;color:var(--gold);letter-spacing:.06em;margin-bottom:7px;display:flex;align-items:center;gap:7px}
+.bbox.green .bbox-title{color:var(--green)}
+.bbox-text{font-size:13px;color:var(--cream);line-height:1.7}
+.bbox-text strong{color:var(--gold)}
+.bbox.green .bbox-text strong{color:var(--green)}
+.pill-list{display:flex;flex-wrap:wrap;gap:7px;margin-top:11px}
+.pill{background:rgba(46,69,96,.7);border:1px solid var(--slate);border-radius:20px;padding:3px 12px;font-size:13px;color:var(--cream);display:flex;align-items:center;gap:5px}
+.pill-rank{font-family:'Bebas Neue',sans-serif;font-size:14px;color:var(--muted)}
+.divider{height:1px;background:linear-gradient(90deg,transparent,var(--mexico),var(--red),transparent);margin:32px 0}
+/* FORM */
+.fsec{margin-bottom:30px}
+.fsec-title{font-family:'Bebas Neue',sans-serif;font-size:20px;letter-spacing:.06em;color:var(--gold);margin-bottom:12px;padding-bottom:7px;border-bottom:1px solid var(--slate);display:flex;align-items:center;gap:9px}
+.frow{display:grid;grid-template-columns:1fr 1fr;gap:9px}
+@media(max-width:580px){.frow{grid-template-columns:1fr}}
+.field{display:flex;flex-direction:column;gap:4px}
+.field label{font-size:11px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+.field input,.field select{background:var(--mid);border:1px solid var(--slate);border-radius:6px;padding:9px 12px;color:var(--cream);font-family:'DM Sans',sans-serif;font-size:14px;transition:border-color .2s;width:100%}
+.field input:focus,.field select:focus{outline:none;border-color:var(--gold)}
+.field select option{background:var(--navy)}
+.score-row{display:grid;grid-template-columns:1fr 44px 16px 44px 1fr;align-items:center;gap:6px;background:var(--mid);border:1px solid var(--slate);border-radius:8px;padding:10px 14px;margin-bottom:7px}
+.score-team{font-size:13px;font-weight:600}
+.score-team.home{text-align:right}
+.score-inp{width:44px;height:40px;text-align:center;background:var(--slate);border:1px solid var(--slate);border-radius:6px;color:var(--white);font-family:'Bebas Neue',sans-serif;font-size:22px;padding:0;transition:border-color .2s}
+.score-inp:focus{outline:none;border-color:var(--gold);background:var(--mid)}
+.score-dash{font-family:'Bebas Neue',sans-serif;font-size:22px;color:var(--muted);text-align:center}
+.grp-lbl{font-family:'Bebas Neue',sans-serif;font-size:13px;color:var(--muted);letter-spacing:.1em;margin-bottom:5px;margin-top:2px}
+.sel-grp{display:grid;grid-template-columns:1fr 1fr;gap:9px}
+.notice{background:rgba(245,166,35,.07);border:1px solid rgba(245,166,35,.25);border-radius:8px;padding:11px 14px;font-size:13px;color:var(--cream);margin-bottom:18px;line-height:1.6}
+.notice strong{color:var(--gold)}
+.notice.green{background:rgba(46,204,113,.07);border-color:rgba(46,204,113,.25)}
+.notice.green strong{color:var(--green)}
+/* SAVE BUTTON – big and obvious */
+.save-share-btn{display:flex;align-items:center;justify-content:center;gap:12px;background:linear-gradient(135deg,var(--mexico),#009060);color:var(--white);border:none;border-radius:10px;padding:18px 32px;font-family:'Bebas Neue',sans-serif;font-size:24px;letter-spacing:.08em;cursor:pointer;transition:opacity .2s,transform .1s;width:100%;margin-top:8px}
+.save-share-btn:hover{opacity:.9}
+.save-share-btn:active{transform:scale(.98)}
+.save-share-btn:disabled{background:var(--slate);color:var(--muted);cursor:not-allowed}
+.save-share-btn .icon{font-size:28px}
+.success-msg{background:linear-gradient(135deg,#0d2218,var(--mid));border:1.5px solid var(--green);border-radius:10px;padding:28px;text-align:center;display:none}
+.success-msg.show{display:block}
+.success-msg h3{font-family:'Bebas Neue',sans-serif;font-size:26px;color:var(--green);margin-bottom:10px}
+.success-msg p{color:var(--muted);font-size:14px;line-height:1.7;margin-bottom:14px}
+.success-msg strong{color:var(--cream)}
+.btn-sm{background:var(--slate);border:none;border-radius:6px;padding:8px 16px;color:var(--cream);font-family:'DM Sans',sans-serif;font-size:13px;font-weight:600;cursor:pointer;transition:background .2s}
+.btn-sm:hover{background:#3a5070}
+.btn-sm.danger{background:rgba(215,38,61,.25);color:var(--red)}
+.btn-sm.danger:hover{background:rgba(215,38,61,.45)}
+.btn-sm.primary{background:var(--mexico);color:var(--white)}
+.btn-sm.primary:hover{background:#005538}
+/* LEADERBOARD */
+.lb-hd{display:flex;justify-content:space-between;align-items:center;margin-bottom:18px;flex-wrap:wrap;gap:9px}
+.lb-title{font-family:'Bebas Neue',sans-serif;font-size:30px;letter-spacing:.06em;color:var(--white)}
+.lb-table{width:100%;border-collapse:collapse}
+.lb-table thead th{font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:.12em;color:var(--muted);padding:0 12px 9px;text-align:left;border-bottom:1px solid var(--slate)}
+.lb-table thead th.r{text-align:right}
+.lb-table tbody tr:hover td{background:rgba(255,255,255,.03)}
+.lb-table tbody td{padding:13px 12px;border-bottom:1px solid rgba(46,69,96,.4);vertical-align:middle}
+.lb-table tbody tr:last-child td{border-bottom:none}
+.rank-badge{font-family:'Bebas Neue',sans-serif;width:34px;height:34px;border-radius:50%;display:flex;align-items:center;justify-content:center}
+.r1{background:rgba(245,166,35,.2);color:var(--gold);font-size:16px}
+.r2{background:rgba(200,210,220,.12);color:#c8d2dc;font-size:16px}
+.r3{background:rgba(180,100,40,.2);color:#d4863a;font-size:16px}
+.rn{background:var(--slate);color:var(--muted);font-size:14px}
+.lb-name{font-size:15px;font-weight:600;color:var(--cream)}
+.lb-picks{font-size:12px;color:var(--muted);margin-top:2px}
+.lb-pts{font-family:'Bebas Neue',sans-serif;font-size:26px;color:var(--gold);text-align:right}
+.log-chip{display:inline-block;background:rgba(46,69,96,.7);border-radius:3px;padding:1px 6px;margin-left:3px;color:#90b8d8;font-size:11px}
+/* ADMIN */
+.admin-box{background:var(--mid);border:1px solid var(--slate);border-radius:10px;padding:20px;margin-bottom:20px}
+.admin-title{font-family:'Bebas Neue',sans-serif;font-size:20px;color:var(--muted);margin-bottom:14px}
+.res-score-row{display:grid;grid-template-columns:1fr 40px 14px 40px 1fr auto;align-items:center;gap:6px;background:var(--navy);border:1px solid var(--slate);border-radius:7px;padding:9px 12px;margin-bottom:6px;transition:border-color .2s}
+.res-score-row.done{border-color:var(--mexico)}
+.res-inp{width:40px;height:36px;text-align:center;background:var(--slate);border:1px solid var(--slate);border-radius:5px;color:var(--white);font-family:'Bebas Neue',sans-serif;font-size:20px;padding:0}
+.res-inp:focus{outline:none;border-color:var(--gold)}
+.save-match-btn{background:var(--mexico);color:var(--white);border:none;border-radius:5px;padding:6px 12px;font-family:'DM Sans',sans-serif;font-weight:600;font-size:12px;cursor:pointer;white-space:nowrap}
+.done-badge{font-size:12px;color:var(--green);font-weight:600;padding:4px 8px;background:rgba(46,204,113,.1);border-radius:5px;cursor:pointer}
+.import-area{border:2px dashed var(--slate);border-radius:10px;padding:28px;text-align:center;transition:border-color .2s;cursor:pointer}
+.import-area:hover,.import-area.drag{border-color:var(--mexico)}
+.import-area p{color:var(--muted);font-size:14px;margin-top:8px}
+.import-area .big-icon{font-size:40px}
+/* MODAL */
+.modal-bg{position:fixed;inset:0;background:rgba(0,0,0,.75);display:flex;align-items:center;justify-content:center;z-index:100;padding:20px}
+.modal{background:var(--mid);border:1px solid var(--slate);border-radius:12px;padding:32px;max-width:400px;width:100%;text-align:center}
+.modal h2{font-family:'Bebas Neue',sans-serif;font-size:28px;color:var(--white);margin-bottom:10px}
+.modal p{font-size:14px;color:var(--muted);margin-bottom:20px;line-height:1.6}
+.modal input{background:var(--navy);border:1px solid var(--slate);border-radius:7px;padding:11px 14px;color:var(--cream);font-family:'DM Sans',sans-serif;font-size:16px;width:100%;margin-bottom:12px}
+.modal input:focus{outline:none;border-color:var(--gold)}
+.modal-btn{background:var(--red);color:var(--white);border:none;border-radius:7px;padding:12px 28px;font-family:'Bebas Neue',sans-serif;font-size:18px;cursor:pointer;width:100%}
+.modal-btn:hover{background:#b8202f}
+.modal-err{color:var(--red);font-size:13px;margin-top:6px;min-height:18px}
+.loading{text-align:center;padding:36px;color:var(--muted)}
+.lb-empty{text-align:center;padding:50px 0;color:var(--muted);font-size:15px}
+.lb-empty span{font-size:44px;display:block;margin-bottom:10px}
+/* TIPVIEW */
+.person-card{background:var(--mid);border:1px solid var(--slate);border-radius:10px;margin-bottom:14px;overflow:hidden}
+.person-card-header{display:flex;justify-content:space-between;align-items:center;padding:14px 18px;cursor:pointer;transition:background .2s}
+.person-card-header:hover{background:rgba(255,255,255,.04)}
+.person-card-name{font-size:15px;font-weight:600;color:var(--cream)}
+.person-card-pts{font-family:'Bebas Neue',sans-serif;font-size:22px;color:var(--gold)}
+.person-card-body{display:none;padding:0 18px 18px;border-top:1px solid var(--slate)}
+.person-card-body.open{display:block}
+.tv-section{margin-top:14px}
+.tv-section-title{font-size:11px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin-bottom:8px}
+.tv-match-row{display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:8px;padding:6px 0;border-bottom:1px solid rgba(46,69,96,.3);font-size:13px}
+.tv-match-row:last-child{border-bottom:none}
+.tv-home{text-align:right;color:var(--cream)}
+.tv-away{color:var(--cream)}
+.tv-score{font-family:'Bebas Neue',sans-serif;font-size:18px;color:var(--gold);text-align:center;min-width:40px}
+.tv-score.empty{color:var(--slate)}
+.tv-picks{display:flex;gap:8px;flex-wrap:wrap;margin-top:4px}
+.tv-pick-chip{background:var(--slate);border-radius:5px;padding:3px 10px;font-size:12px;color:var(--cream)}
+.tv-pick-chip.gold{background:rgba(245,166,35,.2);color:var(--gold)}
+.tv-pick-chip.mexico{background:rgba(0,104,71,.25);color:#4ddb9a}
+/* match view */
+.match-view-block{background:var(--mid);border:1px solid var(--slate);border-radius:10px;margin-bottom:14px;overflow:hidden}
+.match-view-header{padding:12px 18px;background:rgba(46,69,96,.4);font-size:13px;font-weight:600;color:var(--cream);display:flex;justify-content:space-between;align-items:center}
+.match-view-result{font-family:'Bebas Neue',sans-serif;font-size:18px;color:var(--gold)}
+.match-view-result.tbd{color:var(--slate)}
+.tips-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(160px,1fr));gap:8px;padding:12px 18px}
+.tip-chip{background:var(--navy);border:1px solid var(--slate);border-radius:6px;padding:8px 12px;font-size:13px}
+.tip-chip-name{color:var(--muted);font-size:11px;margin-bottom:3px}
+.tip-chip-score{font-family:'Bebas Neue',sans-serif;font-size:20px;color:var(--cream)}
+.tip-chip.correct-exact{border-color:var(--gold);background:rgba(245,166,35,.08)}
+.tip-chip.correct-exact .tip-chip-score{color:var(--gold)}
+.tip-chip.correct-diff{border-color:var(--mexico);background:rgba(0,104,71,.1)}
+.tip-chip.correct-diff .tip-chip-score{color:#4ddb9a}
+.tip-chip.correct-tend{border-color:var(--slate)}
+.tip-chip.correct-tend .tip-chip-score{color:var(--cream)}
+.tip-chip.wrong .tip-chip-score{color:var(--muted)}
+
+[data-lang]{display:block}
+.lang-en [data-lang="de"]{display:none}
+.lang-de [data-lang="en"]{display:none}
+span[data-lang]{display:inline}
+.lang-en span[data-lang="de"]{display:none}
+.lang-de span[data-lang="en"]{display:none}
+</style>
+</head>
+<body class="lang-de" id="root">
+
+<!-- PW MODALS -->
+<div class="modal-bg" id="pw-modal" style="display:none">
+  <div class="modal">
+    <h2 data-lang="de">Admin-Bereich</h2><h2 data-lang="en">Admin Area</h2>
+    <p data-lang="de">Bitte gib das Admin-Passwort ein.</p><p data-lang="en">Please enter the admin password.</p>
+    <input type="password" id="pw-input" placeholder="Passwort / Password">
+    <div class="modal-err" id="pw-err"></div>
+    <button class="modal-btn" onclick="checkAdminPw()"><span data-lang="de">Einloggen</span><span data-lang="en">Login</span></button>
+  </div>
+</div>
+<div class="modal-bg" id="set-pw-modal" style="display:none">
+  <div class="modal">
+    <h2 data-lang="de">Admin-Passwort setzen</h2><h2 data-lang="en">Set Admin Password</h2>
+    <p data-lang="de">Dieses Passwort schützt den Admin-Bereich. Bitte gut merken!</p><p data-lang="en">This password protects the admin area. Remember it well!</p>
+    <input type="password" id="set-pw1" placeholder="Passwort / Password">
+    <input type="password" id="set-pw2" placeholder="Wiederholen / Repeat" style="margin-top:0">
+    <div class="modal-err" id="set-pw-err"></div>
+    <button class="modal-btn" onclick="setAdminPw()" style="margin-top:8px"><span data-lang="de">Passwort festlegen</span><span data-lang="en">Set Password</span></button>
+  </div>
+</div>
+
+<!-- HERO -->
+<div class="hero">
+  <div class="hero-eye">Fußball-WM 2026 · Kanada · Mexiko · USA</div>
+  <h1>WM <span>2026</span> <span class="mexico">Tippspiel</span></h1>
+  <p class="hero-sub">11. Juni – 19. Juli 2026</p>
+  <div class="top-bar">
+    <div class="lang-bar">
+      <button class="lang-btn active" onclick="setLang('de')">🇩🇪 DE</button>
+      <button class="lang-btn" onclick="setLang('en')">🇬🇧 EN</button>
+    </div>
+    <div class="tab-bar">
+      <button class="tab-btn active" onclick="showTab('rules')" id="tb-rules"><span data-lang="de">📋 Regeln</span><span data-lang="en">📋 Rules</span></button>
+      <button class="tab-btn" onclick="showTab('tips')" id="tb-tips"><span data-lang="de">✏️ Tipps abgeben</span><span data-lang="en">✏️ Submit Tips</span></button>
+      <button class="tab-btn" onclick="showTab('board')" id="tb-board"><span data-lang="de">🏆 Tabelle</span><span data-lang="en">🏆 Leaderboard</span></button>
+      <button class="tab-btn" onclick="showTab('tipview')" id="tb-tipview"><span data-lang="de">🔍 Tippübersicht</span><span data-lang="en">🔍 Tip Overview</span></button>
+    </div>
+  </div>
+</div>
+
+<!-- ══════ RULES ══════ -->
+<div id="tab-rules" class="tab-panel active">
+  <div class="sec">
+    <div class="sec-head"><div class="sec-num">1</div><div>
+      <div class="sec-title" data-lang="de">Gruppenspiele</div><div class="sec-title" data-lang="en">Group Stage Matches</div>
+      <div class="sec-sub" data-lang="de">48 Spiele – Tipp: Exaktes Ergebnis</div><div class="sec-sub" data-lang="en">48 Matches – Predict: Exact Score</div>
+    </div></div>
+    <div class="cards">
+      <div class="card hl"><div class="c-icon">🎯</div><div>
+        <div class="c-lbl" data-lang="de">Richtiges Ergebnis</div><div class="c-lbl" data-lang="en">Exact Result</div>
+        <div class="c-desc" data-lang="de">Exaktes Endergebnis getippt (z.B. 2:1)</div><div class="c-desc" data-lang="en">Exact final score predicted (e.g. 2–1)</div>
+      </div><div><div class="pts">4</div><div class="pts-lbl" data-lang="de">Punkte</div><div class="pts-lbl" data-lang="en">Points</div></div></div>
+      <div class="card"><div class="c-icon">⚖️</div><div>
+        <div class="c-lbl" data-lang="de">Richtiges Torverhältnis</div><div class="c-lbl" data-lang="en">Correct Goal Difference</div>
+        <div class="c-desc" data-lang="de">Tordifferenz und Tendenz stimmen, Torzahl weicht ab (z.B. 2:0 → 3:1)</div><div class="c-desc" data-lang="en">Goal difference and winner correct, exact scores differ (e.g. 2–0 tip → 3–1 result)</div>
+      </div><div><div class="pts">2</div><div class="pts-lbl" data-lang="de">Punkte</div><div class="pts-lbl" data-lang="en">Points</div></div></div>
+      <div class="card"><div class="c-icon">↗️</div><div>
+        <div class="c-lbl" data-lang="de">Richtige Tendenz</div><div class="c-lbl" data-lang="en">Correct Tendency</div>
+        <div class="c-desc" data-lang="de">Sieg/Unentschieden/Niederlage richtig, Tordifferenz falsch (z.B. 2:0 → 3:2)</div><div class="c-desc" data-lang="en">Win/draw/loss correct, goal difference wrong (e.g. 2–0 tip → 3–2 result)</div>
+      </div><div><div class="pts">1</div><div class="pts-lbl" data-lang="de">Punkte</div><div class="pts-lbl" data-lang="en">Points</div></div></div>
+      <div class="card"><div class="c-icon">❌</div><div>
+        <div class="c-lbl" data-lang="de">Falsche Tendenz</div><div class="c-lbl" data-lang="en">Wrong Tendency</div>
+        <div class="c-desc" data-lang="de">Weder Tendenz noch Ergebnis korrekt</div><div class="c-desc" data-lang="en">Neither tendency nor result correct</div>
+      </div><div><div class="pts">0</div><div class="pts-lbl" data-lang="de">Punkte</div><div class="pts-lbl" data-lang="en">Points</div></div></div>
+    </div>
+  </div>
+  <div class="divider"></div>
+  <div class="sec">
+    <div class="sec-head"><div class="sec-num mx">2</div><div>
+      <div class="sec-title" data-lang="de">Gruppenplatzierungen</div><div class="sec-title" data-lang="en">Group Standings</div>
+      <div class="sec-sub" data-lang="de">12 Gruppen – Tipp: 1. und 2. Platz je Gruppe</div><div class="sec-sub" data-lang="en">12 Groups – Predict: 1st and 2nd place per group</div>
+    </div></div>
+    <div class="cards">
+      <div class="card"><div class="c-icon">🥇</div><div>
+        <div class="c-lbl" data-lang="de">Richtige Platzierung (1. oder 2.)</div><div class="c-lbl" data-lang="en">Correct Placement (1st or 2nd)</div>
+        <div class="c-desc" data-lang="de">Richtiges Team auf dem richtigen Platz</div><div class="c-desc" data-lang="en">Correct team in the correct position</div>
+      </div><div><div class="pts">5</div><div class="pts-lbl" data-lang="de">Punkte</div><div class="pts-lbl" data-lang="en">Points</div></div></div>
+      <div class="card"><div class="c-icon">✅</div><div>
+        <div class="c-lbl" data-lang="de">Richtiger Aufsteiger – falscher Platz</div><div class="c-lbl" data-lang="en">Correct Qualifier – wrong position</div>
+        <div class="c-desc" data-lang="de">Team kommt weiter, aber auf anderem Platz (z.B. Tipp 1. → tatsächlich 2.)</div><div class="c-desc" data-lang="en">Team qualifies but in the other spot (Tip: 1st → actual: 2nd)</div>
+      </div><div><div class="pts">2</div><div class="pts-lbl" data-lang="de">Punkte</div><div class="pts-lbl" data-lang="en">Points</div></div></div>
+      <div class="card auto"><div class="c-icon">🔵</div><div>
+        <div class="c-lbl" data-lang="de">Als 1. oder 2. getippt – kommt als Bester Dritter weiter <span class="tag tag-green">Automatisch</span></div>
+        <div class="c-lbl" data-lang="en">Tipped 1st or 2nd – advances as best third-placed <span class="tag tag-green">Automatic</span></div>
+        <div class="c-desc" data-lang="de">Kein separater Tipp nötig. Team als 1. oder 2. getippt und qualifiziert sich als Bester Dritter → 2 Punkte.</div>
+        <div class="c-desc" data-lang="en">No separate prediction needed. Tipped 1st or 2nd and advances as best third-placed → 2 points.</div>
+      </div><div><div class="pts">2</div><div class="pts-lbl" data-lang="de">Punkte</div><div class="pts-lbl" data-lang="en">Points</div></div></div>
+    </div>
+    <div class="bbox green" style="margin-top:12px">
+      <div class="bbox-title">⚡ <span data-lang="de">Bonus: Perfekte Gruppe</span><span data-lang="en">Bonus: Perfect Group</span></div>
+      <div class="bbox-text" data-lang="de">Alle <strong>6 Gruppenspiele</strong> in der richtigen Tendenz getippt → <strong>+15 Punkte</strong> Bonus pro Gruppe!</div>
+      <div class="bbox-text" data-lang="en">All <strong>6 matches in a group</strong> with correct tendency → <strong>+15 bonus points</strong> per group!</div>
+    </div>
+  </div>
+  <div class="divider"></div>
+  <div class="sec">
+    <div class="sec-head"><div class="sec-num">3</div><div>
+      <div class="sec-title" data-lang="de">Turniersieger &amp; Finale</div><div class="sec-title" data-lang="en">Tournament Winners &amp; Final</div>
+      <div class="sec-sub" data-lang="de">Tipp: 1., 2. und 3. Platz</div><div class="sec-sub" data-lang="en">Predict: 1st, 2nd and 3rd place</div>
+    </div></div>
+    <table class="tbl" style="background:var(--mid);border:1px solid var(--slate);border-radius:8px;overflow:hidden">
+      <thead><tr><th style="width:44px">#</th><th data-lang="de">Platzierung</th><th data-lang="en">Placement</th><th data-lang="de">Punkte</th><th data-lang="en">Points</th></tr></thead>
+      <tbody>
+        <tr><td>🥇</td><td data-lang="de">Weltmeister richtig getippt</td><td data-lang="en">Correct World Champion</td><td>30</td></tr>
+        <tr><td>🥈</td><td data-lang="de">Finalist (2. Platz) richtig</td><td data-lang="en">Correct Runner-Up</td><td>20</td></tr>
+        <tr><td>🥉</td><td data-lang="de">3. Platz richtig getippt</td><td data-lang="en">Correct 3rd Place</td><td>10</td></tr>
+      </tbody>
+    </table>
+    <div class="bbox" style="margin-top:12px">
+      <div class="bbox-title">⭐ <span data-lang="de">Halbfinale-Bonus</span><span data-lang="en">Semi-Final Bonus</span></div>
+      <div class="bbox-text" data-lang="de">Für jedes Team auf <strong>Platz 1, 2 oder 3</strong> getippt, das das Halbfinale erreicht: <strong>+5 Punkte</strong>.</div>
+      <div class="bbox-text" data-lang="en">For each team tipped <strong>1st, 2nd or 3rd</strong> that reaches the semi-finals: <strong>+5 bonus points</strong>.</div>
+    </div>
+  </div>
+  <div class="divider"></div>
+  <div class="sec">
+    <div class="sec-head"><div class="sec-num mx">4</div><div>
+      <div class="sec-title" data-lang="de">Überraschungsteam</div><div class="sec-title" data-lang="en">Surprise Team</div>
+      <div class="sec-sub" data-lang="de">1 Tipp: Außenseiter ins Viertelfinale</div><div class="sec-sub" data-lang="en">1 Prediction: underdog to quarter-finals</div>
+    </div></div>
+    <div class="cards">
+      <div class="card hl"><div class="c-icon">🌟</div><div>
+        <div class="c-lbl" data-lang="de">Überraschungsteam erreicht Viertelfinale</div><div class="c-lbl" data-lang="en">Surprise team reaches quarter-finals</div>
+        <div class="c-desc" data-lang="de"><strong>Nicht</strong> unter deinen Top-3-Turniertipps und <strong>nicht</strong> in den FIFA Top 10.</div>
+        <div class="c-desc" data-lang="en"><strong>Not</strong> among your Top-3 picks and <strong>not</strong> in the FIFA Top 10.</div>
+      </div><div><div class="pts">15</div><div class="pts-lbl" data-lang="de">Punkte</div><div class="pts-lbl" data-lang="en">Points</div></div></div>
+    </div>
+    <div class="bbox" style="margin-top:12px;border-color:var(--slate)">
+      <div class="bbox-title" style="color:var(--muted);font-size:14px">🚫 <span data-lang="de">FIFA Top 10 – nicht wählbar (Stand: 25. Mai 2026, Ranking vom 1. April 2026*)</span><span data-lang="en">FIFA Top 10 – not eligible (as of 25 May 2026, ranking dated 1 April 2026*)</span></div>
+      <div class="pill-list">
+        <div class="pill"><span class="pill-rank">1</span><span data-lang="de">Frankreich</span><span data-lang="en">France</span></div>
+        <div class="pill"><span class="pill-rank">2</span><span data-lang="de">Spanien</span><span data-lang="en">Spain</span></div>
+        <div class="pill"><span class="pill-rank">3</span><span data-lang="de">Argentinien</span><span data-lang="en">Argentina</span></div>
+        <div class="pill"><span class="pill-rank">4</span><span data-lang="de">England</span><span data-lang="en">England</span></div>
+        <div class="pill"><span class="pill-rank">5</span><span data-lang="de">Portugal</span><span data-lang="en">Portugal</span></div>
+        <div class="pill"><span class="pill-rank">6</span><span data-lang="de">Brasilien</span><span data-lang="en">Brazil</span></div>
+        <div class="pill"><span class="pill-rank">7</span><span data-lang="de">Niederlande</span><span data-lang="en">Netherlands</span></div>
+        <div class="pill"><span class="pill-rank">8</span><span data-lang="de">Marokko</span><span data-lang="en">Morocco</span></div>
+        <div class="pill"><span class="pill-rank">9</span><span data-lang="de">Belgien</span><span data-lang="en">Belgium</span></div>
+        <div class="pill"><span class="pill-rank">10</span><span data-lang="de">Deutschland</span><span data-lang="en">Germany</span></div>
+      </div>
+      <p style="font-size:12px;color:var(--muted);margin-top:11px" data-lang="de">* Maßgeblich ist das Ranking vom <strong style="color:var(--cream)">9. Juni 2026</strong>. Änderungen werden vor Tippabgabe bekanntgegeben.</p>
+      <p style="font-size:12px;color:var(--muted);margin-top:11px" data-lang="en">* Binding list is the ranking of <strong style="color:var(--cream)">9 June 2026</strong>. Changes announced before predictions close.</p>
+    </div>
+  </div>
+  <div class="divider"></div>
+  <div class="sec">
+    <div class="sec-head"><div class="sec-num" style="color:var(--muted)">∑</div><div>
+      <div class="sec-title" data-lang="de">Alle Punkte auf einen Blick</div><div class="sec-title" data-lang="en">All Points at a Glance</div>
+    </div></div>
+    <table class="tbl" style="background:var(--mid);border:1px solid var(--slate);border-radius:8px;overflow:hidden">
+      <thead><tr><th data-lang="de">Kategorie</th><th data-lang="en">Category</th><th data-lang="de">Punkte</th><th data-lang="en">Points</th></tr></thead>
+      <tbody>
+        <tr><td data-lang="de">Gruppenspiel – richtige Tendenz</td><td data-lang="en">Group match – correct tendency</td><td>1</td></tr>
+        <tr><td data-lang="de">Gruppenspiel – richtiges Torverhältnis</td><td data-lang="en">Group match – correct goal difference</td><td>2</td></tr>
+        <tr><td data-lang="de">Gruppenspiel – exaktes Ergebnis</td><td data-lang="en">Group match – exact score</td><td>4</td></tr>
+        <tr><td data-lang="de">Richtiger Aufsteiger (1./2.) – falscher Platz</td><td data-lang="en">Correct qualifier – wrong position</td><td>2</td></tr>
+        <tr><td data-lang="de">Richtige Platzierung (1. oder 2.)</td><td data-lang="en">Correct group position (1st or 2nd)</td><td>5</td></tr>
+        <tr><td data-lang="de">Als 1./2. getippt – Team als Bester Dritter weiter</td><td data-lang="en">Tipped 1st/2nd – advances as best third-placed</td><td>2</td></tr>
+        <tr style="background:rgba(46,204,113,.05)"><td data-lang="de">⚡ Bonus: Perfekte Gruppe</td><td data-lang="en">⚡ Bonus: Perfect Group</td><td style="color:var(--green)">+15</td></tr>
+        <tr><td data-lang="de">3. Platz Turnier richtig</td><td data-lang="en">Correct 3rd place (tournament)</td><td>10</td></tr>
+        <tr><td data-lang="de">2. Platz Turnier (Finalist)</td><td data-lang="en">Correct runner-up</td><td>20</td></tr>
+        <tr><td data-lang="de">1. Platz Turnier (Weltmeister)</td><td data-lang="en">Correct World Champion</td><td>30</td></tr>
+        <tr style="background:rgba(245,166,35,.07)"><td data-lang="de">⭐ Halbfinale-Bonus (pro Top-3-Tipp)</td><td data-lang="en">⭐ Semi-final bonus (per Top-3 pick)</td><td style="color:var(--gold)">+5</td></tr>
+        <tr><td data-lang="de">🌟 Überraschungsteam – Viertelfinale</td><td data-lang="en">🌟 Surprise team – quarter-finals</td><td>15</td></tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<!-- ══════ TIPS ══════ -->
+<div id="tab-tips" class="tab-panel">
+  <div class="notice" data-lang="de"><strong>So funktioniert es:</strong> Fülle alle Tipps aus und wähle dann eine Option: <strong>Herunterladen</strong> und die Datei an den Admin schicken, oder direkt <strong>zu Dropbox hochladen</strong> – dann muss du nichts schicken!</div>
+  <div class="notice" data-lang="en"><strong>How it works:</strong> Fill in your tips, then choose: <strong>Download</strong> the file and send it to the admin, or <strong>upload directly to Dropbox</strong> – no need to send anything!</div>
+  <div id="tip-form-wrap">
+    <div class="fsec">
+      <div class="fsec-title">👤 <span data-lang="de">Dein Name</span><span data-lang="en">Your Name</span></div>
+      <div class="field" style="max-width:300px">
+        <label data-lang="de">Name (erscheint in der Tabelle)</label><label data-lang="en">Name (appears in leaderboard)</label>
+        <input type="text" id="tipster-name" placeholder="z.B. Max M." maxlength="30">
+      </div>
+    </div>
+    <div class="fsec">
+      <div class="fsec-title">⚽ <span data-lang="de">Gruppenspiele</span><span data-lang="en">Group Stage Matches</span></div>
+      <div id="matches-container"></div>
+    </div>
+    <div class="fsec">
+      <div class="fsec-title">📊 <span data-lang="de">Gruppenplatzierungen (1. &amp; 2. Platz)</span><span data-lang="en">Group Standings (1st &amp; 2nd place)</span></div>
+      <div id="standings-container"></div>
+    </div>
+    <div class="fsec">
+      <div class="fsec-title">🏆 <span data-lang="de">Turniersieger</span><span data-lang="en">Tournament Winners</span></div>
+      <div class="frow">
+        <div class="field"><label data-lang="de">🥇 Weltmeister</label><label data-lang="en">🥇 World Champion</label><select id="pick-1st"></select></div>
+        <div class="field"><label data-lang="de">🥈 Finalist (2. Platz)</label><label data-lang="en">🥈 Runner-Up</label><select id="pick-2nd"></select></div>
+      </div>
+      <div class="frow" style="margin-top:9px">
+        <div class="field"><label data-lang="de">🥉 3. Platz</label><label data-lang="en">🥉 3rd Place</label><select id="pick-3rd"></select></div>
+        <div class="field"><label data-lang="de">🌟 Überraschungsteam (Viertelfinale)</label><label data-lang="en">🌟 Surprise Team (Quarter-final)</label><select id="pick-surprise"></select></div>
+      </div>
+    </div>
+
+    <!-- TWO ACTION BUTTONS -->
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:8px">
+      <button class="save-share-btn" onclick="saveTipFile('download')" id="save-btn" style="font-size:18px">
+        <span class="icon" style="font-size:22px">💾</span>
+        <span data-lang="de">Herunterladen</span>
+        <span data-lang="en">Download</span>
+      </button>
+      <button class="save-share-btn" onclick="saveTipFile('dropbox')" id="upload-btn" style="font-size:18px;background:linear-gradient(135deg,#0061ff,#0040cc)">
+        <span class="icon" style="font-size:22px">☁️</span>
+        <span data-lang="de">Zu Dropbox hochladen</span>
+        <span data-lang="en">Upload to Dropbox</span>
+      </button>
+    </div>
+  </div>
+
+  <div class="success-msg" id="success-msg">
+    <!-- Download success -->
+    <div id="success-download">
+      <h3 data-lang="de">Datei heruntergeladen! 💾</h3>
+      <h3 data-lang="en">File downloaded! 💾</h3>
+      <p data-lang="de">Deine Tipps wurden gespeichert.<br><strong>Schick die Datei per Mail oder WhatsApp an den Admin!</strong><br><br>Dateiname: <strong id="filename-display"></strong></p>
+      <p data-lang="en">Your tips have been saved.<br><strong>Simply send the file to the admin via email or WhatsApp!</strong><br><br>File name: <strong id="filename-display-en"></strong></p>
+    </div>
+    <!-- Upload success -->
+    <div id="success-upload" style="display:none">
+      <h3 data-lang="de">Hochgeladen! ☁️⚽</h3>
+      <h3 data-lang="en">Uploaded! ☁️⚽</h3>
+      <p data-lang="de">Deine Tipps wurden direkt zu Dropbox hochgeladen.<br><strong>Du musst nichts weiter tun!</strong></p>
+      <p data-lang="en">Your tips have been uploaded directly to Dropbox.<br><strong>You don't need to do anything else!</strong></p>
+    </div>
+    <!-- Upload error -->
+    <div id="success-error" style="display:none">
+      <h3 style="color:var(--red)" data-lang="de">Upload fehlgeschlagen ⚠️</h3>
+      <h3 style="color:var(--red)" data-lang="en">Upload failed ⚠️</h3>
+      <p data-lang="de">Bitte lade die Datei herunter und schick sie dem Admin.<br><strong id="filename-display-err"></strong></p>
+      <p data-lang="en">Please download the file and send it to the admin.<br><strong id="filename-display-err-en"></strong></p>
+    </div>
+    <button onclick="resetForm()" class="btn-sm" style="margin-top:14px" data-lang="de">Neue Eingabe</button>
+    <button onclick="resetForm()" class="btn-sm" style="margin-top:14px" data-lang="en">New Entry</button>
+  </div>
+</div>
+
+<!-- ══════ LEADERBOARD ══════ -->
+<div id="tab-board" class="tab-panel">
+  <div class="lb-hd">
+    <div class="lb-title" data-lang="de">🏆 Tabelle</div>
+    <div class="lb-title" data-lang="en">🏆 Leaderboard</div>
+  </div>
+  <div id="leaderboard-content">
+    <div class="lb-empty"><span>📋</span><span data-lang="de">Noch keine Tipps importiert.<br>Der Admin importiert die Dateien im Admin-Bereich.</span><span data-lang="en">No tips imported yet.<br>The admin imports files in the admin area.</span></div>
+  </div>
+</div>
+
+<!-- ══════ ADMIN ══════ -->
+<div id="tab-admin" class="tab-panel">
+  <div class="notice" style="border-color:rgba(215,38,61,.3);background:rgba(215,38,61,.06)" data-lang="de"><strong>Admin-Bereich.</strong> Hier importierst du die Tipp-Dateien der Teilnehmenden und trägst die echten Spielergebnisse ein. Die Punkte werden automatisch berechnet.</div>
+  <div class="notice" style="border-color:rgba(215,38,61,.3);background:rgba(215,38,61,.06)" data-lang="en"><strong>Admin area.</strong> Import participant tip files and enter real match results. Points are calculated automatically.</div>
+
+  <!-- IMPORT -->
+  <div class="admin-box">
+    <div class="admin-title" data-lang="de">📥 Tipps importieren</div>
+    <div class="admin-title" data-lang="en">📥 Import Tips</div>
+    <div class="import-area" id="import-area" onclick="document.getElementById('file-input').click()" ondragover="handleDragOver(event)" ondrop="handleDrop(event)">
+      <div class="big-icon">📂</div>
+      <p data-lang="de"><strong>Klicken oder Datei hierher ziehen</strong><br>Tipp-Dateien (.json) der Teilnehmenden importieren</p>
+      <p data-lang="en"><strong>Click or drag file here</strong><br>Import participant tip files (.json)</p>
+    </div>
+    <input type="file" id="file-input" accept=".json" multiple style="display:none" onchange="importFiles(this.files)">
+    <div id="import-log" style="margin-top:12px;font-size:13px;color:var(--green)"></div>
+    <div style="margin-top:12px;display:flex;gap:10px;flex-wrap:wrap">
+      <button class="btn-sm" onclick="exportLeaderboard()" data-lang="de">📤 Tabelle als CSV</button>
+      <button class="btn-sm" onclick="exportLeaderboard()" data-lang="en">📤 Export as CSV</button>
+      <button class="btn-sm primary" onclick="exportForGitHub()" data-lang="de">🚀 Für GitHub exportieren</button>
+      <button class="btn-sm primary" onclick="exportForGitHub()" data-lang="en">🚀 Export for GitHub</button>
+    </div>
+    <div id="github-export-info" style="display:none;margin-top:14px;background:var(--navy);border:1px solid var(--mexico);border-radius:8px;padding:14px;font-size:13px;line-height:1.7">
+      <div data-lang="de"><strong style="color:var(--mexico)">✓ Datei heruntergeladen!</strong> So geht's weiter:<br>
+        1. Öffne dein GitHub Repository<br>
+        2. Klicke auf <strong>index.html</strong> → dann auf das ✏️ Stift-Symbol<br>
+        3. Drücke <strong>Cmd+A</strong> um alles zu markieren, dann löschen<br>
+        4. Öffne die heruntergeladene Datei in VS Code, drücke <strong>Cmd+A</strong> → <strong>Cmd+C</strong><br>
+        5. Zurück in GitHub: einfügen mit <strong>Cmd+V</strong><br>
+        6. Unten auf <strong>"Commit changes"</strong> klicken<br>
+        7. Nach 1-2 Minuten sehen alle die aktuelle Tabelle! 🎉
+      </div>
+      <div data-lang="en"><strong style="color:var(--mexico)">✓ File downloaded!</strong> Next steps:<br>
+        1. Open your GitHub Repository<br>
+        2. Click on <strong>index.html</strong> → then the ✏️ pencil icon<br>
+        3. Press <strong>Cmd+A</strong> to select all, then delete<br>
+        4. Open the downloaded file in VS Code, press <strong>Cmd+A</strong> → <strong>Cmd+C</strong><br>
+        5. Back in GitHub: paste with <strong>Cmd+V</strong><br>
+        6. Click <strong>"Commit changes"</strong> at the bottom<br>
+        7. After 1-2 minutes everyone sees the updated leaderboard! 🎉
+      </div>
+    </div>
+  </div>
+
+  <!-- MATCH RESULTS -->
+  <div class="admin-box">
+    <div class="admin-title" data-lang="de">⚽ Spielergebnisse eintragen</div>
+    <div class="admin-title" data-lang="en">⚽ Enter Match Results</div>
+    <p style="font-size:13px;color:var(--muted);margin-bottom:14px" data-lang="de">Trage nach jedem Spiel das Ergebnis ein. Die Punkte aller Teilnehmer werden sofort neu berechnet.</p>
+    <p style="font-size:13px;color:var(--muted);margin-bottom:14px" data-lang="en">Enter each result after the match. All participants' points are recalculated instantly.</p>
+    <div id="admin-matches"></div>
+  </div>
+
+  <!-- BEST THIRDS -->
+  <div class="admin-box">
+    <div class="admin-title" data-lang="de">🔵 Beste Dritte auswerten</div>
+    <div class="admin-title" data-lang="en">🔵 Evaluate Best Third-Placed</div>
+    <p style="font-size:13px;color:var(--muted);margin-bottom:12px" data-lang="de">Nach Abschluss aller Gruppenspiele: Die 8 besten Dritten werden automatisch ermittelt und 2 Punkte an Tipper vergeben, die das Team als 1. oder 2. getippt hatten.</p>
+    <p style="font-size:13px;color:var(--muted);margin-bottom:12px" data-lang="en">After all group matches: the 8 best third-placed teams are determined automatically, and 2 points awarded to tippers who predicted them 1st or 2nd.</p>
+    <div id="best-thirds-info" style="font-size:14px;color:var(--cream);margin-bottom:12px"></div>
+    <button class="btn-sm primary" onclick="evaluateBestThirds()" data-lang="de">Beste Dritte jetzt auswerten</button>
+    <button class="btn-sm primary" onclick="evaluateBestThirds()" data-lang="en">Evaluate Best Third-Placed Now</button>
+  </div>
+
+  <!-- DATA MGMT -->
+  <div class="admin-box">
+    <div class="admin-title" data-lang="de">⚠️ Daten verwalten</div>
+    <div class="admin-title" data-lang="en">⚠️ Data Management</div>
+    <div style="display:flex;gap:10px;flex-wrap:wrap">
+      <button class="btn-sm danger" onclick="adminClearAll()" data-lang="de">Alle Daten löschen</button>
+      <button class="btn-sm danger" onclick="adminClearAll()" data-lang="en">Delete All Data</button>
+      <button class="btn-sm danger" onclick="adminClearResults()" data-lang="de">Nur Ergebnisse zurücksetzen</button>
+      <button class="btn-sm danger" onclick="adminClearResults()" data-lang="en">Reset Results Only</button>
+    </div>
+  </div>
+</div>
+
+<!-- ══════ TIPVIEW ══════ -->
+<div id="tab-tipview" class="tab-panel">
+  <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:20px;flex-wrap:wrap;gap:10px">
+    <div style="font-family:'Bebas Neue',sans-serif;font-size:30px;color:var(--white)" data-lang="de">🔍 Tippübersicht</div>
+    <div style="font-family:'Bebas Neue',sans-serif;font-size:30px;color:var(--white)" data-lang="en">🔍 Tip Overview</div>
+    <!-- View toggle -->
+    <div style="display:flex;border:1.5px solid var(--slate);border-radius:6px;overflow:hidden">
+      <button id="view-btn-person" onclick="setTipView('person')" style="background:var(--mexico);color:var(--white);border:none;padding:8px 18px;font-family:'DM Sans',sans-serif;font-size:13px;font-weight:600;cursor:pointer" data-lang="de">👤 Pro Person</button>
+      <button id="view-btn-person-en" onclick="setTipView('person')" style="background:var(--mexico);color:var(--white);border:none;padding:8px 18px;font-family:'DM Sans',sans-serif;font-size:13px;font-weight:600;cursor:pointer" data-lang="en">👤 Per Person</button>
+      <button id="view-btn-match" onclick="setTipView('match')" style="background:transparent;color:var(--muted);border:none;padding:8px 18px;font-family:'DM Sans',sans-serif;font-size:13px;font-weight:600;cursor:pointer" data-lang="de">⚽ Pro Spiel</button>
+      <button id="view-btn-match-en" onclick="setTipView('match')" style="background:transparent;color:var(--muted);border:none;padding:8px 18px;font-family:'DM Sans',sans-serif;font-size:13px;font-weight:600;cursor:pointer" data-lang="en">⚽ Per Match</button>
+    </div>
+  </div>
+  <div id="tipview-content"></div>
+</div>
+
+<!-- DISCREET ADMIN LINK -->
+<div style="text-align:center;padding:30px 0 10px">
+  <button onclick="openAdmin()" id="tb-admin" style="background:none;border:none;color:var(--slate);font-family:'DM Sans',sans-serif;font-size:11px;cursor:pointer;letter-spacing:.08em;opacity:.5;transition:opacity .2s" onmouseover="this.style.opacity=1" onmouseout="this.style.opacity=.5">⚙️ Admin</button>
+</div>
+
+<script>
+// ══════════════════════════════════════════
+// DATA
+// ══════════════════════════════════════════
+const GROUPS={
+  A:{teams:['Mexiko','Südafrika','Südkorea','Tschechien'],matches:[['Mexiko','Südafrika'],['Südkorea','Tschechien'],['Tschechien','Südafrika'],['Mexiko','Südkorea'],['Tschechien','Mexiko'],['Südafrika','Südkorea']]},
+  B:{teams:['Kanada','Bosnien-Herz.','Katar','Schweiz'],matches:[['Kanada','Bosnien-Herz.'],['Katar','Schweiz'],['Schweiz','Bosnien-Herz.'],['Kanada','Katar'],['Schweiz','Kanada'],['Bosnien-Herz.','Katar']]},
+  C:{teams:['Brasilien','Marokko','Haiti','Schottland'],matches:[['Brasilien','Marokko'],['Haiti','Schottland'],['Schottland','Marokko'],['Brasilien','Haiti'],['Schottland','Brasilien'],['Marokko','Haiti']]},
+  D:{teams:['USA','Paraguay','Australien','Türkei'],matches:[['USA','Paraguay'],['Australien','Türkei'],['USA','Australien'],['Türkei','Paraguay'],['Türkei','USA'],['Paraguay','Australien']]},
+  E:{teams:['Deutschland','Curaçao','Elfenbeinküste','Ecuador'],matches:[['Deutschland','Curaçao'],['Elfenbeinküste','Ecuador'],['Deutschland','Elfenbeinküste'],['Ecuador','Curaçao'],['Curaçao','Elfenbeinküste'],['Ecuador','Deutschland']]},
+  F:{teams:['Niederlande','Japan','Schweden','Tunesien'],matches:[['Niederlande','Japan'],['Schweden','Tunesien'],['Niederlande','Schweden'],['Tunesien','Japan'],['Japan','Schweden'],['Tunesien','Niederlande']]},
+  G:{teams:['Belgien','Ägypten','Iran','Neuseeland'],matches:[['Belgien','Ägypten'],['Iran','Neuseeland'],['Belgien','Iran'],['Neuseeland','Ägypten'],['Ägypten','Iran'],['Neuseeland','Belgien']]},
+  H:{teams:['Spanien','Kap Verde','Saudi-Arabien','Uruguay'],matches:[['Spanien','Kap Verde'],['Saudi-Arabien','Uruguay'],['Spanien','Saudi-Arabien'],['Uruguay','Kap Verde'],['Kap Verde','Saudi-Arabien'],['Uruguay','Spanien']]},
+  I:{teams:['Frankreich','Senegal','Irak','Norwegen'],matches:[['Frankreich','Senegal'],['Irak','Norwegen'],['Frankreich','Irak'],['Norwegen','Senegal'],['Norwegen','Frankreich'],['Senegal','Irak']]},
+  J:{teams:['Argentinien','Algerien','Österreich','Jordanien'],matches:[['Argentinien','Algerien'],['Österreich','Jordanien'],['Argentinien','Österreich'],['Jordanien','Algerien'],['Algerien','Österreich'],['Jordanien','Argentinien']]},
+  K:{teams:['Portugal','D.R. Kongo','Usbekistan','Kolumbien'],matches:[['Portugal','D.R. Kongo'],['Usbekistan','Kolumbien'],['Portugal','Usbekistan'],['Kolumbien','D.R. Kongo'],['Kolumbien','Portugal'],['D.R. Kongo','Usbekistan']]},
+  L:{teams:['England','Kroatien','Ghana','Panama'],matches:[['England','Kroatien'],['Ghana','Panama'],['England','Ghana'],['Panama','Kroatien'],['Panama','England'],['Kroatien','Ghana']]}
+};
+const ALL_TEAMS=Object.values(GROUPS).flatMap(g=>g.teams).sort();
+const FIFA_TOP10=['Frankreich','Spanien','Argentinien','England','Portugal','Brasilien','Niederlande','Marokko','Belgien','Deutschland'];
+
+// ── LOCAL STATE ──
+let DB = { tips: {}, results: {} }; // all in memory, saved to localStorage
+let adminUnlocked = false;
+let currentLang = 'de';
+let currentTab = 'rules';
+
+function saveDB(){ try{ localStorage.setItem('wm2026_db', JSON.stringify(DB)); }catch(e){} }
+function loadDB(){ try{ const s=localStorage.getItem('wm2026_db'); if(s) DB=JSON.parse(s); }catch(e){} }
+
+// ══════════════════════════════════════════
+// LANG + TABS
+// ══════════════════════════════════════════
+function setLang(lang){
+  currentLang=lang;
+  document.getElementById('root').className='lang-'+lang;
+  document.querySelectorAll('.lang-btn').forEach(b=>b.classList.remove('active'));
+  document.querySelector(`.lang-btn[onclick*="'${lang}'"]`).classList.add('active');
+}
+function showTab(tab){
+  currentTab=tab;
+  document.querySelectorAll('.tab-panel').forEach(p=>p.classList.remove('active'));
+  document.getElementById('tab-'+tab).classList.add('active');
+  document.querySelectorAll('.tab-btn').forEach(b=>b.classList.remove('active'));
+  const tbEl=document.getElementById('tb-'+tab);
+  if(tbEl) tbEl.classList.add('active');
+  if(tab==='board') renderLeaderboard();
+  if(tab==='admin') buildAdminMatches();
+  if(tab==='tipview') renderTipView();
+}
+
+// ══════════════════════════════════════════
+// ADMIN PASSWORD (localStorage)
+// ══════════════════════════════════════════
+function openAdmin(){
+  const stored=localStorage.getItem('wm2026_pw');
+  if(!stored){ document.getElementById('set-pw-modal').style.display='flex'; return; }
+  if(adminUnlocked){ showTab('admin'); return; }
+  document.getElementById('pw-modal').style.display='flex';
+  setTimeout(()=>document.getElementById('pw-input').focus(),100);
+}
+function openTipView(){
+  showTab('tipview');
+}
+let pendingTab='admin';
+let currentTipView='person';
+function setAdminPw(){
+  const p1=document.getElementById('set-pw1').value;
+  const p2=document.getElementById('set-pw2').value;
+  const err=document.getElementById('set-pw-err');
+  if(!p1||p1.length<4){err.textContent=currentLang==='de'?'Mindestens 4 Zeichen.':'At least 4 characters.';return;}
+  if(p1!==p2){err.textContent=currentLang==='de'?'Passwörter stimmen nicht überein.':'Passwords do not match.';return;}
+  localStorage.setItem('wm2026_pw', btoa(p1));
+  adminUnlocked=true;
+  document.getElementById('set-pw-modal').style.display='none';
+  showTab(pendingTab);
+}
+function checkAdminPw(){
+  const inp=document.getElementById('pw-input').value;
+  const stored=localStorage.getItem('wm2026_pw');
+  if(stored && btoa(inp)===stored){
+    adminUnlocked=true;
+    document.getElementById('pw-modal').style.display='none';
+    document.getElementById('pw-input').value='';
+    showTab(pendingTab);
+  } else {
+    document.getElementById('pw-err').textContent=currentLang==='de'?'Falsches Passwort.':'Wrong password.';
+  }
+}
+document.getElementById('pw-input').addEventListener('keydown',e=>{if(e.key==='Enter')checkAdminPw();});
+document.getElementById('set-pw2').addEventListener('keydown',e=>{if(e.key==='Enter')setAdminPw();});
+
+// ══════════════════════════════════════════
+// BUILD TIP FORM
+// ══════════════════════════════════════════
+function buildForm(){
+  const mc=document.getElementById('matches-container');
+  mc.innerHTML='';
+  Object.entries(GROUPS).forEach(([grp,data])=>{
+    const wrap=document.createElement('div');
+    wrap.style.marginBottom='22px';
+    wrap.innerHTML=`<div class="grp-lbl">GRUPPE ${grp}</div>`;
+    data.matches.forEach((m,i)=>{
+      const row=document.createElement('div');
+      row.className='score-row';
+      row.innerHTML=`<div class="score-team home">${m[0]}</div>
+        <input class="score-inp" type="number" min="0" max="20" id="m_${grp}_${i}_h" placeholder="–">
+        <div class="score-dash">:</div>
+        <input class="score-inp" type="number" min="0" max="20" id="m_${grp}_${i}_a" placeholder="–">
+        <div class="score-team">${m[1]}</div>`;
+      wrap.appendChild(row);
+    });
+    mc.appendChild(wrap);
+  });
+  const sc=document.getElementById('standings-container');
+  sc.innerHTML='';
+  Object.entries(GROUPS).forEach(([grp,data])=>{
+    const wrap=document.createElement('div');
+    wrap.style.marginBottom='18px';
+    wrap.innerHTML=`<div class="grp-lbl">GRUPPE ${grp}</div>`;
+    const grid=document.createElement('div');
+    grid.className='sel-grp';
+    ['1.','2.'].forEach((pos,pi)=>{
+      const f=document.createElement('div');
+      f.className='field';
+      f.innerHTML=`<label>${pos} <span data-lang="de">Platz</span><span data-lang="en">Place</span></label>
+        <select id="s_${grp}_${pi}"><option value="">–</option>${data.teams.map(t=>`<option value="${t}">${t}</option>`).join('')}</select>`;
+      grid.appendChild(f);
+    });
+    wrap.appendChild(grid);
+    sc.appendChild(wrap);
+  });
+  ['pick-1st','pick-2nd','pick-3rd'].forEach(id=>{
+    document.getElementById(id).innerHTML=`<option value="">–</option>`+ALL_TEAMS.map(t=>`<option value="${t}">${t}</option>`).join('');
+  });
+  const eligible=ALL_TEAMS.filter(t=>!FIFA_TOP10.includes(t));
+  document.getElementById('pick-surprise').innerHTML=`<option value="">–</option>`+eligible.map(t=>`<option value="${t}">${t}</option>`).join('');
+}
+
+// ══════════════════════════════════════════
+// DROPBOX CONFIG – trage hier deinen Token ein
+// ══════════════════════════════════════════
+const DROPBOX_TOKEN = 'DEIN_TOKEN_HIER'; // ← deinen Dropbox Access Token hier eintragen
+const DROPBOX_FOLDER = '/WM2026-Tipps';  // ← Ordnername in Dropbox (wird automatisch erstellt)
+
+// ══════════════════════════════════════════
+// SAVE TIP AS FILE OR UPLOAD TO DROPBOX
+// ══════════════════════════════════════════
+function collectTipData() {
+  const name=document.getElementById('tipster-name').value.trim();
+  if(!name){alert(currentLang==='de'?'Bitte gib deinen Namen ein.':'Please enter your name.');return null;}
+  const matches={};
+  Object.entries(GROUPS).forEach(([grp,data])=>{
+    matches[grp]=data.matches.map((m,i)=>({
+      home:m[0],away:m[1],
+      h:document.getElementById(`m_${grp}_${i}_h`).value===''?null:parseInt(document.getElementById(`m_${grp}_${i}_h`).value),
+      a:document.getElementById(`m_${grp}_${i}_a`).value===''?null:parseInt(document.getElementById(`m_${grp}_${i}_a`).value)
+    }));
+  });
+  const standings={};
+  Object.keys(GROUPS).forEach(grp=>{
+    standings[grp]=[0,1].map(pi=>document.getElementById(`s_${grp}_${pi}`)?.value||'');
+  });
+  return {
+    name,matches,standings,
+    pick1:document.getElementById('pick-1st').value,
+    pick2:document.getElementById('pick-2nd').value,
+    pick3:document.getElementById('pick-3rd').value,
+    surprise:document.getElementById('pick-surprise').value,
+    submitted:new Date().toISOString(),
+    version:'wm2026'
+  };
+}
+
+function saveTipFile(mode){
+  const tipData=collectTipData();
+  if(!tipData) return;
+  const filename=`tipps-${tipData.name.toLowerCase().replace(/\s+/g,'-').replace(/[^a-z0-9-]/g,'')}.json`;
+  const json=JSON.stringify(tipData,null,2);
+  const blob=new Blob([json],{type:'application/json'});
+
+  if(mode==='download'){
+    const url=URL.createObjectURL(blob);
+    const a=document.createElement('a');
+    a.href=url; a.download=filename; a.click();
+    URL.revokeObjectURL(url);
+    document.getElementById('filename-display').textContent=filename;
+    document.getElementById('filename-display-en').textContent=filename;
+    showSuccessPanel('download');
+  } else if(mode==='dropbox'){
+    uploadToDropbox(blob, filename, tipData.name);
+  }
+}
+
+async function uploadToDropbox(blob, filename, name){
+  const btn=document.getElementById('upload-btn');
+  btn.disabled=true;
+  btn.innerHTML=`<span class="icon">⏳</span><span>${currentLang==='de'?'Wird hochgeladen…':'Uploading…'}</span>`;
+  try{
+    const path=`${DROPBOX_FOLDER}/${filename}`;
+    const response=await fetch('https://content.dropboxapi.com/2/files/upload',{
+      method:'POST',
+      headers:{
+        'Authorization':`Bearer ${DROPBOX_TOKEN}`,
+        'Dropbox-API-Arg':JSON.stringify({path, mode:'overwrite', autorename:false}),
+        'Content-Type':'application/octet-stream'
+      },
+      body:blob
+    });
+    if(response.ok){
+      showSuccessPanel('upload');
+    } else {
+      const err=await response.json();
+      console.error('Dropbox error:',err);
+      document.getElementById('filename-display-err').textContent=filename;
+      document.getElementById('filename-display-err-en').textContent=filename;
+      // fallback: also download the file
+      const url=URL.createObjectURL(blob);
+      const a=document.createElement('a'); a.href=url; a.download=filename; a.click();
+      URL.revokeObjectURL(url);
+      showSuccessPanel('error');
+    }
+  } catch(e){
+    console.error('Upload failed:',e);
+    document.getElementById('filename-display-err').textContent=filename;
+    document.getElementById('filename-display-err-en').textContent=filename;
+    const url=URL.createObjectURL(blob);
+    const a=document.createElement('a'); a.href=url; a.download=filename; a.click();
+    URL.revokeObjectURL(url);
+    showSuccessPanel('error');
+  } finally {
+    btn.disabled=false;
+    btn.innerHTML=`<span class="icon" style="font-size:22px">☁️</span><span data-lang="de">Zu Dropbox hochladen</span><span data-lang="en">Upload to Dropbox</span>`;
+  }
+}
+
+function showSuccessPanel(type){
+  document.getElementById('tip-form-wrap').style.display='none';
+  document.getElementById('success-msg').classList.add('show');
+  document.getElementById('success-download').style.display=type==='download'?'block':'none';
+  document.getElementById('success-upload').style.display=type==='upload'?'block':'none';
+  document.getElementById('success-error').style.display=type==='error'?'block':'none';
+}
+
+function resetForm(){
+  document.getElementById('tip-form-wrap').style.display='';
+  document.getElementById('success-msg').classList.remove('show');
+  document.getElementById('tipster-name').value='';
+  document.getElementById('save-btn').disabled=false;
+  document.getElementById('upload-btn').disabled=false;
+}
+
+// ══════════════════════════════════════════
+// IMPORT FILES
+// ══════════════════════════════════════════
+function handleDragOver(e){e.preventDefault();document.getElementById('import-area').classList.add('drag');}
+function handleDrop(e){
+  e.preventDefault();
+  document.getElementById('import-area').classList.remove('drag');
+  importFiles(e.dataTransfer.files);
+}
+function importFiles(files){
+  const log=document.getElementById('import-log');
+  let imported=0, skipped=0;
+  Array.from(files).forEach(file=>{
+    const reader=new FileReader();
+    reader.onload=e=>{
+      try{
+        const data=JSON.parse(e.target.result);
+        if(!data.name||!data.version==='wm2026') throw new Error('invalid');
+        DB.tips[data.name]=data;
+        saveDB();
+        imported++;
+        log.innerHTML=`✓ ${imported} Datei(en) importiert${skipped?' · '+skipped+' übersprungen':''}.`;
+        recalcAll();
+        renderLeaderboard();
+      }catch(err){skipped++;log.innerHTML=`${imported} importiert · ${skipped} Fehler.`;}
+    };
+    reader.readAsText(file);
+  });
+}
+function exportLeaderboard(){
+  const entries=Object.values(DB.tips).sort((a,b)=>(b.points||0)-(a.points||0));
+  const csv=['Platz,Name,Punkte,Tipp 1.,Tipp 2.,Tipp 3.,Überraschung',...entries.map((e,i)=>`${i+1},"${e.name}",${e.points||0},"${e.pick1||''}","${e.pick2||''}","${e.pick3||''}","${e.surprise||''}"`)].join('\n');
+  const blob=new Blob([csv],{type:'text/csv'});
+  const a=document.createElement('a');
+  a.href=URL.createObjectURL(blob);
+  a.download='wm2026-tabelle.csv'; a.click();
+}
+
+function exportForGitHub(){
+  // Take the current HTML source, inject the current DB as preloaded data
+  const currentHTML = document.documentElement.outerHTML;
+  const dbSnapshot = JSON.stringify(DB);
+  // Inject a script tag that preloads DB data before the main script runs
+  const injected = currentHTML.replace(
+    'function saveDB(){ try{ localStorage.setItem(\'wm2026_db\', JSON.stringify(DB)); }catch(e){} }\nfunction loadDB(){ try{ const s=localStorage.getItem(\'wm2026_db\'); if(s) DB=JSON.parse(s); }catch(e){} }',
+    `function saveDB(){ try{ localStorage.setItem('wm2026_db', JSON.stringify(DB)); }catch(e){} }
+function loadDB(){
+  // Preloaded snapshot from admin export
+  const snapshot = ${dbSnapshot};
+  // Merge with any existing localStorage data, snapshot takes priority for results & points
+  try{ const s=localStorage.getItem('wm2026_db'); if(s){ const local=JSON.parse(s); DB=local; } }catch(e){}
+  // Always apply the exported results and recalculated points
+  DB.results = snapshot.results;
+  // Update points from snapshot for all known tips
+  Object.keys(snapshot.tips).forEach(k=>{ if(DB.tips[k]){ DB.tips[k].points=snapshot.tips[k].points; DB.tips[k].log=snapshot.tips[k].log; DB.tips[k].bonusPts=snapshot.tips[k].bonusPts; } });
+}`
+  );
+  const blob = new Blob([injected], {type:'text/html'});
+  const a = document.createElement('a');
+  a.href = URL.createObjectURL(blob);
+  a.download = 'index.html';
+  a.click();
+  URL.revokeObjectURL(a.href);
+  document.getElementById('github-export-info').style.display='block';
+}
+
+// ══════════════════════════════════════════
+// SCORING
+// ══════════════════════════════════════════
+function scoreMatch(tipH,tipA,resH,resA){
+  if(tipH===null||tipA===null) return 0;
+  if(tipH===resH&&tipA===resA) return 4;
+  const td=tipH-tipA, rd=resH-resA;
+  if(td===rd) return 2;
+  if(Math.sign(td)===Math.sign(rd)) return 1;
+  return 0;
+}
+function calcGroupTable(grp){
+  const table={};
+  GROUPS[grp].teams.forEach(t=>{table[t]={pts:0,gf:0,ga:0,gd:0};});
+  GROUPS[grp].matches.forEach((m,i)=>{
+    const r=DB.results[`${grp}_${i}`];
+    if(!r||r.h===null||r.a===null) return;
+    const [home,away]=[m[0],m[1]];
+    table[home].gf+=r.h; table[home].ga+=r.a; table[home].gd+=r.h-r.a;
+    table[away].gf+=r.a; table[away].ga+=r.h; table[away].gd+=r.a-r.h;
+    if(r.h>r.a) table[home].pts+=3;
+    else if(r.h===r.a){table[home].pts+=1;table[away].pts+=1;}
+    else table[away].pts+=3;
+  });
+  return Object.entries(table).sort((a,b)=>{
+    if(b[1].pts!==a[1].pts) return b[1].pts-a[1].pts;
+    if(b[1].gd!==a[1].gd) return b[1].gd-a[1].gd;
+    return b[1].gf-a[1].gf;
+  });
+}
+function grpComplete(grp){
+  return GROUPS[grp].matches.every((_,i)=>{const r=DB.results[`${grp}_${i}`];return r&&r.h!==null&&r.a!==null;});
+}
+function recalcAll(){
+  Object.values(DB.tips).forEach(entry=>{
+    let pts=0; const log=[];
+    // matches
+    Object.entries(GROUPS).forEach(([grp,data])=>{
+      let tendencies=0;
+      data.matches.forEach((m,i)=>{
+        const tm=entry.matches?.[grp]?.[i];
+        const r=DB.results[`${grp}_${i}`];
+        if(!r||r.h===null||r.a===null||!tm||tm.h===null||tm.a===null) return;
+        const p=scoreMatch(tm.h,tm.a,r.h,r.a);
+        if(p>0){pts+=p;log.push({pts:p,reason:`${m[0]}-${m[1]} ${r.h}:${r.a}`});}
+        if(Math.sign(tm.h-tm.a)===Math.sign(r.h-r.a)) tendencies++;
+      });
+      if(tendencies===6&&grpComplete(grp)){pts+=15;log.push({pts:15,reason:`⚡ Gruppe ${grp}`});}
+      // standings
+      if(grpComplete(grp)){
+        const sorted=calcGroupTable(grp);
+        const a1=sorted[0]?.[0]||'', a2=sorted[1]?.[0]||'';
+        const t1=entry.standings?.[grp]?.[0]||'', t2=entry.standings?.[grp]?.[1]||'';
+        if(t1&&t1===a1){pts+=5;log.push({pts:5,reason:`${grp}: ${t1} 1.`});}
+        else if(t1&&t1===a2){pts+=2;log.push({pts:2,reason:`${grp}: ${t1} (2.st.1.)`});}
+        if(t2&&t2===a2){pts+=5;log.push({pts:5,reason:`${grp}: ${t2} 2.`});}
+        else if(t2&&t2===a1){pts+=2;log.push({pts:2,reason:`${grp}: ${t2} (1.st.2.)`});}
+      }
+    });
+    // keep bonus pts (best thirds, tournament) that were added separately
+    const bonusPts=(entry.bonusPts||0);
+    entry.points=pts+bonusPts;
+    entry.log=log;
+  });
+  saveDB();
+}
+
+// ══════════════════════════════════════════
+// BEST THIRDS
+// ══════════════════════════════════════════
+function evaluateBestThirds(){
+  const allDone=Object.keys(GROUPS).every(grp=>grpComplete(grp));
+  if(!allDone){alert(currentLang==='de'?'Nicht alle Gruppenspiele eingetragen!':'Not all group matches entered!');return;}
+  const thirds=Object.keys(GROUPS).map(grp=>{
+    const s=calcGroupTable(grp);
+    return {team:s[2]?.[0]||'',grp,pts:s[2]?.[1]?.pts||0,gd:s[2]?.[1]?.gd||0,gf:s[2]?.[1]?.gf||0};
+  }).filter(t=>t.team);
+  thirds.sort((a,b)=>b.pts!==a.pts?b.pts-a.pts:b.gd!==a.gd?b.gd-a.gd:b.gf-a.gf);
+  const best8=thirds.slice(0,8).map(t=>t.team);
+  document.getElementById('best-thirds-info').innerHTML=`<strong style="color:var(--green)">${currentLang==='de'?'Beste 8 Dritte':'Best 8 Third-Placed'}:</strong> ${best8.join(', ')}`;
+  Object.values(DB.tips).forEach(entry=>{
+    let bonus=0;
+    Object.keys(GROUPS).forEach(grp=>{
+      [entry.standings?.[grp]?.[0]||'', entry.standings?.[grp]?.[1]||''].forEach(tip=>{
+        if(tip&&best8.includes(tip)){bonus+=2;(entry.log=entry.log||[]).push({pts:2,reason:`🔵 ${tip} Bester Dritter`});}
+      });
+    });
+    entry.bonusPts=(entry.bonusPts||0)+bonus;
+    entry.points=(entry.points||0)+bonus;
+  });
+  saveDB();
+  renderLeaderboard();
+  alert(currentLang==='de'?'Beste Dritte wurden ausgewertet und Punkte vergeben!':'Best third-placed teams evaluated and points awarded!');
+}
+
+// ══════════════════════════════════════════
+// ADMIN MATCH ENTRY
+// ══════════════════════════════════════════
+function buildAdminMatches(){
+  const cont=document.getElementById('admin-matches');
+  cont.innerHTML='';
+  Object.entries(GROUPS).forEach(([grp,data])=>{
+    const wrap=document.createElement('div');
+    wrap.style.marginBottom='20px';
+    wrap.innerHTML=`<div class="grp-lbl">GRUPPE ${grp}</div>`;
+    data.matches.forEach((m,i)=>{
+      const key=`${grp}_${i}`;
+      const r=DB.results[key]||{h:null,a:null};
+      const done=r.h!==null&&r.a!==null;
+      const row=document.createElement('div');
+      row.className='res-score-row'+(done?' done':'');
+      row.innerHTML=`
+        <div class="score-team home" style="font-size:13px">${m[0]}</div>
+        <input class="res-inp" type="number" min="0" max="20" id="res_${key}_h" value="${done?r.h:''}" placeholder="–">
+        <div class="score-dash" style="font-size:18px">:</div>
+        <input class="res-inp" type="number" min="0" max="20" id="res_${key}_a" value="${done?r.a:''}" placeholder="–">
+        <div class="score-team" style="font-size:13px">${m[1]}</div>
+        ${done
+          ? `<div class="done-badge" onclick="editResult('${grp}',${i})" title="${currentLang==='de'?'Bearbeiten':'Edit'}">✓ ${r.h}:${r.a} ✎</div>`
+          : `<button class="save-match-btn" onclick="saveResult('${grp}',${i})">${currentLang==='de'?'Speichern':'Save'}</button>`
+        }`;
+      wrap.appendChild(row);
+    });
+    cont.appendChild(wrap);
+  });
+  updateBestThirdsPreview();
+}
+function updateBestThirdsPreview(){
+  const thirds=Object.keys(GROUPS).map(grp=>{
+    const s=calcGroupTable(grp);
+    if(!s[2]) return null;
+    return {team:s[2][0],pts:s[2][1].pts,gd:s[2][1].gd,gf:s[2][1].gf};
+  }).filter(Boolean);
+  thirds.sort((a,b)=>b.pts!==a.pts?b.pts-a.pts:b.gd!==a.gd?b.gd-a.gd:b.gf-a.gf);
+  const el=document.getElementById('best-thirds-info');
+  if(el&&thirds.length>0) el.innerHTML=`<span style="color:var(--muted);font-size:12px">${currentLang==='de'?'Vorläufig':'Preliminary'}:</span> `+thirds.slice(0,8).map(t=>`<span style="color:var(--green)">${t.team}</span>`).join(', ');
+}
+function saveResult(grp,idx){
+  const key=`${grp}_${idx}`;
+  const h=document.getElementById(`res_${key}_h`).value;
+  const a=document.getElementById(`res_${key}_a`).value;
+  if(h===''||a===''){alert(currentLang==='de'?'Bitte beide Tore eingeben.':'Please enter both scores.');return;}
+  DB.results[key]={h:parseInt(h),a:parseInt(a)};
+  saveDB(); recalcAll(); buildAdminMatches(); renderLeaderboard();
+}
+function editResult(grp,idx){
+  const key=`${grp}_${idx}`;
+  delete DB.results[key];
+  saveDB(); recalcAll(); buildAdminMatches(); renderLeaderboard();
+}
+function adminClearAll(){
+  if(!confirm(currentLang==='de'?'Wirklich ALLE Daten löschen?':'Really delete ALL data?')) return;
+  DB={tips:{},results:{}}; saveDB(); renderLeaderboard(); buildAdminMatches();
+}
+function adminClearResults(){
+  if(!confirm(currentLang==='de'?'Nur Ergebnisse zurücksetzen? Tipps bleiben erhalten.':'Reset results only? Tips are kept.')) return;
+  DB.results={};
+  Object.values(DB.tips).forEach(e=>{e.points=0;e.bonusPts=0;e.log=[];});
+  saveDB(); renderLeaderboard(); buildAdminMatches();
+}
+
+// ══════════════════════════════════════════
+// LEADERBOARD
+// ══════════════════════════════════════════
+function renderLeaderboard(){
+  const cont=document.getElementById('leaderboard-content');
+  const entries=Object.values(DB.tips);
+  if(!entries.length){
+    cont.innerHTML=`<div class="lb-empty"><span>📋</span><span data-lang="de">Noch keine Tipps importiert.<br>Der Admin importiert die Dateien im Admin-Bereich.</span><span data-lang="en">No tips imported yet.<br>The admin imports files in the admin area.</span></div>`;
+    return;
+  }
+  entries.sort((a,b)=>(b.points||0)-(a.points||0));
+  const tbl=document.createElement('table');
+  tbl.className='lb-table';
+  tbl.innerHTML=`<thead><tr>
+    <th style="width:48px">#</th>
+    <th>${currentLang==='de'?'Name':'Name'}</th>
+    <th>${currentLang==='de'?'Letzte Punkte':'Recent Points'}</th>
+    <th class="r">${currentLang==='de'?'Gesamt':'Total'}</th>
+  </tr></thead>`;
+  const tbody=document.createElement('tbody');
+  entries.forEach((e,i)=>{
+    const rank=i+1;
+    const bc=rank===1?'r1':rank===2?'r2':rank===3?'r3':'rn';
+    const medal=rank===1?'🥇':rank===2?'🥈':rank===3?'🥉':rank;
+    const recentLog=(e.log||[]).slice(-4).map(l=>`<span class="log-chip">+${l.pts} ${l.reason}</span>`).join(' ');
+    const picks=[e.pick1,e.pick2,e.pick3].filter(Boolean).join(' · ');
+    const tr=document.createElement('tr');
+    tr.innerHTML=`
+      <td><div class="rank-badge ${bc}">${medal}</div></td>
+      <td><div class="lb-name">${e.name}</div><div class="lb-picks">${picks||'–'}</div></td>
+      <td><div style="font-size:12px">${recentLog||'–'}</div></td>
+      <td><div class="lb-pts">${e.points||0}</div></td>`;
+    tbody.appendChild(tr);
+  });
+  tbl.appendChild(tbody);
+  cont.innerHTML='';
+  cont.appendChild(tbl);
+  const info=document.createElement('p');
+  info.style.cssText='font-size:12px;color:var(--muted);margin-top:14px;text-align:center';
+  info.textContent=currentLang==='de'
+    ?`${entries.length} Teilnehmer · Punkte werden nach jedem eingetragenen Ergebnis automatisch berechnet`
+    :`${entries.length} participants · Points calculated automatically after each result`;
+  cont.appendChild(info);
+}
+
+// ══════════════════════════════════════════
+// TIPVIEW
+// ══════════════════════════════════════════
+function setTipView(mode){
+  currentTipView=mode;
+  // toggle button styles
+  ['person','match'].forEach(m=>{
+    const active=m===mode;
+    ['de','en'].forEach(l=>{
+      const btn=document.getElementById(`view-btn-${m}${l==='en'?'-en':''}`);
+      if(btn){btn.style.background=active?'var(--mexico)':'transparent';btn.style.color=active?'var(--white)':'var(--muted)';}
+    });
+  });
+  renderTipView();
+}
+
+function renderTipView(){
+  const cont=document.getElementById('tipview-content');
+  const entries=Object.values(DB.tips);
+  if(!entries.length){
+    cont.innerHTML=`<div class="lb-empty"><span>📋</span><span data-lang="de">Noch keine Tipps importiert.</span><span data-lang="en">No tips imported yet.</span></div>`;
+    return;
+  }
+  if(currentTipView==='person') renderPersonView(cont, entries);
+  else renderMatchView(cont, entries);
+}
+
+function renderPersonView(cont, entries){
+  cont.innerHTML='';
+  entries.sort((a,b)=>a.name.localeCompare(b.name));
+  entries.forEach(entry=>{
+    const card=document.createElement('div');
+    card.className='person-card';
+    // header
+    const header=document.createElement('div');
+    header.className='person-card-header';
+    header.innerHTML=`<div class="person-card-name">👤 ${entry.name}</div><div style="display:flex;align-items:center;gap:14px"><div style="font-size:12px;color:var(--muted)">${[entry.pick1,entry.pick2,entry.pick3].filter(Boolean).join(' · ')||'–'}</div><div class="person-card-pts">${entry.points||0} Pts</div><div style="color:var(--muted);font-size:14px">▼</div></div>`;
+    const body=document.createElement('div');
+    body.className='person-card-body';
+    // build body content
+    let html='';
+    // tournament picks
+    html+=`<div class="tv-section"><div class="tv-section-title">${currentLang==='de'?'Turniertipps':'Tournament Picks'}</div>`;
+    html+=`<div class="tv-picks">`;
+    if(entry.pick1) html+=`<div class="tv-pick-chip gold">🥇 ${entry.pick1}</div>`;
+    if(entry.pick2) html+=`<div class="tv-pick-chip gold">🥈 ${entry.pick2}</div>`;
+    if(entry.pick3) html+=`<div class="tv-pick-chip gold">🥉 ${entry.pick3}</div>`;
+    if(entry.surprise) html+=`<div class="tv-pick-chip mexico">🌟 ${entry.surprise}</div>`;
+    html+=`</div></div>`;
+    // group standings
+    html+=`<div class="tv-section"><div class="tv-section-title">${currentLang==='de'?'Gruppenplatzierungen':'Group Standings'}</div><div class="tv-picks">`;
+    Object.keys(GROUPS).forEach(grp=>{
+      const t1=entry.standings?.[grp]?.[0]||'–';
+      const t2=entry.standings?.[grp]?.[1]||'–';
+      html+=`<div class="tv-pick-chip"><span style="color:var(--muted);font-size:10px">GRP ${grp}</span><br>${t1} / ${t2}</div>`;
+    });
+    html+=`</div></div>`;
+    // matches per group
+    Object.entries(GROUPS).forEach(([grp,data])=>{
+      html+=`<div class="tv-section"><div class="tv-section-title">GRUPPE ${grp}</div>`;
+      data.matches.forEach((m,i)=>{
+        const tm=entry.matches?.[grp]?.[i];
+        const res=DB.results[`${grp}_${i}`];
+        const tipH=tm?.h; const tipA=tm?.a;
+        const hasScore=tipH!==null&&tipH!==undefined&&tipA!==null&&tipA!==undefined;
+        let scoreClass='empty', pts=0;
+        if(hasScore&&res&&res.h!==null){
+          pts=scoreMatch(tipH,tipA,res.h,res.a);
+          scoreClass=pts===4?'correct-exact':pts===2?'correct-diff':pts===1?'correct-tend':'wrong';
+        }
+        const scoreStr=hasScore?`${tipH}:${tipA}`:'–:–';
+        const ptsStr=res&&res.h!==null?(pts>0?`+${pts}`:'0'):'';
+        html+=`<div class="tv-match-row">
+          <div class="tv-home">${m[0]}</div>
+          <div class="tv-score ${!hasScore?'empty':scoreClass}">${scoreStr}${ptsStr?`<span style="font-size:11px;color:var(--muted)"> ${ptsStr}</span>`:''}</div>
+          <div class="tv-away">${m[1]}</div>
+        </div>`;
+      });
+      html+=`</div>`;
+    });
+    body.innerHTML=html;
+    header.addEventListener('click',()=>body.classList.toggle('open'));
+    card.appendChild(header);
+    card.appendChild(body);
+    cont.appendChild(card);
+  });
+}
+
+function renderMatchView(cont, entries){
+  cont.innerHTML='';
+  Object.entries(GROUPS).forEach(([grp,data])=>{
+    data.matches.forEach((m,i)=>{
+      const key=`${grp}_${i}`;
+      const res=DB.results[key];
+      const hasRes=res&&res.h!==null&&res.a!==null;
+      const block=document.createElement('div');
+      block.className='match-view-block';
+      block.innerHTML=`<div class="match-view-header">
+        <span style="color:var(--muted);font-size:11px;margin-right:10px">GRP ${grp}</span>
+        <span>${m[0]} vs ${m[1]}</span>
+        <span class="match-view-result ${!hasRes?'tbd':''}">${hasRes?`${res.h}:${res.a}`:currentLang==='de'?'Noch offen':'TBD'}</span>
+      </div>`;
+      const grid=document.createElement('div');
+      grid.className='tips-grid';
+      if(!entries.length){
+        grid.innerHTML=`<div style="color:var(--muted);font-size:13px;padding:4px">${currentLang==='de'?'Keine Tipps':'No tips'}</div>`;
+      } else {
+        entries.forEach(entry=>{
+          const tm=entry.matches?.[grp]?.[i];
+          const tipH=tm?.h; const tipA=tm?.a;
+          const hasScore=tipH!==null&&tipH!==undefined&&tipA!==null&&tipA!==undefined;
+          let chipClass='';
+          if(hasScore&&hasRes){
+            const pts=scoreMatch(tipH,tipA,res.h,res.a);
+            chipClass=pts===4?'correct-exact':pts===2?'correct-diff':pts===1?'correct-tend':'wrong';
+          }
+          const chip=document.createElement('div');
+          chip.className=`tip-chip ${chipClass}`;
+          chip.innerHTML=`<div class="tip-chip-name">${entry.name}</div><div class="tip-chip-score">${hasScore?`${tipH}:${tipA}`:'–:–'}</div>`;
+          grid.appendChild(chip);
+        });
+      }
+      block.appendChild(grid);
+      cont.appendChild(block);
+    });
+  });
+}
+
+// ══════════════════════════════════════════
+// INIT
+// ══════════════════════════════════════════
+loadDB();
+buildForm();
+renderLeaderboard();
+</script>
+</body>
+</html>
