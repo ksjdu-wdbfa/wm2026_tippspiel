@@ -328,7 +328,7 @@ span[data-lang]{display:inline}
       </div><div><div class="pts">15</div><div class="pts-lbl" data-lang="de">Punkte</div><div class="pts-lbl" data-lang="en">Points</div></div></div>
     </div>
     <div class="bbox" style="margin-top:12px;border-color:var(--slate)">
-      <div class="bbox-title" style="color:var(--muted);font-size:14px">🚫 <span data-lang="de">FIFA Top 10 – nicht wählbar (Stand: 25. Mai 2026, Ranking vom 1. April 2026*)</span><span data-lang="en">FIFA Top 10 – not eligible (as of 25 May 2026, ranking dated 1 April 2026*)</span></div>
+      <div class="bbox-title" style="color:var(--muted);font-size:14px">🚫 <span data-lang="de">FIFA Top 10 – nicht wählbar (Stand: 25. Mai 2026, Ranking vom 1. April 2026)</span><span data-lang="en">FIFA Top 10 – not eligible (as of 25 May 2026, ranking dated 1 April 2026)</span></div>
       <div class="pill-list">
         <div class="pill"><span class="pill-rank">1</span><span data-lang="de">Frankreich</span><span data-lang="en">France</span></div>
         <div class="pill"><span class="pill-rank">2</span><span data-lang="de">Spanien</span><span data-lang="en">Spain</span></div>
@@ -341,8 +341,6 @@ span[data-lang]{display:inline}
         <div class="pill"><span class="pill-rank">9</span><span data-lang="de">Belgien</span><span data-lang="en">Belgium</span></div>
         <div class="pill"><span class="pill-rank">10</span><span data-lang="de">Deutschland</span><span data-lang="en">Germany</span></div>
       </div>
-      <p style="font-size:12px;color:var(--muted);margin-top:11px" data-lang="de">* Maßgeblich ist das Ranking vom <strong style="color:var(--cream)">9. Juni 2026</strong>. Änderungen werden vor Tippabgabe bekanntgegeben.</p>
-      <p style="font-size:12px;color:var(--muted);margin-top:11px" data-lang="en">* Binding list is the ranking of <strong style="color:var(--cream)">9 June 2026</strong>. Changes announced before predictions close.</p>
     </div>
   </div>
   <div class="divider"></div>
@@ -372,8 +370,8 @@ span[data-lang]{display:inline}
 
 <!-- ══════ TIPS ══════ -->
 <div id="tab-tips" class="tab-panel">
-  <div class="notice" data-lang="de"><strong>So funktioniert es:</strong> Fülle alle Tipps aus und wähle dann eine Option: <strong>Herunterladen</strong> und die <u>Datei an den Admin schicken</u>, oder direkt <strong>zu Dropbox hochladen</strong> – dann muss du nichts schicken!<br>Auf Dropbox hochgeladene Dateien werden nach Eingang durch den Admin gelöscht. Bitte beachte, dass für Dateien in Dropbox die Datenschutzrichtlinien von Dropbox gelten. Außer dem frei wählbaren Namen werden keine weiteren persönlichen Daten übermittelt.<br><br><strong>Wichtig:</strong>Tipps können nicht zwischengespeichert werden. Es müssen daher <u>alle</u>Tipps abgegeben, und dann Hoch- oder runtergeladen werden. Wenn es einen Fehler in den Tipps gibt, muss die Eingabe komplett wiederholt werden.</div>
-  <div class="notice" data-lang="en"><strong>How it works:</strong> Fill in all your tips and then choose an option: <strong>Download</strong> and <u>send the file to the admin</u>, or directly <strong>upload to Dropbox</strong> – then you don't need to send anything!<br>Files uploaded to Dropbox will be deleted by the admin upon receipt. Please note that Dropbox's privacy policy applies to files stored there. No personal information is transmitted beyond the freely chosen display name.<br><br><strong>Important:</strong> Tips cannot be saved in between. Therefore <u>all</u> tips must be entered and then uploaded or downloaded in one go. If there is a mistake in the tips, the entire entry must be repeated completely.</div>
+  <div class="notice" data-lang="de"><strong>So funktioniert es:</strong> Fülle alle Tipps aus und wähle dann eine Option: <strong>Herunterladen</strong> und die <u>Datei an den Admin schicken</u>, oder direkt <strong>zu Dropbox hochladen</strong> – dann muss du nichts schicken!<br>Auf Dropbox hochgeladene Dateien werden nach Eingang durch den Admin gelöscht. Bitte beachte, dass für Dateien in Dropbox die Datenschutzrichtlinien von Dropbox gelten. Außer dem frei wählbaren Namen werden keine weiteren persönlichen Daten übermittelt.<br><br><strong>Wichtig:</strong> Die abgegebenen Tipps sind erst gültig, nachdem alle Tipps abgeschlossen, gespeichert und an den Admin übermittelt wurden. Mit Turnierbeginn sind alle abgegebenen Tipps für alle Teilnehmer einsehbar – dies dient der Transparenz des Wettbewerbs.</div>
+  <div class="notice" data-lang="en"><strong>How it works:</strong> Fill in all your tips and then choose an option: <strong>Download</strong> and <u>send the file to the admin</u>, or directly <strong>upload to Dropbox</strong> – then you don't need to send anything!<br>Files uploaded to Dropbox will be deleted by the admin upon receipt. Please note that Dropbox's privacy policy applies to files stored there. No personal information is transmitted beyond the freely chosen display name.<br><br><strong>Important:</strong> Your entry only counts once all tips have been completed, saved and submitted to the admin. When the tournament starts, all submitted tips become visible to every participant – this keeps the competition transparent.</div>
   <div id="tip-form-wrap">
     <div class="fsec">
       <div class="fsec-title">👤 <span data-lang="de">Dein Name</span><span data-lang="en">Your Name</span></div>
@@ -400,6 +398,13 @@ span[data-lang]{display:inline}
         <div class="field"><label data-lang="de">🥉 3. Platz</label><label data-lang="en">🥉 3rd Place</label><select id="pick-3rd"></select></div>
         <div class="field"><label data-lang="de">🌟 Überraschungsteam (Viertelfinale)</label><label data-lang="en">🌟 Surprise Team (Quarter-final)</label><select id="pick-surprise"></select></div>
       </div>
+    </div>
+
+    <!-- AUTOSAVE STATUS -->
+    <div id="draft-status" style="display:none;align-items:center;justify-content:space-between;gap:12px;background:rgba(46,204,113,.08);border:1px solid rgba(46,204,113,.28);border-radius:8px;padding:10px 14px;margin-top:8px;font-size:13px;color:var(--cream);flex-wrap:wrap">
+      <span><span style="color:var(--green)">✓</span> <span data-lang="de">Automatisch im Browser gespeichert</span><span data-lang="en">Automatically saved in your browser</span> <span id="draft-time" style="color:var(--muted)"></span></span>
+      <button type="button" class="btn-sm danger" onclick="discardDraft()" data-lang="de">Entwurf verwerfen</button>
+      <button type="button" class="btn-sm danger" onclick="discardDraft()" data-lang="en">Discard draft</button>
     </div>
 
     <!-- TWO ACTION BUTTONS -->
@@ -474,27 +479,25 @@ span[data-lang]{display:inline}
     <div style="margin-top:12px;display:flex;gap:10px;flex-wrap:wrap">
       <button class="btn-sm" onclick="exportLeaderboard()" data-lang="de">📤 Tabelle als CSV</button>
       <button class="btn-sm" onclick="exportLeaderboard()" data-lang="en">📤 Export as CSV</button>
-      <button class="btn-sm primary" onclick="exportForGitHub()" data-lang="de">🚀 Für GitHub exportieren</button>
-      <button class="btn-sm primary" onclick="exportForGitHub()" data-lang="en">🚀 Export for GitHub</button>
+      <button class="btn-sm primary" onclick="exportDataJson()" data-lang="de">🚀 data.json veröffentlichen</button>
+      <button class="btn-sm primary" onclick="exportDataJson()" data-lang="en">🚀 Publish data.json</button>
     </div>
     <div id="github-export-info" style="display:none;margin-top:14px;background:var(--navy);border:1px solid var(--mexico);border-radius:8px;padding:14px;font-size:13px;line-height:1.7">
-      <div data-lang="de"><strong style="color:var(--mexico)">✓ Datei heruntergeladen!</strong> So geht's weiter:<br>
-        1. Öffne dein GitHub Repository<br>
-        2. Klicke auf <strong>index.html</strong> → dann auf das ✏️ Stift-Symbol<br>
-        3. Drücke <strong>Cmd+A</strong> um alles zu markieren, dann löschen<br>
-        4. Öffne die heruntergeladene Datei in VS Code, drücke <strong>Cmd+A</strong> → <strong>Cmd+C</strong><br>
-        5. Zurück in GitHub: einfügen mit <strong>Cmd+V</strong><br>
-        6. Unten auf <strong>"Commit changes"</strong> klicken<br>
-        7. Nach 1-2 Minuten sehen alle die aktuelle Tabelle! 🎉
+      <div data-lang="de"><strong style="color:var(--mexico)">✓ data.json heruntergeladen!</strong> So veröffentlichst du die aktuelle Tabelle:<br>
+        1. Öffne dein GitHub-Repository<br>
+        2. Klicke auf <strong>Add file</strong> → <strong>Upload files</strong> (oder zieh die Datei ins Fenster)<br>
+        3. Wähle die heruntergeladene <strong>data.json</strong> – sie ersetzt die alte automatisch<br>
+        4. Unten auf <strong>"Commit changes"</strong> klicken<br>
+        5. Nach 1–2 Minuten sehen alle die aktuelle Tabelle! 🎉<br>
+        <span style="color:var(--muted)">Die <strong>index.html</strong> musst du nie wieder anfassen.</span>
       </div>
-      <div data-lang="en"><strong style="color:var(--mexico)">✓ File downloaded!</strong> Next steps:<br>
-        1. Open your GitHub Repository<br>
-        2. Click on <strong>index.html</strong> → then the ✏️ pencil icon<br>
-        3. Press <strong>Cmd+A</strong> to select all, then delete<br>
-        4. Open the downloaded file in VS Code, press <strong>Cmd+A</strong> → <strong>Cmd+C</strong><br>
-        5. Back in GitHub: paste with <strong>Cmd+V</strong><br>
-        6. Click <strong>"Commit changes"</strong> at the bottom<br>
-        7. After 1-2 minutes everyone sees the updated leaderboard! 🎉
+      <div data-lang="en"><strong style="color:var(--mexico)">✓ data.json downloaded!</strong> How to publish the updated table:<br>
+        1. Open your GitHub repository<br>
+        2. Click <strong>Add file</strong> → <strong>Upload files</strong> (or drag the file into the window)<br>
+        3. Select the downloaded <strong>data.json</strong> – it replaces the old one automatically<br>
+        4. Click <strong>"Commit changes"</strong> at the bottom<br>
+        5. After 1–2 minutes everyone sees the updated table! 🎉<br>
+        <span style="color:var(--muted)">You never need to touch <strong>index.html</strong> again.</span>
       </div>
     </div>
   </div>
@@ -524,11 +527,15 @@ span[data-lang]{display:inline}
     <div class="admin-title" data-lang="de">⚠️ Daten verwalten</div>
     <div class="admin-title" data-lang="en">⚠️ Data Management</div>
     <div style="display:flex;gap:10px;flex-wrap:wrap">
+      <button class="btn-sm primary" onclick="adminLoadPublished()" data-lang="de">⬇️ Veröffentlichten Stand laden</button>
+      <button class="btn-sm primary" onclick="adminLoadPublished()" data-lang="en">⬇️ Load published data</button>
       <button class="btn-sm danger" onclick="adminClearAll()" data-lang="de">Alle Daten löschen</button>
       <button class="btn-sm danger" onclick="adminClearAll()" data-lang="en">Delete All Data</button>
       <button class="btn-sm danger" onclick="adminClearResults()" data-lang="de">Nur Ergebnisse zurücksetzen</button>
       <button class="btn-sm danger" onclick="adminClearResults()" data-lang="en">Reset Results Only</button>
     </div>
+    <p style="font-size:12px;color:var(--muted);margin-top:10px" data-lang="de">„Veröffentlichten Stand laden" holt die aktuelle <strong>data.json</strong> von GitHub – nützlich, wenn du den Browser gewechselt hast. Achtung: ersetzt den lokalen Arbeitsstand.</p>
+    <p style="font-size:12px;color:var(--muted);margin-top:10px" data-lang="en">"Load published data" fetches the current <strong>data.json</strong> from GitHub – handy if you switched browsers. Note: this replaces your local working copy.</p>
   </div>
 </div>
 
@@ -582,6 +589,80 @@ let currentTab = 'rules';
 
 function saveDB(){ try{ localStorage.setItem('wm2026_db', JSON.stringify(DB)); }catch(e){} }
 function loadDB(){ try{ const s=localStorage.getItem('wm2026_db'); if(s) DB=JSON.parse(s); }catch(e){} }
+
+// ── TIMESTAMP HELPER ──
+function formatTimestamp(iso){
+  if(!iso) return '';
+  const d=new Date(iso);
+  if(isNaN(d.getTime())) return '';
+  const locale=currentLang==='de'?'de-CH':'en-GB';
+  return d.toLocaleString(locale,{day:'2-digit',month:'2-digit',year:'numeric',hour:'2-digit',minute:'2-digit'});
+}
+
+// ══════════════════════════════════════════
+// AUTOSAVE – Tipp-Entwurf im Browser (localStorage)
+// ══════════════════════════════════════════
+const DRAFT_KEY='wm2026_draft';
+let draftTimer=null;
+
+function collectDraft(){
+  const fields={};
+  document.querySelectorAll('#tip-form-wrap input, #tip-form-wrap select').forEach(el=>{
+    if(el.id) fields[el.id]=el.value;
+  });
+  return { fields, savedAt:new Date().toISOString() };
+}
+function saveDraft(){
+  try{
+    const draft=collectDraft();
+    localStorage.setItem(DRAFT_KEY, JSON.stringify(draft));
+    showDraftStatus(draft.savedAt);
+  }catch(e){}
+}
+function scheduleDraftSave(){
+  clearTimeout(draftTimer);
+  draftTimer=setTimeout(saveDraft,400);
+}
+function restoreDraft(){
+  try{
+    const s=localStorage.getItem(DRAFT_KEY);
+    if(!s) return false;
+    const draft=JSON.parse(s);
+    if(!draft||!draft.fields) return false;
+    let restored=false;
+    Object.entries(draft.fields).forEach(([id,val])=>{
+      const el=document.getElementById(id);
+      if(el){ el.value=val; restored=true; }
+    });
+    if(restored) showDraftStatus(draft.savedAt);
+    return restored;
+  }catch(e){ return false; }
+}
+function clearDraft(){
+  try{ localStorage.removeItem(DRAFT_KEY); }catch(e){}
+  const box=document.getElementById('draft-status');
+  if(box) box.style.display='none';
+}
+function showDraftStatus(iso){
+  const box=document.getElementById('draft-status');
+  if(!box) return;
+  box.style.display='flex';
+  const t=document.getElementById('draft-time');
+  if(t) t.textContent=iso?'· '+formatTimestamp(iso):'';
+}
+function discardDraft(){
+  if(!confirm(currentLang==='de'?'Gespeicherten Entwurf wirklich löschen? Alle Eingaben gehen verloren.':'Really delete the saved draft? All entries will be lost.')) return;
+  clearDraft();
+  buildForm();                                   // setzt alle Felder zurück
+  const nm=document.getElementById('tipster-name'); if(nm) nm.value='';
+}
+function initAutosave(){
+  const wrap=document.getElementById('tip-form-wrap');
+  if(!wrap) return;
+  wrap.addEventListener('input', scheduleDraftSave);
+  wrap.addEventListener('change', scheduleDraftSave);
+  restoreDraft();
+}
 
 // ══════════════════════════════════════════
 // LANG + TABS
@@ -659,9 +740,9 @@ function buildForm(){
       const row=document.createElement('div');
       row.className='score-row';
       row.innerHTML=`<div class="score-team home">${m[0]}</div>
-        <input class="score-inp" type="number" min="0" max="20" id="m_${grp}_${i}_h" value="0">
+        <input class="score-inp" type="number" min="0" max="20" id="m_${grp}_${i}_h" placeholder="–">
         <div class="score-dash">:</div>
-        <input class="score-inp" type="number" min="0" max="20" id="m_${grp}_${i}_a" value="0">
+        <input class="score-inp" type="number" min="0" max="20" id="m_${grp}_${i}_a" placeholder="–">
         <div class="score-team">${m[1]}</div>`;
       wrap.appendChild(row);
     });
@@ -716,11 +797,36 @@ function collectTipData() {
   Object.keys(GROUPS).forEach(grp=>{
     standings[grp]=[0,1].map(pi=>document.getElementById(`s_${grp}_${pi}`)?.value||'');
   });
+  // ── Plausibilitätsprüfung: identische Teams ──
+  const problems=[];
+  Object.keys(GROUPS).forEach(grp=>{
+    const [s1,s2]=standings[grp];
+    if(s1&&s2&&s1===s2){
+      problems.push(currentLang==='de'
+        ? `Gruppe ${grp}: „${s1}" steht auf Platz 1 und Platz 2.`
+        : `Group ${grp}: "${s1}" is set as both 1st and 2nd.`);
+    }
+  });
+  const p1=document.getElementById('pick-1st').value;
+  const p2=document.getElementById('pick-2nd').value;
+  const p3=document.getElementById('pick-3rd').value;
+  const picks=[p1,p2,p3].filter(Boolean);
+  if(new Set(picks).size!==picks.length){
+    problems.push(currentLang==='de'
+      ? 'Turniertipp: Weltmeister, Finalist und 3. Platz müssen unterschiedliche Teams sein.'
+      : 'Tournament picks: champion, runner-up and 3rd place must be different teams.');
+  }
+  if(problems.length){
+    alert((currentLang==='de'
+      ? 'Bitte korrigiere zuerst:\n\n'
+      : 'Please fix the following first:\n\n')+problems.join('\n'));
+    return null;
+  }
   return {
     name,matches,standings,
-    pick1:document.getElementById('pick-1st').value,
-    pick2:document.getElementById('pick-2nd').value,
-    pick3:document.getElementById('pick-3rd').value,
+    pick1:p1,
+    pick2:p2,
+    pick3:p3,
     surprise:document.getElementById('pick-surprise').value,
     submitted:new Date().toISOString(),
     version:'wm2026'
@@ -800,6 +906,8 @@ function showSuccessPanel(type){
 function resetForm(){
   document.getElementById('tip-form-wrap').style.display='';
   document.getElementById('success-msg').classList.remove('show');
+  clearDraft();
+  buildForm();
   document.getElementById('tipster-name').value='';
   document.getElementById('save-btn').disabled=false;
   document.getElementById('upload-btn').disabled=false;
@@ -843,29 +951,39 @@ function exportLeaderboard(){
   a.download='wm2026-tabelle.csv'; a.click();
 }
 
-function exportForGitHub(){
-  // Take the current HTML source, inject the current DB as preloaded data
-  const currentHTML = document.documentElement.outerHTML;
-  const dbSnapshot = JSON.stringify(DB);
-  // Inject a script tag that preloads DB data before the main script runs
-  const injected = currentHTML.replace(
-    'function saveDB(){ try{ localStorage.setItem(\'wm2026_db\', JSON.stringify(DB)); }catch(e){} }\nfunction loadDB(){ try{ const s=localStorage.getItem(\'wm2026_db\'); if(s) DB=JSON.parse(s); }catch(e){} }',
-    `function saveDB(){ try{ localStorage.setItem('wm2026_db', JSON.stringify(DB)); }catch(e){} }
-function loadDB(){
-  // Preloaded snapshot from admin export
-  const snapshot = ${dbSnapshot};
-  // Merge with any existing localStorage data, snapshot takes priority for results & points
-  try{ const s=localStorage.getItem('wm2026_db'); if(s){ const local=JSON.parse(s); DB=local; } }catch(e){}
-  // Always apply the exported results and recalculated points
-  DB.results = snapshot.results;
-  // Update points from snapshot for all known tips
-  Object.keys(snapshot.tips).forEach(k=>{ if(DB.tips[k]){ DB.tips[k].points=snapshot.tips[k].points; DB.tips[k].log=snapshot.tips[k].log; DB.tips[k].bonusPts=snapshot.tips[k].bonusPts; } });
-}`
-  );
-  const blob = new Blob([injected], {type:'text/html'});
-  const a = document.createElement('a');
-  a.href = URL.createObjectURL(blob);
-  a.download = 'index.html';
+// ══════════════════════════════════════════
+// PUBLISH: data.json (statt ganze HTML auszutauschen)
+// ══════════════════════════════════════════
+const DATA_VERSION='wm2026-data';
+
+// Lädt den veröffentlichten Datenstand von GitHub (data.json neben der index.html).
+async function loadPublishedData(){
+  try{
+    const res=await fetch('data.json?t='+Date.now(),{cache:'no-store'});
+    if(!res.ok) return false;
+    const data=await res.json();
+    if(data&&data.version===DATA_VERSION){
+      DB.tips=data.tips||{};
+      DB.results=data.results||{};
+      DB.lastUpdate=data.lastUpdate||null;
+      return true;
+    }
+  }catch(e){ /* keine data.json vorhanden -> leerer Zustand */ }
+  return false;
+}
+
+// Admin: erzeugt die data.json zum Hochladen auf GitHub.
+function exportDataJson(){
+  const payload={
+    version:DATA_VERSION,
+    lastUpdate:DB.lastUpdate||new Date().toISOString(),
+    results:DB.results||{},
+    tips:DB.tips||{}
+  };
+  const blob=new Blob([JSON.stringify(payload,null,2)],{type:'application/json'});
+  const a=document.createElement('a');
+  a.href=URL.createObjectURL(blob);
+  a.download='data.json';
   a.click();
   URL.revokeObjectURL(a.href);
   document.getElementById('github-export-info').style.display='block';
@@ -935,6 +1053,7 @@ function recalcAll(){
     entry.points=pts+bonusPts;
     entry.log=log;
   });
+  DB.lastUpdate=new Date().toISOString();
   saveDB();
 }
 
@@ -961,6 +1080,7 @@ function evaluateBestThirds(){
     entry.bonusPts=(entry.bonusPts||0)+bonus;
     entry.points=(entry.points||0)+bonus;
   });
+  DB.lastUpdate=new Date().toISOString();
   saveDB();
   renderLeaderboard();
   alert(currentLang==='de'?'Beste Dritte wurden ausgewertet und Punkte vergeben!':'Best third-placed teams evaluated and points awarded!');
@@ -984,9 +1104,9 @@ function buildAdminMatches(){
       row.className='res-score-row'+(done?' done':'');
       row.innerHTML=`
         <div class="score-team home" style="font-size:13px">${m[0]}</div>
-        <input class="res-inp" type="number" min="0" max="20" id="res_${key}_h" value="${done?r.h:''}" value="0">
+        <input class="res-inp" type="number" min="0" max="20" id="res_${key}_h" value="${done?r.h:''}" placeholder="–">
         <div class="score-dash" style="font-size:18px">:</div>
-        <input class="res-inp" type="number" min="0" max="20" id="res_${key}_a" value="${done?r.a:''}" value="0">
+        <input class="res-inp" type="number" min="0" max="20" id="res_${key}_a" value="${done?r.a:''}" placeholder="–">
         <div class="score-team" style="font-size:13px">${m[1]}</div>
         ${done
           ? `<div class="done-badge" onclick="editResult('${grp}',${i})" title="${currentLang==='de'?'Bearbeiten':'Edit'}">✓ ${r.h}:${r.a} ✎</div>`
@@ -1031,6 +1151,20 @@ function adminClearResults(){
   Object.values(DB.tips).forEach(e=>{e.points=0;e.bonusPts=0;e.log=[];});
   saveDB(); renderLeaderboard(); buildAdminMatches();
 }
+async function adminLoadPublished(){
+  if(!confirm(currentLang==='de'
+      ? 'Veröffentlichten Stand (data.json) von GitHub laden? Der lokale Arbeitsstand wird ersetzt.'
+      : 'Load published data (data.json) from GitHub? Your local working copy will be replaced.')) return;
+  const ok=await loadPublishedData();
+  if(ok){
+    saveDB(); buildAdminMatches(); renderLeaderboard();
+    alert(currentLang==='de'?'Veröffentlichter Stand geladen.':'Published data loaded.');
+  } else {
+    alert(currentLang==='de'
+      ? 'Keine data.json gefunden. Beim lokalen Öffnen (file://) ist das normal – das funktioniert nur über die gehostete Seite (https).'
+      : 'No data.json found. This is normal when opening locally (file://) – it only works on the hosted page (https).');
+  }
+}
 
 // ══════════════════════════════════════════
 // LEADERBOARD
@@ -1068,6 +1202,12 @@ function renderLeaderboard(){
   });
   tbl.appendChild(tbody);
   cont.innerHTML='';
+  if(DB.lastUpdate){
+    const stamp=document.createElement('div');
+    stamp.style.cssText='font-size:12px;color:var(--muted);text-align:center;margin-bottom:16px;letter-spacing:.04em';
+    stamp.innerHTML=(currentLang==='de'?'🕒 Stand: ':'🕒 As of: ')+'<strong style="color:var(--cream)">'+formatTimestamp(DB.lastUpdate)+'</strong>';
+    cont.appendChild(stamp);
+  }
   cont.appendChild(tbl);
   const info=document.createElement('p');
   info.style.cssText='font-size:12px;color:var(--muted);margin-top:14px;text-align:center';
@@ -1208,9 +1348,16 @@ function renderMatchView(cont, entries){
 // ══════════════════════════════════════════
 // INIT
 // ══════════════════════════════════════════
-loadDB();
 buildForm();
-renderLeaderboard();
+initAutosave();
+init();
+async function init(){
+  loadDB(); // lokaler Arbeitsstand (Admin) – falls vorhanden
+  const haveLocal = !!(DB && ((DB.tips && Object.keys(DB.tips).length) || (DB.results && Object.keys(DB.results).length) || DB.lastUpdate));
+  // Frische Besucher (kein lokaler Stand) laden die veröffentlichte data.json von GitHub
+  if(!haveLocal){ await loadPublishedData(); }
+  renderLeaderboard();
+}
 </script>
 </body>
 </html>
