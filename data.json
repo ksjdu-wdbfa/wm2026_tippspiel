@@ -1,7 +1,16 @@
 {
   "version": "wm2026-data",
-  "lastUpdate": "2026-05-31T14:51:06.657Z",
-  "results": {},
+  "lastUpdate": "2026-05-31T14:55:10.740Z",
+  "results": {
+    "A_0": {
+      "h": 2,
+      "a": 0
+    },
+    "A_1": {
+      "h": 1,
+      "a": 2
+    }
+  },
   "tips": {
     "Beta2.4 Test 1": {
       "name": "Beta2.4 Test 1",
@@ -519,8 +528,13 @@
         ]
       },
       "submitted": "2026-05-31T10:21:32.745Z",
-      "points": 0,
-      "log": []
+      "points": 1,
+      "log": [
+        {
+          "pts": 1,
+          "reason": "Südkorea-Tschechien 1:2"
+        }
+      ]
     },
     "Beta2.2 Test1": {
       "name": "Beta2.2 Test1",
@@ -1038,8 +1052,17 @@
       "surprise": "Elfenbeinküste",
       "submitted": "2026-05-31T07:49:13.041Z",
       "version": "wm2026",
-      "points": 0,
-      "log": []
+      "points": 3,
+      "log": [
+        {
+          "pts": 1,
+          "reason": "Mexiko-Südafrika 2:0"
+        },
+        {
+          "pts": 2,
+          "reason": "Südkorea-Tschechien 1:2"
+        }
+      ]
     },
     "Beta2.2 Test2": {
       "name": "Beta2.2 Test2",
@@ -2595,8 +2618,17 @@
       "surprise": "",
       "submitted": "2026-05-27T14:58:04.781Z",
       "version": "wm2026",
-      "points": 0,
-      "log": []
+      "points": 8,
+      "log": [
+        {
+          "pts": 4,
+          "reason": "Mexiko-Südafrika 2:0"
+        },
+        {
+          "pts": 4,
+          "reason": "Südkorea-Tschechien 1:2"
+        }
+      ]
     },
     "Test2": {
       "name": "Test2",
@@ -3114,8 +3146,13 @@
       "surprise": "Bosnien-Herz.",
       "submitted": "2026-05-25T16:56:43.961Z",
       "version": "wm2026",
-      "points": 0,
-      "log": []
+      "points": 1,
+      "log": [
+        {
+          "pts": 1,
+          "reason": "Mexiko-Südafrika 2:0"
+        }
+      ]
     },
     "Test": {
       "name": "Test",
@@ -3633,8 +3670,13 @@
       "surprise": "Bosnien-Herz.",
       "submitted": "2026-05-25T13:55:52.296Z",
       "version": "wm2026",
-      "points": 0,
-      "log": []
+      "points": 2,
+      "log": [
+        {
+          "pts": 2,
+          "reason": "Südkorea-Tschechien 1:2"
+        }
+      ]
     }
   }
 }
