@@ -370,8 +370,8 @@ span[data-lang]{display:inline}
 
 <!-- ══════ TIPS ══════ -->
 <div id="tab-tips" class="tab-panel">
-  <div class="notice" data-lang="de"><strong>So funktioniert es:</strong> Fülle alle Tipps aus und wähle dann eine Option: <strong>Herunterladen</strong> und die <u>Datei an den Admin schicken</u>, oder direkt <strong>zu Dropbox hochladen</strong> – dann muss du nichts schicken!<br>Auf Dropbox hochgeladene Dateien werden nach Eingang durch den Admin gelöscht. Bitte beachte, dass für Dateien in Dropbox die Datenschutzrichtlinien von Dropbox gelten. Außer dem frei wählbaren Namen werden keine weiteren persönlichen Daten übermittelt.<br><br><strong>Wichtig:</strong> Die abgegebenen Tipps sind erst gültig, nachdem alle Tipps abgeschlossen, gespeichert und an den Admin übermittelt wurden. Mit Turnierbeginn sind alle abgegebenen Tipps für alle Teilnehmer einsehbar – dies dient der Transparenz des Wettbewerbs.</div>
-  <div class="notice" data-lang="en"><strong>How it works:</strong> Fill in all your tips and then choose an option: <strong>Download</strong> and <u>send the file to the admin</u>, or directly <strong>upload to Dropbox</strong> – then you don't need to send anything!<br>Files uploaded to Dropbox will be deleted by the admin upon receipt. Please note that Dropbox's privacy policy applies to files stored there. No personal information is transmitted beyond the freely chosen display name.<br><br><strong>Important:</strong> Your entry only counts once all tips have been completed, saved and submitted to the admin. When the tournament starts, all submitted tips become visible to every participant – this keeps the competition transparent.</div>
+  <div class="notice" data-lang="de"><strong>So funktioniert es:</strong> Fülle alle Tipps aus und wähle dann eine Option: <strong>Tipps online abgeben</strong> – dann musst du nichts schicken! – oder die Datei <strong>herunterladen</strong> und <u>an den Admin schicken</u>.<br>Bei der Online-Abgabe wird nur der frei wählbare Name und deine Tipps übermittelt, keine weiteren persönlichen Daten.<br><br><strong>Wichtig:</strong> Die abgegebenen Tipps sind erst gültig, nachdem alle Tipps abgeschlossen, gespeichert und an den Admin übermittelt wurden. Mit Turnierbeginn sind alle abgegebenen Tipps für alle Teilnehmer einsehbar – dies dient der Transparenz des Wettbewerbs.</div>
+  <div class="notice" data-lang="en"><strong>How it works:</strong> Fill in all your tips and then choose an option: <strong>Submit tips online</strong> – then you don't need to send anything! – or <strong>download</strong> the file and <u>send it to the admin</u>.<br>Online submission transmits only your freely chosen display name and your tips, no other personal data.<br><br><strong>Important:</strong> Your entry only counts once all tips have been completed, saved and submitted to the admin. When the tournament starts, all submitted tips become visible to every participant – this keeps the competition transparent.</div>
   <div id="tip-form-wrap">
     <div class="fsec">
       <div class="fsec-title">👤 <span data-lang="de">Dein Name</span><span data-lang="en">Your Name</span></div>
@@ -414,10 +414,10 @@ span[data-lang]{display:inline}
         <span data-lang="de">Herunterladen</span>
         <span data-lang="en">Download</span>
       </button>
-      <button class="save-share-btn" onclick="saveTipFile('dropbox')" id="upload-btn" style="font-size:18px;background:linear-gradient(135deg,#0061ff,#0040cc)">
+      <button class="save-share-btn" onclick="saveTipFile('supabase')" id="upload-btn" style="font-size:18px;background:linear-gradient(135deg,#3ECF8E,#249f6e)">
         <span class="icon" style="font-size:22px">☁️</span>
-        <span data-lang="de">Zu Dropbox hochladen</span>
-        <span data-lang="en">Upload to Dropbox</span>
+        <span data-lang="de">Tipps online abgeben</span>
+        <span data-lang="en">Submit tips online</span>
       </button>
     </div>
   </div>
@@ -432,20 +432,28 @@ span[data-lang]{display:inline}
     </div>
     <!-- Upload success -->
     <div id="success-upload" style="display:none">
-      <h3 data-lang="de">Hochgeladen! ☁️⚽</h3>
-      <h3 data-lang="en">Uploaded! ☁️⚽</h3>
-      <p data-lang="de">Deine Tipps wurden direkt zu Dropbox hochgeladen.<br><strong>Du musst nichts weiter tun!</strong></p>
-      <p data-lang="en">Your tips have been uploaded directly to Dropbox.<br><strong>You don't need to do anything else!</strong></p>
+      <h3 data-lang="de">Abgegeben! ☁️⚽</h3>
+      <h3 data-lang="en">Submitted! ☁️⚽</h3>
+      <p data-lang="de">Deine Tipps wurden online übermittelt.<br><strong>Du musst nichts weiter tun!</strong></p>
+      <p data-lang="en">Your tips have been submitted online.<br><strong>You don't need to do anything else!</strong></p>
     </div>
     <!-- Upload error -->
     <div id="success-error" style="display:none">
       <h3 style="color:var(--red)" data-lang="de">Upload fehlgeschlagen ⚠️</h3>
       <h3 style="color:var(--red)" data-lang="en">Upload failed ⚠️</h3>
-      <p data-lang="de">Bitte lade die Datei herunter und schick sie dem Admin.<br><strong id="filename-display-err"></strong></p>
-      <p data-lang="en">Please download the file and send it to the admin.<br><strong id="filename-display-err-en"></strong></p>
+      <p data-lang="de">Keine Sorge – deine Eingaben sind <strong>nicht</strong> verloren. Lade die Datei jetzt herunter und schick sie dem Admin, oder geh zurück und versuch es noch einmal.<br><br>Dateiname: <strong id="filename-display-err"></strong></p>
+      <p data-lang="en">Don't worry – your entries are <strong>not</strong> lost. Download the file now and send it to the admin, or go back and try again.<br><br>File name: <strong id="filename-display-err-en"></strong></p>
+      <div id="upload-error-detail" style="font-size:12px;color:var(--muted);margin-bottom:16px;line-height:1.6"></div>
+      <div style="display:flex;gap:10px;justify-content:center;flex-wrap:wrap">
+        <button onclick="downloadLastTip()" class="save-share-btn" style="width:auto;font-size:16px;padding:12px 22px;margin-top:0"><span class="icon" style="font-size:20px">💾</span><span data-lang="de">Datei herunterladen</span><span data-lang="en">Download file</span></button>
+        <button onclick="backToForm()" class="btn-sm" data-lang="de">↩ Zurück zum Formular</button>
+        <button onclick="backToForm()" class="btn-sm" data-lang="en">↩ Back to form</button>
+      </div>
     </div>
-    <button onclick="resetForm()" class="btn-sm" style="margin-top:14px" data-lang="de">Neue Eingabe</button>
-    <button onclick="resetForm()" class="btn-sm" style="margin-top:14px" data-lang="en">New Entry</button>
+    <div id="success-reset-btns">
+      <button onclick="resetForm()" class="btn-sm" style="margin-top:14px" data-lang="de">Neue Eingabe</button>
+      <button onclick="resetForm()" class="btn-sm" style="margin-top:14px" data-lang="en">New Entry</button>
+    </div>
   </div>
 </div>
 
@@ -467,8 +475,29 @@ span[data-lang]{display:inline}
 
   <!-- IMPORT -->
   <div class="admin-box">
-    <div class="admin-title" data-lang="de">📥 Tipps importieren</div>
-    <div class="admin-title" data-lang="en">📥 Import Tips</div>
+    <div class="admin-title" data-lang="de">☁️ Tipps aus Supabase laden</div>
+    <div class="admin-title" data-lang="en">☁️ Load tips from Supabase</div>
+    <p style="font-size:13px;color:var(--muted);margin-bottom:12px" data-lang="de">Holt alle online abgegebenen Tipps. Dafür ist der <strong>service_role</strong>-Schlüssel nötig (Supabase → Project Settings → API). Er wird <strong>nur lokal in diesem Browser</strong> gespeichert und niemals in die veröffentlichte Seite geschrieben. Gib ihn nur auf deinem eigenen Gerät ein.</p>
+    <p style="font-size:13px;color:var(--muted);margin-bottom:12px" data-lang="en">Loads all tips submitted online. Requires the <strong>service_role</strong> key (Supabase → Project Settings → API). It is stored <strong>only locally in this browser</strong> and never written into the published page. Only enter it on your own device.</p>
+    <div class="field" style="margin-bottom:10px">
+      <label data-lang="de">service_role-Schlüssel</label><label data-lang="en">service_role key</label>
+      <input type="password" id="sb-service-key" placeholder="service_role key" autocomplete="off">
+    </div>
+    <div style="display:flex;gap:10px;flex-wrap:wrap">
+      <button class="btn-sm primary" onclick="loadTipsFromSupabase()" data-lang="de">☁️ Jetzt laden</button>
+      <button class="btn-sm primary" onclick="loadTipsFromSupabase()" data-lang="en">☁️ Load now</button>
+      <button class="btn-sm" onclick="saveServiceKey()" data-lang="de">Schlüssel merken</button>
+      <button class="btn-sm" onclick="saveServiceKey()" data-lang="en">Remember key</button>
+      <button class="btn-sm danger" onclick="forgetServiceKey()" data-lang="de">Schlüssel vergessen</button>
+      <button class="btn-sm danger" onclick="forgetServiceKey()" data-lang="en">Forget key</button>
+    </div>
+    <div id="sb-load-log" style="margin-top:10px;font-size:13px;color:var(--green)"></div>
+  </div>
+
+  <!-- IMPORT (Dateien) -->
+  <div class="admin-box">
+    <div class="admin-title" data-lang="de">📥 Tipps aus Dateien importieren</div>
+    <div class="admin-title" data-lang="en">📥 Import Tips from Files</div>
     <div class="import-area" id="import-area" onclick="document.getElementById('file-input').click()" ondragover="handleDragOver(event)" ondrop="handleDrop(event)">
       <div class="big-icon">📂</div>
       <p data-lang="de"><strong>Klicken oder Datei hierher ziehen</strong><br>Tipp-Dateien (.json) der Teilnehmenden importieren</p>
@@ -681,7 +710,7 @@ function showTab(tab){
   const tbEl=document.getElementById('tb-'+tab);
   if(tbEl) tbEl.classList.add('active');
   if(tab==='board') renderLeaderboard();
-  if(tab==='admin') buildAdminMatches();
+  if(tab==='admin'){ buildAdminMatches(); restoreServiceKey(); }
   if(tab==='tipview') renderTipView();
 }
 
@@ -774,13 +803,14 @@ function buildForm(){
 }
 
 // ══════════════════════════════════════════
-// DROPBOX CONFIG – trage hier deinen Token ein
+// SUPABASE CONFIG – hier die beiden Werte aus Supabase-Projekt eintragen
 // ══════════════════════════════════════════
-const DROPBOX_TOKEN = 'sl.u.AGiXpdnyFA_7FhH6Zv2p-bfINww2PwjfEEg4EMyE5Uvb-Z_F3TGaFOCXXLjEKRfk_E2iF-IjSes_-mBtcpGwYLBz0vNPkHGmRPomzRvUUxvm1jXisUUNFDeW5AKSpG5XEiRz7-wiLGjmJBm_0H6IJ_2z7cDOEmBSyudpmPhYwh4LmXmfSRboFOSV9JX38maohiiPkgFpvIspDftfgCaSdqRTAI2SBCsNDA274CLxpq2ixQYJLxZqYGQAuLG131GgmBORzyH8KD0tSfqVkH1O0_pyVjb_IvcyXyacC_Utd6KRYWwvhtPPbglynDyJDDP3PG0Xnt0NRpIwVa3VvnaMCSCGWlbAHliSjZBykYi4sA4BDJbuJ2oGpUW83-12ZHolumvig3pxltoW2lFaI_MX7K0WxltUk_4dMlHEA1SxtDM8JwviA4LbmR1l7mI-5-2GnzR9nmXsAqo6XLvoj3J20gI59Y63X0rLo53c7WnjH4J4Q-UKJy01AUJl6OhmHgdlPKqAMkCdMJdHhiHbTBZyMshI2e9KEk7dppAbYTwY7shA_Vo-5nUmALvoHgL08uIWX9X_lrWOXa_dbhK77Gtljed0j1ah7W4UFzHMS7HDgIh7IcWCbXbW6vvSz1gv0V5raKvUzTO80nNPREW3ha_UL_d1qBBW_h9P0y1DKmL8K-T1vnxcIImIu_xhaLY8vZRP21F_sXX7B8ejmQJfdIL91Hb8nELwodahpBlfQvd_EUYHfWvRJBmMk2aYJo1a6jc-J4N0R-5YJRXrkK4yfb9ntPNJGjHQlp-hZihqbxXARjYGdrPnILsfSLvoPjDKnBP-xEqMcYeafqrN9tnUQAihqhdIKLPu2l9eNzqE1OITpEHaK-64aeb5gmYirRCfym4NVwxiAiYqxIaPInklzr-sg6dNDjIC_fF0WtIT7tk97Rpj92n-epAze28XQuIBQf7S2eF4DOpCn_HLdOCnvhlHJspNbey8OSWkCYkQPNK6yNwIhpj78Z9IWsDA9lt1s3pnA_PmDK12m8xbkykgM53JiNsIU-cb72kjvejiUW2epRtRotU7VuUJLXhYSx6PpDzQImqi-E-PBDKv6s_qmxokDkH3aZcJ4a5SY3_9zK4nTCiIz7oQjtmO2v0eiShd04ebzi5Gh9aZEA61Ft7B1JfepPo3yThiMCOxL3i1NOms8t1UP5rJh6i7hngSw0uX87bocgmanw1Me0GiCb_KjbtP_oveXbDkzYbm0_63h8VEOHkjbKGtIAddg29-jC3rzanFOwX3rEk4T5p-4FzEFPMbptQwUs_tqC3k_5cKJL1wTGSwYTsg1kmEKrTfQuynCPMg9utgYfPuEHyDw9ETw76AvHlHb9eICaEBl5vcRleKAb3ynU-BJd937RBZSdWkFEBJc3EvT-IBiOzB9TellbGzrc0IXHsOubtbma8KiTO7fumKxA'; // ← deinen Dropbox Access Token hier eintragen
-const DROPBOX_FOLDER = '/WM2026-Tipps';  // ← Ordnername in Dropbox (wird automatisch erstellt)
+const SUPABASE_URL = 'https://ozgekgrbzakyoyfejool.supabase.co/rest/v1/';        // z.B. https://abcdwxyz.supabase.co
+const SUPABASE_ANON_KEY = 'sb_publishable_JnLYdoXa6h0yt7wXEEPbig_fWy0UZhW';   // der "anon public"-Schlüssel
+const SUPABASE_TABLE = 'tips';  // Tabellenname in Supabase (siehe SQL-Anleitung)
 
 // ══════════════════════════════════════════
-// SAVE TIP AS FILE OR UPLOAD TO DROPBOX
+// SAVE TIP AS FILE OR SUBMIT ONLINE (Supabase)
 // ══════════════════════════════════════════
 function collectTipData() {
   const name=document.getElementById('tipster-name').value.trim();
@@ -833,66 +863,95 @@ function collectTipData() {
   };
 }
 
+let lastTipBlob=null, lastTipFilename='';
+
+function downloadBlob(blob, filename){
+  const url=URL.createObjectURL(blob);
+  const a=document.createElement('a');
+  a.href=url; a.download=filename;
+  document.body.appendChild(a); a.click(); a.remove();
+  setTimeout(()=>URL.revokeObjectURL(url),1500);
+}
+function downloadLastTip(){
+  if(lastTipBlob) downloadBlob(lastTipBlob, lastTipFilename);
+}
+function backToForm(){
+  document.getElementById('success-msg').classList.remove('show');
+  document.getElementById('tip-form-wrap').style.display='';
+}
+
 function saveTipFile(mode){
   const tipData=collectTipData();
   if(!tipData) return;
   const filename=`tipps-${tipData.name.toLowerCase().replace(/\s+/g,'-').replace(/[^a-z0-9-]/g,'')}.json`;
   const json=JSON.stringify(tipData,null,2);
   const blob=new Blob([json],{type:'application/json'});
+  lastTipBlob=blob; lastTipFilename=filename;
 
   if(mode==='download'){
-    const url=URL.createObjectURL(blob);
-    const a=document.createElement('a');
-    a.href=url; a.download=filename; a.click();
-    URL.revokeObjectURL(url);
+    downloadBlob(blob, filename);
     document.getElementById('filename-display').textContent=filename;
     document.getElementById('filename-display-en').textContent=filename;
     showSuccessPanel('download');
-  } else if(mode==='dropbox'){
-    uploadToDropbox(blob, filename, tipData.name);
+  } else if(mode==='supabase'){
+    uploadToSupabase(tipData);
   }
 }
 
-async function uploadToDropbox(blob, filename, name){
+async function uploadToSupabase(tipData){
   const btn=document.getElementById('upload-btn');
   btn.disabled=true;
-  btn.innerHTML=`<span class="icon">⏳</span><span>${currentLang==='de'?'Wird hochgeladen…':'Uploading…'}</span>`;
+  btn.innerHTML=`<span class="icon">⏳</span><span>${currentLang==='de'?'Wird übermittelt…':'Submitting…'}</span>`;
+  let detail='';
   try{
-    const path=`${DROPBOX_FOLDER}/${filename}`;
-    const response=await fetch('https://content.dropboxapi.com/2/files/upload',{
+    if(!SUPABASE_URL||!SUPABASE_ANON_KEY){
+      detail=currentLang==='de'
+        ? 'Online-Abgabe ist nicht konfiguriert. Bitte lade die Datei herunter und schick sie dem Admin.'
+        : 'Online submission is not configured. Please download the file and send it to the admin.';
+      throw new Error('not-configured');
+    }
+    const response=await fetch(`${SUPABASE_URL}/rest/v1/${SUPABASE_TABLE}`,{
       method:'POST',
       headers:{
-        'Authorization':`Bearer ${DROPBOX_TOKEN}`,
-        'Dropbox-API-Arg':JSON.stringify({path, mode:'overwrite', autorename:false}),
-        'Content-Type':'application/octet-stream'
+        'apikey':SUPABASE_ANON_KEY,
+        'Authorization':`Bearer ${SUPABASE_ANON_KEY}`,
+        'Content-Type':'application/json',
+        'Prefer':'return=minimal'
       },
-      body:blob
+      body:JSON.stringify({ name:tipData.name, payload:tipData })
     });
     if(response.ok){
       showSuccessPanel('upload');
-    } else {
-      const err=await response.json();
-      console.error('Dropbox error:',err);
-      document.getElementById('filename-display-err').textContent=filename;
-      document.getElementById('filename-display-err-en').textContent=filename;
-      // fallback: also download the file
-      const url=URL.createObjectURL(blob);
-      const a=document.createElement('a'); a.href=url; a.download=filename; a.click();
-      URL.revokeObjectURL(url);
-      showSuccessPanel('error');
+      return;
     }
-  } catch(e){
-    console.error('Upload failed:',e);
-    document.getElementById('filename-display-err').textContent=filename;
-    document.getElementById('filename-display-err-en').textContent=filename;
-    const url=URL.createObjectURL(blob);
-    const a=document.createElement('a'); a.href=url; a.download=filename; a.click();
-    URL.revokeObjectURL(url);
-    showSuccessPanel('error');
-  } finally {
+    // Fehler von Supabase – Detail auslesen
+    let summary='';
+    try{ const err=await response.json(); summary=err.message||err.hint||err.error||''; }
+    catch(_){ try{ summary=await response.text(); }catch(__){} }
+    console.error('Supabase error:',response.status,summary);
+    if(response.status===401||response.status===403){
+      detail=currentLang==='de'
+        ? 'Die Online-Abgabe wurde vom Server abgelehnt (Berechtigung). Bitte informiere den Admin. Deine Datei kannst du unten einfach herunterladen.'
+        : 'The server rejected the submission (permissions). Please tell the admin. You can simply download your file below.';
+    } else {
+      detail=(currentLang==='de'?'Server-Fehler ':'Server error ')+response.status+(summary?' · '+summary:'');
+    }
+  }catch(e){
+    console.error('Submit failed:',e);
+    if(!detail){
+      detail=currentLang==='de'
+        ? 'Der Server war nicht erreichbar (Netzwerk- oder Verbindungsproblem). Bitte lade die Datei herunter und schick sie dem Admin.'
+        : 'The server could not be reached (network/connection issue). Please download the file and send it to the admin.';
+    }
+  }finally{
     btn.disabled=false;
-    btn.innerHTML=`<span class="icon" style="font-size:22px">☁️</span><span data-lang="de">Zu Dropbox hochladen</span><span data-lang="en">Upload to Dropbox</span>`;
+    btn.innerHTML=`<span class="icon" style="font-size:22px">☁️</span><span data-lang="de">Tipps online abgeben</span><span data-lang="en">Submit tips online</span>`;
   }
+  // nur im Fehlerfall erreicht – Daten bleiben erhalten, Download per Button möglich
+  document.getElementById('filename-display-err').textContent=lastTipFilename;
+  document.getElementById('filename-display-err-en').textContent=lastTipFilename;
+  const det=document.getElementById('upload-error-detail'); if(det) det.textContent=detail;
+  showSuccessPanel('error');
 }
 
 function showSuccessPanel(type){
@@ -901,6 +960,8 @@ function showSuccessPanel(type){
   document.getElementById('success-download').style.display=type==='download'?'block':'none';
   document.getElementById('success-upload').style.display=type==='upload'?'block':'none';
   document.getElementById('success-error').style.display=type==='error'?'block':'none';
+  const rb=document.getElementById('success-reset-btns'); if(rb) rb.style.display=type==='error'?'none':'block';
+  const msg=document.getElementById('success-msg'); if(msg) msg.scrollIntoView({behavior:'smooth',block:'center'});
 }
 
 function resetForm(){
@@ -941,6 +1002,55 @@ function importFiles(files){
     };
     reader.readAsText(file);
   });
+}
+
+// ── Tipps aus Supabase laden (Admin, service_role-Schlüssel nur lokal) ──
+const SB_SERVICE_KEY='wm2026_sb_service';
+function saveServiceKey(){
+  const v=document.getElementById('sb-service-key').value.trim();
+  if(!v){ forgetServiceKey(); return; }
+  try{ localStorage.setItem(SB_SERVICE_KEY, v); }catch(e){}
+  const log=document.getElementById('sb-load-log');
+  if(log) log.textContent=currentLang==='de'?'Schlüssel lokal gemerkt.':'Key remembered locally.';
+}
+function forgetServiceKey(){
+  try{ localStorage.removeItem(SB_SERVICE_KEY); }catch(e){}
+  const f=document.getElementById('sb-service-key'); if(f) f.value='';
+  const log=document.getElementById('sb-load-log');
+  if(log) log.textContent=currentLang==='de'?'Schlüssel vergessen.':'Key forgotten.';
+}
+function restoreServiceKey(){
+  try{ const v=localStorage.getItem(SB_SERVICE_KEY); const f=document.getElementById('sb-service-key'); if(v&&f) f.value=v; }catch(e){}
+}
+async function loadTipsFromSupabase(){
+  const log=document.getElementById('sb-load-log');
+  const key=(document.getElementById('sb-service-key').value||'').trim();
+  if(!SUPABASE_URL){ if(log) log.textContent=currentLang==='de'?'Supabase ist nicht konfiguriert (SUPABASE_URL fehlt).':'Supabase is not configured (SUPABASE_URL missing).'; return; }
+  if(!key){ if(log) log.textContent=currentLang==='de'?'Bitte den service_role-Schlüssel eingeben.':'Please enter the service_role key.'; return; }
+  if(log) log.textContent=currentLang==='de'?'Lade…':'Loading…';
+  try{
+    const res=await fetch(`${SUPABASE_URL}/rest/v1/${SUPABASE_TABLE}?select=name,payload,created_at&order=created_at.asc`,{
+      headers:{ 'apikey':key, 'Authorization':`Bearer ${key}` }
+    });
+    if(!res.ok){
+      const t=await res.text().catch(()=> '');
+      if(log) log.textContent=(currentLang==='de'?'Fehler ':'Error ')+res.status+(t?' · '+t:'');
+      return;
+    }
+    const rows=await res.json();
+    let imported=0;
+    // created_at aufsteigend -> spätere Abgaben überschreiben frühere (gleicher Name)
+    rows.forEach(r=>{
+      const tip=r.payload;
+      if(tip && tip.name){ DB.tips[tip.name]=tip; imported++; }
+      else if(r.name){ DB.tips[r.name]=tip||{}; imported++; }
+    });
+    saveDB(); recalcAll(); renderLeaderboard();
+    if(log) log.textContent=(currentLang==='de'?`✓ ${imported} Tipp(s) geladen (${Object.keys(DB.tips).length} Teilnehmer gesamt).`:`✓ Loaded ${imported} tip(s) (${Object.keys(DB.tips).length} participants total).`);
+  }catch(e){
+    console.error('Supabase load failed:',e);
+    if(log) log.textContent=currentLang==='de'?'Verbindung zu Supabase fehlgeschlagen.':'Connection to Supabase failed.';
+  }
 }
 function exportLeaderboard(){
   const entries=Object.values(DB.tips).sort((a,b)=>(b.points||0)-(a.points||0));
