@@ -1,0 +1,6848 @@
+{
+  "version": "wm2026-data",
+  "lastUpdate": "2026-06-12T04:10:12.034Z",
+  "results": {
+    "A_0": {
+      "h": 2,
+      "a": 0
+    },
+    "A_1": {
+      "h": 2,
+      "a": 1
+    }
+  },
+  "tips": {
+    "Corinna": {
+      "name": "Corinna",
+      "pick1": "Frankreich",
+      "pick2": "Deutschland",
+      "pick3": "USA",
+      "matches": {
+        "A": [
+          {
+            "a": 0,
+            "h": 2,
+            "away": "Südafrika",
+            "home": "Mexiko"
+          },
+          {
+            "a": 1,
+            "h": 1,
+            "away": "Tschechien",
+            "home": "Südkorea"
+          },
+          {
+            "a": 0,
+            "h": 3,
+            "away": "Südafrika",
+            "home": "Tschechien"
+          },
+          {
+            "a": 1,
+            "h": 2,
+            "away": "Südkorea",
+            "home": "Mexiko"
+          },
+          {
+            "a": 1,
+            "h": 1,
+            "away": "Mexiko",
+            "home": "Tschechien"
+          },
+          {
+            "a": 3,
+            "h": 0,
+            "away": "Südkorea",
+            "home": "Südafrika"
+          }
+        ],
+        "B": [
+          {
+            "a": 0,
+            "h": 0,
+            "away": "Bosnien-Herz.",
+            "home": "Kanada"
+          },
+          {
+            "a": 4,
+            "h": 0,
+            "away": "Schweiz",
+            "home": "Katar"
+          },
+          {
+            "a": 1,
+            "h": 2,
+            "away": "Bosnien-Herz.",
+            "home": "Schweiz"
+          },
+          {
+            "a": 2,
+            "h": 4,
+            "away": "Katar",
+            "home": "Kanada"
+          },
+          {
+            "a": 0,
+            "h": 2,
+            "away": "Kanada",
+            "home": "Schweiz"
+          },
+          {
+            "a": 1,
+            "h": 3,
+            "away": "Katar",
+            "home": "Bosnien-Herz."
+          }
+        ],
+        "C": [
+          {
+            "a": 1,
+            "h": 5,
+            "away": "Marokko",
+            "home": "Brasilien"
+          },
+          {
+            "a": 4,
+            "h": 0,
+            "away": "Schottland",
+            "home": "Haiti"
+          },
+          {
+            "a": 1,
+            "h": 2,
+            "away": "Marokko",
+            "home": "Schottland"
+          },
+          {
+            "a": 0,
+            "h": 3,
+            "away": "Haiti",
+            "home": "Brasilien"
+          },
+          {
+            "a": 3,
+            "h": 2,
+            "away": "Brasilien",
+            "home": "Schottland"
+          },
+          {
+            "a": 0,
+            "h": 2,
+            "away": "Haiti",
+            "home": "Marokko"
+          }
+        ],
+        "D": [
+          {
+            "a": 0,
+            "h": 3,
+            "away": "Paraguay",
+            "home": "USA"
+          },
+          {
+            "a": 1,
+            "h": 1,
+            "away": "Türkei",
+            "home": "Australien"
+          },
+          {
+            "a": 0,
+            "h": 2,
+            "away": "Australien",
+            "home": "USA"
+          },
+          {
+            "a": 0,
+            "h": 3,
+            "away": "Paraguay",
+            "home": "Türkei"
+          },
+          {
+            "a": 1,
+            "h": 2,
+            "away": "USA",
+            "home": "Türkei"
+          },
+          {
+            "a": 0,
+            "h": 0,
+            "away": "Australien",
+            "home": "Paraguay"
+          }
+        ],
+        "E": [
+          {
+            "a": 0,
+            "h": 3,
+            "away": "Curaçao",
+            "home": "Deutschland"
+          },
+          {
+            "a": 0,
+            "h": 2,
+            "away": "Ecuador",
+            "home": "Elfenbeinküste"
+          },
+          {
+            "a": 1,
+            "h": 3,
+            "away": "Elfenbeinküste",
+            "home": "Deutschland"
+          },
+          {
+            "a": 1,
+            "h": 1,
+            "away": "Curaçao",
+            "home": "Ecuador"
+          },
+          {
+            "a": 4,
+            "h": 1,
+            "away": "Elfenbeinküste",
+            "home": "Curaçao"
+          },
+          {
+            "a": 3,
+            "h": 2,
+            "away": "Deutschland",
+            "home": "Ecuador"
+          }
+        ],
+        "F": [
+          {
+            "a": 3,
+            "h": 3,
+            "away": "Japan",
+            "home": "Niederlande"
+          },
+          {
+            "a": 2,
+            "h": 1,
+            "away": "Tunesien",
+            "home": "Schweden"
+          },
+          {
+            "a": 0,
+            "h": 3,
+            "away": "Schweden",
+            "home": "Niederlande"
+          },
+          {
+            "a": 2,
+            "h": 2,
+            "away": "Japan",
+            "home": "Tunesien"
+          },
+          {
+            "a": 1,
+            "h": 4,
+            "away": "Schweden",
+            "home": "Japan"
+          },
+          {
+            "a": 2,
+            "h": 1,
+            "away": "Niederlande",
+            "home": "Tunesien"
+          }
+        ],
+        "G": [
+          {
+            "a": 0,
+            "h": 3,
+            "away": "Ägypten",
+            "home": "Belgien"
+          },
+          {
+            "a": 0,
+            "h": 0,
+            "away": "Neuseeland",
+            "home": "Iran"
+          },
+          {
+            "a": 0,
+            "h": 2,
+            "away": "Iran",
+            "home": "Belgien"
+          },
+          {
+            "a": 3,
+            "h": 1,
+            "away": "Ägypten",
+            "home": "Neuseeland"
+          },
+          {
+            "a": 2,
+            "h": 2,
+            "away": "Iran",
+            "home": "Ägypten"
+          },
+          {
+            "a": 3,
+            "h": 0,
+            "away": "Belgien",
+            "home": "Neuseeland"
+          }
+        ],
+        "H": [
+          {
+            "a": 0,
+            "h": 5,
+            "away": "Kap Verde",
+            "home": "Spanien"
+          },
+          {
+            "a": 2,
+            "h": 0,
+            "away": "Uruguay",
+            "home": "Saudi-Arabien"
+          },
+          {
+            "a": 1,
+            "h": 4,
+            "away": "Saudi-Arabien",
+            "home": "Spanien"
+          },
+          {
+            "a": 0,
+            "h": 2,
+            "away": "Kap Verde",
+            "home": "Uruguay"
+          },
+          {
+            "a": 0,
+            "h": 0,
+            "away": "Saudi-Arabien",
+            "home": "Kap Verde"
+          },
+          {
+            "a": 3,
+            "h": 2,
+            "away": "Spanien",
+            "home": "Uruguay"
+          }
+        ],
+        "I": [
+          {
+            "a": 1,
+            "h": 3,
+            "away": "Senegal",
+            "home": "Frankreich"
+          },
+          {
+            "a": 1,
+            "h": 1,
+            "away": "Norwegen",
+            "home": "Irak"
+          },
+          {
+            "a": 0,
+            "h": 4,
+            "away": "Irak",
+            "home": "Frankreich"
+          },
+          {
+            "a": 2,
+            "h": 1,
+            "away": "Senegal",
+            "home": "Norwegen"
+          },
+          {
+            "a": 3,
+            "h": 1,
+            "away": "Frankreich",
+            "home": "Norwegen"
+          },
+          {
+            "a": 0,
+            "h": 3,
+            "away": "Irak",
+            "home": "Senegal"
+          }
+        ],
+        "J": [
+          {
+            "a": 2,
+            "h": 2,
+            "away": "Algerien",
+            "home": "Argentinien"
+          },
+          {
+            "a": 0,
+            "h": 2,
+            "away": "Jordanien",
+            "home": "Österreich"
+          },
+          {
+            "a": 1,
+            "h": 3,
+            "away": "Österreich",
+            "home": "Argentinien"
+          },
+          {
+            "a": 1,
+            "h": 0,
+            "away": "Algerien",
+            "home": "Jordanien"
+          },
+          {
+            "a": 2,
+            "h": 1,
+            "away": "Österreich",
+            "home": "Algerien"
+          },
+          {
+            "a": 4,
+            "h": 1,
+            "away": "Argentinien",
+            "home": "Jordanien"
+          }
+        ],
+        "K": [
+          {
+            "a": 0,
+            "h": 6,
+            "away": "D.R. Kongo",
+            "home": "Portugal"
+          },
+          {
+            "a": 3,
+            "h": 0,
+            "away": "Kolumbien",
+            "home": "Usbekistan"
+          },
+          {
+            "a": 0,
+            "h": 4,
+            "away": "Usbekistan",
+            "home": "Portugal"
+          },
+          {
+            "a": 0,
+            "h": 2,
+            "away": "D.R. Kongo",
+            "home": "Kolumbien"
+          },
+          {
+            "a": 4,
+            "h": 1,
+            "away": "Portugal",
+            "home": "Kolumbien"
+          },
+          {
+            "a": 3,
+            "h": 0,
+            "away": "Usbekistan",
+            "home": "D.R. Kongo"
+          }
+        ],
+        "L": [
+          {
+            "a": 3,
+            "h": 3,
+            "away": "Kroatien",
+            "home": "England"
+          },
+          {
+            "a": 1,
+            "h": 1,
+            "away": "Panama",
+            "home": "Ghana"
+          },
+          {
+            "a": 1,
+            "h": 2,
+            "away": "Ghana",
+            "home": "England"
+          },
+          {
+            "a": 4,
+            "h": 1,
+            "away": "Kroatien",
+            "home": "Panama"
+          },
+          {
+            "a": 3,
+            "h": 2,
+            "away": "England",
+            "home": "Panama"
+          },
+          {
+            "a": 0,
+            "h": 1,
+            "away": "Ghana",
+            "home": "Kroatien"
+          }
+        ]
+      },
+      "version": "wm2026",
+      "surprise": "Schottland",
+      "standings": {
+        "A": [
+          "Mexiko",
+          "Tschechien"
+        ],
+        "B": [
+          "Schweiz",
+          "Kanada"
+        ],
+        "C": [
+          "Brasilien",
+          "Schottland"
+        ],
+        "D": [
+          "USA",
+          "Paraguay"
+        ],
+        "E": [
+          "Deutschland",
+          "Elfenbeinküste"
+        ],
+        "F": [
+          "Japan",
+          "Niederlande"
+        ],
+        "G": [
+          "Belgien",
+          "Ägypten"
+        ],
+        "H": [
+          "Spanien",
+          "Uruguay"
+        ],
+        "I": [
+          "Frankreich",
+          "Senegal"
+        ],
+        "J": [
+          "Algerien",
+          "Argentinien"
+        ],
+        "K": [
+          "Portugal",
+          "Kolumbien"
+        ],
+        "L": [
+          "Kroatien",
+          "England"
+        ]
+      },
+      "submitted": "2026-06-04T14:00:04.739Z",
+      "points": 4,
+      "log": [
+        {
+          "pts": 4,
+          "reason": "Mexiko-Südafrika 2:0"
+        }
+      ]
+    },
+    "Zinowia": {
+      "name": "Zinowia",
+      "pick1": "Marokko",
+      "pick2": "Brasilien",
+      "pick3": "Argentinien",
+      "matches": {
+        "A": [
+          {
+            "a": 0,
+            "h": 2,
+            "away": "Südafrika",
+            "home": "Mexiko"
+          },
+          {
+            "a": 3,
+            "h": 0,
+            "away": "Tschechien",
+            "home": "Südkorea"
+          },
+          {
+            "a": 1,
+            "h": 1,
+            "away": "Südafrika",
+            "home": "Tschechien"
+          },
+          {
+            "a": 0,
+            "h": 3,
+            "away": "Südkorea",
+            "home": "Mexiko"
+          },
+          {
+            "a": 2,
+            "h": 1,
+            "away": "Mexiko",
+            "home": "Tschechien"
+          },
+          {
+            "a": 1,
+            "h": 1,
+            "away": "Südkorea",
+            "home": "Südafrika"
+          }
+        ],
+        "B": [
+          {
+            "a": 2,
+            "h": 0,
+            "away": "Bosnien-Herz.",
+            "home": "Kanada"
+          },
+          {
+            "a": 1,
+            "h": 0,
+            "away": "Schweiz",
+            "home": "Katar"
+          },
+          {
+            "a": 1,
+            "h": 1,
+            "away": "Bosnien-Herz.",
+            "home": "Schweiz"
+          },
+          {
+            "a": 0,
+            "h": 0,
+            "away": "Katar",
+            "home": "Kanada"
+          },
+          {
+            "a": 0,
+            "h": 1,
+            "away": "Kanada",
+            "home": "Schweiz"
+          },
+          {
+            "a": 0,
+            "h": 1,
+            "away": "Katar",
+            "home": "Bosnien-Herz."
+          }
+        ],
+        "C": [
+          {
+            "a": 1,
+            "h": 1,
+            "away": "Marokko",
+            "home": "Brasilien"
+          },
+          {
+            "a": 2,
+            "h": 1,
+            "away": "Schottland",
+            "home": "Haiti"
+          },
+          {
+            "a": 1,
+            "h": 0,
+            "away": "Marokko",
+            "home": "Schottland"
+          },
+          {
+            "a": 0,
+            "h": 3,
+            "away": "Haiti",
+            "home": "Brasilien"
+          },
+          {
+            "a": 2,
+            "h": 1,
+            "away": "Brasilien",
+            "home": "Schottland"
+          },
+          {
+            "a": 0,
+            "h": 2,
+            "away": "Haiti",
+            "home": "Marokko"
+          }
+        ],
+        "D": [
+          {
+            "a": 2,
+            "h": 0,
+            "away": "Paraguay",
+            "home": "USA"
+          },
+          {
+            "a": 1,
+            "h": 0,
+            "away": "Türkei",
+            "home": "Australien"
+          },
+          {
+            "a": 1,
+            "h": 1,
+            "away": "Australien",
+            "home": "USA"
+          },
+          {
+            "a": 2,
+            "h": 1,
+            "away": "Paraguay",
+            "home": "Türkei"
+          },
+          {
+            "a": 0,
+            "h": 1,
+            "away": "USA",
+            "home": "Türkei"
+          },
+          {
+            "a": 0,
+            "h": 2,
+            "away": "Australien",
+            "home": "Paraguay"
+          }
+        ],
+        "E": [
+          {
+            "a": 0,
+            "h": 2,
+            "away": "Curaçao",
+            "home": "Deutschland"
+          },
+          {
+            "a": 1,
+            "h": 1,
+            "away": "Ecuador",
+            "home": "Elfenbeinküste"
+          },
+          {
+            "a": 1,
+            "h": 1,
+            "away": "Elfenbeinküste",
+            "home": "Deutschland"
+          },
+          {
+            "a": 0,
+            "h": 2,
+            "away": "Curaçao",
+            "home": "Ecuador"
+          },
+          {
+            "a": 1,
+            "h": 0,
+            "away": "Elfenbeinküste",
+            "home": "Curaçao"
+          },
+          {
+            "a": 2,
+            "h": 2,
+            "away": "Deutschland",
+            "home": "Ecuador"
+          }
+        ],
+        "F": [
+          {
+            "a": 1,
+            "h": 2,
+            "away": "Japan",
+            "home": "Niederlande"
+          },
+          {
+            "a": 1,
+            "h": 1,
+            "away": "Tunesien",
+            "home": "Schweden"
+          },
+          {
+            "a": 0,
+            "h": 2,
+            "away": "Schweden",
+            "home": "Niederlande"
+          },
+          {
+            "a": 1,
+            "h": 1,
+            "away": "Japan",
+            "home": "Tunesien"
+          },
+          {
+            "a": 0,
+            "h": 1,
+            "away": "Schweden",
+            "home": "Japan"
+          },
+          {
+            "a": 2,
+            "h": 1,
+            "away": "Niederlande",
+            "home": "Tunesien"
+          }
+        ],
+        "G": [
+          {
+            "a": 1,
+            "h": 2,
+            "away": "Ägypten",
+            "home": "Belgien"
+          },
+          {
+            "a": 0,
+            "h": 1,
+            "away": "Neuseeland",
+            "home": "Iran"
+          },
+          {
+            "a": 0,
+            "h": 1,
+            "away": "Iran",
+            "home": "Belgien"
+          },
+          {
+            "a": 1,
+            "h": 0,
+            "away": "Ägypten",
+            "home": "Neuseeland"
+          },
+          {
+            "a": 0,
+            "h": 1,
+            "away": "Iran",
+            "home": "Ägypten"
+          },
+          {
+            "a": 2,
+            "h": 0,
+            "away": "Belgien",
+            "home": "Neuseeland"
+          }
+        ],
+        "H": [
+          {
+            "a": 0,
+            "h": 2,
+            "away": "Kap Verde",
+            "home": "Spanien"
+          },
+          {
+            "a": 3,
+            "h": 0,
+            "away": "Uruguay",
+            "home": "Saudi-Arabien"
+          },
+          {
+            "a": 0,
+            "h": 2,
+            "away": "Saudi-Arabien",
+            "home": "Spanien"
+          },
+          {
+            "a": 0,
+            "h": 2,
+            "away": "Kap Verde",
+            "home": "Uruguay"
+          },
+          {
+            "a": 1,
+            "h": 1,
+            "away": "Saudi-Arabien",
+            "home": "Kap Verde"
+          },
+          {
+            "a": 1,
+            "h": 1,
+            "away": "Spanien",
+            "home": "Uruguay"
+          }
+        ],
+        "I": [
+          {
+            "a": 2,
+            "h": 1,
+            "away": "Senegal",
+            "home": "Frankreich"
+          },
+          {
+            "a": 1,
+            "h": 1,
+            "away": "Norwegen",
+            "home": "Irak"
+          },
+          {
+            "a": 0,
+            "h": 2,
+            "away": "Irak",
+            "home": "Frankreich"
+          },
+          {
+            "a": 1,
+            "h": 0,
+            "away": "Senegal",
+            "home": "Norwegen"
+          },
+          {
+            "a": 2,
+            "h": 0,
+            "away": "Frankreich",
+            "home": "Norwegen"
+          },
+          {
+            "a": 0,
+            "h": 2,
+            "away": "Irak",
+            "home": "Senegal"
+          }
+        ],
+        "J": [
+          {
+            "a": 0,
+            "h": 2,
+            "away": "Algerien",
+            "home": "Argentinien"
+          },
+          {
+            "a": 1,
+            "h": 1,
+            "away": "Jordanien",
+            "home": "Österreich"
+          },
+          {
+            "a": 0,
+            "h": 2,
+            "away": "Österreich",
+            "home": "Argentinien"
+          },
+          {
+            "a": 2,
+            "h": 1,
+            "away": "Algerien",
+            "home": "Jordanien"
+          },
+          {
+            "a": 1,
+            "h": 1,
+            "away": "Österreich",
+            "home": "Algerien"
+          },
+          {
+            "a": 2,
+            "h": 1,
+            "away": "Argentinien",
+            "home": "Jordanien"
+          }
+        ],
+        "K": [
+          {
+            "a": 0,
+            "h": 2,
+            "away": "D.R. Kongo",
+            "home": "Portugal"
+          },
+          {
+            "a": 2,
+            "h": 0,
+            "away": "Kolumbien",
+            "home": "Usbekistan"
+          },
+          {
+            "a": 0,
+            "h": 2,
+            "away": "Usbekistan",
+            "home": "Portugal"
+          },
+          {
+            "a": 0,
+            "h": 1,
+            "away": "D.R. Kongo",
+            "home": "Kolumbien"
+          },
+          {
+            "a": 1,
+            "h": 1,
+            "away": "Portugal",
+            "home": "Kolumbien"
+          },
+          {
+            "a": 1,
+            "h": 1,
+            "away": "Usbekistan",
+            "home": "D.R. Kongo"
+          }
+        ],
+        "L": [
+          {
+            "a": 1,
+            "h": 1,
+            "away": "Kroatien",
+            "home": "England"
+          },
+          {
+            "a": 1,
+            "h": 1,
+            "away": "Panama",
+            "home": "Ghana"
+          },
+          {
+            "a": 1,
+            "h": 1,
+            "away": "Ghana",
+            "home": "England"
+          },
+          {
+            "a": 2,
+            "h": 0,
+            "away": "Kroatien",
+            "home": "Panama"
+          },
+          {
+            "a": 1,
+            "h": 0,
+            "away": "England",
+            "home": "Panama"
+          },
+          {
+            "a": 0,
+            "h": 1,
+            "away": "Ghana",
+            "home": "Kroatien"
+          }
+        ]
+      },
+      "version": "wm2026",
+      "surprise": "Kolumbien",
+      "standings": {
+        "A": [
+          "Mexiko",
+          "Tschechien"
+        ],
+        "B": [
+          "Bosnien-Herz.",
+          "Schweiz"
+        ],
+        "C": [
+          "Brasilien",
+          "Marokko"
+        ],
+        "D": [
+          "Paraguay",
+          "Türkei"
+        ],
+        "E": [
+          "Deutschland",
+          "Ecuador"
+        ],
+        "F": [
+          "Niederlande",
+          "Japan"
+        ],
+        "G": [
+          "Belgien",
+          "Ägypten"
+        ],
+        "H": [
+          "Spanien",
+          "Uruguay"
+        ],
+        "I": [
+          "Frankreich",
+          "Senegal"
+        ],
+        "J": [
+          "Argentinien",
+          "Jordanien"
+        ],
+        "K": [
+          "Portugal",
+          "Kolumbien"
+        ],
+        "L": [
+          "England",
+          "Kroatien"
+        ]
+      },
+      "submitted": "2026-06-08T05:13:16.405Z",
+      "points": 4,
+      "log": [
+        {
+          "pts": 4,
+          "reason": "Mexiko-Südafrika 2:0"
+        }
+      ]
+    },
+    "Jonas": {
+      "name": "Jonas",
+      "pick1": "Deutschland",
+      "pick2": "Frankreich",
+      "pick3": "Niederlande",
+      "matches": {
+        "A": [
+          {
+            "a": 0,
+            "h": 1,
+            "away": "Südafrika",
+            "home": "Mexiko"
+          },
+          {
+            "a": 1,
+            "h": 2,
+            "away": "Tschechien",
+            "home": "Südkorea"
+          },
+          {
+            "a": 0,
+            "h": 2,
+            "away": "Südafrika",
+            "home": "Tschechien"
+          },
+          {
+            "a": 1,
+            "h": 1,
+            "away": "Südkorea",
+            "home": "Mexiko"
+          },
+          {
+            "a": 1,
+            "h": 2,
+            "away": "Mexiko",
+            "home": "Tschechien"
+          },
+          {
+            "a": 0,
+            "h": 0,
+            "away": "Südkorea",
+            "home": "Südafrika"
+          }
+        ],
+        "B": [
+          {
+            "a": 3,
+            "h": 0,
+            "away": "Bosnien-Herz.",
+            "home": "Kanada"
+          },
+          {
+            "a": 2,
+            "h": 0,
+            "away": "Schweiz",
+            "home": "Katar"
+          },
+          {
+            "a": 1,
+            "h": 1,
+            "away": "Bosnien-Herz.",
+            "home": "Schweiz"
+          },
+          {
+            "a": 0,
+            "h": 2,
+            "away": "Katar",
+            "home": "Kanada"
+          },
+          {
+            "a": 0,
+            "h": 3,
+            "away": "Kanada",
+            "home": "Schweiz"
+          },
+          {
+            "a": 0,
+            "h": 1,
+            "away": "Katar",
+            "home": "Bosnien-Herz."
+          }
+        ],
+        "C": [
+          {
+            "a": 0,
+            "h": 4,
+            "away": "Marokko",
+            "home": "Brasilien"
+          },
+          {
+            "a": 2,
+            "h": 0,
+            "away": "Schottland",
+            "home": "Haiti"
+          },
+          {
+            "a": 1,
+            "h": 2,
+            "away": "Marokko",
+            "home": "Schottland"
+          },
+          {
+            "a": 0,
+            "h": 3,
+            "away": "Haiti",
+            "home": "Brasilien"
+          },
+          {
+            "a": 2,
+            "h": 1,
+            "away": "Brasilien",
+            "home": "Schottland"
+          },
+          {
+            "a": 0,
+            "h": 2,
+            "away": "Haiti",
+            "home": "Marokko"
+          }
+        ],
+        "D": [
+          {
+            "a": 3,
+            "h": 0,
+            "away": "Paraguay",
+            "home": "USA"
+          },
+          {
+            "a": 0,
+            "h": 0,
+            "away": "Türkei",
+            "home": "Australien"
+          },
+          {
+            "a": 2,
+            "h": 0,
+            "away": "Australien",
+            "home": "USA"
+          },
+          {
+            "a": 1,
+            "h": 3,
+            "away": "Paraguay",
+            "home": "Türkei"
+          },
+          {
+            "a": 0,
+            "h": 2,
+            "away": "USA",
+            "home": "Türkei"
+          },
+          {
+            "a": 2,
+            "h": 2,
+            "away": "Australien",
+            "home": "Paraguay"
+          }
+        ],
+        "E": [
+          {
+            "a": 1,
+            "h": 5,
+            "away": "Curaçao",
+            "home": "Deutschland"
+          },
+          {
+            "a": 1,
+            "h": 2,
+            "away": "Ecuador",
+            "home": "Elfenbeinküste"
+          },
+          {
+            "a": 0,
+            "h": 2,
+            "away": "Elfenbeinküste",
+            "home": "Deutschland"
+          },
+          {
+            "a": 1,
+            "h": 3,
+            "away": "Curaçao",
+            "home": "Ecuador"
+          },
+          {
+            "a": 2,
+            "h": 0,
+            "away": "Elfenbeinküste",
+            "home": "Curaçao"
+          },
+          {
+            "a": 1,
+            "h": 0,
+            "away": "Deutschland",
+            "home": "Ecuador"
+          }
+        ],
+        "F": [
+          {
+            "a": 0,
+            "h": 2,
+            "away": "Japan",
+            "home": "Niederlande"
+          },
+          {
+            "a": 0,
+            "h": 1,
+            "away": "Tunesien",
+            "home": "Schweden"
+          },
+          {
+            "a": 0,
+            "h": 1,
+            "away": "Schweden",
+            "home": "Niederlande"
+          },
+          {
+            "a": 0,
+            "h": 2,
+            "away": "Japan",
+            "home": "Tunesien"
+          },
+          {
+            "a": 1,
+            "h": 0,
+            "away": "Schweden",
+            "home": "Japan"
+          },
+          {
+            "a": 1,
+            "h": 0,
+            "away": "Niederlande",
+            "home": "Tunesien"
+          }
+        ],
+        "G": [
+          {
+            "a": 2,
+            "h": 3,
+            "away": "Ägypten",
+            "home": "Belgien"
+          },
+          {
+            "a": 0,
+            "h": 1,
+            "away": "Neuseeland",
+            "home": "Iran"
+          },
+          {
+            "a": 1,
+            "h": 3,
+            "away": "Iran",
+            "home": "Belgien"
+          },
+          {
+            "a": 1,
+            "h": 0,
+            "away": "Ägypten",
+            "home": "Neuseeland"
+          },
+          {
+            "a": 2,
+            "h": 2,
+            "away": "Iran",
+            "home": "Ägypten"
+          },
+          {
+            "a": 4,
+            "h": 0,
+            "away": "Belgien",
+            "home": "Neuseeland"
+          }
+        ],
+        "H": [
+          {
+            "a": 0,
+            "h": 4,
+            "away": "Kap Verde",
+            "home": "Spanien"
+          },
+          {
+            "a": 1,
+            "h": 0,
+            "away": "Uruguay",
+            "home": "Saudi-Arabien"
+          },
+          {
+            "a": 0,
+            "h": 3,
+            "away": "Saudi-Arabien",
+            "home": "Spanien"
+          },
+          {
+            "a": 1,
+            "h": 3,
+            "away": "Kap Verde",
+            "home": "Uruguay"
+          },
+          {
+            "a": 0,
+            "h": 1,
+            "away": "Saudi-Arabien",
+            "home": "Kap Verde"
+          },
+          {
+            "a": 2,
+            "h": 2,
+            "away": "Spanien",
+            "home": "Uruguay"
+          }
+        ],
+        "I": [
+          {
+            "a": 0,
+            "h": 4,
+            "away": "Senegal",
+            "home": "Frankreich"
+          },
+          {
+            "a": 1,
+            "h": 2,
+            "away": "Norwegen",
+            "home": "Irak"
+          },
+          {
+            "a": 0,
+            "h": 2,
+            "away": "Irak",
+            "home": "Frankreich"
+          },
+          {
+            "a": 2,
+            "h": 1,
+            "away": "Senegal",
+            "home": "Norwegen"
+          },
+          {
+            "a": 1,
+            "h": 0,
+            "away": "Frankreich",
+            "home": "Norwegen"
+          },
+          {
+            "a": 0,
+            "h": 2,
+            "away": "Irak",
+            "home": "Senegal"
+          }
+        ],
+        "J": [
+          {
+            "a": 1,
+            "h": 2,
+            "away": "Algerien",
+            "home": "Argentinien"
+          },
+          {
+            "a": 0,
+            "h": 1,
+            "away": "Jordanien",
+            "home": "Österreich"
+          },
+          {
+            "a": 1,
+            "h": 2,
+            "away": "Österreich",
+            "home": "Argentinien"
+          },
+          {
+            "a": 0,
+            "h": 0,
+            "away": "Algerien",
+            "home": "Jordanien"
+          },
+          {
+            "a": 1,
+            "h": 1,
+            "away": "Österreich",
+            "home": "Algerien"
+          },
+          {
+            "a": 3,
+            "h": 0,
+            "away": "Argentinien",
+            "home": "Jordanien"
+          }
+        ],
+        "K": [
+          {
+            "a": 0,
+            "h": 5,
+            "away": "D.R. Kongo",
+            "home": "Portugal"
+          },
+          {
+            "a": 2,
+            "h": 0,
+            "away": "Kolumbien",
+            "home": "Usbekistan"
+          },
+          {
+            "a": 1,
+            "h": 4,
+            "away": "Usbekistan",
+            "home": "Portugal"
+          },
+          {
+            "a": 0,
+            "h": 2,
+            "away": "D.R. Kongo",
+            "home": "Kolumbien"
+          },
+          {
+            "a": 1,
+            "h": 0,
+            "away": "Portugal",
+            "home": "Kolumbien"
+          },
+          {
+            "a": 0,
+            "h": 0,
+            "away": "Usbekistan",
+            "home": "D.R. Kongo"
+          }
+        ],
+        "L": [
+          {
+            "a": 2,
+            "h": 2,
+            "away": "Kroatien",
+            "home": "England"
+          },
+          {
+            "a": 0,
+            "h": 0,
+            "away": "Panama",
+            "home": "Ghana"
+          },
+          {
+            "a": 0,
+            "h": 3,
+            "away": "Ghana",
+            "home": "England"
+          },
+          {
+            "a": 2,
+            "h": 0,
+            "away": "Kroatien",
+            "home": "Panama"
+          },
+          {
+            "a": 3,
+            "h": 0,
+            "away": "England",
+            "home": "Panama"
+          },
+          {
+            "a": 0,
+            "h": 1,
+            "away": "Ghana",
+            "home": "Kroatien"
+          }
+        ]
+      },
+      "version": "wm2026",
+      "surprise": "Elfenbeinküste",
+      "standings": {
+        "A": [
+          "Mexiko",
+          "Südkorea"
+        ],
+        "B": [
+          "Schweiz",
+          "Bosnien-Herz."
+        ],
+        "C": [
+          "Brasilien",
+          "Marokko"
+        ],
+        "D": [
+          "Paraguay",
+          "Türkei"
+        ],
+        "E": [
+          "Deutschland",
+          "Elfenbeinküste"
+        ],
+        "F": [
+          "Niederlande",
+          "Schweden"
+        ],
+        "G": [
+          "Belgien",
+          "Ägypten"
+        ],
+        "H": [
+          "Spanien",
+          "Uruguay"
+        ],
+        "I": [
+          "Frankreich",
+          "Senegal"
+        ],
+        "J": [
+          "Argentinien",
+          "Österreich"
+        ],
+        "K": [
+          "Portugal",
+          "Kolumbien"
+        ],
+        "L": [
+          "England",
+          "Kroatien"
+        ]
+      },
+      "submitted": "2026-06-08T09:59:26.544Z",
+      "points": 5,
+      "log": [
+        {
+          "pts": 1,
+          "reason": "Mexiko-Südafrika 2:0"
+        },
+        {
+          "pts": 4,
+          "reason": "Südkorea-Tschechien 2:1"
+        }
+      ]
+    },
+    "Guido": {
+      "name": "Guido",
+      "pick1": "Deutschland",
+      "pick2": "Brasilien",
+      "pick3": "Argentinien",
+      "matches": {
+        "A": [
+          {
+            "a": 1,
+            "h": 2,
+            "away": "Südafrika",
+            "home": "Mexiko"
+          },
+          {
+            "a": 2,
+            "h": 2,
+            "away": "Tschechien",
+            "home": "Südkorea"
+          },
+          {
+            "a": 1,
+            "h": 3,
+            "away": "Südafrika",
+            "home": "Tschechien"
+          },
+          {
+            "a": 2,
+            "h": 3,
+            "away": "Südkorea",
+            "home": "Mexiko"
+          },
+          {
+            "a": 2,
+            "h": 2,
+            "away": "Mexiko",
+            "home": "Tschechien"
+          },
+          {
+            "a": 3,
+            "h": 0,
+            "away": "Südkorea",
+            "home": "Südafrika"
+          }
+        ],
+        "B": [
+          {
+            "a": 3,
+            "h": 0,
+            "away": "Bosnien-Herz.",
+            "home": "Kanada"
+          },
+          {
+            "a": 4,
+            "h": 1,
+            "away": "Schweiz",
+            "home": "Katar"
+          },
+          {
+            "a": 2,
+            "h": 2,
+            "away": "Bosnien-Herz.",
+            "home": "Schweiz"
+          },
+          {
+            "a": 0,
+            "h": 1,
+            "away": "Katar",
+            "home": "Kanada"
+          },
+          {
+            "a": 0,
+            "h": 4,
+            "away": "Kanada",
+            "home": "Schweiz"
+          },
+          {
+            "a": 0,
+            "h": 3,
+            "away": "Katar",
+            "home": "Bosnien-Herz."
+          }
+        ],
+        "C": [
+          {
+            "a": 1,
+            "h": 3,
+            "away": "Marokko",
+            "home": "Brasilien"
+          },
+          {
+            "a": 2,
+            "h": 0,
+            "away": "Schottland",
+            "home": "Haiti"
+          },
+          {
+            "a": 2,
+            "h": 1,
+            "away": "Marokko",
+            "home": "Schottland"
+          },
+          {
+            "a": 0,
+            "h": 3,
+            "away": "Haiti",
+            "home": "Brasilien"
+          },
+          {
+            "a": 4,
+            "h": 1,
+            "away": "Brasilien",
+            "home": "Schottland"
+          },
+          {
+            "a": 0,
+            "h": 4,
+            "away": "Haiti",
+            "home": "Marokko"
+          }
+        ],
+        "D": [
+          {
+            "a": 0,
+            "h": 2,
+            "away": "Paraguay",
+            "home": "USA"
+          },
+          {
+            "a": 3,
+            "h": 0,
+            "away": "Türkei",
+            "home": "Australien"
+          },
+          {
+            "a": 0,
+            "h": 3,
+            "away": "Australien",
+            "home": "USA"
+          },
+          {
+            "a": 1,
+            "h": 2,
+            "away": "Paraguay",
+            "home": "Türkei"
+          },
+          {
+            "a": 2,
+            "h": 2,
+            "away": "USA",
+            "home": "Türkei"
+          },
+          {
+            "a": 0,
+            "h": 3,
+            "away": "Australien",
+            "home": "Paraguay"
+          }
+        ],
+        "E": [
+          {
+            "a": 0,
+            "h": 6,
+            "away": "Curaçao",
+            "home": "Deutschland"
+          },
+          {
+            "a": 2,
+            "h": 2,
+            "away": "Ecuador",
+            "home": "Elfenbeinküste"
+          },
+          {
+            "a": 0,
+            "h": 2,
+            "away": "Elfenbeinküste",
+            "home": "Deutschland"
+          },
+          {
+            "a": 0,
+            "h": 3,
+            "away": "Curaçao",
+            "home": "Ecuador"
+          },
+          {
+            "a": 4,
+            "h": 0,
+            "away": "Elfenbeinküste",
+            "home": "Curaçao"
+          },
+          {
+            "a": 3,
+            "h": 1,
+            "away": "Deutschland",
+            "home": "Ecuador"
+          }
+        ],
+        "F": [
+          {
+            "a": 1,
+            "h": 1,
+            "away": "Japan",
+            "home": "Niederlande"
+          },
+          {
+            "a": 1,
+            "h": 2,
+            "away": "Tunesien",
+            "home": "Schweden"
+          },
+          {
+            "a": 2,
+            "h": 2,
+            "away": "Schweden",
+            "home": "Niederlande"
+          },
+          {
+            "a": 3,
+            "h": 0,
+            "away": "Japan",
+            "home": "Tunesien"
+          },
+          {
+            "a": 3,
+            "h": 2,
+            "away": "Schweden",
+            "home": "Japan"
+          },
+          {
+            "a": 3,
+            "h": 1,
+            "away": "Niederlande",
+            "home": "Tunesien"
+          }
+        ],
+        "G": [
+          {
+            "a": 1,
+            "h": 2,
+            "away": "Ägypten",
+            "home": "Belgien"
+          },
+          {
+            "a": 0,
+            "h": 3,
+            "away": "Neuseeland",
+            "home": "Iran"
+          },
+          {
+            "a": 1,
+            "h": 1,
+            "away": "Iran",
+            "home": "Belgien"
+          },
+          {
+            "a": 3,
+            "h": 0,
+            "away": "Ägypten",
+            "home": "Neuseeland"
+          },
+          {
+            "a": 2,
+            "h": 2,
+            "away": "Iran",
+            "home": "Ägypten"
+          },
+          {
+            "a": 4,
+            "h": 0,
+            "away": "Belgien",
+            "home": "Neuseeland"
+          }
+        ],
+        "H": [
+          {
+            "a": 0,
+            "h": 5,
+            "away": "Kap Verde",
+            "home": "Spanien"
+          },
+          {
+            "a": 3,
+            "h": 1,
+            "away": "Uruguay",
+            "home": "Saudi-Arabien"
+          },
+          {
+            "a": 1,
+            "h": 4,
+            "away": "Saudi-Arabien",
+            "home": "Spanien"
+          },
+          {
+            "a": 0,
+            "h": 4,
+            "away": "Kap Verde",
+            "home": "Uruguay"
+          },
+          {
+            "a": 2,
+            "h": 0,
+            "away": "Saudi-Arabien",
+            "home": "Kap Verde"
+          },
+          {
+            "a": 3,
+            "h": 1,
+            "away": "Spanien",
+            "home": "Uruguay"
+          }
+        ],
+        "I": [
+          {
+            "a": 1,
+            "h": 3,
+            "away": "Senegal",
+            "home": "Frankreich"
+          },
+          {
+            "a": 3,
+            "h": 1,
+            "away": "Norwegen",
+            "home": "Irak"
+          },
+          {
+            "a": 0,
+            "h": 3,
+            "away": "Irak",
+            "home": "Frankreich"
+          },
+          {
+            "a": 1,
+            "h": 2,
+            "away": "Senegal",
+            "home": "Norwegen"
+          },
+          {
+            "a": 3,
+            "h": 1,
+            "away": "Frankreich",
+            "home": "Norwegen"
+          },
+          {
+            "a": 2,
+            "h": 2,
+            "away": "Irak",
+            "home": "Senegal"
+          }
+        ],
+        "J": [
+          {
+            "a": 1,
+            "h": 3,
+            "away": "Algerien",
+            "home": "Argentinien"
+          },
+          {
+            "a": 0,
+            "h": 3,
+            "away": "Jordanien",
+            "home": "Österreich"
+          },
+          {
+            "a": 2,
+            "h": 2,
+            "away": "Österreich",
+            "home": "Argentinien"
+          },
+          {
+            "a": 2,
+            "h": 1,
+            "away": "Algerien",
+            "home": "Jordanien"
+          },
+          {
+            "a": 2,
+            "h": 1,
+            "away": "Österreich",
+            "home": "Algerien"
+          },
+          {
+            "a": 3,
+            "h": 0,
+            "away": "Argentinien",
+            "home": "Jordanien"
+          }
+        ],
+        "K": [
+          {
+            "a": 0,
+            "h": 2,
+            "away": "D.R. Kongo",
+            "home": "Portugal"
+          },
+          {
+            "a": 3,
+            "h": 1,
+            "away": "Kolumbien",
+            "home": "Usbekistan"
+          },
+          {
+            "a": 0,
+            "h": 4,
+            "away": "Usbekistan",
+            "home": "Portugal"
+          },
+          {
+            "a": 1,
+            "h": 1,
+            "away": "D.R. Kongo",
+            "home": "Kolumbien"
+          },
+          {
+            "a": 3,
+            "h": 1,
+            "away": "Portugal",
+            "home": "Kolumbien"
+          },
+          {
+            "a": 1,
+            "h": 2,
+            "away": "Usbekistan",
+            "home": "D.R. Kongo"
+          }
+        ],
+        "L": [
+          {
+            "a": 1,
+            "h": 2,
+            "away": "Kroatien",
+            "home": "England"
+          },
+          {
+            "a": 0,
+            "h": 2,
+            "away": "Panama",
+            "home": "Ghana"
+          },
+          {
+            "a": 0,
+            "h": 3,
+            "away": "Ghana",
+            "home": "England"
+          },
+          {
+            "a": 4,
+            "h": 1,
+            "away": "Kroatien",
+            "home": "Panama"
+          },
+          {
+            "a": 3,
+            "h": 0,
+            "away": "England",
+            "home": "Panama"
+          },
+          {
+            "a": 0,
+            "h": 3,
+            "away": "Ghana",
+            "home": "Kroatien"
+          }
+        ]
+      },
+      "version": "wm2026",
+      "surprise": "Japan",
+      "standings": {
+        "A": [
+          "Mexiko",
+          "Südkorea"
+        ],
+        "B": [
+          "Schweiz",
+          "Bosnien-Herz."
+        ],
+        "C": [
+          "Brasilien",
+          "Marokko"
+        ],
+        "D": [
+          "Türkei",
+          "USA"
+        ],
+        "E": [
+          "Deutschland",
+          "Elfenbeinküste"
+        ],
+        "F": [
+          "Niederlande",
+          "Japan"
+        ],
+        "G": [
+          "Belgien",
+          "Iran"
+        ],
+        "H": [
+          "Spanien",
+          "Uruguay"
+        ],
+        "I": [
+          "Frankreich",
+          "Norwegen"
+        ],
+        "J": [
+          "Argentinien",
+          "Österreich"
+        ],
+        "K": [
+          "Portugal",
+          "Kolumbien"
+        ],
+        "L": [
+          "England",
+          "Kroatien"
+        ]
+      },
+      "submitted": "2026-06-11T06:29:42.345Z",
+      "points": 1,
+      "log": [
+        {
+          "pts": 1,
+          "reason": "Mexiko-Südafrika 2:0"
+        }
+      ]
+    },
+    "Claudia": {
+      "name": "Claudia",
+      "pick1": "Deutschland",
+      "pick2": "Mexiko",
+      "pick3": "Kolumbien",
+      "matches": {
+        "A": [
+          {
+            "a": 0,
+            "h": 1,
+            "away": "Südafrika",
+            "home": "Mexiko"
+          },
+          {
+            "a": 1,
+            "h": 2,
+            "away": "Tschechien",
+            "home": "Südkorea"
+          },
+          {
+            "a": 1,
+            "h": 1,
+            "away": "Südafrika",
+            "home": "Tschechien"
+          },
+          {
+            "a": 2,
+            "h": 2,
+            "away": "Südkorea",
+            "home": "Mexiko"
+          },
+          {
+            "a": 2,
+            "h": 1,
+            "away": "Mexiko",
+            "home": "Tschechien"
+          },
+          {
+            "a": 0,
+            "h": 0,
+            "away": "Südkorea",
+            "home": "Südafrika"
+          }
+        ],
+        "B": [
+          {
+            "a": 1,
+            "h": 1,
+            "away": "Bosnien-Herz.",
+            "home": "Kanada"
+          },
+          {
+            "a": 2,
+            "h": 1,
+            "away": "Schweiz",
+            "home": "Katar"
+          },
+          {
+            "a": 1,
+            "h": 2,
+            "away": "Bosnien-Herz.",
+            "home": "Schweiz"
+          },
+          {
+            "a": 1,
+            "h": 1,
+            "away": "Katar",
+            "home": "Kanada"
+          },
+          {
+            "a": 1,
+            "h": 2,
+            "away": "Kanada",
+            "home": "Schweiz"
+          },
+          {
+            "a": 2,
+            "h": 0,
+            "away": "Katar",
+            "home": "Bosnien-Herz."
+          }
+        ],
+        "C": [
+          {
+            "a": 0,
+            "h": 2,
+            "away": "Marokko",
+            "home": "Brasilien"
+          },
+          {
+            "a": 2,
+            "h": 1,
+            "away": "Schottland",
+            "home": "Haiti"
+          },
+          {
+            "a": 1,
+            "h": 2,
+            "away": "Marokko",
+            "home": "Schottland"
+          },
+          {
+            "a": 1,
+            "h": 3,
+            "away": "Haiti",
+            "home": "Brasilien"
+          },
+          {
+            "a": 2,
+            "h": 1,
+            "away": "Brasilien",
+            "home": "Schottland"
+          },
+          {
+            "a": 0,
+            "h": 1,
+            "away": "Haiti",
+            "home": "Marokko"
+          }
+        ],
+        "D": [
+          {
+            "a": 1,
+            "h": 2,
+            "away": "Paraguay",
+            "home": "USA"
+          },
+          {
+            "a": 2,
+            "h": 1,
+            "away": "Türkei",
+            "home": "Australien"
+          },
+          {
+            "a": 1,
+            "h": 2,
+            "away": "Australien",
+            "home": "USA"
+          },
+          {
+            "a": 0,
+            "h": 2,
+            "away": "Paraguay",
+            "home": "Türkei"
+          },
+          {
+            "a": 1,
+            "h": 1,
+            "away": "USA",
+            "home": "Türkei"
+          },
+          {
+            "a": 1,
+            "h": 2,
+            "away": "Australien",
+            "home": "Paraguay"
+          }
+        ],
+        "E": [
+          {
+            "a": 0,
+            "h": 2,
+            "away": "Curaçao",
+            "home": "Deutschland"
+          },
+          {
+            "a": 2,
+            "h": 1,
+            "away": "Ecuador",
+            "home": "Elfenbeinküste"
+          },
+          {
+            "a": 0,
+            "h": 1,
+            "away": "Elfenbeinküste",
+            "home": "Deutschland"
+          },
+          {
+            "a": 1,
+            "h": 1,
+            "away": "Curaçao",
+            "home": "Ecuador"
+          },
+          {
+            "a": 2,
+            "h": 1,
+            "away": "Elfenbeinküste",
+            "home": "Curaçao"
+          },
+          {
+            "a": 2,
+            "h": 1,
+            "away": "Deutschland",
+            "home": "Ecuador"
+          }
+        ],
+        "F": [
+          {
+            "a": 1,
+            "h": 2,
+            "away": "Japan",
+            "home": "Niederlande"
+          },
+          {
+            "a": 0,
+            "h": 1,
+            "away": "Tunesien",
+            "home": "Schweden"
+          },
+          {
+            "a": 1,
+            "h": 2,
+            "away": "Schweden",
+            "home": "Niederlande"
+          },
+          {
+            "a": 1,
+            "h": 1,
+            "away": "Japan",
+            "home": "Tunesien"
+          },
+          {
+            "a": 1,
+            "h": 1,
+            "away": "Schweden",
+            "home": "Japan"
+          },
+          {
+            "a": 2,
+            "h": 1,
+            "away": "Niederlande",
+            "home": "Tunesien"
+          }
+        ],
+        "G": [
+          {
+            "a": 1,
+            "h": 2,
+            "away": "Ägypten",
+            "home": "Belgien"
+          },
+          {
+            "a": 1,
+            "h": 0,
+            "away": "Neuseeland",
+            "home": "Iran"
+          },
+          {
+            "a": 1,
+            "h": 1,
+            "away": "Iran",
+            "home": "Belgien"
+          },
+          {
+            "a": 1,
+            "h": 1,
+            "away": "Ägypten",
+            "home": "Neuseeland"
+          },
+          {
+            "a": 1,
+            "h": 2,
+            "away": "Iran",
+            "home": "Ägypten"
+          },
+          {
+            "a": 1,
+            "h": 2,
+            "away": "Belgien",
+            "home": "Neuseeland"
+          }
+        ],
+        "H": [
+          {
+            "a": 0,
+            "h": 2,
+            "away": "Kap Verde",
+            "home": "Spanien"
+          },
+          {
+            "a": 1,
+            "h": 1,
+            "away": "Uruguay",
+            "home": "Saudi-Arabien"
+          },
+          {
+            "a": 1,
+            "h": 2,
+            "away": "Saudi-Arabien",
+            "home": "Spanien"
+          },
+          {
+            "a": 1,
+            "h": 1,
+            "away": "Kap Verde",
+            "home": "Uruguay"
+          },
+          {
+            "a": 2,
+            "h": 1,
+            "away": "Saudi-Arabien",
+            "home": "Kap Verde"
+          },
+          {
+            "a": 3,
+            "h": 1,
+            "away": "Spanien",
+            "home": "Uruguay"
+          }
+        ],
+        "I": [
+          {
+            "a": 1,
+            "h": 2,
+            "away": "Senegal",
+            "home": "Frankreich"
+          },
+          {
+            "a": 2,
+            "h": 2,
+            "away": "Norwegen",
+            "home": "Irak"
+          },
+          {
+            "a": 2,
+            "h": 1,
+            "away": "Irak",
+            "home": "Frankreich"
+          },
+          {
+            "a": 0,
+            "h": 1,
+            "away": "Senegal",
+            "home": "Norwegen"
+          },
+          {
+            "a": 2,
+            "h": 2,
+            "away": "Frankreich",
+            "home": "Norwegen"
+          },
+          {
+            "a": 1,
+            "h": 0,
+            "away": "Irak",
+            "home": "Senegal"
+          }
+        ],
+        "J": [
+          {
+            "a": 1,
+            "h": 2,
+            "away": "Algerien",
+            "home": "Argentinien"
+          },
+          {
+            "a": 1,
+            "h": 0,
+            "away": "Jordanien",
+            "home": "Österreich"
+          },
+          {
+            "a": 1,
+            "h": 2,
+            "away": "Österreich",
+            "home": "Argentinien"
+          },
+          {
+            "a": 2,
+            "h": 1,
+            "away": "Algerien",
+            "home": "Jordanien"
+          },
+          {
+            "a": 1,
+            "h": 1,
+            "away": "Österreich",
+            "home": "Algerien"
+          },
+          {
+            "a": 2,
+            "h": 2,
+            "away": "Argentinien",
+            "home": "Jordanien"
+          }
+        ],
+        "K": [
+          {
+            "a": 0,
+            "h": 2,
+            "away": "D.R. Kongo",
+            "home": "Portugal"
+          },
+          {
+            "a": 3,
+            "h": 1,
+            "away": "Kolumbien",
+            "home": "Usbekistan"
+          },
+          {
+            "a": 1,
+            "h": 2,
+            "away": "Usbekistan",
+            "home": "Portugal"
+          },
+          {
+            "a": 1,
+            "h": 2,
+            "away": "D.R. Kongo",
+            "home": "Kolumbien"
+          },
+          {
+            "a": 2,
+            "h": 2,
+            "away": "Portugal",
+            "home": "Kolumbien"
+          },
+          {
+            "a": 1,
+            "h": 0,
+            "away": "Usbekistan",
+            "home": "D.R. Kongo"
+          }
+        ],
+        "L": [
+          {
+            "a": 1,
+            "h": 2,
+            "away": "Kroatien",
+            "home": "England"
+          },
+          {
+            "a": 1,
+            "h": 1,
+            "away": "Panama",
+            "home": "Ghana"
+          },
+          {
+            "a": 1,
+            "h": 2,
+            "away": "Ghana",
+            "home": "England"
+          },
+          {
+            "a": 1,
+            "h": 0,
+            "away": "Kroatien",
+            "home": "Panama"
+          },
+          {
+            "a": 2,
+            "h": 1,
+            "away": "England",
+            "home": "Panama"
+          },
+          {
+            "a": 1,
+            "h": 2,
+            "away": "Ghana",
+            "home": "Kroatien"
+          }
+        ]
+      },
+      "version": "wm2026",
+      "surprise": "Ecuador",
+      "standings": {
+        "A": [
+          "Mexiko",
+          "Südafrika"
+        ],
+        "B": [
+          "Kanada",
+          "Schweiz"
+        ],
+        "C": [
+          "Brasilien",
+          "Schottland"
+        ],
+        "D": [
+          "Türkei",
+          "Paraguay"
+        ],
+        "E": [
+          "Deutschland",
+          "Ecuador"
+        ],
+        "F": [
+          "Niederlande",
+          "Japan"
+        ],
+        "G": [
+          "Belgien",
+          "Neuseeland"
+        ],
+        "H": [
+          "Spanien",
+          "Uruguay"
+        ],
+        "I": [
+          "Frankreich",
+          "Norwegen"
+        ],
+        "J": [
+          "Argentinien",
+          "Jordanien"
+        ],
+        "K": [
+          "Portugal",
+          "Kolumbien"
+        ],
+        "L": [
+          "England",
+          "Kroatien"
+        ]
+      },
+      "submitted": "2026-06-08T17:20:31.028Z",
+      "points": 5,
+      "log": [
+        {
+          "pts": 1,
+          "reason": "Mexiko-Südafrika 2:0"
+        },
+        {
+          "pts": 4,
+          "reason": "Südkorea-Tschechien 2:1"
+        }
+      ]
+    },
+    "Yvonne": {
+      "name": "Yvonne",
+      "pick1": "Spanien",
+      "pick2": "Frankreich",
+      "pick3": "Deutschland",
+      "matches": {
+        "A": [
+          {
+            "a": 0,
+            "h": 2,
+            "away": "Südafrika",
+            "home": "Mexiko"
+          },
+          {
+            "a": 1,
+            "h": 1,
+            "away": "Tschechien",
+            "home": "Südkorea"
+          },
+          {
+            "a": 0,
+            "h": 2,
+            "away": "Südafrika",
+            "home": "Tschechien"
+          },
+          {
+            "a": 1,
+            "h": 3,
+            "away": "Südkorea",
+            "home": "Mexiko"
+          },
+          {
+            "a": 2,
+            "h": 1,
+            "away": "Mexiko",
+            "home": "Tschechien"
+          },
+          {
+            "a": 2,
+            "h": 2,
+            "away": "Südkorea",
+            "home": "Südafrika"
+          }
+        ],
+        "B": [
+          {
+            "a": 1,
+            "h": 1,
+            "away": "Bosnien-Herz.",
+            "home": "Kanada"
+          },
+          {
+            "a": 3,
+            "h": 0,
+            "away": "Schweiz",
+            "home": "Katar"
+          },
+          {
+            "a": 2,
+            "h": 3,
+            "away": "Bosnien-Herz.",
+            "home": "Schweiz"
+          },
+          {
+            "a": 0,
+            "h": 1,
+            "away": "Katar",
+            "home": "Kanada"
+          },
+          {
+            "a": 0,
+            "h": 2,
+            "away": "Kanada",
+            "home": "Schweiz"
+          },
+          {
+            "a": 1,
+            "h": 2,
+            "away": "Katar",
+            "home": "Bosnien-Herz."
+          }
+        ],
+        "C": [
+          {
+            "a": 1,
+            "h": 2,
+            "away": "Marokko",
+            "home": "Brasilien"
+          },
+          {
+            "a": 1,
+            "h": 0,
+            "away": "Schottland",
+            "home": "Haiti"
+          },
+          {
+            "a": 2,
+            "h": 1,
+            "away": "Marokko",
+            "home": "Schottland"
+          },
+          {
+            "a": 0,
+            "h": 4,
+            "away": "Haiti",
+            "home": "Brasilien"
+          },
+          {
+            "a": 3,
+            "h": 0,
+            "away": "Brasilien",
+            "home": "Schottland"
+          },
+          {
+            "a": 0,
+            "h": 3,
+            "away": "Haiti",
+            "home": "Marokko"
+          }
+        ],
+        "D": [
+          {
+            "a": 2,
+            "h": 0,
+            "away": "Paraguay",
+            "home": "USA"
+          },
+          {
+            "a": 2,
+            "h": 1,
+            "away": "Türkei",
+            "home": "Australien"
+          },
+          {
+            "a": 0,
+            "h": 0,
+            "away": "Australien",
+            "home": "USA"
+          },
+          {
+            "a": 2,
+            "h": 2,
+            "away": "Paraguay",
+            "home": "Türkei"
+          },
+          {
+            "a": 0,
+            "h": 3,
+            "away": "USA",
+            "home": "Türkei"
+          },
+          {
+            "a": 1,
+            "h": 2,
+            "away": "Australien",
+            "home": "Paraguay"
+          }
+        ],
+        "E": [
+          {
+            "a": 0,
+            "h": 6,
+            "away": "Curaçao",
+            "home": "Deutschland"
+          },
+          {
+            "a": 1,
+            "h": 2,
+            "away": "Ecuador",
+            "home": "Elfenbeinküste"
+          },
+          {
+            "a": 1,
+            "h": 2,
+            "away": "Elfenbeinküste",
+            "home": "Deutschland"
+          },
+          {
+            "a": 0,
+            "h": 3,
+            "away": "Curaçao",
+            "home": "Ecuador"
+          },
+          {
+            "a": 2,
+            "h": 0,
+            "away": "Elfenbeinküste",
+            "home": "Curaçao"
+          },
+          {
+            "a": 2,
+            "h": 1,
+            "away": "Deutschland",
+            "home": "Ecuador"
+          }
+        ],
+        "F": [
+          {
+            "a": 1,
+            "h": 1,
+            "away": "Japan",
+            "home": "Niederlande"
+          },
+          {
+            "a": 1,
+            "h": 1,
+            "away": "Tunesien",
+            "home": "Schweden"
+          },
+          {
+            "a": 1,
+            "h": 2,
+            "away": "Schweden",
+            "home": "Niederlande"
+          },
+          {
+            "a": 2,
+            "h": 0,
+            "away": "Japan",
+            "home": "Tunesien"
+          },
+          {
+            "a": 1,
+            "h": 1,
+            "away": "Schweden",
+            "home": "Japan"
+          },
+          {
+            "a": 3,
+            "h": 1,
+            "away": "Niederlande",
+            "home": "Tunesien"
+          }
+        ],
+        "G": [
+          {
+            "a": 1,
+            "h": 1,
+            "away": "Ägypten",
+            "home": "Belgien"
+          },
+          {
+            "a": 0,
+            "h": 1,
+            "away": "Neuseeland",
+            "home": "Iran"
+          },
+          {
+            "a": 0,
+            "h": 2,
+            "away": "Iran",
+            "home": "Belgien"
+          },
+          {
+            "a": 1,
+            "h": 0,
+            "away": "Ägypten",
+            "home": "Neuseeland"
+          },
+          {
+            "a": 2,
+            "h": 2,
+            "away": "Iran",
+            "home": "Ägypten"
+          },
+          {
+            "a": 3,
+            "h": 0,
+            "away": "Belgien",
+            "home": "Neuseeland"
+          }
+        ],
+        "H": [
+          {
+            "a": 0,
+            "h": 4,
+            "away": "Kap Verde",
+            "home": "Spanien"
+          },
+          {
+            "a": 3,
+            "h": 0,
+            "away": "Uruguay",
+            "home": "Saudi-Arabien"
+          },
+          {
+            "a": 0,
+            "h": 3,
+            "away": "Saudi-Arabien",
+            "home": "Spanien"
+          },
+          {
+            "a": 0,
+            "h": 2,
+            "away": "Kap Verde",
+            "home": "Uruguay"
+          },
+          {
+            "a": 1,
+            "h": 0,
+            "away": "Saudi-Arabien",
+            "home": "Kap Verde"
+          },
+          {
+            "a": 2,
+            "h": 1,
+            "away": "Spanien",
+            "home": "Uruguay"
+          }
+        ],
+        "I": [
+          {
+            "a": 0,
+            "h": 2,
+            "away": "Senegal",
+            "home": "Frankreich"
+          },
+          {
+            "a": 2,
+            "h": 0,
+            "away": "Norwegen",
+            "home": "Irak"
+          },
+          {
+            "a": 0,
+            "h": 4,
+            "away": "Irak",
+            "home": "Frankreich"
+          },
+          {
+            "a": 1,
+            "h": 2,
+            "away": "Senegal",
+            "home": "Norwegen"
+          },
+          {
+            "a": 2,
+            "h": 0,
+            "away": "Frankreich",
+            "home": "Norwegen"
+          },
+          {
+            "a": 0,
+            "h": 2,
+            "away": "Irak",
+            "home": "Senegal"
+          }
+        ],
+        "J": [
+          {
+            "a": 1,
+            "h": 2,
+            "away": "Algerien",
+            "home": "Argentinien"
+          },
+          {
+            "a": 0,
+            "h": 3,
+            "away": "Jordanien",
+            "home": "Österreich"
+          },
+          {
+            "a": 1,
+            "h": 3,
+            "away": "Österreich",
+            "home": "Argentinien"
+          },
+          {
+            "a": 1,
+            "h": 1,
+            "away": "Algerien",
+            "home": "Jordanien"
+          },
+          {
+            "a": 0,
+            "h": 0,
+            "away": "Österreich",
+            "home": "Algerien"
+          },
+          {
+            "a": 4,
+            "h": 0,
+            "away": "Argentinien",
+            "home": "Jordanien"
+          }
+        ],
+        "K": [
+          {
+            "a": 0,
+            "h": 3,
+            "away": "D.R. Kongo",
+            "home": "Portugal"
+          },
+          {
+            "a": 3,
+            "h": 0,
+            "away": "Kolumbien",
+            "home": "Usbekistan"
+          },
+          {
+            "a": 0,
+            "h": 4,
+            "away": "Usbekistan",
+            "home": "Portugal"
+          },
+          {
+            "a": 0,
+            "h": 3,
+            "away": "D.R. Kongo",
+            "home": "Kolumbien"
+          },
+          {
+            "a": 1,
+            "h": 1,
+            "away": "Portugal",
+            "home": "Kolumbien"
+          },
+          {
+            "a": 0,
+            "h": 0,
+            "away": "Usbekistan",
+            "home": "D.R. Kongo"
+          }
+        ],
+        "L": [
+          {
+            "a": 2,
+            "h": 1,
+            "away": "Kroatien",
+            "home": "England"
+          },
+          {
+            "a": 0,
+            "h": 2,
+            "away": "Panama",
+            "home": "Ghana"
+          },
+          {
+            "a": 1,
+            "h": 1,
+            "away": "Ghana",
+            "home": "England"
+          },
+          {
+            "a": 2,
+            "h": 0,
+            "away": "Kroatien",
+            "home": "Panama"
+          },
+          {
+            "a": 3,
+            "h": 1,
+            "away": "England",
+            "home": "Panama"
+          },
+          {
+            "a": 1,
+            "h": 2,
+            "away": "Ghana",
+            "home": "Kroatien"
+          }
+        ]
+      },
+      "version": "wm2026",
+      "surprise": "Norwegen",
+      "standings": {
+        "A": [
+          "Mexiko",
+          "Südkorea"
+        ],
+        "B": [
+          "Schweiz",
+          "Bosnien-Herz."
+        ],
+        "C": [
+          "Brasilien",
+          "Marokko"
+        ],
+        "D": [
+          "Türkei",
+          "Paraguay"
+        ],
+        "E": [
+          "Deutschland",
+          "Elfenbeinküste"
+        ],
+        "F": [
+          "Niederlande",
+          "Japan"
+        ],
+        "G": [
+          "Belgien",
+          "Ägypten"
+        ],
+        "H": [
+          "Spanien",
+          "Uruguay"
+        ],
+        "I": [
+          "Frankreich",
+          "Norwegen"
+        ],
+        "J": [
+          "Argentinien",
+          "Österreich"
+        ],
+        "K": [
+          "Portugal",
+          "Kolumbien"
+        ],
+        "L": [
+          "Kroatien",
+          "England"
+        ]
+      },
+      "submitted": "2026-06-09T05:20:46.829Z",
+      "points": 4,
+      "log": [
+        {
+          "pts": 4,
+          "reason": "Mexiko-Südafrika 2:0"
+        }
+      ]
+    },
+    "Alexander Schönfelder": {
+      "name": "Alexander Schönfelder",
+      "pick1": "Frankreich",
+      "pick2": "Spanien",
+      "pick3": "Brasilien",
+      "matches": {
+        "A": [
+          {
+            "a": 1,
+            "h": 2,
+            "away": "Südafrika",
+            "home": "Mexiko"
+          },
+          {
+            "a": 2,
+            "h": 1,
+            "away": "Tschechien",
+            "home": "Südkorea"
+          },
+          {
+            "a": 0,
+            "h": 2,
+            "away": "Südafrika",
+            "home": "Tschechien"
+          },
+          {
+            "a": 1,
+            "h": 1,
+            "away": "Südkorea",
+            "home": "Mexiko"
+          },
+          {
+            "a": 0,
+            "h": 0,
+            "away": "Mexiko",
+            "home": "Tschechien"
+          },
+          {
+            "a": 1,
+            "h": 0,
+            "away": "Südkorea",
+            "home": "Südafrika"
+          }
+        ],
+        "B": [
+          {
+            "a": 2,
+            "h": 0,
+            "away": "Bosnien-Herz.",
+            "home": "Kanada"
+          },
+          {
+            "a": 1,
+            "h": 0,
+            "away": "Schweiz",
+            "home": "Katar"
+          },
+          {
+            "a": 1,
+            "h": 1,
+            "away": "Bosnien-Herz.",
+            "home": "Schweiz"
+          },
+          {
+            "a": 0,
+            "h": 2,
+            "away": "Katar",
+            "home": "Kanada"
+          },
+          {
+            "a": 1,
+            "h": 1,
+            "away": "Kanada",
+            "home": "Schweiz"
+          },
+          {
+            "a": 0,
+            "h": 3,
+            "away": "Katar",
+            "home": "Bosnien-Herz."
+          }
+        ],
+        "C": [
+          {
+            "a": 1,
+            "h": 1,
+            "away": "Marokko",
+            "home": "Brasilien"
+          },
+          {
+            "a": 2,
+            "h": 0,
+            "away": "Schottland",
+            "home": "Haiti"
+          },
+          {
+            "a": 1,
+            "h": 0,
+            "away": "Marokko",
+            "home": "Schottland"
+          },
+          {
+            "a": 0,
+            "h": 3,
+            "away": "Haiti",
+            "home": "Brasilien"
+          },
+          {
+            "a": 2,
+            "h": 0,
+            "away": "Brasilien",
+            "home": "Schottland"
+          },
+          {
+            "a": 0,
+            "h": 3,
+            "away": "Haiti",
+            "home": "Marokko"
+          }
+        ],
+        "D": [
+          {
+            "a": 2,
+            "h": 1,
+            "away": "Paraguay",
+            "home": "USA"
+          },
+          {
+            "a": 1,
+            "h": 0,
+            "away": "Türkei",
+            "home": "Australien"
+          },
+          {
+            "a": 1,
+            "h": 1,
+            "away": "Australien",
+            "home": "USA"
+          },
+          {
+            "a": 1,
+            "h": 1,
+            "away": "Paraguay",
+            "home": "Türkei"
+          },
+          {
+            "a": 0,
+            "h": 1,
+            "away": "USA",
+            "home": "Türkei"
+          },
+          {
+            "a": 0,
+            "h": 1,
+            "away": "Australien",
+            "home": "Paraguay"
+          }
+        ],
+        "E": [
+          {
+            "a": 0,
+            "h": 3,
+            "away": "Curaçao",
+            "home": "Deutschland"
+          },
+          {
+            "a": 1,
+            "h": 1,
+            "away": "Ecuador",
+            "home": "Elfenbeinküste"
+          },
+          {
+            "a": 1,
+            "h": 1,
+            "away": "Elfenbeinküste",
+            "home": "Deutschland"
+          },
+          {
+            "a": 0,
+            "h": 1,
+            "away": "Curaçao",
+            "home": "Ecuador"
+          },
+          {
+            "a": 2,
+            "h": 0,
+            "away": "Elfenbeinküste",
+            "home": "Curaçao"
+          },
+          {
+            "a": 1,
+            "h": 1,
+            "away": "Deutschland",
+            "home": "Ecuador"
+          }
+        ],
+        "F": [
+          {
+            "a": 0,
+            "h": 1,
+            "away": "Japan",
+            "home": "Niederlande"
+          },
+          {
+            "a": 1,
+            "h": 1,
+            "away": "Tunesien",
+            "home": "Schweden"
+          },
+          {
+            "a": 0,
+            "h": 1,
+            "away": "Schweden",
+            "home": "Niederlande"
+          },
+          {
+            "a": 1,
+            "h": 1,
+            "away": "Japan",
+            "home": "Tunesien"
+          },
+          {
+            "a": 0,
+            "h": 0,
+            "away": "Schweden",
+            "home": "Japan"
+          },
+          {
+            "a": 1,
+            "h": 0,
+            "away": "Niederlande",
+            "home": "Tunesien"
+          }
+        ],
+        "G": [
+          {
+            "a": 1,
+            "h": 2,
+            "away": "Ägypten",
+            "home": "Belgien"
+          },
+          {
+            "a": 1,
+            "h": 0,
+            "away": "Neuseeland",
+            "home": "Iran"
+          },
+          {
+            "a": 0,
+            "h": 2,
+            "away": "Iran",
+            "home": "Belgien"
+          },
+          {
+            "a": 0,
+            "h": 0,
+            "away": "Ägypten",
+            "home": "Neuseeland"
+          },
+          {
+            "a": 0,
+            "h": 0,
+            "away": "Iran",
+            "home": "Ägypten"
+          },
+          {
+            "a": 2,
+            "h": 0,
+            "away": "Belgien",
+            "home": "Neuseeland"
+          }
+        ],
+        "H": [
+          {
+            "a": 0,
+            "h": 3,
+            "away": "Kap Verde",
+            "home": "Spanien"
+          },
+          {
+            "a": 1,
+            "h": 0,
+            "away": "Uruguay",
+            "home": "Saudi-Arabien"
+          },
+          {
+            "a": 0,
+            "h": 2,
+            "away": "Saudi-Arabien",
+            "home": "Spanien"
+          },
+          {
+            "a": 0,
+            "h": 2,
+            "away": "Kap Verde",
+            "home": "Uruguay"
+          },
+          {
+            "a": 1,
+            "h": 0,
+            "away": "Saudi-Arabien",
+            "home": "Kap Verde"
+          },
+          {
+            "a": 2,
+            "h": 1,
+            "away": "Spanien",
+            "home": "Uruguay"
+          }
+        ],
+        "I": [
+          {
+            "a": 1,
+            "h": 1,
+            "away": "Senegal",
+            "home": "Frankreich"
+          },
+          {
+            "a": 1,
+            "h": 0,
+            "away": "Norwegen",
+            "home": "Irak"
+          },
+          {
+            "a": 0,
+            "h": 3,
+            "away": "Irak",
+            "home": "Frankreich"
+          },
+          {
+            "a": 2,
+            "h": 1,
+            "away": "Senegal",
+            "home": "Norwegen"
+          },
+          {
+            "a": 2,
+            "h": 0,
+            "away": "Frankreich",
+            "home": "Norwegen"
+          },
+          {
+            "a": 0,
+            "h": 2,
+            "away": "Irak",
+            "home": "Senegal"
+          }
+        ],
+        "J": [
+          {
+            "a": 1,
+            "h": 1,
+            "away": "Algerien",
+            "home": "Argentinien"
+          },
+          {
+            "a": 1,
+            "h": 2,
+            "away": "Jordanien",
+            "home": "Österreich"
+          },
+          {
+            "a": 0,
+            "h": 2,
+            "away": "Österreich",
+            "home": "Argentinien"
+          },
+          {
+            "a": 1,
+            "h": 0,
+            "away": "Algerien",
+            "home": "Jordanien"
+          },
+          {
+            "a": 1,
+            "h": 2,
+            "away": "Österreich",
+            "home": "Algerien"
+          },
+          {
+            "a": 2,
+            "h": 0,
+            "away": "Argentinien",
+            "home": "Jordanien"
+          }
+        ],
+        "K": [
+          {
+            "a": 1,
+            "h": 2,
+            "away": "D.R. Kongo",
+            "home": "Portugal"
+          },
+          {
+            "a": 2,
+            "h": 0,
+            "away": "Kolumbien",
+            "home": "Usbekistan"
+          },
+          {
+            "a": 0,
+            "h": 2,
+            "away": "Usbekistan",
+            "home": "Portugal"
+          },
+          {
+            "a": 1,
+            "h": 1,
+            "away": "D.R. Kongo",
+            "home": "Kolumbien"
+          },
+          {
+            "a": 2,
+            "h": 1,
+            "away": "Portugal",
+            "home": "Kolumbien"
+          },
+          {
+            "a": 0,
+            "h": 1,
+            "away": "Usbekistan",
+            "home": "D.R. Kongo"
+          }
+        ],
+        "L": [
+          {
+            "a": 1,
+            "h": 1,
+            "away": "Kroatien",
+            "home": "England"
+          },
+          {
+            "a": 1,
+            "h": 2,
+            "away": "Panama",
+            "home": "Ghana"
+          },
+          {
+            "a": 1,
+            "h": 2,
+            "away": "Ghana",
+            "home": "England"
+          },
+          {
+            "a": 1,
+            "h": 0,
+            "away": "Kroatien",
+            "home": "Panama"
+          },
+          {
+            "a": 2,
+            "h": 0,
+            "away": "England",
+            "home": "Panama"
+          },
+          {
+            "a": 1,
+            "h": 1,
+            "away": "Ghana",
+            "home": "Kroatien"
+          }
+        ]
+      },
+      "version": "wm2026",
+      "surprise": "Mexiko",
+      "standings": {
+        "A": [
+          "Mexiko",
+          "Tschechien"
+        ],
+        "B": [
+          "Bosnien-Herz.",
+          "Schweiz"
+        ],
+        "C": [
+          "Brasilien",
+          "Marokko"
+        ],
+        "D": [
+          "Türkei",
+          "USA"
+        ],
+        "E": [
+          "Deutschland",
+          "Elfenbeinküste"
+        ],
+        "F": [
+          "Niederlande",
+          "Japan"
+        ],
+        "G": [
+          "Belgien",
+          "Ägypten"
+        ],
+        "H": [
+          "Spanien",
+          "Uruguay"
+        ],
+        "I": [
+          "Frankreich",
+          "Senegal"
+        ],
+        "J": [
+          "Argentinien",
+          "Algerien"
+        ],
+        "K": [
+          "Portugal",
+          "Kolumbien"
+        ],
+        "L": [
+          "England",
+          "Kroatien"
+        ]
+      },
+      "submitted": "2026-06-09T07:41:00.685Z",
+      "points": 1,
+      "log": [
+        {
+          "pts": 1,
+          "reason": "Mexiko-Südafrika 2:0"
+        }
+      ]
+    },
+    "Ronny": {
+      "name": "Ronny",
+      "pick1": "Deutschland",
+      "pick2": "Argentinien",
+      "pick3": "Portugal",
+      "matches": {
+        "A": [
+          {
+            "a": 0,
+            "h": 2,
+            "away": "Südafrika",
+            "home": "Mexiko"
+          },
+          {
+            "a": 1,
+            "h": 2,
+            "away": "Tschechien",
+            "home": "Südkorea"
+          },
+          {
+            "a": 1,
+            "h": 1,
+            "away": "Südafrika",
+            "home": "Tschechien"
+          },
+          {
+            "a": 2,
+            "h": 2,
+            "away": "Südkorea",
+            "home": "Mexiko"
+          },
+          {
+            "a": 2,
+            "h": 0,
+            "away": "Mexiko",
+            "home": "Tschechien"
+          },
+          {
+            "a": 2,
+            "h": 1,
+            "away": "Südkorea",
+            "home": "Südafrika"
+          }
+        ],
+        "B": [
+          {
+            "a": 1,
+            "h": 1,
+            "away": "Bosnien-Herz.",
+            "home": "Kanada"
+          },
+          {
+            "a": 2,
+            "h": 2,
+            "away": "Schweiz",
+            "home": "Katar"
+          },
+          {
+            "a": 0,
+            "h": 2,
+            "away": "Bosnien-Herz.",
+            "home": "Schweiz"
+          },
+          {
+            "a": 3,
+            "h": 1,
+            "away": "Katar",
+            "home": "Kanada"
+          },
+          {
+            "a": 2,
+            "h": 2,
+            "away": "Kanada",
+            "home": "Schweiz"
+          },
+          {
+            "a": 3,
+            "h": 0,
+            "away": "Katar",
+            "home": "Bosnien-Herz."
+          }
+        ],
+        "C": [
+          {
+            "a": 0,
+            "h": 2,
+            "away": "Marokko",
+            "home": "Brasilien"
+          },
+          {
+            "a": 1,
+            "h": 0,
+            "away": "Schottland",
+            "home": "Haiti"
+          },
+          {
+            "a": 0,
+            "h": 1,
+            "away": "Marokko",
+            "home": "Schottland"
+          },
+          {
+            "a": 1,
+            "h": 2,
+            "away": "Haiti",
+            "home": "Brasilien"
+          },
+          {
+            "a": 2,
+            "h": 1,
+            "away": "Brasilien",
+            "home": "Schottland"
+          },
+          {
+            "a": 0,
+            "h": 1,
+            "away": "Haiti",
+            "home": "Marokko"
+          }
+        ],
+        "D": [
+          {
+            "a": 1,
+            "h": 3,
+            "away": "Paraguay",
+            "home": "USA"
+          },
+          {
+            "a": 1,
+            "h": 2,
+            "away": "Türkei",
+            "home": "Australien"
+          },
+          {
+            "a": 2,
+            "h": 3,
+            "away": "Australien",
+            "home": "USA"
+          },
+          {
+            "a": 1,
+            "h": 3,
+            "away": "Paraguay",
+            "home": "Türkei"
+          },
+          {
+            "a": 3,
+            "h": 2,
+            "away": "USA",
+            "home": "Türkei"
+          },
+          {
+            "a": 2,
+            "h": 1,
+            "away": "Australien",
+            "home": "Paraguay"
+          }
+        ],
+        "E": [
+          {
+            "a": 1,
+            "h": 3,
+            "away": "Curaçao",
+            "home": "Deutschland"
+          },
+          {
+            "a": 1,
+            "h": 0,
+            "away": "Ecuador",
+            "home": "Elfenbeinküste"
+          },
+          {
+            "a": 0,
+            "h": 4,
+            "away": "Elfenbeinküste",
+            "home": "Deutschland"
+          },
+          {
+            "a": 0,
+            "h": 2,
+            "away": "Curaçao",
+            "home": "Ecuador"
+          },
+          {
+            "a": 0,
+            "h": 1,
+            "away": "Elfenbeinküste",
+            "home": "Curaçao"
+          },
+          {
+            "a": 3,
+            "h": 1,
+            "away": "Deutschland",
+            "home": "Ecuador"
+          }
+        ],
+        "F": [
+          {
+            "a": 4,
+            "h": 2,
+            "away": "Japan",
+            "home": "Niederlande"
+          },
+          {
+            "a": 0,
+            "h": 1,
+            "away": "Tunesien",
+            "home": "Schweden"
+          },
+          {
+            "a": 1,
+            "h": 3,
+            "away": "Schweden",
+            "home": "Niederlande"
+          },
+          {
+            "a": 3,
+            "h": 0,
+            "away": "Japan",
+            "home": "Tunesien"
+          },
+          {
+            "a": 1,
+            "h": 3,
+            "away": "Schweden",
+            "home": "Japan"
+          },
+          {
+            "a": 3,
+            "h": 0,
+            "away": "Niederlande",
+            "home": "Tunesien"
+          }
+        ],
+        "G": [
+          {
+            "a": 1,
+            "h": 2,
+            "away": "Ägypten",
+            "home": "Belgien"
+          },
+          {
+            "a": 2,
+            "h": 0,
+            "away": "Neuseeland",
+            "home": "Iran"
+          },
+          {
+            "a": 0,
+            "h": 1,
+            "away": "Iran",
+            "home": "Belgien"
+          },
+          {
+            "a": 2,
+            "h": 0,
+            "away": "Ägypten",
+            "home": "Neuseeland"
+          },
+          {
+            "a": 0,
+            "h": 2,
+            "away": "Iran",
+            "home": "Ägypten"
+          },
+          {
+            "a": 1,
+            "h": 1,
+            "away": "Belgien",
+            "home": "Neuseeland"
+          }
+        ],
+        "H": [
+          {
+            "a": 0,
+            "h": 3,
+            "away": "Kap Verde",
+            "home": "Spanien"
+          },
+          {
+            "a": 0,
+            "h": 3,
+            "away": "Uruguay",
+            "home": "Saudi-Arabien"
+          },
+          {
+            "a": 4,
+            "h": 3,
+            "away": "Saudi-Arabien",
+            "home": "Spanien"
+          },
+          {
+            "a": 0,
+            "h": 1,
+            "away": "Kap Verde",
+            "home": "Uruguay"
+          },
+          {
+            "a": 2,
+            "h": 0,
+            "away": "Saudi-Arabien",
+            "home": "Kap Verde"
+          },
+          {
+            "a": 3,
+            "h": 1,
+            "away": "Spanien",
+            "home": "Uruguay"
+          }
+        ],
+        "I": [
+          {
+            "a": 1,
+            "h": 3,
+            "away": "Senegal",
+            "home": "Frankreich"
+          },
+          {
+            "a": 2,
+            "h": 0,
+            "away": "Norwegen",
+            "home": "Irak"
+          },
+          {
+            "a": 0,
+            "h": 2,
+            "away": "Irak",
+            "home": "Frankreich"
+          },
+          {
+            "a": 0,
+            "h": 2,
+            "away": "Senegal",
+            "home": "Norwegen"
+          },
+          {
+            "a": 3,
+            "h": 1,
+            "away": "Frankreich",
+            "home": "Norwegen"
+          },
+          {
+            "a": 0,
+            "h": 2,
+            "away": "Irak",
+            "home": "Senegal"
+          }
+        ],
+        "J": [
+          {
+            "a": 0,
+            "h": 3,
+            "away": "Algerien",
+            "home": "Argentinien"
+          },
+          {
+            "a": 1,
+            "h": 2,
+            "away": "Jordanien",
+            "home": "Österreich"
+          },
+          {
+            "a": 1,
+            "h": 2,
+            "away": "Österreich",
+            "home": "Argentinien"
+          },
+          {
+            "a": 0,
+            "h": 2,
+            "away": "Algerien",
+            "home": "Jordanien"
+          },
+          {
+            "a": 1,
+            "h": 0,
+            "away": "Österreich",
+            "home": "Algerien"
+          },
+          {
+            "a": 3,
+            "h": 0,
+            "away": "Argentinien",
+            "home": "Jordanien"
+          }
+        ],
+        "K": [
+          {
+            "a": 0,
+            "h": 3,
+            "away": "D.R. Kongo",
+            "home": "Portugal"
+          },
+          {
+            "a": 1,
+            "h": 0,
+            "away": "Kolumbien",
+            "home": "Usbekistan"
+          },
+          {
+            "a": 0,
+            "h": 3,
+            "away": "Usbekistan",
+            "home": "Portugal"
+          },
+          {
+            "a": 0,
+            "h": 1,
+            "away": "D.R. Kongo",
+            "home": "Kolumbien"
+          },
+          {
+            "a": 3,
+            "h": 0,
+            "away": "Portugal",
+            "home": "Kolumbien"
+          },
+          {
+            "a": 1,
+            "h": 0,
+            "away": "Usbekistan",
+            "home": "D.R. Kongo"
+          }
+        ],
+        "L": [
+          {
+            "a": 4,
+            "h": 3,
+            "away": "Kroatien",
+            "home": "England"
+          },
+          {
+            "a": 2,
+            "h": 0,
+            "away": "Panama",
+            "home": "Ghana"
+          },
+          {
+            "a": 0,
+            "h": 3,
+            "away": "Ghana",
+            "home": "England"
+          },
+          {
+            "a": 3,
+            "h": 0,
+            "away": "Kroatien",
+            "home": "Panama"
+          },
+          {
+            "a": 3,
+            "h": 1,
+            "away": "England",
+            "home": "Panama"
+          },
+          {
+            "a": 1,
+            "h": 3,
+            "away": "Ghana",
+            "home": "Kroatien"
+          }
+        ]
+      },
+      "version": "wm2026",
+      "surprise": "Katar",
+      "standings": {
+        "A": [
+          "Mexiko",
+          "Südkorea"
+        ],
+        "B": [
+          "Katar",
+          "Schweiz"
+        ],
+        "C": [
+          "Brasilien",
+          "Schottland"
+        ],
+        "D": [
+          "USA",
+          "Türkei"
+        ],
+        "E": [
+          "Deutschland",
+          "Ecuador"
+        ],
+        "F": [
+          "Japan",
+          "Niederlande"
+        ],
+        "G": [
+          "Ägypten",
+          "Belgien"
+        ],
+        "H": [
+          "Spanien",
+          "Saudi-Arabien"
+        ],
+        "I": [
+          "Frankreich",
+          "Norwegen"
+        ],
+        "J": [
+          "Argentinien",
+          "Österreich"
+        ],
+        "K": [
+          "Portugal",
+          "Kolumbien"
+        ],
+        "L": [
+          "England",
+          "Kroatien"
+        ]
+      },
+      "submitted": "2026-06-09T08:25:32.465Z",
+      "points": 8,
+      "log": [
+        {
+          "pts": 4,
+          "reason": "Mexiko-Südafrika 2:0"
+        },
+        {
+          "pts": 4,
+          "reason": "Südkorea-Tschechien 2:1"
+        }
+      ]
+    },
+    "Yasin": {
+      "name": "Yasin",
+      "pick1": "Spanien",
+      "pick2": "Brasilien",
+      "pick3": "Marokko",
+      "matches": {
+        "A": [
+          {
+            "a": 0,
+            "h": 2,
+            "away": "Südafrika",
+            "home": "Mexiko"
+          },
+          {
+            "a": 2,
+            "h": 2,
+            "away": "Tschechien",
+            "home": "Südkorea"
+          },
+          {
+            "a": 1,
+            "h": 1,
+            "away": "Südafrika",
+            "home": "Tschechien"
+          },
+          {
+            "a": 1,
+            "h": 2,
+            "away": "Südkorea",
+            "home": "Mexiko"
+          },
+          {
+            "a": 1,
+            "h": 1,
+            "away": "Mexiko",
+            "home": "Tschechien"
+          },
+          {
+            "a": 2,
+            "h": 0,
+            "away": "Südkorea",
+            "home": "Südafrika"
+          }
+        ],
+        "B": [
+          {
+            "a": 2,
+            "h": 0,
+            "away": "Bosnien-Herz.",
+            "home": "Kanada"
+          },
+          {
+            "a": 3,
+            "h": 0,
+            "away": "Schweiz",
+            "home": "Katar"
+          },
+          {
+            "a": 1,
+            "h": 1,
+            "away": "Bosnien-Herz.",
+            "home": "Schweiz"
+          },
+          {
+            "a": 1,
+            "h": 2,
+            "away": "Katar",
+            "home": "Kanada"
+          },
+          {
+            "a": 0,
+            "h": 2,
+            "away": "Kanada",
+            "home": "Schweiz"
+          },
+          {
+            "a": 0,
+            "h": 4,
+            "away": "Katar",
+            "home": "Bosnien-Herz."
+          }
+        ],
+        "C": [
+          {
+            "a": 1,
+            "h": 1,
+            "away": "Marokko",
+            "home": "Brasilien"
+          },
+          {
+            "a": 2,
+            "h": 0,
+            "away": "Schottland",
+            "home": "Haiti"
+          },
+          {
+            "a": 2,
+            "h": 1,
+            "away": "Marokko",
+            "home": "Schottland"
+          },
+          {
+            "a": 0,
+            "h": 5,
+            "away": "Haiti",
+            "home": "Brasilien"
+          },
+          {
+            "a": 1,
+            "h": 0,
+            "away": "Brasilien",
+            "home": "Schottland"
+          },
+          {
+            "a": 0,
+            "h": 3,
+            "away": "Haiti",
+            "home": "Marokko"
+          }
+        ],
+        "D": [
+          {
+            "a": 0,
+            "h": 2,
+            "away": "Paraguay",
+            "home": "USA"
+          },
+          {
+            "a": 1,
+            "h": 1,
+            "away": "Türkei",
+            "home": "Australien"
+          },
+          {
+            "a": 0,
+            "h": 0,
+            "away": "Australien",
+            "home": "USA"
+          },
+          {
+            "a": 1,
+            "h": 2,
+            "away": "Paraguay",
+            "home": "Türkei"
+          },
+          {
+            "a": 1,
+            "h": 2,
+            "away": "USA",
+            "home": "Türkei"
+          },
+          {
+            "a": 2,
+            "h": 1,
+            "away": "Australien",
+            "home": "Paraguay"
+          }
+        ],
+        "E": [
+          {
+            "a": 0,
+            "h": 5,
+            "away": "Curaçao",
+            "home": "Deutschland"
+          },
+          {
+            "a": 0,
+            "h": 0,
+            "away": "Ecuador",
+            "home": "Elfenbeinküste"
+          },
+          {
+            "a": 1,
+            "h": 1,
+            "away": "Elfenbeinküste",
+            "home": "Deutschland"
+          },
+          {
+            "a": 1,
+            "h": 3,
+            "away": "Curaçao",
+            "home": "Ecuador"
+          },
+          {
+            "a": 2,
+            "h": 0,
+            "away": "Elfenbeinküste",
+            "home": "Curaçao"
+          },
+          {
+            "a": 2,
+            "h": 0,
+            "away": "Deutschland",
+            "home": "Ecuador"
+          }
+        ],
+        "F": [
+          {
+            "a": 0,
+            "h": 0,
+            "away": "Japan",
+            "home": "Niederlande"
+          },
+          {
+            "a": 1,
+            "h": 1,
+            "away": "Tunesien",
+            "home": "Schweden"
+          },
+          {
+            "a": 1,
+            "h": 2,
+            "away": "Schweden",
+            "home": "Niederlande"
+          },
+          {
+            "a": 2,
+            "h": 0,
+            "away": "Japan",
+            "home": "Tunesien"
+          },
+          {
+            "a": 1,
+            "h": 2,
+            "away": "Schweden",
+            "home": "Japan"
+          },
+          {
+            "a": 2,
+            "h": 0,
+            "away": "Niederlande",
+            "home": "Tunesien"
+          }
+        ],
+        "G": [
+          {
+            "a": 1,
+            "h": 2,
+            "away": "Ägypten",
+            "home": "Belgien"
+          },
+          {
+            "a": 1,
+            "h": 1,
+            "away": "Neuseeland",
+            "home": "Iran"
+          },
+          {
+            "a": 0,
+            "h": 3,
+            "away": "Iran",
+            "home": "Belgien"
+          },
+          {
+            "a": 2,
+            "h": 1,
+            "away": "Ägypten",
+            "home": "Neuseeland"
+          },
+          {
+            "a": 1,
+            "h": 2,
+            "away": "Iran",
+            "home": "Ägypten"
+          },
+          {
+            "a": 0,
+            "h": 0,
+            "away": "Belgien",
+            "home": "Neuseeland"
+          }
+        ],
+        "H": [
+          {
+            "a": 0,
+            "h": 6,
+            "away": "Kap Verde",
+            "home": "Spanien"
+          },
+          {
+            "a": 2,
+            "h": 1,
+            "away": "Uruguay",
+            "home": "Saudi-Arabien"
+          },
+          {
+            "a": 0,
+            "h": 2,
+            "away": "Saudi-Arabien",
+            "home": "Spanien"
+          },
+          {
+            "a": 0,
+            "h": 2,
+            "away": "Kap Verde",
+            "home": "Uruguay"
+          },
+          {
+            "a": 2,
+            "h": 1,
+            "away": "Saudi-Arabien",
+            "home": "Kap Verde"
+          },
+          {
+            "a": 2,
+            "h": 1,
+            "away": "Spanien",
+            "home": "Uruguay"
+          }
+        ],
+        "I": [
+          {
+            "a": 1,
+            "h": 1,
+            "away": "Senegal",
+            "home": "Frankreich"
+          },
+          {
+            "a": 1,
+            "h": 0,
+            "away": "Norwegen",
+            "home": "Irak"
+          },
+          {
+            "a": 0,
+            "h": 3,
+            "away": "Irak",
+            "home": "Frankreich"
+          },
+          {
+            "a": 1,
+            "h": 0,
+            "away": "Senegal",
+            "home": "Norwegen"
+          },
+          {
+            "a": 2,
+            "h": 1,
+            "away": "Frankreich",
+            "home": "Norwegen"
+          },
+          {
+            "a": 0,
+            "h": 4,
+            "away": "Irak",
+            "home": "Senegal"
+          }
+        ],
+        "J": [
+          {
+            "a": 1,
+            "h": 1,
+            "away": "Algerien",
+            "home": "Argentinien"
+          },
+          {
+            "a": 0,
+            "h": 2,
+            "away": "Jordanien",
+            "home": "Österreich"
+          },
+          {
+            "a": 1,
+            "h": 2,
+            "away": "Österreich",
+            "home": "Argentinien"
+          },
+          {
+            "a": 3,
+            "h": 1,
+            "away": "Algerien",
+            "home": "Jordanien"
+          },
+          {
+            "a": 0,
+            "h": 0,
+            "away": "Österreich",
+            "home": "Algerien"
+          },
+          {
+            "a": 3,
+            "h": 0,
+            "away": "Argentinien",
+            "home": "Jordanien"
+          }
+        ],
+        "K": [
+          {
+            "a": 1,
+            "h": 2,
+            "away": "D.R. Kongo",
+            "home": "Portugal"
+          },
+          {
+            "a": 3,
+            "h": 0,
+            "away": "Kolumbien",
+            "home": "Usbekistan"
+          },
+          {
+            "a": 1,
+            "h": 4,
+            "away": "Usbekistan",
+            "home": "Portugal"
+          },
+          {
+            "a": 1,
+            "h": 1,
+            "away": "D.R. Kongo",
+            "home": "Kolumbien"
+          },
+          {
+            "a": 2,
+            "h": 1,
+            "away": "Portugal",
+            "home": "Kolumbien"
+          },
+          {
+            "a": 0,
+            "h": 2,
+            "away": "Usbekistan",
+            "home": "D.R. Kongo"
+          }
+        ],
+        "L": [
+          {
+            "a": 2,
+            "h": 1,
+            "away": "Kroatien",
+            "home": "England"
+          },
+          {
+            "a": 0,
+            "h": 2,
+            "away": "Panama",
+            "home": "Ghana"
+          },
+          {
+            "a": 0,
+            "h": 3,
+            "away": "Ghana",
+            "home": "England"
+          },
+          {
+            "a": 2,
+            "h": 0,
+            "away": "Kroatien",
+            "home": "Panama"
+          },
+          {
+            "a": 2,
+            "h": 1,
+            "away": "England",
+            "home": "Panama"
+          },
+          {
+            "a": 1,
+            "h": 2,
+            "away": "Ghana",
+            "home": "Kroatien"
+          }
+        ]
+      },
+      "version": "wm2026",
+      "surprise": "Türkei",
+      "standings": {
+        "A": [
+          "Mexiko",
+          "Südkorea"
+        ],
+        "B": [
+          "Bosnien-Herz.",
+          "Schweiz"
+        ],
+        "C": [
+          "Brasilien",
+          "Marokko"
+        ],
+        "D": [
+          "Türkei",
+          "Australien"
+        ],
+        "E": [
+          "Deutschland",
+          "Elfenbeinküste"
+        ],
+        "F": [
+          "Niederlande",
+          "Japan"
+        ],
+        "G": [
+          "Belgien",
+          "Ägypten"
+        ],
+        "H": [
+          "Spanien",
+          "Uruguay"
+        ],
+        "I": [
+          "Senegal",
+          "Frankreich"
+        ],
+        "J": [
+          "Argentinien",
+          "Algerien"
+        ],
+        "K": [
+          "Portugal",
+          "Kolumbien"
+        ],
+        "L": [
+          "Kroatien",
+          "England"
+        ]
+      },
+      "submitted": "2026-06-09T13:52:38.888Z",
+      "points": 4,
+      "log": [
+        {
+          "pts": 4,
+          "reason": "Mexiko-Südafrika 2:0"
+        }
+      ]
+    },
+    "Steffi": {
+      "name": "Steffi",
+      "pick1": "Brasilien",
+      "pick2": "Argentinien",
+      "pick3": "Spanien",
+      "matches": {
+        "A": [
+          {
+            "a": 1,
+            "h": 2,
+            "away": "Südafrika",
+            "home": "Mexiko"
+          },
+          {
+            "a": 0,
+            "h": 2,
+            "away": "Tschechien",
+            "home": "Südkorea"
+          },
+          {
+            "a": 1,
+            "h": 1,
+            "away": "Südafrika",
+            "home": "Tschechien"
+          },
+          {
+            "a": 1,
+            "h": 2,
+            "away": "Südkorea",
+            "home": "Mexiko"
+          },
+          {
+            "a": 2,
+            "h": 0,
+            "away": "Mexiko",
+            "home": "Tschechien"
+          },
+          {
+            "a": 2,
+            "h": 0,
+            "away": "Südkorea",
+            "home": "Südafrika"
+          }
+        ],
+        "B": [
+          {
+            "a": 1,
+            "h": 2,
+            "away": "Bosnien-Herz.",
+            "home": "Kanada"
+          },
+          {
+            "a": 2,
+            "h": 0,
+            "away": "Schweiz",
+            "home": "Katar"
+          },
+          {
+            "a": 1,
+            "h": 2,
+            "away": "Bosnien-Herz.",
+            "home": "Schweiz"
+          },
+          {
+            "a": 0,
+            "h": 2,
+            "away": "Katar",
+            "home": "Kanada"
+          },
+          {
+            "a": 1,
+            "h": 1,
+            "away": "Kanada",
+            "home": "Schweiz"
+          },
+          {
+            "a": 1,
+            "h": 2,
+            "away": "Katar",
+            "home": "Bosnien-Herz."
+          }
+        ],
+        "C": [
+          {
+            "a": 0,
+            "h": 3,
+            "away": "Marokko",
+            "home": "Brasilien"
+          },
+          {
+            "a": 1,
+            "h": 1,
+            "away": "Schottland",
+            "home": "Haiti"
+          },
+          {
+            "a": 1,
+            "h": 1,
+            "away": "Marokko",
+            "home": "Schottland"
+          },
+          {
+            "a": 0,
+            "h": 3,
+            "away": "Haiti",
+            "home": "Brasilien"
+          },
+          {
+            "a": 3,
+            "h": 1,
+            "away": "Brasilien",
+            "home": "Schottland"
+          },
+          {
+            "a": 0,
+            "h": 2,
+            "away": "Haiti",
+            "home": "Marokko"
+          }
+        ],
+        "D": [
+          {
+            "a": 1,
+            "h": 2,
+            "away": "Paraguay",
+            "home": "USA"
+          },
+          {
+            "a": 0,
+            "h": 1,
+            "away": "Türkei",
+            "home": "Australien"
+          },
+          {
+            "a": 1,
+            "h": 1,
+            "away": "Australien",
+            "home": "USA"
+          },
+          {
+            "a": 1,
+            "h": 1,
+            "away": "Paraguay",
+            "home": "Türkei"
+          },
+          {
+            "a": 2,
+            "h": 1,
+            "away": "USA",
+            "home": "Türkei"
+          },
+          {
+            "a": 2,
+            "h": 1,
+            "away": "Australien",
+            "home": "Paraguay"
+          }
+        ],
+        "E": [
+          {
+            "a": 0,
+            "h": 3,
+            "away": "Curaçao",
+            "home": "Deutschland"
+          },
+          {
+            "a": 1,
+            "h": 1,
+            "away": "Ecuador",
+            "home": "Elfenbeinküste"
+          },
+          {
+            "a": 1,
+            "h": 3,
+            "away": "Elfenbeinküste",
+            "home": "Deutschland"
+          },
+          {
+            "a": 0,
+            "h": 2,
+            "away": "Curaçao",
+            "home": "Ecuador"
+          },
+          {
+            "a": 2,
+            "h": 0,
+            "away": "Elfenbeinküste",
+            "home": "Curaçao"
+          },
+          {
+            "a": 3,
+            "h": 1,
+            "away": "Deutschland",
+            "home": "Ecuador"
+          }
+        ],
+        "F": [
+          {
+            "a": 1,
+            "h": 3,
+            "away": "Japan",
+            "home": "Niederlande"
+          },
+          {
+            "a": 1,
+            "h": 0,
+            "away": "Tunesien",
+            "home": "Schweden"
+          },
+          {
+            "a": 1,
+            "h": 3,
+            "away": "Schweden",
+            "home": "Niederlande"
+          },
+          {
+            "a": 2,
+            "h": 1,
+            "away": "Japan",
+            "home": "Tunesien"
+          },
+          {
+            "a": 2,
+            "h": 2,
+            "away": "Schweden",
+            "home": "Japan"
+          },
+          {
+            "a": 3,
+            "h": 1,
+            "away": "Niederlande",
+            "home": "Tunesien"
+          }
+        ],
+        "G": [
+          {
+            "a": 1,
+            "h": 2,
+            "away": "Ägypten",
+            "home": "Belgien"
+          },
+          {
+            "a": 1,
+            "h": 1,
+            "away": "Neuseeland",
+            "home": "Iran"
+          },
+          {
+            "a": 0,
+            "h": 2,
+            "away": "Iran",
+            "home": "Belgien"
+          },
+          {
+            "a": 2,
+            "h": 0,
+            "away": "Ägypten",
+            "home": "Neuseeland"
+          },
+          {
+            "a": 2,
+            "h": 2,
+            "away": "Iran",
+            "home": "Ägypten"
+          },
+          {
+            "a": 2,
+            "h": 1,
+            "away": "Belgien",
+            "home": "Neuseeland"
+          }
+        ],
+        "H": [
+          {
+            "a": 0,
+            "h": 3,
+            "away": "Kap Verde",
+            "home": "Spanien"
+          },
+          {
+            "a": 1,
+            "h": 2,
+            "away": "Uruguay",
+            "home": "Saudi-Arabien"
+          },
+          {
+            "a": 1,
+            "h": 3,
+            "away": "Saudi-Arabien",
+            "home": "Spanien"
+          },
+          {
+            "a": 1,
+            "h": 1,
+            "away": "Kap Verde",
+            "home": "Uruguay"
+          },
+          {
+            "a": 2,
+            "h": 0,
+            "away": "Saudi-Arabien",
+            "home": "Kap Verde"
+          },
+          {
+            "a": 3,
+            "h": 1,
+            "away": "Spanien",
+            "home": "Uruguay"
+          }
+        ],
+        "I": [
+          {
+            "a": 1,
+            "h": 3,
+            "away": "Senegal",
+            "home": "Frankreich"
+          },
+          {
+            "a": 2,
+            "h": 0,
+            "away": "Norwegen",
+            "home": "Irak"
+          },
+          {
+            "a": 0,
+            "h": 3,
+            "away": "Irak",
+            "home": "Frankreich"
+          },
+          {
+            "a": 2,
+            "h": 1,
+            "away": "Senegal",
+            "home": "Norwegen"
+          },
+          {
+            "a": 3,
+            "h": 1,
+            "away": "Frankreich",
+            "home": "Norwegen"
+          },
+          {
+            "a": 2,
+            "h": 2,
+            "away": "Irak",
+            "home": "Senegal"
+          }
+        ],
+        "J": [
+          {
+            "a": 0,
+            "h": 3,
+            "away": "Algerien",
+            "home": "Argentinien"
+          },
+          {
+            "a": 1,
+            "h": 1,
+            "away": "Jordanien",
+            "home": "Österreich"
+          },
+          {
+            "a": 1,
+            "h": 2,
+            "away": "Österreich",
+            "home": "Argentinien"
+          },
+          {
+            "a": 2,
+            "h": 1,
+            "away": "Algerien",
+            "home": "Jordanien"
+          },
+          {
+            "a": 1,
+            "h": 0,
+            "away": "Österreich",
+            "home": "Algerien"
+          },
+          {
+            "a": 3,
+            "h": 0,
+            "away": "Argentinien",
+            "home": "Jordanien"
+          }
+        ],
+        "K": [
+          {
+            "a": 0,
+            "h": 3,
+            "away": "D.R. Kongo",
+            "home": "Portugal"
+          },
+          {
+            "a": 2,
+            "h": 1,
+            "away": "Kolumbien",
+            "home": "Usbekistan"
+          },
+          {
+            "a": 0,
+            "h": 3,
+            "away": "Usbekistan",
+            "home": "Portugal"
+          },
+          {
+            "a": 0,
+            "h": 2,
+            "away": "D.R. Kongo",
+            "home": "Kolumbien"
+          },
+          {
+            "a": 3,
+            "h": 1,
+            "away": "Portugal",
+            "home": "Kolumbien"
+          },
+          {
+            "a": 1,
+            "h": 1,
+            "away": "Usbekistan",
+            "home": "D.R. Kongo"
+          }
+        ],
+        "L": [
+          {
+            "a": 3,
+            "h": 3,
+            "away": "Kroatien",
+            "home": "England"
+          },
+          {
+            "a": 1,
+            "h": 1,
+            "away": "Panama",
+            "home": "Ghana"
+          },
+          {
+            "a": 0,
+            "h": 3,
+            "away": "Ghana",
+            "home": "England"
+          },
+          {
+            "a": 4,
+            "h": 0,
+            "away": "Kroatien",
+            "home": "Panama"
+          },
+          {
+            "a": 3,
+            "h": 1,
+            "away": "England",
+            "home": "Panama"
+          },
+          {
+            "a": 1,
+            "h": 2,
+            "away": "Ghana",
+            "home": "Kroatien"
+          }
+        ]
+      },
+      "version": "wm2026",
+      "surprise": "Kroatien",
+      "standings": {
+        "A": [
+          "Mexiko",
+          "Südkorea"
+        ],
+        "B": [
+          "Kanada",
+          "Schweiz"
+        ],
+        "C": [
+          "Brasilien",
+          "Marokko"
+        ],
+        "D": [
+          "USA",
+          "Australien"
+        ],
+        "E": [
+          "Deutschland",
+          "Ecuador"
+        ],
+        "F": [
+          "Niederlande",
+          "Japan"
+        ],
+        "G": [
+          "Belgien",
+          "Iran"
+        ],
+        "H": [
+          "Spanien",
+          "Uruguay"
+        ],
+        "I": [
+          "Frankreich",
+          "Senegal"
+        ],
+        "J": [
+          "Argentinien",
+          "Österreich"
+        ],
+        "K": [
+          "Portugal",
+          "Kolumbien"
+        ],
+        "L": [
+          "England",
+          "Kroatien"
+        ]
+      },
+      "submitted": "2026-06-09T18:12:22.443Z",
+      "points": 2,
+      "log": [
+        {
+          "pts": 1,
+          "reason": "Mexiko-Südafrika 2:0"
+        },
+        {
+          "pts": 1,
+          "reason": "Südkorea-Tschechien 2:1"
+        }
+      ]
+    },
+    "Orakel Uwe": {
+      "name": "Orakel Uwe",
+      "pick1": "Frankreich",
+      "pick2": "Spanien",
+      "pick3": "Deutschland",
+      "matches": {
+        "A": [
+          {
+            "a": 1,
+            "h": 2,
+            "away": "Südafrika",
+            "home": "Mexiko"
+          },
+          {
+            "a": 1,
+            "h": 1,
+            "away": "Tschechien",
+            "home": "Südkorea"
+          },
+          {
+            "a": 1,
+            "h": 2,
+            "away": "Südafrika",
+            "home": "Tschechien"
+          },
+          {
+            "a": 0,
+            "h": 1,
+            "away": "Südkorea",
+            "home": "Mexiko"
+          },
+          {
+            "a": 1,
+            "h": 1,
+            "away": "Mexiko",
+            "home": "Tschechien"
+          },
+          {
+            "a": 2,
+            "h": 0,
+            "away": "Südkorea",
+            "home": "Südafrika"
+          }
+        ],
+        "B": [
+          {
+            "a": 1,
+            "h": 1,
+            "away": "Bosnien-Herz.",
+            "home": "Kanada"
+          },
+          {
+            "a": 2,
+            "h": 0,
+            "away": "Schweiz",
+            "home": "Katar"
+          },
+          {
+            "a": 1,
+            "h": 2,
+            "away": "Bosnien-Herz.",
+            "home": "Schweiz"
+          },
+          {
+            "a": 0,
+            "h": 2,
+            "away": "Katar",
+            "home": "Kanada"
+          },
+          {
+            "a": 1,
+            "h": 1,
+            "away": "Kanada",
+            "home": "Schweiz"
+          },
+          {
+            "a": 0,
+            "h": 2,
+            "away": "Katar",
+            "home": "Bosnien-Herz."
+          }
+        ],
+        "C": [
+          {
+            "a": 1,
+            "h": 1,
+            "away": "Marokko",
+            "home": "Brasilien"
+          },
+          {
+            "a": 1,
+            "h": 0,
+            "away": "Schottland",
+            "home": "Haiti"
+          },
+          {
+            "a": 2,
+            "h": 0,
+            "away": "Marokko",
+            "home": "Schottland"
+          },
+          {
+            "a": 0,
+            "h": 3,
+            "away": "Haiti",
+            "home": "Brasilien"
+          },
+          {
+            "a": 2,
+            "h": 0,
+            "away": "Brasilien",
+            "home": "Schottland"
+          },
+          {
+            "a": 0,
+            "h": 3,
+            "away": "Haiti",
+            "home": "Marokko"
+          }
+        ],
+        "D": [
+          {
+            "a": 1,
+            "h": 1,
+            "away": "Paraguay",
+            "home": "USA"
+          },
+          {
+            "a": 2,
+            "h": 0,
+            "away": "Türkei",
+            "home": "Australien"
+          },
+          {
+            "a": 0,
+            "h": 2,
+            "away": "Australien",
+            "home": "USA"
+          },
+          {
+            "a": 1,
+            "h": 2,
+            "away": "Paraguay",
+            "home": "Türkei"
+          },
+          {
+            "a": 1,
+            "h": 2,
+            "away": "USA",
+            "home": "Türkei"
+          },
+          {
+            "a": 1,
+            "h": 1,
+            "away": "Australien",
+            "home": "Paraguay"
+          }
+        ],
+        "E": [
+          {
+            "a": 0,
+            "h": 3,
+            "away": "Curaçao",
+            "home": "Deutschland"
+          },
+          {
+            "a": 1,
+            "h": 1,
+            "away": "Ecuador",
+            "home": "Elfenbeinküste"
+          },
+          {
+            "a": 0,
+            "h": 2,
+            "away": "Elfenbeinküste",
+            "home": "Deutschland"
+          },
+          {
+            "a": 1,
+            "h": 3,
+            "away": "Curaçao",
+            "home": "Ecuador"
+          },
+          {
+            "a": 2,
+            "h": 0,
+            "away": "Elfenbeinküste",
+            "home": "Curaçao"
+          },
+          {
+            "a": 2,
+            "h": 1,
+            "away": "Deutschland",
+            "home": "Ecuador"
+          }
+        ],
+        "F": [
+          {
+            "a": 0,
+            "h": 1,
+            "away": "Japan",
+            "home": "Niederlande"
+          },
+          {
+            "a": 1,
+            "h": 1,
+            "away": "Tunesien",
+            "home": "Schweden"
+          },
+          {
+            "a": 0,
+            "h": 2,
+            "away": "Schweden",
+            "home": "Niederlande"
+          },
+          {
+            "a": 1,
+            "h": 1,
+            "away": "Japan",
+            "home": "Tunesien"
+          },
+          {
+            "a": 1,
+            "h": 1,
+            "away": "Schweden",
+            "home": "Japan"
+          },
+          {
+            "a": 2,
+            "h": 1,
+            "away": "Niederlande",
+            "home": "Tunesien"
+          }
+        ],
+        "G": [
+          {
+            "a": 1,
+            "h": 1,
+            "away": "Ägypten",
+            "home": "Belgien"
+          },
+          {
+            "a": 0,
+            "h": 1,
+            "away": "Neuseeland",
+            "home": "Iran"
+          },
+          {
+            "a": 0,
+            "h": 3,
+            "away": "Iran",
+            "home": "Belgien"
+          },
+          {
+            "a": 2,
+            "h": 0,
+            "away": "Ägypten",
+            "home": "Neuseeland"
+          },
+          {
+            "a": 0,
+            "h": 2,
+            "away": "Iran",
+            "home": "Ägypten"
+          },
+          {
+            "a": 3,
+            "h": 0,
+            "away": "Belgien",
+            "home": "Neuseeland"
+          }
+        ],
+        "H": [
+          {
+            "a": 0,
+            "h": 3,
+            "away": "Kap Verde",
+            "home": "Spanien"
+          },
+          {
+            "a": 2,
+            "h": 0,
+            "away": "Uruguay",
+            "home": "Saudi-Arabien"
+          },
+          {
+            "a": 0,
+            "h": 3,
+            "away": "Saudi-Arabien",
+            "home": "Spanien"
+          },
+          {
+            "a": 0,
+            "h": 3,
+            "away": "Kap Verde",
+            "home": "Uruguay"
+          },
+          {
+            "a": 2,
+            "h": 1,
+            "away": "Saudi-Arabien",
+            "home": "Kap Verde"
+          },
+          {
+            "a": 2,
+            "h": 1,
+            "away": "Spanien",
+            "home": "Uruguay"
+          }
+        ],
+        "I": [
+          {
+            "a": 0,
+            "h": 3,
+            "away": "Senegal",
+            "home": "Frankreich"
+          },
+          {
+            "a": 2,
+            "h": 0,
+            "away": "Norwegen",
+            "home": "Irak"
+          },
+          {
+            "a": 0,
+            "h": 4,
+            "away": "Irak",
+            "home": "Frankreich"
+          },
+          {
+            "a": 0,
+            "h": 2,
+            "away": "Senegal",
+            "home": "Norwegen"
+          },
+          {
+            "a": 2,
+            "h": 1,
+            "away": "Frankreich",
+            "home": "Norwegen"
+          },
+          {
+            "a": 0,
+            "h": 2,
+            "away": "Irak",
+            "home": "Senegal"
+          }
+        ],
+        "J": [
+          {
+            "a": 1,
+            "h": 2,
+            "away": "Algerien",
+            "home": "Argentinien"
+          },
+          {
+            "a": 0,
+            "h": 3,
+            "away": "Jordanien",
+            "home": "Österreich"
+          },
+          {
+            "a": 0,
+            "h": 2,
+            "away": "Österreich",
+            "home": "Argentinien"
+          },
+          {
+            "a": 2,
+            "h": 0,
+            "away": "Algerien",
+            "home": "Jordanien"
+          },
+          {
+            "a": 1,
+            "h": 1,
+            "away": "Österreich",
+            "home": "Algerien"
+          },
+          {
+            "a": 3,
+            "h": 0,
+            "away": "Argentinien",
+            "home": "Jordanien"
+          }
+        ],
+        "K": [
+          {
+            "a": 0,
+            "h": 2,
+            "away": "D.R. Kongo",
+            "home": "Portugal"
+          },
+          {
+            "a": 2,
+            "h": 0,
+            "away": "Kolumbien",
+            "home": "Usbekistan"
+          },
+          {
+            "a": 0,
+            "h": 3,
+            "away": "Usbekistan",
+            "home": "Portugal"
+          },
+          {
+            "a": 1,
+            "h": 2,
+            "away": "D.R. Kongo",
+            "home": "Kolumbien"
+          },
+          {
+            "a": 2,
+            "h": 1,
+            "away": "Portugal",
+            "home": "Kolumbien"
+          },
+          {
+            "a": 0,
+            "h": 2,
+            "away": "Usbekistan",
+            "home": "D.R. Kongo"
+          }
+        ],
+        "L": [
+          {
+            "a": 1,
+            "h": 1,
+            "away": "Kroatien",
+            "home": "England"
+          },
+          {
+            "a": 1,
+            "h": 1,
+            "away": "Panama",
+            "home": "Ghana"
+          },
+          {
+            "a": 0,
+            "h": 2,
+            "away": "Ghana",
+            "home": "England"
+          },
+          {
+            "a": 2,
+            "h": 0,
+            "away": "Kroatien",
+            "home": "Panama"
+          },
+          {
+            "a": 3,
+            "h": 0,
+            "away": "England",
+            "home": "Panama"
+          },
+          {
+            "a": 1,
+            "h": 2,
+            "away": "Ghana",
+            "home": "Kroatien"
+          }
+        ]
+      },
+      "version": "wm2026",
+      "surprise": "Norwegen",
+      "standings": {
+        "A": [
+          "Mexiko",
+          "Tschechien"
+        ],
+        "B": [
+          "Schweiz",
+          "Kanada"
+        ],
+        "C": [
+          "Brasilien",
+          "Marokko"
+        ],
+        "D": [
+          "Türkei",
+          "USA"
+        ],
+        "E": [
+          "Deutschland",
+          "Ecuador"
+        ],
+        "F": [
+          "Niederlande",
+          "Schweden"
+        ],
+        "G": [
+          "Belgien",
+          "Ägypten"
+        ],
+        "H": [
+          "Spanien",
+          "Uruguay"
+        ],
+        "I": [
+          "Frankreich",
+          "Norwegen"
+        ],
+        "J": [
+          "Argentinien",
+          "Österreich"
+        ],
+        "K": [
+          "Portugal",
+          "Kolumbien"
+        ],
+        "L": [
+          "England",
+          "Kroatien"
+        ]
+      },
+      "submitted": "2026-06-10T16:23:43.502Z",
+      "points": 1,
+      "log": [
+        {
+          "pts": 1,
+          "reason": "Mexiko-Südafrika 2:0"
+        }
+      ]
+    },
+    "Marius": {
+      "name": "Marius",
+      "pick1": "Deutschland",
+      "pick2": "Spanien",
+      "pick3": "Ghana",
+      "matches": {
+        "A": [
+          {
+            "a": 0,
+            "h": 2,
+            "away": "Südafrika",
+            "home": "Mexiko"
+          },
+          {
+            "a": 1,
+            "h": 2,
+            "away": "Tschechien",
+            "home": "Südkorea"
+          },
+          {
+            "a": 0,
+            "h": 2,
+            "away": "Südafrika",
+            "home": "Tschechien"
+          },
+          {
+            "a": 1,
+            "h": 1,
+            "away": "Südkorea",
+            "home": "Mexiko"
+          },
+          {
+            "a": 3,
+            "h": 1,
+            "away": "Mexiko",
+            "home": "Tschechien"
+          },
+          {
+            "a": 3,
+            "h": 1,
+            "away": "Südkorea",
+            "home": "Südafrika"
+          }
+        ],
+        "B": [
+          {
+            "a": 2,
+            "h": 1,
+            "away": "Bosnien-Herz.",
+            "home": "Kanada"
+          },
+          {
+            "a": 0,
+            "h": 0,
+            "away": "Schweiz",
+            "home": "Katar"
+          },
+          {
+            "a": 1,
+            "h": 1,
+            "away": "Bosnien-Herz.",
+            "home": "Schweiz"
+          },
+          {
+            "a": 0,
+            "h": 0,
+            "away": "Katar",
+            "home": "Kanada"
+          },
+          {
+            "a": 0,
+            "h": 2,
+            "away": "Kanada",
+            "home": "Schweiz"
+          },
+          {
+            "a": 0,
+            "h": 3,
+            "away": "Katar",
+            "home": "Bosnien-Herz."
+          }
+        ],
+        "C": [
+          {
+            "a": 1,
+            "h": 3,
+            "away": "Marokko",
+            "home": "Brasilien"
+          },
+          {
+            "a": 1,
+            "h": 0,
+            "away": "Schottland",
+            "home": "Haiti"
+          },
+          {
+            "a": 1,
+            "h": 0,
+            "away": "Marokko",
+            "home": "Schottland"
+          },
+          {
+            "a": 0,
+            "h": 5,
+            "away": "Haiti",
+            "home": "Brasilien"
+          },
+          {
+            "a": 3,
+            "h": 0,
+            "away": "Brasilien",
+            "home": "Schottland"
+          },
+          {
+            "a": 0,
+            "h": 2,
+            "away": "Haiti",
+            "home": "Marokko"
+          }
+        ],
+        "D": [
+          {
+            "a": 0,
+            "h": 2,
+            "away": "Paraguay",
+            "home": "USA"
+          },
+          {
+            "a": 3,
+            "h": 0,
+            "away": "Türkei",
+            "home": "Australien"
+          },
+          {
+            "a": 0,
+            "h": 1,
+            "away": "Australien",
+            "home": "USA"
+          },
+          {
+            "a": 1,
+            "h": 2,
+            "away": "Paraguay",
+            "home": "Türkei"
+          },
+          {
+            "a": 1,
+            "h": 2,
+            "away": "USA",
+            "home": "Türkei"
+          },
+          {
+            "a": 1,
+            "h": 1,
+            "away": "Australien",
+            "home": "Paraguay"
+          }
+        ],
+        "E": [
+          {
+            "a": 0,
+            "h": 4,
+            "away": "Curaçao",
+            "home": "Deutschland"
+          },
+          {
+            "a": 1,
+            "h": 2,
+            "away": "Ecuador",
+            "home": "Elfenbeinküste"
+          },
+          {
+            "a": 1,
+            "h": 2,
+            "away": "Elfenbeinküste",
+            "home": "Deutschland"
+          },
+          {
+            "a": 0,
+            "h": 2,
+            "away": "Curaçao",
+            "home": "Ecuador"
+          },
+          {
+            "a": 3,
+            "h": 0,
+            "away": "Elfenbeinküste",
+            "home": "Curaçao"
+          },
+          {
+            "a": 2,
+            "h": 0,
+            "away": "Deutschland",
+            "home": "Ecuador"
+          }
+        ],
+        "F": [
+          {
+            "a": 1,
+            "h": 1,
+            "away": "Japan",
+            "home": "Niederlande"
+          },
+          {
+            "a": 1,
+            "h": 1,
+            "away": "Tunesien",
+            "home": "Schweden"
+          },
+          {
+            "a": 1,
+            "h": 1,
+            "away": "Schweden",
+            "home": "Niederlande"
+          },
+          {
+            "a": 2,
+            "h": 0,
+            "away": "Japan",
+            "home": "Tunesien"
+          },
+          {
+            "a": 1,
+            "h": 2,
+            "away": "Schweden",
+            "home": "Japan"
+          },
+          {
+            "a": 2,
+            "h": 0,
+            "away": "Niederlande",
+            "home": "Tunesien"
+          }
+        ],
+        "G": [
+          {
+            "a": 1,
+            "h": 3,
+            "away": "Ägypten",
+            "home": "Belgien"
+          },
+          {
+            "a": 0,
+            "h": 0,
+            "away": "Neuseeland",
+            "home": "Iran"
+          },
+          {
+            "a": 0,
+            "h": 2,
+            "away": "Iran",
+            "home": "Belgien"
+          },
+          {
+            "a": 2,
+            "h": 0,
+            "away": "Ägypten",
+            "home": "Neuseeland"
+          },
+          {
+            "a": 0,
+            "h": 1,
+            "away": "Iran",
+            "home": "Ägypten"
+          },
+          {
+            "a": 2,
+            "h": 0,
+            "away": "Belgien",
+            "home": "Neuseeland"
+          }
+        ],
+        "H": [
+          {
+            "a": 0,
+            "h": 5,
+            "away": "Kap Verde",
+            "home": "Spanien"
+          },
+          {
+            "a": 0,
+            "h": 0,
+            "away": "Uruguay",
+            "home": "Saudi-Arabien"
+          },
+          {
+            "a": 0,
+            "h": 3,
+            "away": "Saudi-Arabien",
+            "home": "Spanien"
+          },
+          {
+            "a": 0,
+            "h": 1,
+            "away": "Kap Verde",
+            "home": "Uruguay"
+          },
+          {
+            "a": 1,
+            "h": 1,
+            "away": "Saudi-Arabien",
+            "home": "Kap Verde"
+          },
+          {
+            "a": 1,
+            "h": 0,
+            "away": "Spanien",
+            "home": "Uruguay"
+          }
+        ],
+        "I": [
+          {
+            "a": 2,
+            "h": 1,
+            "away": "Senegal",
+            "home": "Frankreich"
+          },
+          {
+            "a": 1,
+            "h": 1,
+            "away": "Norwegen",
+            "home": "Irak"
+          },
+          {
+            "a": 0,
+            "h": 2,
+            "away": "Irak",
+            "home": "Frankreich"
+          },
+          {
+            "a": 2,
+            "h": 0,
+            "away": "Senegal",
+            "home": "Norwegen"
+          },
+          {
+            "a": 3,
+            "h": 0,
+            "away": "Frankreich",
+            "home": "Norwegen"
+          },
+          {
+            "a": 0,
+            "h": 2,
+            "away": "Irak",
+            "home": "Senegal"
+          }
+        ],
+        "J": [
+          {
+            "a": 0,
+            "h": 2,
+            "away": "Algerien",
+            "home": "Argentinien"
+          },
+          {
+            "a": 0,
+            "h": 2,
+            "away": "Jordanien",
+            "home": "Österreich"
+          },
+          {
+            "a": 1,
+            "h": 1,
+            "away": "Österreich",
+            "home": "Argentinien"
+          },
+          {
+            "a": 0,
+            "h": 0,
+            "away": "Algerien",
+            "home": "Jordanien"
+          },
+          {
+            "a": 1,
+            "h": 1,
+            "away": "Österreich",
+            "home": "Algerien"
+          },
+          {
+            "a": 1,
+            "h": 0,
+            "away": "Argentinien",
+            "home": "Jordanien"
+          }
+        ],
+        "K": [
+          {
+            "a": 0,
+            "h": 2,
+            "away": "D.R. Kongo",
+            "home": "Portugal"
+          },
+          {
+            "a": 2,
+            "h": 1,
+            "away": "Kolumbien",
+            "home": "Usbekistan"
+          },
+          {
+            "a": 0,
+            "h": 2,
+            "away": "Usbekistan",
+            "home": "Portugal"
+          },
+          {
+            "a": 1,
+            "h": 2,
+            "away": "D.R. Kongo",
+            "home": "Kolumbien"
+          },
+          {
+            "a": 1,
+            "h": 1,
+            "away": "Portugal",
+            "home": "Kolumbien"
+          },
+          {
+            "a": 2,
+            "h": 3,
+            "away": "Usbekistan",
+            "home": "D.R. Kongo"
+          }
+        ],
+        "L": [
+          {
+            "a": 2,
+            "h": 2,
+            "away": "Kroatien",
+            "home": "England"
+          },
+          {
+            "a": 0,
+            "h": 2,
+            "away": "Panama",
+            "home": "Ghana"
+          },
+          {
+            "a": 2,
+            "h": 1,
+            "away": "Ghana",
+            "home": "England"
+          },
+          {
+            "a": 2,
+            "h": 0,
+            "away": "Kroatien",
+            "home": "Panama"
+          },
+          {
+            "a": 3,
+            "h": 0,
+            "away": "England",
+            "home": "Panama"
+          },
+          {
+            "a": 1,
+            "h": 1,
+            "away": "Ghana",
+            "home": "Kroatien"
+          }
+        ]
+      },
+      "version": "wm2026",
+      "surprise": "Ghana",
+      "standings": {
+        "A": [
+          "Mexiko",
+          "Südkorea"
+        ],
+        "B": [
+          "Bosnien-Herz.",
+          "Schweiz"
+        ],
+        "C": [
+          "Brasilien",
+          "Marokko"
+        ],
+        "D": [
+          "Türkei",
+          "USA"
+        ],
+        "E": [
+          "Deutschland",
+          "Elfenbeinküste"
+        ],
+        "F": [
+          "Japan",
+          "Niederlande"
+        ],
+        "G": [
+          "Belgien",
+          "Ägypten"
+        ],
+        "H": [
+          "Spanien",
+          "Uruguay"
+        ],
+        "I": [
+          "Frankreich",
+          "Senegal"
+        ],
+        "J": [
+          "Argentinien",
+          "Österreich"
+        ],
+        "K": [
+          "Portugal",
+          "Kolumbien"
+        ],
+        "L": [
+          "Ghana",
+          "England"
+        ]
+      },
+      "submitted": "2026-06-11T09:11:58.757Z",
+      "points": 8,
+      "log": [
+        {
+          "pts": 4,
+          "reason": "Mexiko-Südafrika 2:0"
+        },
+        {
+          "pts": 4,
+          "reason": "Südkorea-Tschechien 2:1"
+        }
+      ]
+    },
+    "Katja": {
+      "name": "Katja",
+      "matches": {
+        "A": [
+          {
+            "home": "Mexiko",
+            "away": "Südafrika",
+            "h": 2,
+            "a": 0
+          },
+          {
+            "home": "Südkorea",
+            "away": "Tschechien",
+            "h": 1,
+            "a": 2
+          },
+          {
+            "home": "Tschechien",
+            "away": "Südafrika",
+            "h": 3,
+            "a": 1
+          },
+          {
+            "home": "Mexiko",
+            "away": "Südkorea",
+            "h": 2,
+            "a": 1
+          },
+          {
+            "home": "Tschechien",
+            "away": "Mexiko",
+            "h": 2,
+            "a": 2
+          },
+          {
+            "home": "Südafrika",
+            "away": "Südkorea",
+            "h": 1,
+            "a": 1
+          }
+        ],
+        "B": [
+          {
+            "home": "Kanada",
+            "away": "Bosnien-Herz.",
+            "h": 2,
+            "a": 2
+          },
+          {
+            "home": "Katar",
+            "away": "Schweiz",
+            "h": 1,
+            "a": 3
+          },
+          {
+            "home": "Schweiz",
+            "away": "Bosnien-Herz.",
+            "h": 3,
+            "a": 1
+          },
+          {
+            "home": "Kanada",
+            "away": "Katar",
+            "h": 1,
+            "a": 1
+          },
+          {
+            "home": "Schweiz",
+            "away": "Kanada",
+            "h": 2,
+            "a": 1
+          },
+          {
+            "home": "Bosnien-Herz.",
+            "away": "Katar",
+            "h": 2,
+            "a": 1
+          }
+        ],
+        "C": [
+          {
+            "home": "Brasilien",
+            "away": "Marokko",
+            "h": 4,
+            "a": 2
+          },
+          {
+            "home": "Haiti",
+            "away": "Schottland",
+            "h": 0,
+            "a": 3
+          },
+          {
+            "home": "Schottland",
+            "away": "Marokko",
+            "h": 2,
+            "a": 2
+          },
+          {
+            "home": "Brasilien",
+            "away": "Haiti",
+            "h": 4,
+            "a": 0
+          },
+          {
+            "home": "Schottland",
+            "away": "Brasilien",
+            "h": 2,
+            "a": 4
+          },
+          {
+            "home": "Marokko",
+            "away": "Haiti",
+            "h": 3,
+            "a": 1
+          }
+        ],
+        "D": [
+          {
+            "home": "USA",
+            "away": "Paraguay",
+            "h": 2,
+            "a": 2
+          },
+          {
+            "home": "Australien",
+            "away": "Türkei",
+            "h": 1,
+            "a": 2
+          },
+          {
+            "home": "USA",
+            "away": "Australien",
+            "h": 2,
+            "a": 1
+          },
+          {
+            "home": "Türkei",
+            "away": "Paraguay",
+            "h": 3,
+            "a": 2
+          },
+          {
+            "home": "Türkei",
+            "away": "USA",
+            "h": 2,
+            "a": 2
+          },
+          {
+            "home": "Paraguay",
+            "away": "Australien",
+            "h": 2,
+            "a": 2
+          }
+        ],
+        "E": [
+          {
+            "home": "Deutschland",
+            "away": "Curaçao",
+            "h": 5,
+            "a": 0
+          },
+          {
+            "home": "Elfenbeinküste",
+            "away": "Ecuador",
+            "h": 2,
+            "a": 2
+          },
+          {
+            "home": "Deutschland",
+            "away": "Elfenbeinküste",
+            "h": 3,
+            "a": 1
+          },
+          {
+            "home": "Ecuador",
+            "away": "Curaçao",
+            "h": 3,
+            "a": 1
+          },
+          {
+            "home": "Curaçao",
+            "away": "Elfenbeinküste",
+            "h": 0,
+            "a": 3
+          },
+          {
+            "home": "Ecuador",
+            "away": "Deutschland",
+            "h": 1,
+            "a": 3
+          }
+        ],
+        "F": [
+          {
+            "home": "Niederlande",
+            "away": "Japan",
+            "h": 3,
+            "a": 1
+          },
+          {
+            "home": "Schweden",
+            "away": "Tunesien",
+            "h": 2,
+            "a": 2
+          },
+          {
+            "home": "Niederlande",
+            "away": "Schweden",
+            "h": 2,
+            "a": 2
+          },
+          {
+            "home": "Tunesien",
+            "away": "Japan",
+            "h": 3,
+            "a": 2
+          },
+          {
+            "home": "Japan",
+            "away": "Schweden",
+            "h": 1,
+            "a": 1
+          },
+          {
+            "home": "Tunesien",
+            "away": "Niederlande",
+            "h": 1,
+            "a": 2
+          }
+        ],
+        "G": [
+          {
+            "home": "Belgien",
+            "away": "Ägypten",
+            "h": 3,
+            "a": 1
+          },
+          {
+            "home": "Iran",
+            "away": "Neuseeland",
+            "h": 1,
+            "a": 1
+          },
+          {
+            "home": "Belgien",
+            "away": "Iran",
+            "h": 3,
+            "a": 1
+          },
+          {
+            "home": "Neuseeland",
+            "away": "Ägypten",
+            "h": 1,
+            "a": 2
+          },
+          {
+            "home": "Ägypten",
+            "away": "Iran",
+            "h": 2,
+            "a": 1
+          },
+          {
+            "home": "Neuseeland",
+            "away": "Belgien",
+            "h": 1,
+            "a": 3
+          }
+        ],
+        "H": [
+          {
+            "home": "Spanien",
+            "away": "Kap Verde",
+            "h": 4,
+            "a": 0
+          },
+          {
+            "home": "Saudi-Arabien",
+            "away": "Uruguay",
+            "h": 1,
+            "a": 3
+          },
+          {
+            "home": "Spanien",
+            "away": "Saudi-Arabien",
+            "h": 4,
+            "a": 1
+          },
+          {
+            "home": "Uruguay",
+            "away": "Kap Verde",
+            "h": 3,
+            "a": 0
+          },
+          {
+            "home": "Kap Verde",
+            "away": "Saudi-Arabien",
+            "h": 0,
+            "a": 2
+          },
+          {
+            "home": "Uruguay",
+            "away": "Spanien",
+            "h": 1,
+            "a": 3
+          }
+        ],
+        "I": [
+          {
+            "home": "Frankreich",
+            "away": "Senegal",
+            "h": 2,
+            "a": 1
+          },
+          {
+            "home": "Irak",
+            "away": "Norwegen",
+            "h": 1,
+            "a": 1
+          },
+          {
+            "home": "Frankreich",
+            "away": "Irak",
+            "h": 3,
+            "a": 1
+          },
+          {
+            "home": "Norwegen",
+            "away": "Senegal",
+            "h": 2,
+            "a": 2
+          },
+          {
+            "home": "Norwegen",
+            "away": "Frankreich",
+            "h": 1,
+            "a": 3
+          },
+          {
+            "home": "Senegal",
+            "away": "Irak",
+            "h": 3,
+            "a": 1
+          }
+        ],
+        "J": [
+          {
+            "home": "Argentinien",
+            "away": "Algerien",
+            "h": 4,
+            "a": 2
+          },
+          {
+            "home": "Österreich",
+            "away": "Jordanien",
+            "h": 2,
+            "a": 2
+          },
+          {
+            "home": "Argentinien",
+            "away": "Österreich",
+            "h": 4,
+            "a": 1
+          },
+          {
+            "home": "Jordanien",
+            "away": "Algerien",
+            "h": 2,
+            "a": 2
+          },
+          {
+            "home": "Algerien",
+            "away": "Österreich",
+            "h": 2,
+            "a": 1
+          },
+          {
+            "home": "Jordanien",
+            "away": "Argentinien",
+            "h": 1,
+            "a": 4
+          }
+        ],
+        "K": [
+          {
+            "home": "Portugal",
+            "away": "D.R. Kongo",
+            "h": 3,
+            "a": 0
+          },
+          {
+            "home": "Usbekistan",
+            "away": "Kolumbien",
+            "h": 1,
+            "a": 4
+          },
+          {
+            "home": "Portugal",
+            "away": "Usbekistan",
+            "h": 4,
+            "a": 1
+          },
+          {
+            "home": "Kolumbien",
+            "away": "D.R. Kongo",
+            "h": 3,
+            "a": 1
+          },
+          {
+            "home": "Kolumbien",
+            "away": "Portugal",
+            "h": 2,
+            "a": 3
+          },
+          {
+            "home": "D.R. Kongo",
+            "away": "Usbekistan",
+            "h": 1,
+            "a": 2
+          }
+        ],
+        "L": [
+          {
+            "home": "England",
+            "away": "Kroatien",
+            "h": 2,
+            "a": 1
+          },
+          {
+            "home": "Ghana",
+            "away": "Panama",
+            "h": 3,
+            "a": 1
+          },
+          {
+            "home": "England",
+            "away": "Ghana",
+            "h": 3,
+            "a": 1
+          },
+          {
+            "home": "Panama",
+            "away": "Kroatien",
+            "h": 1,
+            "a": 2
+          },
+          {
+            "home": "Panama",
+            "away": "England",
+            "h": 0,
+            "a": 3
+          },
+          {
+            "home": "Kroatien",
+            "away": "Ghana",
+            "h": 2,
+            "a": 2
+          }
+        ]
+      },
+      "standings": {
+        "A": [
+          "Mexiko",
+          "Tschechien"
+        ],
+        "B": [
+          "Schweiz",
+          "Kanada"
+        ],
+        "C": [
+          "Brasilien",
+          "Schottland"
+        ],
+        "D": [
+          "USA",
+          "Türkei"
+        ],
+        "E": [
+          "Deutschland",
+          "Elfenbeinküste"
+        ],
+        "F": [
+          "Niederlande",
+          "Schweden"
+        ],
+        "G": [
+          "Belgien",
+          "Ägypten"
+        ],
+        "H": [
+          "Spanien",
+          "Uruguay"
+        ],
+        "I": [
+          "Frankreich",
+          "Senegal"
+        ],
+        "J": [
+          "Argentinien",
+          "Algerien"
+        ],
+        "K": [
+          "Portugal",
+          "Kolumbien"
+        ],
+        "L": [
+          "England",
+          "Ghana"
+        ]
+      },
+      "pick1": "Deutschland",
+      "pick2": "Brasilien",
+      "pick3": "Spanien",
+      "surprise": "USA",
+      "submitted": "2026-06-11T08:47:54.605Z",
+      "version": "wm2026",
+      "points": 4,
+      "log": [
+        {
+          "pts": 4,
+          "reason": "Mexiko-Südafrika 2:0"
+        }
+      ]
+    }
+  }
+}
