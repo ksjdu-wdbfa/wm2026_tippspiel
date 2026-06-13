@@ -1,6 +1,6 @@
 {
   "version": "wm2026-data",
-  "lastUpdate": "2026-06-12T04:10:12.034Z",
+  "lastUpdate": "2026-06-13T07:23:51.843Z",
   "results": {
     "A_0": {
       "h": 2,
@@ -8,6 +8,14 @@
     },
     "A_1": {
       "h": 2,
+      "a": 1
+    },
+    "B_0": {
+      "h": 1,
+      "a": 1
+    },
+    "D_0": {
+      "h": 4,
       "a": 1
     }
   },
@@ -528,11 +536,19 @@
         ]
       },
       "submitted": "2026-06-04T14:00:04.739Z",
-      "points": 4,
+      "points": 8,
       "log": [
         {
           "pts": 4,
           "reason": "Mexiko-Südafrika 2:0"
+        },
+        {
+          "pts": 2,
+          "reason": "Kanada-Bosnien-Herz. 1:1"
+        },
+        {
+          "pts": 2,
+          "reason": "USA-Paraguay 4:1"
         }
       ]
     },
@@ -2104,11 +2120,15 @@
         ]
       },
       "submitted": "2026-06-11T06:29:42.345Z",
-      "points": 1,
+      "points": 2,
       "log": [
         {
           "pts": 1,
           "reason": "Mexiko-Südafrika 2:0"
+        },
+        {
+          "pts": 1,
+          "reason": "USA-Paraguay 4:1"
         }
       ]
     },
@@ -2628,7 +2648,7 @@
         ]
       },
       "submitted": "2026-06-08T17:20:31.028Z",
-      "points": 5,
+      "points": 10,
       "log": [
         {
           "pts": 1,
@@ -2637,6 +2657,14 @@
         {
           "pts": 4,
           "reason": "Südkorea-Tschechien 2:1"
+        },
+        {
+          "pts": 4,
+          "reason": "Kanada-Bosnien-Herz. 1:1"
+        },
+        {
+          "pts": 1,
+          "reason": "USA-Paraguay 4:1"
         }
       ]
     },
@@ -3156,11 +3184,15 @@
         ]
       },
       "submitted": "2026-06-09T05:20:46.829Z",
-      "points": 4,
+      "points": 8,
       "log": [
         {
           "pts": 4,
           "reason": "Mexiko-Südafrika 2:0"
+        },
+        {
+          "pts": 4,
+          "reason": "Kanada-Bosnien-Herz. 1:1"
         }
       ]
     },
@@ -4204,7 +4236,7 @@
         ]
       },
       "submitted": "2026-06-09T08:25:32.465Z",
-      "points": 8,
+      "points": 13,
       "log": [
         {
           "pts": 4,
@@ -4213,6 +4245,14 @@
         {
           "pts": 4,
           "reason": "Südkorea-Tschechien 2:1"
+        },
+        {
+          "pts": 4,
+          "reason": "Kanada-Bosnien-Herz. 1:1"
+        },
+        {
+          "pts": 1,
+          "reason": "USA-Paraguay 4:1"
         }
       ]
     },
@@ -4732,11 +4772,15 @@
         ]
       },
       "submitted": "2026-06-09T13:52:38.888Z",
-      "points": 4,
+      "points": 5,
       "log": [
         {
           "pts": 4,
           "reason": "Mexiko-Südafrika 2:0"
+        },
+        {
+          "pts": 1,
+          "reason": "USA-Paraguay 4:1"
         }
       ]
     },
@@ -5256,7 +5300,7 @@
         ]
       },
       "submitted": "2026-06-09T18:12:22.443Z",
-      "points": 2,
+      "points": 3,
       "log": [
         {
           "pts": 1,
@@ -5265,6 +5309,10 @@
         {
           "pts": 1,
           "reason": "Südkorea-Tschechien 2:1"
+        },
+        {
+          "pts": 1,
+          "reason": "USA-Paraguay 4:1"
         }
       ]
     },
@@ -5784,11 +5832,15 @@
         ]
       },
       "submitted": "2026-06-10T16:23:43.502Z",
-      "points": 1,
+      "points": 5,
       "log": [
         {
           "pts": 1,
           "reason": "Mexiko-Südafrika 2:0"
+        },
+        {
+          "pts": 4,
+          "reason": "Kanada-Bosnien-Herz. 1:1"
         }
       ]
     },
@@ -6308,7 +6360,7 @@
         ]
       },
       "submitted": "2026-06-11T09:11:58.757Z",
-      "points": 8,
+      "points": 9,
       "log": [
         {
           "pts": 4,
@@ -6317,6 +6369,10 @@
         {
           "pts": 4,
           "reason": "Südkorea-Tschechien 2:1"
+        },
+        {
+          "pts": 1,
+          "reason": "USA-Paraguay 4:1"
         }
       ]
     },
@@ -6836,11 +6892,15 @@
       "surprise": "USA",
       "submitted": "2026-06-11T08:47:54.605Z",
       "version": "wm2026",
-      "points": 4,
+      "points": 6,
       "log": [
         {
           "pts": 4,
           "reason": "Mexiko-Südafrika 2:0"
+        },
+        {
+          "pts": 2,
+          "reason": "Kanada-Bosnien-Herz. 1:1"
         }
       ]
     }
