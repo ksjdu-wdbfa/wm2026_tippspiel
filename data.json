@@ -1,6 +1,6 @@
 {
   "version": "wm2026-data",
-  "lastUpdate": "2026-06-13T07:23:51.843Z",
+  "lastUpdate": "2026-06-14T06:01:23.067Z",
   "results": {
     "A_0": {
       "h": 2,
@@ -17,6 +17,22 @@
     "D_0": {
       "h": 4,
       "a": 1
+    },
+    "B_1": {
+      "h": 1,
+      "a": 1
+    },
+    "C_0": {
+      "h": 1,
+      "a": 1
+    },
+    "C_1": {
+      "h": 0,
+      "a": 1
+    },
+    "D_1": {
+      "h": 2,
+      "a": 0
     }
   },
   "tips": {
@@ -536,7 +552,7 @@
         ]
       },
       "submitted": "2026-06-04T14:00:04.739Z",
-      "points": 8,
+      "points": 9,
       "log": [
         {
           "pts": 4,
@@ -545,6 +561,10 @@
         {
           "pts": 2,
           "reason": "Kanada-Bosnien-Herz. 1:1"
+        },
+        {
+          "pts": 1,
+          "reason": "Haiti-Schottland 0:1"
         },
         {
           "pts": 2,
@@ -1068,11 +1088,19 @@
         ]
       },
       "submitted": "2026-06-08T05:13:16.405Z",
-      "points": 4,
+      "points": 10,
       "log": [
         {
           "pts": 4,
           "reason": "Mexiko-Südafrika 2:0"
+        },
+        {
+          "pts": 4,
+          "reason": "Brasilien-Marokko 1:1"
+        },
+        {
+          "pts": 2,
+          "reason": "Haiti-Schottland 0:1"
         }
       ]
     },
@@ -1592,7 +1620,7 @@
         ]
       },
       "submitted": "2026-06-08T09:59:26.544Z",
-      "points": 5,
+      "points": 6,
       "log": [
         {
           "pts": 1,
@@ -1601,6 +1629,10 @@
         {
           "pts": 4,
           "reason": "Südkorea-Tschechien 2:1"
+        },
+        {
+          "pts": 1,
+          "reason": "Haiti-Schottland 0:1"
         }
       ]
     },
@@ -2120,11 +2152,15 @@
         ]
       },
       "submitted": "2026-06-11T06:29:42.345Z",
-      "points": 2,
+      "points": 3,
       "log": [
         {
           "pts": 1,
           "reason": "Mexiko-Südafrika 2:0"
+        },
+        {
+          "pts": 1,
+          "reason": "Haiti-Schottland 0:1"
         },
         {
           "pts": 1,
@@ -2648,7 +2684,7 @@
         ]
       },
       "submitted": "2026-06-08T17:20:31.028Z",
-      "points": 10,
+      "points": 12,
       "log": [
         {
           "pts": 1,
@@ -2661,6 +2697,10 @@
         {
           "pts": 4,
           "reason": "Kanada-Bosnien-Herz. 1:1"
+        },
+        {
+          "pts": 2,
+          "reason": "Haiti-Schottland 0:1"
         },
         {
           "pts": 1,
@@ -3184,7 +3224,7 @@
         ]
       },
       "submitted": "2026-06-09T05:20:46.829Z",
-      "points": 8,
+      "points": 12,
       "log": [
         {
           "pts": 4,
@@ -3193,6 +3233,10 @@
         {
           "pts": 4,
           "reason": "Kanada-Bosnien-Herz. 1:1"
+        },
+        {
+          "pts": 4,
+          "reason": "Haiti-Schottland 0:1"
         }
       ]
     },
@@ -3712,11 +3756,19 @@
         ]
       },
       "submitted": "2026-06-09T07:41:00.685Z",
-      "points": 1,
+      "points": 6,
       "log": [
         {
           "pts": 1,
           "reason": "Mexiko-Südafrika 2:0"
+        },
+        {
+          "pts": 4,
+          "reason": "Brasilien-Marokko 1:1"
+        },
+        {
+          "pts": 1,
+          "reason": "Haiti-Schottland 0:1"
         }
       ]
     },
@@ -4236,7 +4288,7 @@
         ]
       },
       "submitted": "2026-06-09T08:25:32.465Z",
-      "points": 13,
+      "points": 20,
       "log": [
         {
           "pts": 4,
@@ -4251,8 +4303,20 @@
           "reason": "Kanada-Bosnien-Herz. 1:1"
         },
         {
+          "pts": 2,
+          "reason": "Katar-Schweiz 1:1"
+        },
+        {
+          "pts": 4,
+          "reason": "Haiti-Schottland 0:1"
+        },
+        {
           "pts": 1,
           "reason": "USA-Paraguay 4:1"
+        },
+        {
+          "pts": 1,
+          "reason": "Australien-Türkei 2:0"
         }
       ]
     },
@@ -4772,11 +4836,19 @@
         ]
       },
       "submitted": "2026-06-09T13:52:38.888Z",
-      "points": 5,
+      "points": 10,
       "log": [
         {
           "pts": 4,
           "reason": "Mexiko-Südafrika 2:0"
+        },
+        {
+          "pts": 4,
+          "reason": "Brasilien-Marokko 1:1"
+        },
+        {
+          "pts": 1,
+          "reason": "Haiti-Schottland 0:1"
         },
         {
           "pts": 1,
@@ -5300,7 +5372,7 @@
         ]
       },
       "submitted": "2026-06-09T18:12:22.443Z",
-      "points": 3,
+      "points": 4,
       "log": [
         {
           "pts": 1,
@@ -5313,6 +5385,10 @@
         {
           "pts": 1,
           "reason": "USA-Paraguay 4:1"
+        },
+        {
+          "pts": 1,
+          "reason": "Australien-Türkei 2:0"
         }
       ]
     },
@@ -5832,7 +5908,7 @@
         ]
       },
       "submitted": "2026-06-10T16:23:43.502Z",
-      "points": 5,
+      "points": 13,
       "log": [
         {
           "pts": 1,
@@ -5841,6 +5917,14 @@
         {
           "pts": 4,
           "reason": "Kanada-Bosnien-Herz. 1:1"
+        },
+        {
+          "pts": 4,
+          "reason": "Brasilien-Marokko 1:1"
+        },
+        {
+          "pts": 4,
+          "reason": "Haiti-Schottland 0:1"
         }
       ]
     },
@@ -6360,7 +6444,7 @@
         ]
       },
       "submitted": "2026-06-11T09:11:58.757Z",
-      "points": 9,
+      "points": 15,
       "log": [
         {
           "pts": 4,
@@ -6369,6 +6453,14 @@
         {
           "pts": 4,
           "reason": "Südkorea-Tschechien 2:1"
+        },
+        {
+          "pts": 2,
+          "reason": "Katar-Schweiz 1:1"
+        },
+        {
+          "pts": 4,
+          "reason": "Haiti-Schottland 0:1"
         },
         {
           "pts": 1,
@@ -6892,7 +6984,7 @@
       "surprise": "USA",
       "submitted": "2026-06-11T08:47:54.605Z",
       "version": "wm2026",
-      "points": 6,
+      "points": 7,
       "log": [
         {
           "pts": 4,
@@ -6901,6 +6993,10 @@
         {
           "pts": 2,
           "reason": "Kanada-Bosnien-Herz. 1:1"
+        },
+        {
+          "pts": 1,
+          "reason": "Haiti-Schottland 0:1"
         }
       ]
     }
