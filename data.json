@@ -1,6 +1,6 @@
 {
   "version": "wm2026-data",
-  "lastUpdate": "2026-06-19T12:01:42.430Z",
+  "lastUpdate": "2026-06-20T19:03:52.646Z",
   "results": {
     "A_0": {
       "h": 2,
@@ -113,6 +113,26 @@
     "A_3": {
       "h": 1,
       "a": 0
+    },
+    "C_2": {
+      "h": 0,
+      "a": 1
+    },
+    "C_3": {
+      "h": 3,
+      "a": 0
+    },
+    "D_2": {
+      "h": 2,
+      "a": 0
+    },
+    "D_3": {
+      "h": 0,
+      "a": 1
+    },
+    "F_2": {
+      "h": 5,
+      "a": 1
     }
   },
   "tips": {
@@ -632,7 +652,7 @@
         ]
       },
       "submitted": "2026-06-04T14:00:04.739Z",
-      "points": 26,
+      "points": 35,
       "log": [
         {
           "pts": 4,
@@ -659,8 +679,16 @@
           "reason": "Haiti-Schottland 0:1"
         },
         {
+          "pts": 4,
+          "reason": "Brasilien-Haiti 3:0"
+        },
+        {
           "pts": 2,
           "reason": "USA-Paraguay 4:1"
+        },
+        {
+          "pts": 4,
+          "reason": "USA-Australien 2:0"
         },
         {
           "pts": 1,
@@ -673,6 +701,10 @@
         {
           "pts": 2,
           "reason": "Niederlande-Japan 2:2"
+        },
+        {
+          "pts": 1,
+          "reason": "Niederlande-Schweden 5:1"
         },
         {
           "pts": 2,
@@ -1208,7 +1240,7 @@
         ]
       },
       "submitted": "2026-06-08T05:13:16.405Z",
-      "points": 19,
+      "points": 30,
       "log": [
         {
           "pts": 4,
@@ -1231,8 +1263,24 @@
           "reason": "Haiti-Schottland 0:1"
         },
         {
+          "pts": 4,
+          "reason": "Schottland-Marokko 0:1"
+        },
+        {
+          "pts": 4,
+          "reason": "Brasilien-Haiti 3:0"
+        },
+        {
+          "pts": 2,
+          "reason": "Türkei-Paraguay 0:1"
+        },
+        {
           "pts": 1,
           "reason": "Deutschland-Curaçao 7:1"
+        },
+        {
+          "pts": 1,
+          "reason": "Niederlande-Schweden 5:1"
         },
         {
           "pts": 1,
@@ -1760,7 +1808,7 @@
         ]
       },
       "submitted": "2026-06-08T09:59:26.544Z",
-      "points": 16,
+      "points": 21,
       "log": [
         {
           "pts": 1,
@@ -1779,6 +1827,10 @@
           "reason": "Haiti-Schottland 0:1"
         },
         {
+          "pts": 4,
+          "reason": "Brasilien-Haiti 3:0"
+        },
+        {
           "pts": 1,
           "reason": "Deutschland-Curaçao 7:1"
         },
@@ -1789,6 +1841,10 @@
         {
           "pts": 1,
           "reason": "Schweden-Tunesien 5:1"
+        },
+        {
+          "pts": 1,
+          "reason": "Niederlande-Schweden 5:1"
         },
         {
           "pts": 1,
@@ -2324,7 +2380,7 @@
         ]
       },
       "submitted": "2026-06-11T06:29:42.345Z",
-      "points": 24,
+      "points": 31,
       "log": [
         {
           "pts": 1,
@@ -2343,8 +2399,20 @@
           "reason": "Haiti-Schottland 0:1"
         },
         {
+          "pts": 2,
+          "reason": "Schottland-Marokko 0:1"
+        },
+        {
+          "pts": 4,
+          "reason": "Brasilien-Haiti 3:0"
+        },
+        {
           "pts": 1,
           "reason": "USA-Paraguay 4:1"
+        },
+        {
+          "pts": 1,
+          "reason": "USA-Australien 2:0"
         },
         {
           "pts": 2,
@@ -2904,7 +2972,7 @@
         ]
       },
       "submitted": "2026-06-08T17:20:31.028Z",
-      "points": 30,
+      "points": 33,
       "log": [
         {
           "pts": 1,
@@ -2932,7 +3000,15 @@
         },
         {
           "pts": 1,
+          "reason": "Brasilien-Haiti 3:0"
+        },
+        {
+          "pts": 1,
           "reason": "USA-Paraguay 4:1"
+        },
+        {
+          "pts": 1,
+          "reason": "USA-Australien 2:0"
         },
         {
           "pts": 1,
@@ -2941,6 +3017,10 @@
         {
           "pts": 1,
           "reason": "Schweden-Tunesien 5:1"
+        },
+        {
+          "pts": 1,
+          "reason": "Niederlande-Schweden 5:1"
         },
         {
           "pts": 4,
@@ -3480,7 +3560,7 @@
         ]
       },
       "submitted": "2026-06-09T05:20:46.829Z",
-      "points": 32,
+      "points": 36,
       "log": [
         {
           "pts": 4,
@@ -3508,6 +3588,14 @@
         },
         {
           "pts": 2,
+          "reason": "Schottland-Marokko 0:1"
+        },
+        {
+          "pts": 1,
+          "reason": "Brasilien-Haiti 3:0"
+        },
+        {
+          "pts": 2,
           "reason": "Deutschland-Curaçao 7:1"
         },
         {
@@ -3517,6 +3605,10 @@
         {
           "pts": 2,
           "reason": "Niederlande-Japan 2:2"
+        },
+        {
+          "pts": 1,
+          "reason": "Niederlande-Schweden 5:1"
         },
         {
           "pts": 4,
@@ -4064,7 +4156,7 @@
         ]
       },
       "submitted": "2026-06-09T07:41:00.685Z",
-      "points": 14,
+      "points": 23,
       "log": [
         {
           "pts": 1,
@@ -4083,8 +4175,20 @@
           "reason": "Haiti-Schottland 0:1"
         },
         {
+          "pts": 4,
+          "reason": "Schottland-Marokko 0:1"
+        },
+        {
+          "pts": 4,
+          "reason": "Brasilien-Haiti 3:0"
+        },
+        {
           "pts": 1,
           "reason": "Deutschland-Curaçao 7:1"
+        },
+        {
+          "pts": 1,
+          "reason": "Niederlande-Schweden 5:1"
         },
         {
           "pts": 1,
@@ -4620,7 +4724,7 @@
         ]
       },
       "submitted": "2026-06-09T08:25:32.465Z",
-      "points": 38,
+      "points": 41,
       "log": [
         {
           "pts": 4,
@@ -4652,6 +4756,10 @@
         },
         {
           "pts": 1,
+          "reason": "Brasilien-Haiti 3:0"
+        },
+        {
+          "pts": 1,
           "reason": "USA-Paraguay 4:1"
         },
         {
@@ -4660,11 +4768,19 @@
         },
         {
           "pts": 1,
+          "reason": "USA-Australien 2:0"
+        },
+        {
+          "pts": 1,
           "reason": "Deutschland-Curaçao 7:1"
         },
         {
           "pts": 1,
           "reason": "Schweden-Tunesien 5:1"
+        },
+        {
+          "pts": 1,
+          "reason": "Niederlande-Schweden 5:1"
         },
         {
           "pts": 4,
@@ -5204,7 +5320,7 @@
         ]
       },
       "submitted": "2026-06-09T13:52:38.888Z",
-      "points": 27,
+      "points": 31,
       "log": [
         {
           "pts": 4,
@@ -5231,6 +5347,14 @@
           "reason": "Haiti-Schottland 0:1"
         },
         {
+          "pts": 2,
+          "reason": "Schottland-Marokko 0:1"
+        },
+        {
+          "pts": 1,
+          "reason": "Brasilien-Haiti 3:0"
+        },
+        {
           "pts": 1,
           "reason": "USA-Paraguay 4:1"
         },
@@ -5241,6 +5365,10 @@
         {
           "pts": 2,
           "reason": "Niederlande-Japan 2:2"
+        },
+        {
+          "pts": 1,
+          "reason": "Niederlande-Schweden 5:1"
         },
         {
           "pts": 2,
@@ -5780,7 +5908,7 @@
         ]
       },
       "submitted": "2026-06-09T18:12:22.443Z",
-      "points": 25,
+      "points": 30,
       "log": [
         {
           "pts": 1,
@@ -5807,6 +5935,10 @@
           "reason": "Kanada-Katar 6:0"
         },
         {
+          "pts": 4,
+          "reason": "Brasilien-Haiti 3:0"
+        },
+        {
           "pts": 1,
           "reason": "USA-Paraguay 4:1"
         },
@@ -5817,6 +5949,10 @@
         {
           "pts": 1,
           "reason": "Deutschland-Curaçao 7:1"
+        },
+        {
+          "pts": 1,
+          "reason": "Niederlande-Schweden 5:1"
         },
         {
           "pts": 2,
@@ -6356,7 +6492,7 @@
         ]
       },
       "submitted": "2026-06-10T16:23:43.502Z",
-      "points": 30,
+      "points": 40,
       "log": [
         {
           "pts": 1,
@@ -6388,7 +6524,23 @@
         },
         {
           "pts": 1,
+          "reason": "Schottland-Marokko 0:1"
+        },
+        {
+          "pts": 4,
+          "reason": "Brasilien-Haiti 3:0"
+        },
+        {
+          "pts": 4,
+          "reason": "USA-Australien 2:0"
+        },
+        {
+          "pts": 1,
           "reason": "Deutschland-Curaçao 7:1"
+        },
+        {
+          "pts": 1,
+          "reason": "Niederlande-Schweden 5:1"
         },
         {
           "pts": 4,
@@ -6932,7 +7084,7 @@
         ]
       },
       "submitted": "2026-06-11T09:11:58.757Z",
-      "points": 29,
+      "points": 35,
       "log": [
         {
           "pts": 4,
@@ -6951,8 +7103,20 @@
           "reason": "Haiti-Schottland 0:1"
         },
         {
+          "pts": 4,
+          "reason": "Schottland-Marokko 0:1"
+        },
+        {
+          "pts": 1,
+          "reason": "Brasilien-Haiti 3:0"
+        },
+        {
           "pts": 1,
           "reason": "USA-Paraguay 4:1"
+        },
+        {
+          "pts": 1,
+          "reason": "USA-Australien 2:0"
         },
         {
           "pts": 1,
@@ -7508,7 +7672,7 @@
       "surprise": "USA",
       "submitted": "2026-06-11T08:47:54.605Z",
       "version": "wm2026",
-      "points": 18,
+      "points": 20,
       "log": [
         {
           "pts": 4,
@@ -7529,6 +7693,14 @@
         {
           "pts": 1,
           "reason": "Haiti-Schottland 0:1"
+        },
+        {
+          "pts": 1,
+          "reason": "Brasilien-Haiti 3:0"
+        },
+        {
+          "pts": 1,
+          "reason": "USA-Australien 2:0"
         },
         {
           "pts": 1,
