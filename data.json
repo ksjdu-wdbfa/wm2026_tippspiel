@@ -1,6 +1,6 @@
 {
   "version": "wm2026-data",
-  "lastUpdate": "2026-06-20T19:03:52.646Z",
+  "lastUpdate": "2026-06-21T06:01:16.901Z",
   "results": {
     "A_0": {
       "h": 2,
@@ -133,6 +133,18 @@
     "F_2": {
       "h": 5,
       "a": 1
+    },
+    "E_2": {
+      "h": 2,
+      "a": 1
+    },
+    "E_3": {
+      "h": 0,
+      "a": 0
+    },
+    "F_3": {
+      "h": 0,
+      "a": 4
     }
   },
   "tips": {
@@ -652,7 +664,7 @@
         ]
       },
       "submitted": "2026-06-04T14:00:04.739Z",
-      "points": 35,
+      "points": 38,
       "log": [
         {
           "pts": 4,
@@ -697,6 +709,14 @@
         {
           "pts": 1,
           "reason": "Elfenbeinküste-Ecuador 1:0"
+        },
+        {
+          "pts": 1,
+          "reason": "Deutschland-Elfenbeinküste 2:1"
+        },
+        {
+          "pts": 2,
+          "reason": "Ecuador-Curaçao 0:0"
         },
         {
           "pts": 2,
@@ -1808,7 +1828,7 @@
         ]
       },
       "submitted": "2026-06-08T09:59:26.544Z",
-      "points": 21,
+      "points": 22,
       "log": [
         {
           "pts": 1,
@@ -1837,6 +1857,10 @@
         {
           "pts": 2,
           "reason": "Elfenbeinküste-Ecuador 1:0"
+        },
+        {
+          "pts": 1,
+          "reason": "Deutschland-Elfenbeinküste 2:1"
         },
         {
           "pts": 1,
@@ -2380,7 +2404,7 @@
         ]
       },
       "submitted": "2026-06-11T06:29:42.345Z",
-      "points": 31,
+      "points": 33,
       "log": [
         {
           "pts": 1,
@@ -2419,12 +2443,20 @@
           "reason": "Deutschland-Curaçao 7:1"
         },
         {
+          "pts": 1,
+          "reason": "Deutschland-Elfenbeinküste 2:1"
+        },
+        {
           "pts": 2,
           "reason": "Niederlande-Japan 2:2"
         },
         {
           "pts": 1,
           "reason": "Schweden-Tunesien 5:1"
+        },
+        {
+          "pts": 1,
+          "reason": "Tunesien-Japan 0:4"
         },
         {
           "pts": 4,
@@ -2972,7 +3004,7 @@
         ]
       },
       "submitted": "2026-06-08T17:20:31.028Z",
-      "points": 33,
+      "points": 37,
       "log": [
         {
           "pts": 1,
@@ -3013,6 +3045,14 @@
         {
           "pts": 1,
           "reason": "Deutschland-Curaçao 7:1"
+        },
+        {
+          "pts": 2,
+          "reason": "Deutschland-Elfenbeinküste 2:1"
+        },
+        {
+          "pts": 2,
+          "reason": "Ecuador-Curaçao 0:0"
         },
         {
           "pts": 1,
@@ -3560,7 +3600,7 @@
         ]
       },
       "submitted": "2026-06-09T05:20:46.829Z",
-      "points": 36,
+      "points": 41,
       "log": [
         {
           "pts": 4,
@@ -3603,12 +3643,20 @@
           "reason": "Elfenbeinküste-Ecuador 1:0"
         },
         {
+          "pts": 4,
+          "reason": "Deutschland-Elfenbeinküste 2:1"
+        },
+        {
           "pts": 2,
           "reason": "Niederlande-Japan 2:2"
         },
         {
           "pts": 1,
           "reason": "Niederlande-Schweden 5:1"
+        },
+        {
+          "pts": 1,
+          "reason": "Tunesien-Japan 0:4"
         },
         {
           "pts": 4,
@@ -4724,7 +4772,7 @@
         ]
       },
       "submitted": "2026-06-09T08:25:32.465Z",
-      "points": 41,
+      "points": 43,
       "log": [
         {
           "pts": 4,
@@ -4776,11 +4824,19 @@
         },
         {
           "pts": 1,
+          "reason": "Deutschland-Elfenbeinküste 2:1"
+        },
+        {
+          "pts": 1,
           "reason": "Schweden-Tunesien 5:1"
         },
         {
           "pts": 1,
           "reason": "Niederlande-Schweden 5:1"
+        },
+        {
+          "pts": 1,
+          "reason": "Tunesien-Japan 0:4"
         },
         {
           "pts": 4,
@@ -5320,7 +5376,7 @@
         ]
       },
       "submitted": "2026-06-09T13:52:38.888Z",
-      "points": 31,
+      "points": 32,
       "log": [
         {
           "pts": 4,
@@ -5369,6 +5425,10 @@
         {
           "pts": 1,
           "reason": "Niederlande-Schweden 5:1"
+        },
+        {
+          "pts": 1,
+          "reason": "Tunesien-Japan 0:4"
         },
         {
           "pts": 2,
@@ -5908,7 +5968,7 @@
         ]
       },
       "submitted": "2026-06-09T18:12:22.443Z",
-      "points": 30,
+      "points": 32,
       "log": [
         {
           "pts": 1,
@@ -5952,7 +6012,15 @@
         },
         {
           "pts": 1,
+          "reason": "Deutschland-Elfenbeinküste 2:1"
+        },
+        {
+          "pts": 1,
           "reason": "Niederlande-Schweden 5:1"
+        },
+        {
+          "pts": 1,
+          "reason": "Tunesien-Japan 0:4"
         },
         {
           "pts": 2,
@@ -6492,7 +6560,7 @@
         ]
       },
       "submitted": "2026-06-10T16:23:43.502Z",
-      "points": 40,
+      "points": 41,
       "log": [
         {
           "pts": 1,
@@ -6537,6 +6605,10 @@
         {
           "pts": 1,
           "reason": "Deutschland-Curaçao 7:1"
+        },
+        {
+          "pts": 1,
+          "reason": "Deutschland-Elfenbeinküste 2:1"
         },
         {
           "pts": 1,
@@ -7084,7 +7156,7 @@
         ]
       },
       "submitted": "2026-06-11T09:11:58.757Z",
-      "points": 35,
+      "points": 40,
       "log": [
         {
           "pts": 4,
@@ -7127,8 +7199,16 @@
           "reason": "Elfenbeinküste-Ecuador 1:0"
         },
         {
+          "pts": 4,
+          "reason": "Deutschland-Elfenbeinküste 2:1"
+        },
+        {
           "pts": 2,
           "reason": "Niederlande-Japan 2:2"
+        },
+        {
+          "pts": 1,
+          "reason": "Tunesien-Japan 0:4"
         },
         {
           "pts": 2,
@@ -7672,7 +7752,7 @@
       "surprise": "USA",
       "submitted": "2026-06-11T08:47:54.605Z",
       "version": "wm2026",
-      "points": 20,
+      "points": 21,
       "log": [
         {
           "pts": 4,
@@ -7705,6 +7785,10 @@
         {
           "pts": 1,
           "reason": "Deutschland-Curaçao 7:1"
+        },
+        {
+          "pts": 1,
+          "reason": "Deutschland-Elfenbeinküste 2:1"
         },
         {
           "pts": 2,
