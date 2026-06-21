@@ -1,6 +1,6 @@
 {
   "version": "wm2026-data",
-  "lastUpdate": "2026-06-21T06:01:16.901Z",
+  "lastUpdate": "2026-06-21T18:27:30.149Z",
   "results": {
     "A_0": {
       "h": 2,
@@ -145,6 +145,10 @@
     "F_3": {
       "h": 0,
       "a": 4
+    },
+    "H_2": {
+      "h": 4,
+      "a": 0
     }
   },
   "tips": {
@@ -664,7 +668,7 @@
         ]
       },
       "submitted": "2026-06-04T14:00:04.739Z",
-      "points": 38,
+      "points": 39,
       "log": [
         {
           "pts": 4,
@@ -729,6 +733,10 @@
         {
           "pts": 2,
           "reason": "Iran-Neuseeland 2:2"
+        },
+        {
+          "pts": 1,
+          "reason": "Spanien-Saudi-Arabien 4:0"
         },
         {
           "pts": 4,
@@ -1260,7 +1268,7 @@
         ]
       },
       "submitted": "2026-06-08T05:13:16.405Z",
-      "points": 30,
+      "points": 31,
       "log": [
         {
           "pts": 4,
@@ -1301,6 +1309,10 @@
         {
           "pts": 1,
           "reason": "Niederlande-Schweden 5:1"
+        },
+        {
+          "pts": 1,
+          "reason": "Spanien-Saudi-Arabien 4:0"
         },
         {
           "pts": 1,
@@ -1828,7 +1840,7 @@
         ]
       },
       "submitted": "2026-06-08T09:59:26.544Z",
-      "points": 22,
+      "points": 23,
       "log": [
         {
           "pts": 1,
@@ -1869,6 +1881,10 @@
         {
           "pts": 1,
           "reason": "Niederlande-Schweden 5:1"
+        },
+        {
+          "pts": 1,
+          "reason": "Spanien-Saudi-Arabien 4:0"
         },
         {
           "pts": 1,
@@ -2404,7 +2420,7 @@
         ]
       },
       "submitted": "2026-06-11T06:29:42.345Z",
-      "points": 33,
+      "points": 34,
       "log": [
         {
           "pts": 1,
@@ -2457,6 +2473,10 @@
         {
           "pts": 1,
           "reason": "Tunesien-Japan 0:4"
+        },
+        {
+          "pts": 1,
+          "reason": "Spanien-Saudi-Arabien 4:0"
         },
         {
           "pts": 4,
@@ -3004,7 +3024,7 @@
         ]
       },
       "submitted": "2026-06-08T17:20:31.028Z",
-      "points": 37,
+      "points": 38,
       "log": [
         {
           "pts": 1,
@@ -3065,6 +3085,10 @@
         {
           "pts": 4,
           "reason": "Saudi-Arabien-Uruguay 1:1"
+        },
+        {
+          "pts": 1,
+          "reason": "Spanien-Saudi-Arabien 4:0"
         },
         {
           "pts": 1,
@@ -3600,7 +3624,7 @@
         ]
       },
       "submitted": "2026-06-09T05:20:46.829Z",
-      "points": 41,
+      "points": 42,
       "log": [
         {
           "pts": 4,
@@ -3661,6 +3685,10 @@
         {
           "pts": 4,
           "reason": "Belgien-Ägypten 1:1"
+        },
+        {
+          "pts": 1,
+          "reason": "Spanien-Saudi-Arabien 4:0"
         },
         {
           "pts": 2,
@@ -4204,7 +4232,7 @@
         ]
       },
       "submitted": "2026-06-09T07:41:00.685Z",
-      "points": 23,
+      "points": 24,
       "log": [
         {
           "pts": 1,
@@ -4237,6 +4265,10 @@
         {
           "pts": 1,
           "reason": "Niederlande-Schweden 5:1"
+        },
+        {
+          "pts": 1,
+          "reason": "Spanien-Saudi-Arabien 4:0"
         },
         {
           "pts": 1,
@@ -5376,7 +5408,7 @@
         ]
       },
       "submitted": "2026-06-09T13:52:38.888Z",
-      "points": 32,
+      "points": 33,
       "log": [
         {
           "pts": 4,
@@ -5433,6 +5465,10 @@
         {
           "pts": 2,
           "reason": "Iran-Neuseeland 2:2"
+        },
+        {
+          "pts": 1,
+          "reason": "Spanien-Saudi-Arabien 4:0"
         },
         {
           "pts": 1,
@@ -5968,7 +6004,7 @@
         ]
       },
       "submitted": "2026-06-09T18:12:22.443Z",
-      "points": 32,
+      "points": 33,
       "log": [
         {
           "pts": 1,
@@ -6025,6 +6061,10 @@
         {
           "pts": 2,
           "reason": "Iran-Neuseeland 2:2"
+        },
+        {
+          "pts": 1,
+          "reason": "Spanien-Saudi-Arabien 4:0"
         },
         {
           "pts": 4,
@@ -6560,7 +6600,7 @@
         ]
       },
       "submitted": "2026-06-10T16:23:43.502Z",
-      "points": 41,
+      "points": 42,
       "log": [
         {
           "pts": 1,
@@ -6617,6 +6657,10 @@
         {
           "pts": 4,
           "reason": "Belgien-Ägypten 1:1"
+        },
+        {
+          "pts": 1,
+          "reason": "Spanien-Saudi-Arabien 4:0"
         },
         {
           "pts": 1,
@@ -7156,7 +7200,7 @@
         ]
       },
       "submitted": "2026-06-11T09:11:58.757Z",
-      "points": 40,
+      "points": 41,
       "log": [
         {
           "pts": 4,
@@ -7217,6 +7261,10 @@
         {
           "pts": 2,
           "reason": "Saudi-Arabien-Uruguay 1:1"
+        },
+        {
+          "pts": 1,
+          "reason": "Spanien-Saudi-Arabien 4:0"
         },
         {
           "pts": 1,
@@ -7752,7 +7800,7 @@
       "surprise": "USA",
       "submitted": "2026-06-11T08:47:54.605Z",
       "version": "wm2026",
-      "points": 21,
+      "points": 22,
       "log": [
         {
           "pts": 4,
@@ -7793,6 +7841,10 @@
         {
           "pts": 2,
           "reason": "Iran-Neuseeland 2:2"
+        },
+        {
+          "pts": 1,
+          "reason": "Spanien-Saudi-Arabien 4:0"
         },
         {
           "pts": 1,
