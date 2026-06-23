@@ -1,6 +1,6 @@
 {
   "version": "wm2026-data",
-  "lastUpdate": "2026-06-22T04:47:06.053Z",
+  "lastUpdate": "2026-06-23T05:02:34.493Z",
   "results": {
     "A_0": {
       "h": 2,
@@ -161,6 +161,22 @@
     "G_3": {
       "h": 1,
       "a": 3
+    },
+    "J_2": {
+      "h": 2,
+      "a": 0
+    },
+    "I_2": {
+      "h": 3,
+      "a": 0
+    },
+    "I_3": {
+      "h": 3,
+      "a": 2
+    },
+    "J_3": {
+      "h": 1,
+      "a": 2
     }
   },
   "tips": {
@@ -680,7 +696,7 @@
         ]
       },
       "submitted": "2026-06-04T14:00:04.739Z",
-      "points": 43,
+      "points": 48,
       "log": [
         {
           "pts": 4,
@@ -759,8 +775,20 @@
           "reason": "Frankreich-Senegal 3:1"
         },
         {
+          "pts": 1,
+          "reason": "Frankreich-Irak 3:0"
+        },
+        {
           "pts": 2,
           "reason": "Österreich-Jordanien 3:1"
+        },
+        {
+          "pts": 2,
+          "reason": "Argentinien-Österreich 2:0"
+        },
+        {
+          "pts": 2,
+          "reason": "Jordanien-Algerien 1:2"
         },
         {
           "pts": 1,
@@ -1284,7 +1312,7 @@
         ]
       },
       "submitted": "2026-06-08T05:13:16.405Z",
-      "points": 32,
+      "points": 41,
       "log": [
         {
           "pts": 4,
@@ -1336,7 +1364,19 @@
         },
         {
           "pts": 1,
+          "reason": "Frankreich-Irak 3:0"
+        },
+        {
+          "pts": 1,
           "reason": "Argentinien-Algerien 3:0"
+        },
+        {
+          "pts": 4,
+          "reason": "Argentinien-Österreich 2:0"
+        },
+        {
+          "pts": 4,
+          "reason": "Jordanien-Algerien 1:2"
         },
         {
           "pts": 2,
@@ -1860,7 +1900,7 @@
         ]
       },
       "submitted": "2026-06-08T09:59:26.544Z",
-      "points": 24,
+      "points": 26,
       "log": [
         {
           "pts": 1,
@@ -1916,11 +1956,19 @@
         },
         {
           "pts": 1,
+          "reason": "Frankreich-Irak 3:0"
+        },
+        {
+          "pts": 1,
           "reason": "Argentinien-Algerien 3:0"
         },
         {
           "pts": 1,
           "reason": "Österreich-Jordanien 3:1"
+        },
+        {
+          "pts": 1,
+          "reason": "Argentinien-Österreich 2:0"
         },
         {
           "pts": 2,
@@ -2444,7 +2492,7 @@
         ]
       },
       "submitted": "2026-06-11T06:29:42.345Z",
-      "points": 37,
+      "points": 47,
       "log": [
         {
           "pts": 1,
@@ -2519,12 +2567,24 @@
           "reason": "Irak-Norwegen 1:4"
         },
         {
+          "pts": 4,
+          "reason": "Frankreich-Irak 3:0"
+        },
+        {
+          "pts": 2,
+          "reason": "Norwegen-Senegal 3:2"
+        },
+        {
           "pts": 1,
           "reason": "Argentinien-Algerien 3:0"
         },
         {
           "pts": 1,
           "reason": "Österreich-Jordanien 3:1"
+        },
+        {
+          "pts": 4,
+          "reason": "Jordanien-Algerien 1:2"
         },
         {
           "pts": 4,
@@ -3056,7 +3116,7 @@
         ]
       },
       "submitted": "2026-06-08T17:20:31.028Z",
-      "points": 42,
+      "points": 49,
       "log": [
         {
           "pts": 1,
@@ -3135,8 +3195,20 @@
           "reason": "Frankreich-Senegal 3:1"
         },
         {
+          "pts": 2,
+          "reason": "Norwegen-Senegal 3:2"
+        },
+        {
           "pts": 1,
           "reason": "Argentinien-Algerien 3:0"
+        },
+        {
+          "pts": 1,
+          "reason": "Argentinien-Österreich 2:0"
+        },
+        {
+          "pts": 4,
+          "reason": "Jordanien-Algerien 1:2"
         },
         {
           "pts": 4,
@@ -3664,7 +3736,7 @@
         ]
       },
       "submitted": "2026-06-09T05:20:46.829Z",
-      "points": 43,
+      "points": 48,
       "log": [
         {
           "pts": 4,
@@ -3744,11 +3816,23 @@
         },
         {
           "pts": 1,
+          "reason": "Frankreich-Irak 3:0"
+        },
+        {
+          "pts": 2,
+          "reason": "Norwegen-Senegal 3:2"
+        },
+        {
+          "pts": 1,
           "reason": "Argentinien-Algerien 3:0"
         },
         {
           "pts": 1,
           "reason": "Österreich-Jordanien 3:1"
+        },
+        {
+          "pts": 2,
+          "reason": "Argentinien-Österreich 2:0"
         },
         {
           "pts": 1,
@@ -4276,7 +4360,7 @@
         ]
       },
       "submitted": "2026-06-09T07:41:00.685Z",
-      "points": 24,
+      "points": 34,
       "log": [
         {
           "pts": 1,
@@ -4319,8 +4403,20 @@
           "reason": "Irak-Norwegen 1:4"
         },
         {
+          "pts": 4,
+          "reason": "Frankreich-Irak 3:0"
+        },
+        {
           "pts": 1,
           "reason": "Österreich-Jordanien 3:1"
+        },
+        {
+          "pts": 4,
+          "reason": "Argentinien-Österreich 2:0"
+        },
+        {
+          "pts": 2,
+          "reason": "Jordanien-Algerien 1:2"
         },
         {
           "pts": 2,
@@ -4848,7 +4944,7 @@
         ]
       },
       "submitted": "2026-06-09T08:25:32.465Z",
-      "points": 45,
+      "points": 48,
       "log": [
         {
           "pts": 4,
@@ -4927,12 +5023,24 @@
           "reason": "Irak-Norwegen 1:4"
         },
         {
+          "pts": 1,
+          "reason": "Frankreich-Irak 3:0"
+        },
+        {
+          "pts": 1,
+          "reason": "Norwegen-Senegal 3:2"
+        },
+        {
           "pts": 4,
           "reason": "Argentinien-Algerien 3:0"
         },
         {
           "pts": 1,
           "reason": "Österreich-Jordanien 3:1"
+        },
+        {
+          "pts": 1,
+          "reason": "Argentinien-Österreich 2:0"
         },
         {
           "pts": 1,
@@ -5456,7 +5564,7 @@
         ]
       },
       "submitted": "2026-06-09T13:52:38.888Z",
-      "points": 34,
+      "points": 40,
       "log": [
         {
           "pts": 4,
@@ -5527,8 +5635,20 @@
           "reason": "Irak-Norwegen 1:4"
         },
         {
+          "pts": 4,
+          "reason": "Frankreich-Irak 3:0"
+        },
+        {
           "pts": 2,
           "reason": "Österreich-Jordanien 3:1"
+        },
+        {
+          "pts": 1,
+          "reason": "Argentinien-Österreich 2:0"
+        },
+        {
+          "pts": 1,
+          "reason": "Jordanien-Algerien 1:2"
         },
         {
           "pts": 1,
@@ -6056,7 +6176,7 @@
         ]
       },
       "submitted": "2026-06-09T18:12:22.443Z",
-      "points": 37,
+      "points": 46,
       "log": [
         {
           "pts": 1,
@@ -6136,7 +6256,19 @@
         },
         {
           "pts": 4,
+          "reason": "Frankreich-Irak 3:0"
+        },
+        {
+          "pts": 4,
           "reason": "Argentinien-Algerien 3:0"
+        },
+        {
+          "pts": 1,
+          "reason": "Argentinien-Österreich 2:0"
+        },
+        {
+          "pts": 4,
+          "reason": "Jordanien-Algerien 1:2"
         },
         {
           "pts": 1,
@@ -6660,7 +6792,7 @@
         ]
       },
       "submitted": "2026-06-10T16:23:43.502Z",
-      "points": 44,
+      "points": 51,
       "log": [
         {
           "pts": 1,
@@ -6736,11 +6868,27 @@
         },
         {
           "pts": 1,
+          "reason": "Frankreich-Irak 3:0"
+        },
+        {
+          "pts": 1,
+          "reason": "Norwegen-Senegal 3:2"
+        },
+        {
+          "pts": 1,
           "reason": "Argentinien-Algerien 3:0"
         },
         {
           "pts": 1,
           "reason": "Österreich-Jordanien 3:1"
+        },
+        {
+          "pts": 4,
+          "reason": "Argentinien-Österreich 2:0"
+        },
+        {
+          "pts": 1,
+          "reason": "Jordanien-Algerien 1:2"
         },
         {
           "pts": 2,
@@ -7264,7 +7412,7 @@
         ]
       },
       "submitted": "2026-06-11T09:11:58.757Z",
-      "points": 43,
+      "points": 44,
       "log": [
         {
           "pts": 4,
@@ -7333,6 +7481,10 @@
         {
           "pts": 1,
           "reason": "Spanien-Saudi-Arabien 4:0"
+        },
+        {
+          "pts": 1,
+          "reason": "Frankreich-Irak 3:0"
         },
         {
           "pts": 1,
@@ -7868,7 +8020,7 @@
       "surprise": "USA",
       "submitted": "2026-06-11T08:47:54.605Z",
       "version": "wm2026",
-      "points": 23,
+      "points": 25,
       "log": [
         {
           "pts": 4,
@@ -7924,7 +8076,15 @@
         },
         {
           "pts": 1,
+          "reason": "Frankreich-Irak 3:0"
+        },
+        {
+          "pts": 1,
           "reason": "Argentinien-Algerien 3:0"
+        },
+        {
+          "pts": 1,
+          "reason": "Argentinien-Österreich 2:0"
         },
         {
           "pts": 1,
