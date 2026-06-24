@@ -1,6 +1,6 @@
 {
   "version": "wm2026-data",
-  "lastUpdate": "2026-06-23T05:02:34.493Z",
+  "lastUpdate": "2026-06-24T04:07:03.299Z",
   "results": {
     "A_0": {
       "h": 2,
@@ -177,6 +177,22 @@
     "J_3": {
       "h": 1,
       "a": 2
+    },
+    "K_2": {
+      "h": 5,
+      "a": 0
+    },
+    "L_2": {
+      "h": 0,
+      "a": 0
+    },
+    "K_3": {
+      "h": 1,
+      "a": 0
+    },
+    "L_3": {
+      "h": 0,
+      "a": 1
     }
   },
   "tips": {
@@ -696,7 +712,7 @@
         ]
       },
       "submitted": "2026-06-04T14:00:04.739Z",
-      "points": 48,
+      "points": 51,
       "log": [
         {
           "pts": 4,
@@ -793,6 +809,18 @@
         {
           "pts": 1,
           "reason": "Usbekistan-Kolumbien 1:3"
+        },
+        {
+          "pts": 1,
+          "reason": "Portugal-Usbekistan 5:0"
+        },
+        {
+          "pts": 1,
+          "reason": "Kolumbien-D.R. Kongo 1:0"
+        },
+        {
+          "pts": 1,
+          "reason": "Panama-Kroatien 0:1"
         }
       ]
     },
@@ -1312,7 +1340,7 @@
         ]
       },
       "submitted": "2026-06-08T05:13:16.405Z",
-      "points": 41,
+      "points": 49,
       "log": [
         {
           "pts": 4,
@@ -1381,6 +1409,22 @@
         {
           "pts": 2,
           "reason": "Usbekistan-Kolumbien 1:3"
+        },
+        {
+          "pts": 1,
+          "reason": "Portugal-Usbekistan 5:0"
+        },
+        {
+          "pts": 4,
+          "reason": "Kolumbien-D.R. Kongo 1:0"
+        },
+        {
+          "pts": 2,
+          "reason": "England-Ghana 0:0"
+        },
+        {
+          "pts": 1,
+          "reason": "Panama-Kroatien 0:1"
         }
       ]
     },
@@ -1900,7 +1944,7 @@
         ]
       },
       "submitted": "2026-06-08T09:59:26.544Z",
-      "points": 26,
+      "points": 29,
       "log": [
         {
           "pts": 1,
@@ -1973,6 +2017,18 @@
         {
           "pts": 2,
           "reason": "Usbekistan-Kolumbien 1:3"
+        },
+        {
+          "pts": 1,
+          "reason": "Portugal-Usbekistan 5:0"
+        },
+        {
+          "pts": 1,
+          "reason": "Kolumbien-D.R. Kongo 1:0"
+        },
+        {
+          "pts": 1,
+          "reason": "Panama-Kroatien 0:1"
         }
       ]
     },
@@ -2492,7 +2548,7 @@
         ]
       },
       "submitted": "2026-06-11T06:29:42.345Z",
-      "points": 47,
+      "points": 49,
       "log": [
         {
           "pts": 1,
@@ -2592,11 +2648,19 @@
         },
         {
           "pts": 1,
+          "reason": "Portugal-Usbekistan 5:0"
+        },
+        {
+          "pts": 1,
           "reason": "England-Kroatien 4:2"
         },
         {
           "pts": 1,
           "reason": "Ghana-Panama 1:0"
+        },
+        {
+          "pts": 1,
+          "reason": "Panama-Kroatien 0:1"
         }
       ]
     },
@@ -3116,7 +3180,7 @@
         ]
       },
       "submitted": "2026-06-08T17:20:31.028Z",
-      "points": 49,
+      "points": 56,
       "log": [
         {
           "pts": 1,
@@ -3216,7 +3280,19 @@
         },
         {
           "pts": 1,
+          "reason": "Portugal-Usbekistan 5:0"
+        },
+        {
+          "pts": 2,
+          "reason": "Kolumbien-D.R. Kongo 1:0"
+        },
+        {
+          "pts": 1,
           "reason": "England-Kroatien 4:2"
+        },
+        {
+          "pts": 4,
+          "reason": "Panama-Kroatien 0:1"
         }
       ]
     },
@@ -3736,7 +3812,7 @@
         ]
       },
       "submitted": "2026-06-09T05:20:46.829Z",
-      "points": 48,
+      "points": 53,
       "log": [
         {
           "pts": 4,
@@ -3840,7 +3916,23 @@
         },
         {
           "pts": 1,
+          "reason": "Portugal-Usbekistan 5:0"
+        },
+        {
+          "pts": 1,
+          "reason": "Kolumbien-D.R. Kongo 1:0"
+        },
+        {
+          "pts": 1,
           "reason": "Ghana-Panama 1:0"
+        },
+        {
+          "pts": 2,
+          "reason": "England-Ghana 0:0"
+        },
+        {
+          "pts": 1,
+          "reason": "Panama-Kroatien 0:1"
         }
       ]
     },
@@ -4360,7 +4452,7 @@
         ]
       },
       "submitted": "2026-06-09T07:41:00.685Z",
-      "points": 34,
+      "points": 39,
       "log": [
         {
           "pts": 1,
@@ -4423,8 +4515,16 @@
           "reason": "Usbekistan-Kolumbien 1:3"
         },
         {
+          "pts": 1,
+          "reason": "Portugal-Usbekistan 5:0"
+        },
+        {
           "pts": 2,
           "reason": "Ghana-Panama 1:0"
+        },
+        {
+          "pts": 4,
+          "reason": "Panama-Kroatien 0:1"
         }
       ]
     },
@@ -4944,7 +5044,7 @@
         ]
       },
       "submitted": "2026-06-09T08:25:32.465Z",
-      "points": 48,
+      "points": 54,
       "log": [
         {
           "pts": 4,
@@ -5045,6 +5145,18 @@
         {
           "pts": 1,
           "reason": "Usbekistan-Kolumbien 1:3"
+        },
+        {
+          "pts": 1,
+          "reason": "Portugal-Usbekistan 5:0"
+        },
+        {
+          "pts": 4,
+          "reason": "Kolumbien-D.R. Kongo 1:0"
+        },
+        {
+          "pts": 1,
+          "reason": "Panama-Kroatien 0:1"
         }
       ]
     },
@@ -5564,7 +5676,7 @@
         ]
       },
       "submitted": "2026-06-09T13:52:38.888Z",
-      "points": 40,
+      "points": 42,
       "log": [
         {
           "pts": 4,
@@ -5656,7 +5768,15 @@
         },
         {
           "pts": 1,
+          "reason": "Portugal-Usbekistan 5:0"
+        },
+        {
+          "pts": 1,
           "reason": "Ghana-Panama 1:0"
+        },
+        {
+          "pts": 1,
+          "reason": "Panama-Kroatien 0:1"
         }
       ]
     },
@@ -6176,7 +6296,7 @@
         ]
       },
       "submitted": "2026-06-09T18:12:22.443Z",
-      "points": 46,
+      "points": 49,
       "log": [
         {
           "pts": 1,
@@ -6273,6 +6393,18 @@
         {
           "pts": 1,
           "reason": "Usbekistan-Kolumbien 1:3"
+        },
+        {
+          "pts": 1,
+          "reason": "Portugal-Usbekistan 5:0"
+        },
+        {
+          "pts": 1,
+          "reason": "Kolumbien-D.R. Kongo 1:0"
+        },
+        {
+          "pts": 1,
+          "reason": "Panama-Kroatien 0:1"
         }
       ]
     },
@@ -6792,7 +6924,7 @@
         ]
       },
       "submitted": "2026-06-10T16:23:43.502Z",
-      "points": 51,
+      "points": 55,
       "log": [
         {
           "pts": 1,
@@ -6893,6 +7025,18 @@
         {
           "pts": 2,
           "reason": "Usbekistan-Kolumbien 1:3"
+        },
+        {
+          "pts": 1,
+          "reason": "Portugal-Usbekistan 5:0"
+        },
+        {
+          "pts": 2,
+          "reason": "Kolumbien-D.R. Kongo 1:0"
+        },
+        {
+          "pts": 1,
+          "reason": "Panama-Kroatien 0:1"
         }
       ]
     },
@@ -7412,7 +7556,7 @@
         ]
       },
       "submitted": "2026-06-11T09:11:58.757Z",
-      "points": 44,
+      "points": 48,
       "log": [
         {
           "pts": 4,
@@ -7500,7 +7644,19 @@
         },
         {
           "pts": 1,
+          "reason": "Portugal-Usbekistan 5:0"
+        },
+        {
+          "pts": 2,
+          "reason": "Kolumbien-D.R. Kongo 1:0"
+        },
+        {
+          "pts": 1,
           "reason": "Ghana-Panama 1:0"
+        },
+        {
+          "pts": 1,
+          "reason": "Panama-Kroatien 0:1"
         }
       ]
     },
@@ -8020,7 +8176,7 @@
       "surprise": "USA",
       "submitted": "2026-06-11T08:47:54.605Z",
       "version": "wm2026",
-      "points": 25,
+      "points": 29,
       "log": [
         {
           "pts": 4,
@@ -8092,11 +8248,23 @@
         },
         {
           "pts": 1,
+          "reason": "Portugal-Usbekistan 5:0"
+        },
+        {
+          "pts": 1,
+          "reason": "Kolumbien-D.R. Kongo 1:0"
+        },
+        {
+          "pts": 1,
           "reason": "England-Kroatien 4:2"
         },
         {
           "pts": 1,
           "reason": "Ghana-Panama 1:0"
+        },
+        {
+          "pts": 2,
+          "reason": "Panama-Kroatien 0:1"
         }
       ]
     }
