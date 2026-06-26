@@ -175,10 +175,14 @@ body::before{content:'';display:block;height:4px;background:linear-gradient(90de
 .tv-pick-chip.mexico{background:rgba(0,104,71,.25);color:#4ddb9a}
 /* match view */
 .match-view-block{background:var(--mid);border:1px solid var(--slate);border-radius:10px;margin-bottom:14px;overflow:hidden}
-.match-view-header{padding:12px 18px;background:rgba(46,69,96,.4);font-size:13px;font-weight:600;color:var(--cream);display:flex;justify-content:space-between;align-items:center}
+.match-view-header{padding:12px 18px;background:rgba(46,69,96,.4);font-size:13px;font-weight:600;color:var(--cream);display:flex;align-items:center;gap:12px;cursor:pointer;transition:background .2s}
+.match-view-header:hover{background:rgba(46,69,96,.6)}
 .match-view-result{font-family:'Bebas Neue',sans-serif;font-size:18px;color:var(--gold)}
 .match-view-result.tbd{color:var(--slate)}
-.tips-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(160px,1fr));gap:8px;padding:12px 18px}
+.match-view-caret{color:var(--muted);font-size:13px;transition:transform .2s}
+.match-view-caret.rot{transform:rotate(180deg)}
+.tips-grid{display:none;grid-template-columns:repeat(auto-fill,minmax(160px,1fr));gap:8px;padding:12px 18px;border-top:1px solid var(--slate)}
+.tips-grid.open{display:grid}
 .tip-chip{background:var(--navy);border:1px solid var(--slate);border-radius:6px;padding:8px 12px;font-size:13px}
 .tip-chip-name{color:var(--muted);font-size:11px;margin-bottom:3px}
 .tip-chip-score{font-family:'Bebas Neue',sans-serif;font-size:20px;color:var(--cream)}
@@ -551,6 +555,33 @@ span[data-lang]{display:inline}
     <button class="btn-sm primary" onclick="evaluateBestThirds()" data-lang="en">Evaluate Best Third-Placed Now</button>
   </div>
 
+  <!-- KNOCKOUT STAGE -->
+  <div class="admin-box">
+    <div class="admin-title" data-lang="de">🏆 K.-o.-Phase eintragen (Viertel-/Halbfinale &amp; Podium)</div>
+    <div class="admin-title" data-lang="en">🏆 Enter Knockout Stage (Quarter-/Semi-finals &amp; Podium)</div>
+    <p style="font-size:13px;color:var(--muted);margin-bottom:14px" data-lang="de">Grundlage für: Überraschungsteam (Viertelfinale = 15 Pkt), Halbfinal-Bonus (+5 je Top-3-Team) und Turniersieger (30/20/10). Nach dem Speichern werden alle Punkte sofort neu berechnet.</p>
+    <p style="font-size:13px;color:var(--muted);margin-bottom:14px" data-lang="en">Basis for: surprise team (quarter-finals = 15 pts), semi-final bonus (+5 per Top-3 team) and tournament winners (30/20/10). Points recalculate immediately after saving.</p>
+
+    <div class="grp-lbl" data-lang="de">VIERTELFINALISTEN (8 Teams – fürs Überraschungsteam)</div>
+    <div class="grp-lbl" data-lang="en">QUARTER-FINALISTS (8 teams – for surprise team)</div>
+    <div id="ko-qf" style="display:grid;grid-template-columns:1fr 1fr;gap:9px;margin-bottom:18px"></div>
+
+    <div class="grp-lbl" data-lang="de">HALBFINALISTEN (4 Teams – für Halbfinal-Bonus)</div>
+    <div class="grp-lbl" data-lang="en">SEMI-FINALISTS (4 teams – for semi-final bonus)</div>
+    <div id="ko-sf" style="display:grid;grid-template-columns:1fr 1fr;gap:9px;margin-bottom:18px"></div>
+
+    <div class="grp-lbl" data-lang="de">ENDPLATZIERUNG</div>
+    <div class="grp-lbl" data-lang="en">FINAL PLACEMENT</div>
+    <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:9px;margin-bottom:16px">
+      <div class="field"><label>🥇 <span data-lang="de">Weltmeister</span><span data-lang="en">Champion</span></label><select id="ko-first"></select></div>
+      <div class="field"><label>🥈 <span data-lang="de">Finalist</span><span data-lang="en">Runner-up</span></label><select id="ko-second"></select></div>
+      <div class="field"><label>🥉 <span data-lang="de">3. Platz</span><span data-lang="en">3rd place</span></label><select id="ko-third"></select></div>
+    </div>
+    <button class="btn-sm primary" onclick="saveKnockout()" data-lang="de">💾 K.-o.-Phase speichern &amp; Punkte berechnen</button>
+    <button class="btn-sm primary" onclick="saveKnockout()" data-lang="en">💾 Save knockout &amp; recalculate</button>
+    <div id="ko-log" style="margin-top:10px;font-size:13px;color:var(--green)"></div>
+  </div>
+
   <!-- DATA MGMT -->
   <div class="admin-box">
     <div class="admin-title" data-lang="de">⚠️ Daten verwalten</div>
@@ -611,13 +642,23 @@ const ALL_TEAMS=Object.values(GROUPS).flatMap(g=>g.teams).sort();
 const FIFA_TOP10=['Frankreich','Spanien','Argentinien','England','Portugal','Brasilien','Niederlande','Marokko','Belgien','Deutschland'];
 
 // ── LOCAL STATE ──
-let DB = { tips: {}, results: {} }; // all in memory, saved to localStorage
+let DB = { tips: {}, results: {}, knockout:{qf:[],sf:[],first:'',second:'',third:''}, bestThirds:[] }; // all in memory, saved to localStorage
 let adminUnlocked = false;
 let currentLang = 'de';
 let currentTab = 'rules';
 
 function saveDB(){ try{ localStorage.setItem('wm2026_db', JSON.stringify(DB)); }catch(e){} }
-function loadDB(){ try{ const s=localStorage.getItem('wm2026_db'); if(s) DB=JSON.parse(s); }catch(e){} }
+function loadDB(){ try{ const s=localStorage.getItem('wm2026_db'); if(s) DB=JSON.parse(s); }catch(e){} ensureKnockout(); }
+// Stellt sicher, dass DB.knockout / DB.bestThirds immer die richtige Form haben (auch bei alten Daten).
+function ensureKnockout(){
+  if(!DB.knockout||typeof DB.knockout!=='object') DB.knockout={};
+  if(!Array.isArray(DB.knockout.qf)) DB.knockout.qf=[];
+  if(!Array.isArray(DB.knockout.sf)) DB.knockout.sf=[];
+  if(typeof DB.knockout.first!=='string') DB.knockout.first='';
+  if(typeof DB.knockout.second!=='string') DB.knockout.second='';
+  if(typeof DB.knockout.third!=='string') DB.knockout.third='';
+  if(!Array.isArray(DB.bestThirds)) DB.bestThirds=[];
+}
 
 // ── TIMESTAMP HELPER ──
 function formatTimestamp(iso){
@@ -710,7 +751,7 @@ function showTab(tab){
   const tbEl=document.getElementById('tb-'+tab);
   if(tbEl) tbEl.classList.add('active');
   if(tab==='board') renderLeaderboard();
-  if(tab==='admin'){ buildAdminMatches(); restoreServiceKey(); }
+  if(tab==='admin'){ buildAdminMatches(); buildAdminKnockout(); restoreServiceKey(); }
   if(tab==='tipview') renderTipView();
 }
 
@@ -805,7 +846,7 @@ function buildForm(){
 // ══════════════════════════════════════════
 // SUPABASE CONFIG – hier die beiden Werte aus Supabase-Projekt eintragen
 // ══════════════════════════════════════════
-const SUPABASE_URL = 'https://ozgekgrbzakyoyfejool.supabase.co';        // z.B. https://abcdwxyz.supabase.co
+const SUPABASE_URL = 'https://ozgekgrbzakyoyfejool.supabase.co/rest/v1/';        // z.B. https://abcdwxyz.supabase.co
 const SUPABASE_ANON_KEY = 'sb_publishable_JnLYdoXa6h0yt7wXEEPbig_fWy0UZhW';   // der "anon public"-Schlüssel
 const SUPABASE_TABLE = 'tips';  // Tabellenname in Supabase (siehe SQL-Anleitung)
 
@@ -1075,6 +1116,9 @@ async function loadPublishedData(){
     if(data&&data.version===DATA_VERSION){
       DB.tips=data.tips||{};
       DB.results=data.results||{};
+      DB.knockout=data.knockout||{qf:[],sf:[],first:'',second:'',third:''};
+      DB.bestThirds=data.bestThirds||[];
+      ensureKnockout();
       DB.lastUpdate=data.lastUpdate||null;
       return true;
     }
@@ -1088,6 +1132,8 @@ function exportDataJson(){
     version:DATA_VERSION,
     lastUpdate:DB.lastUpdate||new Date().toISOString(),
     results:DB.results||{},
+    knockout:DB.knockout||{qf:[],sf:[],first:'',second:'',third:''},
+    bestThirds:DB.bestThirds||[],
     tips:DB.tips||{}
   };
   const blob=new Blob([JSON.stringify(payload,null,2)],{type:'application/json'});
@@ -1133,6 +1179,7 @@ function grpComplete(grp){
   return GROUPS[grp].matches.every((_,i)=>{const r=DB.results[`${grp}_${i}`];return r&&r.h!==null&&r.a!==null;});
 }
 function recalcAll(){
+  ensureKnockout();
   Object.values(DB.tips).forEach(entry=>{
     let pts=0; const log=[];
     // matches
@@ -1158,9 +1205,25 @@ function recalcAll(){
         else if(t2&&t2===a1){pts+=2;log.push({pts:2,reason:`${grp}: ${t2} (1.st.2.)`});}
       }
     });
-    // keep bonus pts (best thirds, tournament) that were added separately
-    const bonusPts=(entry.bonusPts||0);
-    entry.points=pts+bonusPts;
+    // ── K.-o.-Phase: Überraschungsteam (Viertelfinale), Halbfinal-Bonus, Turniersieger ──
+    if(entry.surprise && DB.knockout.qf.includes(entry.surprise)){
+      pts+=15; log.push({pts:15,reason:`🌟 ${entry.surprise} VF`});
+    }
+    [entry.pick1,entry.pick2,entry.pick3].forEach(p=>{
+      if(p && DB.knockout.sf.includes(p)){ pts+=5; log.push({pts:5,reason:`⭐ ${p} HF`}); }
+    });
+    if(entry.pick1 && entry.pick1===DB.knockout.first){ pts+=30; log.push({pts:30,reason:`🥇 ${entry.pick1} WM`}); }
+    if(entry.pick2 && entry.pick2===DB.knockout.second){ pts+=20; log.push({pts:20,reason:`🥈 ${entry.pick2} Finalist`}); }
+    if(entry.pick3 && entry.pick3===DB.knockout.third){ pts+=10; log.push({pts:10,reason:`🥉 ${entry.pick3} 3.`}); }
+    // ── Beste Dritte: 2 Pkt je als 1./2. getipptem Team, das Bester Dritter wurde ──
+    if((DB.bestThirds||[]).length){
+      Object.keys(GROUPS).forEach(grp=>{
+        [entry.standings?.[grp]?.[0]||'', entry.standings?.[grp]?.[1]||''].forEach(tip=>{
+          if(tip && DB.bestThirds.includes(tip)){ pts+=2; log.push({pts:2,reason:`🔵 ${tip} Bester Dritter`}); }
+        });
+      });
+    }
+    entry.points=pts;
     entry.log=log;
   });
   DB.lastUpdate=new Date().toISOString();
@@ -1179,21 +1242,59 @@ function evaluateBestThirds(){
   }).filter(t=>t.team);
   thirds.sort((a,b)=>b.pts!==a.pts?b.pts-a.pts:b.gd!==a.gd?b.gd-a.gd:b.gf-a.gf);
   const best8=thirds.slice(0,8).map(t=>t.team);
+  DB.bestThirds=best8;                       // dauerhaft speichern -> recalcAll vergibt die Punkte
   document.getElementById('best-thirds-info').innerHTML=`<strong style="color:var(--green)">${currentLang==='de'?'Beste 8 Dritte':'Best 8 Third-Placed'}:</strong> ${best8.join(', ')}`;
-  Object.values(DB.tips).forEach(entry=>{
-    let bonus=0;
-    Object.keys(GROUPS).forEach(grp=>{
-      [entry.standings?.[grp]?.[0]||'', entry.standings?.[grp]?.[1]||''].forEach(tip=>{
-        if(tip&&best8.includes(tip)){bonus+=2;(entry.log=entry.log||[]).push({pts:2,reason:`🔵 ${tip} Bester Dritter`});}
-      });
-    });
-    entry.bonusPts=(entry.bonusPts||0)+bonus;
-    entry.points=(entry.points||0)+bonus;
-  });
-  DB.lastUpdate=new Date().toISOString();
   saveDB();
+  recalcAll();                               // berechnet ALLE Punkte sauber neu (kein Doppelzählen bei erneutem Klick)
   renderLeaderboard();
   alert(currentLang==='de'?'Beste Dritte wurden ausgewertet und Punkte vergeben!':'Best third-placed teams evaluated and points awarded!');
+}
+
+// ══════════════════════════════════════════
+// ADMIN: K.-O.-PHASE (Viertel-/Halbfinale, Podium)
+// ══════════════════════════════════════════
+function teamOptions(selected){
+  return `<option value="">–</option>`+ALL_TEAMS.map(t=>`<option value="${t}"${t===selected?' selected':''}>${t}</option>`).join('');
+}
+function buildAdminKnockout(){
+  ensureKnockout();
+  const qf=document.getElementById('ko-qf');
+  const sf=document.getElementById('ko-sf');
+  if(qf){
+    qf.innerHTML='';
+    for(let i=0;i<8;i++){
+      const f=document.createElement('div'); f.className='field';
+      f.innerHTML=`<select id="ko-qf-${i}">${teamOptions(DB.knockout.qf[i]||'')}</select>`;
+      qf.appendChild(f);
+    }
+  }
+  if(sf){
+    sf.innerHTML='';
+    for(let i=0;i<4;i++){
+      const f=document.createElement('div'); f.className='field';
+      f.innerHTML=`<select id="ko-sf-${i}">${teamOptions(DB.knockout.sf[i]||'')}</select>`;
+      sf.appendChild(f);
+    }
+  }
+  const first=document.getElementById('ko-first');   if(first)  first.innerHTML=teamOptions(DB.knockout.first);
+  const second=document.getElementById('ko-second'); if(second) second.innerHTML=teamOptions(DB.knockout.second);
+  const third=document.getElementById('ko-third');   if(third)  third.innerHTML=teamOptions(DB.knockout.third);
+}
+function saveKnockout(){
+  ensureKnockout();
+  const qf=[],sf=[];
+  for(let i=0;i<8;i++){ const v=document.getElementById(`ko-qf-${i}`)?.value||''; if(v) qf.push(v); }
+  for(let i=0;i<4;i++){ const v=document.getElementById(`ko-sf-${i}`)?.value||''; if(v) sf.push(v); }
+  DB.knockout.qf=qf;
+  DB.knockout.sf=sf;
+  DB.knockout.first=document.getElementById('ko-first')?.value||'';
+  DB.knockout.second=document.getElementById('ko-second')?.value||'';
+  DB.knockout.third=document.getElementById('ko-third')?.value||'';
+  saveDB(); recalcAll(); renderLeaderboard();
+  const log=document.getElementById('ko-log');
+  if(log) log.textContent=currentLang==='de'
+    ? `✓ Gespeichert: ${qf.length} VF · ${sf.length} HF · Podium ${DB.knockout.first||'–'} / ${DB.knockout.second||'–'} / ${DB.knockout.third||'–'}. Punkte neu berechnet.`
+    : `✓ Saved: ${qf.length} QF · ${sf.length} SF · podium ${DB.knockout.first||'–'} / ${DB.knockout.second||'–'} / ${DB.knockout.third||'–'}. Points recalculated.`;
 }
 
 // ══════════════════════════════════════════
@@ -1253,13 +1354,15 @@ function editResult(grp,idx){
 }
 function adminClearAll(){
   if(!confirm(currentLang==='de'?'Wirklich ALLE Daten löschen?':'Really delete ALL data?')) return;
-  DB={tips:{},results:{}}; saveDB(); renderLeaderboard(); buildAdminMatches();
+  DB={tips:{},results:{},knockout:{qf:[],sf:[],first:'',second:'',third:''},bestThirds:[]}; saveDB(); renderLeaderboard(); buildAdminMatches(); buildAdminKnockout();
 }
 function adminClearResults(){
   if(!confirm(currentLang==='de'?'Nur Ergebnisse zurücksetzen? Tipps bleiben erhalten.':'Reset results only? Tips are kept.')) return;
   DB.results={};
+  DB.knockout={qf:[],sf:[],first:'',second:'',third:''};
+  DB.bestThirds=[];
   Object.values(DB.tips).forEach(e=>{e.points=0;e.bonusPts=0;e.log=[];});
-  saveDB(); renderLeaderboard(); buildAdminMatches();
+  saveDB(); renderLeaderboard(); buildAdminMatches(); buildAdminKnockout();
 }
 async function adminLoadPublished(){
   if(!confirm(currentLang==='de'
@@ -1425,9 +1528,10 @@ function renderMatchView(cont, entries){
       const block=document.createElement('div');
       block.className='match-view-block';
       block.innerHTML=`<div class="match-view-header">
-        <span style="color:var(--muted);font-size:11px;margin-right:10px">GRP ${grp}</span>
+        <span style="color:var(--muted);font-size:11px">GRP ${grp}</span>
         <span>${m[0]} vs ${m[1]}</span>
-        <span class="match-view-result ${!hasRes?'tbd':''}">${hasRes?`${res.h}:${res.a}`:currentLang==='de'?'Noch offen':'TBD'}</span>
+        <span class="match-view-result ${!hasRes?'tbd':''}" style="margin-left:auto">${hasRes?`${res.h}:${res.a}`:currentLang==='de'?'Noch offen':'TBD'}</span>
+        <span class="match-view-caret">▼</span>
       </div>`;
       const grid=document.createElement('div');
       grid.className='tips-grid';
@@ -1450,6 +1554,11 @@ function renderMatchView(cont, entries){
         });
       }
       block.appendChild(grid);
+      const mh=block.querySelector('.match-view-header');
+      mh.addEventListener('click',()=>{
+        grid.classList.toggle('open');
+        mh.querySelector('.match-view-caret').classList.toggle('rot');
+      });
       cont.appendChild(block);
     });
   });
