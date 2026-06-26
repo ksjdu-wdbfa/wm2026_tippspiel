@@ -1,6 +1,6 @@
 {
   "version": "wm2026-data",
-  "lastUpdate": "2026-06-25T04:12:54.124Z",
+  "lastUpdate": "2026-06-26T04:20:02.078Z",
   "results": {
     "A_0": {
       "h": 2,
@@ -216,6 +216,30 @@
     },
     "A_5": {
       "h": 1,
+      "a": 0
+    },
+    "E_4": {
+      "h": 0,
+      "a": 2
+    },
+    "E_5": {
+      "h": 2,
+      "a": 1
+    },
+    "F_4": {
+      "h": 1,
+      "a": 1
+    },
+    "F_5": {
+      "h": 1,
+      "a": 3
+    },
+    "D_4": {
+      "h": 3,
+      "a": 2
+    },
+    "D_5": {
+      "h": 0,
       "a": 0
     }
   },
@@ -736,7 +760,7 @@
         ]
       },
       "submitted": "2026-06-04T14:00:04.739Z",
-      "points": 79,
+      "points": 106,
       "log": [
         {
           "pts": 4,
@@ -807,6 +831,18 @@
           "reason": "USA-Australien 2:0"
         },
         {
+          "pts": 2,
+          "reason": "Türkei-USA 3:2"
+        },
+        {
+          "pts": 4,
+          "reason": "Paraguay-Australien 0:0"
+        },
+        {
+          "pts": 5,
+          "reason": "D: USA 1."
+        },
+        {
           "pts": 1,
           "reason": "Deutschland-Curaçao 7:1"
         },
@@ -823,12 +859,36 @@
           "reason": "Ecuador-Curaçao 0:0"
         },
         {
+          "pts": 1,
+          "reason": "Curaçao-Elfenbeinküste 0:2"
+        },
+        {
+          "pts": 5,
+          "reason": "E: Deutschland 1."
+        },
+        {
+          "pts": 5,
+          "reason": "E: Elfenbeinküste 2."
+        },
+        {
           "pts": 2,
           "reason": "Niederlande-Japan 2:2"
         },
         {
           "pts": 1,
           "reason": "Niederlande-Schweden 5:1"
+        },
+        {
+          "pts": 1,
+          "reason": "Tunesien-Niederlande 1:3"
+        },
+        {
+          "pts": 2,
+          "reason": "F: Japan (2.st.1.)"
+        },
+        {
+          "pts": 2,
+          "reason": "F: Niederlande (1.st.2.)"
         },
         {
           "pts": 2,
@@ -1396,7 +1456,7 @@
         ]
       },
       "submitted": "2026-06-08T05:13:16.405Z",
-      "points": 88,
+      "points": 107,
       "log": [
         {
           "pts": 4,
@@ -1471,12 +1531,36 @@
           "reason": "Türkei-Paraguay 0:1"
         },
         {
+          "pts": 2,
+          "reason": "Türkei-USA 3:2"
+        },
+        {
           "pts": 1,
           "reason": "Deutschland-Curaçao 7:1"
         },
         {
           "pts": 1,
+          "reason": "Curaçao-Elfenbeinküste 0:2"
+        },
+        {
+          "pts": 5,
+          "reason": "E: Deutschland 1."
+        },
+        {
+          "pts": 1,
           "reason": "Niederlande-Schweden 5:1"
+        },
+        {
+          "pts": 1,
+          "reason": "Tunesien-Niederlande 1:3"
+        },
+        {
+          "pts": 5,
+          "reason": "F: Niederlande 1."
+        },
+        {
+          "pts": 5,
+          "reason": "F: Japan 2."
         },
         {
           "pts": 1,
@@ -2040,7 +2124,7 @@
         ]
       },
       "submitted": "2026-06-08T09:59:26.544Z",
-      "points": 54,
+      "points": 77,
       "log": [
         {
           "pts": 1,
@@ -2096,6 +2180,14 @@
         },
         {
           "pts": 1,
+          "reason": "Türkei-USA 3:2"
+        },
+        {
+          "pts": 2,
+          "reason": "Paraguay-Australien 0:0"
+        },
+        {
+          "pts": 1,
           "reason": "Deutschland-Curaçao 7:1"
         },
         {
@@ -2107,12 +2199,32 @@
           "reason": "Deutschland-Elfenbeinküste 2:1"
         },
         {
+          "pts": 4,
+          "reason": "Curaçao-Elfenbeinküste 0:2"
+        },
+        {
+          "pts": 5,
+          "reason": "E: Deutschland 1."
+        },
+        {
+          "pts": 5,
+          "reason": "E: Elfenbeinküste 2."
+        },
+        {
           "pts": 1,
           "reason": "Schweden-Tunesien 5:1"
         },
         {
           "pts": 1,
           "reason": "Niederlande-Schweden 5:1"
+        },
+        {
+          "pts": 1,
+          "reason": "Tunesien-Niederlande 1:3"
+        },
+        {
+          "pts": 5,
+          "reason": "F: Niederlande 1."
         },
         {
           "pts": 1,
@@ -2676,7 +2788,7 @@
         ]
       },
       "submitted": "2026-06-11T06:29:42.345Z",
-      "points": 74,
+      "points": 101,
       "log": [
         {
           "pts": 1,
@@ -2744,11 +2856,27 @@
         },
         {
           "pts": 2,
+          "reason": "D: USA (1.st.2.)"
+        },
+        {
+          "pts": 2,
           "reason": "Deutschland-Curaçao 7:1"
         },
         {
           "pts": 1,
           "reason": "Deutschland-Elfenbeinküste 2:1"
+        },
+        {
+          "pts": 1,
+          "reason": "Curaçao-Elfenbeinküste 0:2"
+        },
+        {
+          "pts": 5,
+          "reason": "E: Deutschland 1."
+        },
+        {
+          "pts": 5,
+          "reason": "E: Elfenbeinküste 2."
         },
         {
           "pts": 2,
@@ -2761,6 +2889,18 @@
         {
           "pts": 1,
           "reason": "Tunesien-Japan 0:4"
+        },
+        {
+          "pts": 4,
+          "reason": "Tunesien-Niederlande 1:3"
+        },
+        {
+          "pts": 5,
+          "reason": "F: Niederlande 1."
+        },
+        {
+          "pts": 5,
+          "reason": "F: Japan 2."
         },
         {
           "pts": 2,
@@ -3340,7 +3480,7 @@
         ]
       },
       "submitted": "2026-06-08T17:20:31.028Z",
-      "points": 82,
+      "points": 103,
       "log": [
         {
           "pts": 1,
@@ -3428,11 +3568,35 @@
         },
         {
           "pts": 1,
+          "reason": "Curaçao-Elfenbeinküste 0:2"
+        },
+        {
+          "pts": 5,
+          "reason": "E: Deutschland 1."
+        },
+        {
+          "pts": 1,
           "reason": "Schweden-Tunesien 5:1"
         },
         {
           "pts": 1,
           "reason": "Niederlande-Schweden 5:1"
+        },
+        {
+          "pts": 4,
+          "reason": "Japan-Schweden 1:1"
+        },
+        {
+          "pts": 1,
+          "reason": "Tunesien-Niederlande 1:3"
+        },
+        {
+          "pts": 5,
+          "reason": "F: Niederlande 1."
+        },
+        {
+          "pts": 5,
+          "reason": "F: Japan 2."
         },
         {
           "pts": 2,
@@ -4008,7 +4172,7 @@
         ]
       },
       "submitted": "2026-06-09T05:20:46.829Z",
-      "points": 81,
+      "points": 114,
       "log": [
         {
           "pts": 4,
@@ -4079,6 +4243,10 @@
           "reason": "C: Marokko 2."
         },
         {
+          "pts": 1,
+          "reason": "Türkei-USA 3:2"
+        },
+        {
           "pts": 2,
           "reason": "Deutschland-Curaçao 7:1"
         },
@@ -4091,6 +4259,18 @@
           "reason": "Deutschland-Elfenbeinküste 2:1"
         },
         {
+          "pts": 4,
+          "reason": "Curaçao-Elfenbeinküste 0:2"
+        },
+        {
+          "pts": 5,
+          "reason": "E: Deutschland 1."
+        },
+        {
+          "pts": 5,
+          "reason": "E: Elfenbeinküste 2."
+        },
+        {
           "pts": 2,
           "reason": "Niederlande-Japan 2:2"
         },
@@ -4101,6 +4281,22 @@
         {
           "pts": 1,
           "reason": "Tunesien-Japan 0:4"
+        },
+        {
+          "pts": 4,
+          "reason": "Japan-Schweden 1:1"
+        },
+        {
+          "pts": 4,
+          "reason": "Tunesien-Niederlande 1:3"
+        },
+        {
+          "pts": 5,
+          "reason": "F: Niederlande 1."
+        },
+        {
+          "pts": 5,
+          "reason": "F: Japan 2."
         },
         {
           "pts": 4,
@@ -4684,7 +4880,7 @@
         ]
       },
       "submitted": "2026-06-09T07:41:00.685Z",
-      "points": 74,
+      "points": 105,
       "log": [
         {
           "pts": 1,
@@ -4743,12 +4939,48 @@
           "reason": "C: Marokko 2."
         },
         {
+          "pts": 2,
+          "reason": "Türkei-USA 3:2"
+        },
+        {
+          "pts": 2,
+          "reason": "D: USA (1.st.2.)"
+        },
+        {
           "pts": 1,
           "reason": "Deutschland-Curaçao 7:1"
         },
         {
+          "pts": 4,
+          "reason": "Curaçao-Elfenbeinküste 0:2"
+        },
+        {
+          "pts": 5,
+          "reason": "E: Deutschland 1."
+        },
+        {
+          "pts": 5,
+          "reason": "E: Elfenbeinküste 2."
+        },
+        {
           "pts": 1,
           "reason": "Niederlande-Schweden 5:1"
+        },
+        {
+          "pts": 2,
+          "reason": "Japan-Schweden 1:1"
+        },
+        {
+          "pts": 1,
+          "reason": "Tunesien-Niederlande 1:3"
+        },
+        {
+          "pts": 5,
+          "reason": "F: Niederlande 1."
+        },
+        {
+          "pts": 5,
+          "reason": "F: Japan 2."
         },
         {
           "pts": 1,
@@ -5308,7 +5540,7 @@
         ]
       },
       "submitted": "2026-06-09T08:25:32.465Z",
-      "points": 69,
+      "points": 84,
       "log": [
         {
           "pts": 4,
@@ -5379,12 +5611,20 @@
           "reason": "USA-Australien 2:0"
         },
         {
+          "pts": 5,
+          "reason": "D: USA 1."
+        },
+        {
           "pts": 1,
           "reason": "Deutschland-Curaçao 7:1"
         },
         {
           "pts": 1,
           "reason": "Deutschland-Elfenbeinküste 2:1"
+        },
+        {
+          "pts": 5,
+          "reason": "E: Deutschland 1."
         },
         {
           "pts": 1,
@@ -5397,6 +5637,18 @@
         {
           "pts": 1,
           "reason": "Tunesien-Japan 0:4"
+        },
+        {
+          "pts": 1,
+          "reason": "Tunesien-Niederlande 1:3"
+        },
+        {
+          "pts": 2,
+          "reason": "F: Japan (2.st.1.)"
+        },
+        {
+          "pts": 2,
+          "reason": "F: Niederlande (1.st.2.)"
         },
         {
           "pts": 2,
@@ -5964,7 +6216,7 @@
         ]
       },
       "submitted": "2026-06-09T13:52:38.888Z",
-      "points": 78,
+      "points": 111,
       "log": [
         {
           "pts": 4,
@@ -6039,8 +6291,28 @@
           "reason": "USA-Paraguay 4:1"
         },
         {
+          "pts": 2,
+          "reason": "Türkei-USA 3:2"
+        },
+        {
+          "pts": 5,
+          "reason": "D: Australien 2."
+        },
+        {
           "pts": 1,
           "reason": "Deutschland-Curaçao 7:1"
+        },
+        {
+          "pts": 4,
+          "reason": "Curaçao-Elfenbeinküste 0:2"
+        },
+        {
+          "pts": 5,
+          "reason": "E: Deutschland 1."
+        },
+        {
+          "pts": 5,
+          "reason": "E: Elfenbeinküste 2."
         },
         {
           "pts": 2,
@@ -6053,6 +6325,18 @@
         {
           "pts": 1,
           "reason": "Tunesien-Japan 0:4"
+        },
+        {
+          "pts": 2,
+          "reason": "Tunesien-Niederlande 1:3"
+        },
+        {
+          "pts": 5,
+          "reason": "F: Niederlande 1."
+        },
+        {
+          "pts": 5,
+          "reason": "F: Japan 2."
         },
         {
           "pts": 2,
@@ -6620,7 +6904,7 @@
         ]
       },
       "submitted": "2026-06-09T18:12:22.443Z",
-      "points": 73,
+      "points": 108,
       "log": [
         {
           "pts": 1,
@@ -6695,6 +6979,14 @@
           "reason": "Australien-Türkei 2:0"
         },
         {
+          "pts": 5,
+          "reason": "D: USA 1."
+        },
+        {
+          "pts": 5,
+          "reason": "D: Australien 2."
+        },
+        {
           "pts": 1,
           "reason": "Deutschland-Curaçao 7:1"
         },
@@ -6703,12 +6995,36 @@
           "reason": "Deutschland-Elfenbeinküste 2:1"
         },
         {
+          "pts": 4,
+          "reason": "Curaçao-Elfenbeinküste 0:2"
+        },
+        {
+          "pts": 5,
+          "reason": "E: Deutschland 1."
+        },
+        {
           "pts": 1,
           "reason": "Niederlande-Schweden 5:1"
         },
         {
           "pts": 1,
           "reason": "Tunesien-Japan 0:4"
+        },
+        {
+          "pts": 2,
+          "reason": "Japan-Schweden 1:1"
+        },
+        {
+          "pts": 4,
+          "reason": "Tunesien-Niederlande 1:3"
+        },
+        {
+          "pts": 5,
+          "reason": "F: Niederlande 1."
+        },
+        {
+          "pts": 5,
+          "reason": "F: Japan 2."
         },
         {
           "pts": 2,
@@ -7284,7 +7600,7 @@
         ]
       },
       "submitted": "2026-06-10T16:23:43.502Z",
-      "points": 99,
+      "points": 124,
       "log": [
         {
           "pts": 1,
@@ -7363,6 +7679,18 @@
           "reason": "USA-Australien 2:0"
         },
         {
+          "pts": 2,
+          "reason": "Türkei-USA 3:2"
+        },
+        {
+          "pts": 2,
+          "reason": "Paraguay-Australien 0:0"
+        },
+        {
+          "pts": 2,
+          "reason": "D: USA (1.st.2.)"
+        },
+        {
           "pts": 1,
           "reason": "Deutschland-Curaçao 7:1"
         },
@@ -7371,8 +7699,28 @@
           "reason": "Deutschland-Elfenbeinküste 2:1"
         },
         {
+          "pts": 4,
+          "reason": "Curaçao-Elfenbeinküste 0:2"
+        },
+        {
+          "pts": 5,
+          "reason": "E: Deutschland 1."
+        },
+        {
           "pts": 1,
           "reason": "Niederlande-Schweden 5:1"
+        },
+        {
+          "pts": 4,
+          "reason": "Japan-Schweden 1:1"
+        },
+        {
+          "pts": 1,
+          "reason": "Tunesien-Niederlande 1:3"
+        },
+        {
+          "pts": 5,
+          "reason": "F: Niederlande 1."
         },
         {
           "pts": 4,
@@ -7952,7 +8300,7 @@
         ]
       },
       "submitted": "2026-06-11T09:11:58.757Z",
-      "points": 74,
+      "points": 97,
       "log": [
         {
           "pts": 4,
@@ -8023,6 +8371,18 @@
           "reason": "USA-Australien 2:0"
         },
         {
+          "pts": 2,
+          "reason": "Türkei-USA 3:2"
+        },
+        {
+          "pts": 2,
+          "reason": "Paraguay-Australien 0:0"
+        },
+        {
+          "pts": 2,
+          "reason": "D: USA (1.st.2.)"
+        },
+        {
           "pts": 1,
           "reason": "Deutschland-Curaçao 7:1"
         },
@@ -8035,12 +8395,36 @@
           "reason": "Deutschland-Elfenbeinküste 2:1"
         },
         {
+          "pts": 1,
+          "reason": "Curaçao-Elfenbeinküste 0:2"
+        },
+        {
+          "pts": 5,
+          "reason": "E: Deutschland 1."
+        },
+        {
+          "pts": 5,
+          "reason": "E: Elfenbeinküste 2."
+        },
+        {
           "pts": 2,
           "reason": "Niederlande-Japan 2:2"
         },
         {
           "pts": 1,
           "reason": "Tunesien-Japan 0:4"
+        },
+        {
+          "pts": 2,
+          "reason": "Tunesien-Niederlande 1:3"
+        },
+        {
+          "pts": 2,
+          "reason": "F: Japan (2.st.1.)"
+        },
+        {
+          "pts": 2,
+          "reason": "F: Niederlande (1.st.2.)"
         },
         {
           "pts": 2,
@@ -8608,7 +8992,7 @@
       "surprise": "USA",
       "submitted": "2026-06-11T08:47:54.605Z",
       "version": "wm2026",
-      "points": 57,
+      "points": 85,
       "log": [
         {
           "pts": 4,
@@ -8671,12 +9055,44 @@
           "reason": "USA-Australien 2:0"
         },
         {
+          "pts": 2,
+          "reason": "Paraguay-Australien 0:0"
+        },
+        {
+          "pts": 5,
+          "reason": "D: USA 1."
+        },
+        {
           "pts": 1,
           "reason": "Deutschland-Curaçao 7:1"
         },
         {
           "pts": 1,
           "reason": "Deutschland-Elfenbeinküste 2:1"
+        },
+        {
+          "pts": 1,
+          "reason": "Curaçao-Elfenbeinküste 0:2"
+        },
+        {
+          "pts": 5,
+          "reason": "E: Deutschland 1."
+        },
+        {
+          "pts": 5,
+          "reason": "E: Elfenbeinküste 2."
+        },
+        {
+          "pts": 4,
+          "reason": "Japan-Schweden 1:1"
+        },
+        {
+          "pts": 1,
+          "reason": "Tunesien-Niederlande 1:3"
+        },
+        {
+          "pts": 5,
+          "reason": "F: Niederlande 1."
         },
         {
           "pts": 2,
