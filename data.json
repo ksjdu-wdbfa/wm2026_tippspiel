@@ -1,6 +1,6 @@
 {
   "version": "wm2026-data",
-  "lastUpdate": "2026-06-27T05:04:03.720Z",
+  "lastUpdate": "2026-06-28T05:22:09.241Z",
   "results": {
     "A_0": {
       "h": 2,
@@ -265,6 +265,30 @@
     "G_4": {
       "h": 1,
       "a": 1
+    },
+    "K_4": {
+      "h": 0,
+      "a": 0
+    },
+    "K_5": {
+      "h": 3,
+      "a": 1
+    },
+    "L_4": {
+      "h": 0,
+      "a": 2
+    },
+    "L_5": {
+      "h": 2,
+      "a": 1
+    },
+    "J_4": {
+      "h": 3,
+      "a": 3
+    },
+    "J_5": {
+      "h": 1,
+      "a": 3
     }
   },
   "knockout": {
@@ -274,7 +298,16 @@
     "second": "",
     "third": ""
   },
-  "bestThirds": [],
+  "bestThirds": [
+    "D.R. Kongo",
+    "Schweden",
+    "Ecuador",
+    "Ghana",
+    "Bosnien-Herz.",
+    "Algerien",
+    "Paraguay",
+    "Senegal"
+  ],
   "tips": {
     "Corinna": {
       "name": "Corinna",
@@ -792,7 +825,7 @@
         ]
       },
       "submitted": "2026-06-04T14:00:04.739Z",
-      "points": 137,
+      "points": 157,
       "log": [
         {
           "pts": 4,
@@ -996,6 +1029,14 @@
         },
         {
           "pts": 1,
+          "reason": "Jordanien-Argentinien 1:3"
+        },
+        {
+          "pts": 2,
+          "reason": "J: Argentinien (1.st.2.)"
+        },
+        {
+          "pts": 1,
           "reason": "Usbekistan-Kolumbien 1:3"
         },
         {
@@ -1007,8 +1048,44 @@
           "reason": "Kolumbien-D.R. Kongo 1:0"
         },
         {
+          "pts": 2,
+          "reason": "K: Portugal (2.st.1.)"
+        },
+        {
+          "pts": 2,
+          "reason": "K: Kolumbien (1.st.2.)"
+        },
+        {
           "pts": 1,
           "reason": "Panama-Kroatien 0:1"
+        },
+        {
+          "pts": 1,
+          "reason": "Panama-England 0:2"
+        },
+        {
+          "pts": 2,
+          "reason": "Kroatien-Ghana 2:1"
+        },
+        {
+          "pts": 2,
+          "reason": "L: Kroatien (2.st.1.)"
+        },
+        {
+          "pts": 2,
+          "reason": "L: England (1.st.2.)"
+        },
+        {
+          "pts": 2,
+          "reason": "🔵 Paraguay Bester Dritter"
+        },
+        {
+          "pts": 2,
+          "reason": "🔵 Senegal Bester Dritter"
+        },
+        {
+          "pts": 2,
+          "reason": "🔵 Algerien Bester Dritter"
         }
       ]
     },
@@ -1528,7 +1605,7 @@
         ]
       },
       "submitted": "2026-06-08T05:13:16.405Z",
-      "points": 132,
+      "points": 167,
       "log": [
         {
           "pts": 4,
@@ -1692,6 +1769,18 @@
         },
         {
           "pts": 2,
+          "reason": "Algerien-Österreich 3:3"
+        },
+        {
+          "pts": 1,
+          "reason": "Jordanien-Argentinien 1:3"
+        },
+        {
+          "pts": 5,
+          "reason": "J: Argentinien 1."
+        },
+        {
+          "pts": 2,
           "reason": "Usbekistan-Kolumbien 1:3"
         },
         {
@@ -1704,11 +1793,55 @@
         },
         {
           "pts": 2,
+          "reason": "Kolumbien-Portugal 0:0"
+        },
+        {
+          "pts": 2,
+          "reason": "K: Portugal (2.st.1.)"
+        },
+        {
+          "pts": 2,
+          "reason": "K: Kolumbien (1.st.2.)"
+        },
+        {
+          "pts": 2,
           "reason": "England-Ghana 0:0"
         },
         {
           "pts": 1,
           "reason": "Panama-Kroatien 0:1"
+        },
+        {
+          "pts": 1,
+          "reason": "Panama-England 0:2"
+        },
+        {
+          "pts": 2,
+          "reason": "Kroatien-Ghana 2:1"
+        },
+        {
+          "pts": 5,
+          "reason": "L: England 1."
+        },
+        {
+          "pts": 5,
+          "reason": "L: Kroatien 2."
+        },
+        {
+          "pts": 2,
+          "reason": "🔵 Bosnien-Herz. Bester Dritter"
+        },
+        {
+          "pts": 2,
+          "reason": "🔵 Paraguay Bester Dritter"
+        },
+        {
+          "pts": 2,
+          "reason": "🔵 Ecuador Bester Dritter"
+        },
+        {
+          "pts": 2,
+          "reason": "🔵 Senegal Bester Dritter"
         }
       ]
     },
@@ -2228,7 +2361,7 @@
         ]
       },
       "submitted": "2026-06-08T09:59:26.544Z",
-      "points": 103,
+      "points": 141,
       "log": [
         {
           "pts": 1,
@@ -2392,6 +2525,22 @@
         },
         {
           "pts": 2,
+          "reason": "Algerien-Österreich 3:3"
+        },
+        {
+          "pts": 1,
+          "reason": "Jordanien-Argentinien 1:3"
+        },
+        {
+          "pts": 5,
+          "reason": "J: Argentinien 1."
+        },
+        {
+          "pts": 5,
+          "reason": "J: Österreich 2."
+        },
+        {
+          "pts": 2,
           "reason": "Usbekistan-Kolumbien 1:3"
         },
         {
@@ -2403,8 +2552,48 @@
           "reason": "Kolumbien-D.R. Kongo 1:0"
         },
         {
+          "pts": 2,
+          "reason": "K: Portugal (2.st.1.)"
+        },
+        {
+          "pts": 2,
+          "reason": "K: Kolumbien (1.st.2.)"
+        },
+        {
           "pts": 1,
           "reason": "Panama-Kroatien 0:1"
+        },
+        {
+          "pts": 1,
+          "reason": "Panama-England 0:2"
+        },
+        {
+          "pts": 2,
+          "reason": "Kroatien-Ghana 2:1"
+        },
+        {
+          "pts": 5,
+          "reason": "L: England 1."
+        },
+        {
+          "pts": 5,
+          "reason": "L: Kroatien 2."
+        },
+        {
+          "pts": 2,
+          "reason": "🔵 Bosnien-Herz. Bester Dritter"
+        },
+        {
+          "pts": 2,
+          "reason": "🔵 Paraguay Bester Dritter"
+        },
+        {
+          "pts": 2,
+          "reason": "🔵 Schweden Bester Dritter"
+        },
+        {
+          "pts": 2,
+          "reason": "🔵 Senegal Bester Dritter"
         }
       ]
     },
@@ -2924,7 +3113,7 @@
         ]
       },
       "submitted": "2026-06-11T06:29:42.345Z",
-      "points": 127,
+      "points": 157,
       "log": [
         {
           "pts": 1,
@@ -3111,12 +3300,36 @@
           "reason": "Jordanien-Algerien 1:2"
         },
         {
+          "pts": 1,
+          "reason": "Jordanien-Argentinien 1:3"
+        },
+        {
+          "pts": 5,
+          "reason": "J: Argentinien 1."
+        },
+        {
+          "pts": 5,
+          "reason": "J: Österreich 2."
+        },
+        {
           "pts": 4,
           "reason": "Usbekistan-Kolumbien 1:3"
         },
         {
           "pts": 1,
           "reason": "Portugal-Usbekistan 5:0"
+        },
+        {
+          "pts": 1,
+          "reason": "D.R. Kongo-Usbekistan 3:1"
+        },
+        {
+          "pts": 2,
+          "reason": "K: Portugal (2.st.1.)"
+        },
+        {
+          "pts": 2,
+          "reason": "K: Kolumbien (1.st.2.)"
         },
         {
           "pts": 1,
@@ -3129,6 +3342,26 @@
         {
           "pts": 1,
           "reason": "Panama-Kroatien 0:1"
+        },
+        {
+          "pts": 1,
+          "reason": "Panama-England 0:2"
+        },
+        {
+          "pts": 1,
+          "reason": "Kroatien-Ghana 2:1"
+        },
+        {
+          "pts": 5,
+          "reason": "L: England 1."
+        },
+        {
+          "pts": 5,
+          "reason": "L: Kroatien 2."
+        },
+        {
+          "pts": 2,
+          "reason": "🔵 Bosnien-Herz. Bester Dritter"
         }
       ]
     },
@@ -3648,7 +3881,7 @@
         ]
       },
       "submitted": "2026-06-08T17:20:31.028Z",
-      "points": 124,
+      "points": 156,
       "log": [
         {
           "pts": 1,
@@ -3823,6 +4056,14 @@
           "reason": "Jordanien-Algerien 1:2"
         },
         {
+          "pts": 2,
+          "reason": "Algerien-Österreich 3:3"
+        },
+        {
+          "pts": 5,
+          "reason": "J: Argentinien 1."
+        },
+        {
           "pts": 4,
           "reason": "Usbekistan-Kolumbien 1:3"
         },
@@ -3835,12 +4076,48 @@
           "reason": "Kolumbien-D.R. Kongo 1:0"
         },
         {
+          "pts": 2,
+          "reason": "Kolumbien-Portugal 0:0"
+        },
+        {
+          "pts": 2,
+          "reason": "K: Portugal (2.st.1.)"
+        },
+        {
+          "pts": 2,
+          "reason": "K: Kolumbien (1.st.2.)"
+        },
+        {
           "pts": 1,
           "reason": "England-Kroatien 4:2"
         },
         {
           "pts": 4,
           "reason": "Panama-Kroatien 0:1"
+        },
+        {
+          "pts": 1,
+          "reason": "Panama-England 0:2"
+        },
+        {
+          "pts": 4,
+          "reason": "Kroatien-Ghana 2:1"
+        },
+        {
+          "pts": 5,
+          "reason": "L: England 1."
+        },
+        {
+          "pts": 5,
+          "reason": "L: Kroatien 2."
+        },
+        {
+          "pts": 2,
+          "reason": "🔵 Paraguay Bester Dritter"
+        },
+        {
+          "pts": 2,
+          "reason": "🔵 Ecuador Bester Dritter"
         }
       ]
     },
@@ -4360,7 +4637,7 @@
         ]
       },
       "submitted": "2026-06-09T05:20:46.829Z",
-      "points": 161,
+      "points": 194,
       "log": [
         {
           "pts": 4,
@@ -4571,6 +4848,22 @@
           "reason": "Argentinien-Österreich 2:0"
         },
         {
+          "pts": 2,
+          "reason": "Algerien-Österreich 3:3"
+        },
+        {
+          "pts": 1,
+          "reason": "Jordanien-Argentinien 1:3"
+        },
+        {
+          "pts": 5,
+          "reason": "J: Argentinien 1."
+        },
+        {
+          "pts": 5,
+          "reason": "J: Österreich 2."
+        },
+        {
           "pts": 1,
           "reason": "Usbekistan-Kolumbien 1:3"
         },
@@ -4583,6 +4876,18 @@
           "reason": "Kolumbien-D.R. Kongo 1:0"
         },
         {
+          "pts": 2,
+          "reason": "Kolumbien-Portugal 0:0"
+        },
+        {
+          "pts": 2,
+          "reason": "K: Portugal (2.st.1.)"
+        },
+        {
+          "pts": 2,
+          "reason": "K: Kolumbien (1.st.2.)"
+        },
+        {
           "pts": 1,
           "reason": "Ghana-Panama 1:0"
         },
@@ -4593,6 +4898,30 @@
         {
           "pts": 1,
           "reason": "Panama-Kroatien 0:1"
+        },
+        {
+          "pts": 2,
+          "reason": "Panama-England 0:2"
+        },
+        {
+          "pts": 4,
+          "reason": "Kroatien-Ghana 2:1"
+        },
+        {
+          "pts": 2,
+          "reason": "L: Kroatien (2.st.1.)"
+        },
+        {
+          "pts": 2,
+          "reason": "L: England (1.st.2.)"
+        },
+        {
+          "pts": 2,
+          "reason": "🔵 Bosnien-Herz. Bester Dritter"
+        },
+        {
+          "pts": 2,
+          "reason": "🔵 Paraguay Bester Dritter"
         }
       ]
     },
@@ -5112,7 +5441,7 @@
         ]
       },
       "submitted": "2026-06-09T07:41:00.685Z",
-      "points": 132,
+      "points": 164,
       "log": [
         {
           "pts": 1,
@@ -5276,11 +5605,31 @@
         },
         {
           "pts": 2,
+          "reason": "Jordanien-Argentinien 1:3"
+        },
+        {
+          "pts": 5,
+          "reason": "J: Argentinien 1."
+        },
+        {
+          "pts": 2,
           "reason": "Usbekistan-Kolumbien 1:3"
         },
         {
           "pts": 1,
           "reason": "Portugal-Usbekistan 5:0"
+        },
+        {
+          "pts": 1,
+          "reason": "D.R. Kongo-Usbekistan 3:1"
+        },
+        {
+          "pts": 2,
+          "reason": "K: Portugal (2.st.1.)"
+        },
+        {
+          "pts": 2,
+          "reason": "K: Kolumbien (1.st.2.)"
         },
         {
           "pts": 2,
@@ -5289,6 +5638,30 @@
         {
           "pts": 4,
           "reason": "Panama-Kroatien 0:1"
+        },
+        {
+          "pts": 4,
+          "reason": "Panama-England 0:2"
+        },
+        {
+          "pts": 5,
+          "reason": "L: England 1."
+        },
+        {
+          "pts": 5,
+          "reason": "L: Kroatien 2."
+        },
+        {
+          "pts": 2,
+          "reason": "🔵 Bosnien-Herz. Bester Dritter"
+        },
+        {
+          "pts": 2,
+          "reason": "🔵 Senegal Bester Dritter"
+        },
+        {
+          "pts": 2,
+          "reason": "🔵 Algerien Bester Dritter"
         }
       ]
     },
@@ -5808,7 +6181,7 @@
         ]
       },
       "submitted": "2026-06-09T08:25:32.465Z",
-      "points": 121,
+      "points": 151,
       "log": [
         {
           "pts": 4,
@@ -5988,6 +6361,18 @@
         },
         {
           "pts": 1,
+          "reason": "Jordanien-Argentinien 1:3"
+        },
+        {
+          "pts": 5,
+          "reason": "J: Argentinien 1."
+        },
+        {
+          "pts": 5,
+          "reason": "J: Österreich 2."
+        },
+        {
+          "pts": 1,
           "reason": "Usbekistan-Kolumbien 1:3"
         },
         {
@@ -5999,8 +6384,36 @@
           "reason": "Kolumbien-D.R. Kongo 1:0"
         },
         {
+          "pts": 2,
+          "reason": "K: Portugal (2.st.1.)"
+        },
+        {
+          "pts": 2,
+          "reason": "K: Kolumbien (1.st.2.)"
+        },
+        {
           "pts": 1,
           "reason": "Panama-Kroatien 0:1"
+        },
+        {
+          "pts": 2,
+          "reason": "Panama-England 0:2"
+        },
+        {
+          "pts": 1,
+          "reason": "Kroatien-Ghana 2:1"
+        },
+        {
+          "pts": 5,
+          "reason": "L: England 1."
+        },
+        {
+          "pts": 5,
+          "reason": "L: Kroatien 2."
+        },
+        {
+          "pts": 2,
+          "reason": "🔵 Ecuador Bester Dritter"
         }
       ]
     },
@@ -6520,7 +6933,7 @@
         ]
       },
       "submitted": "2026-06-09T13:52:38.888Z",
-      "points": 132,
+      "points": 161,
       "log": [
         {
           "pts": 4,
@@ -6703,6 +7116,18 @@
           "reason": "Jordanien-Algerien 1:2"
         },
         {
+          "pts": 2,
+          "reason": "Algerien-Österreich 3:3"
+        },
+        {
+          "pts": 1,
+          "reason": "Jordanien-Argentinien 1:3"
+        },
+        {
+          "pts": 5,
+          "reason": "J: Argentinien 1."
+        },
+        {
           "pts": 1,
           "reason": "Usbekistan-Kolumbien 1:3"
         },
@@ -6711,12 +7136,52 @@
           "reason": "Portugal-Usbekistan 5:0"
         },
         {
+          "pts": 2,
+          "reason": "D.R. Kongo-Usbekistan 3:1"
+        },
+        {
+          "pts": 2,
+          "reason": "K: Portugal (2.st.1.)"
+        },
+        {
+          "pts": 2,
+          "reason": "K: Kolumbien (1.st.2.)"
+        },
+        {
           "pts": 1,
           "reason": "Ghana-Panama 1:0"
         },
         {
           "pts": 1,
           "reason": "Panama-Kroatien 0:1"
+        },
+        {
+          "pts": 1,
+          "reason": "Panama-England 0:2"
+        },
+        {
+          "pts": 4,
+          "reason": "Kroatien-Ghana 2:1"
+        },
+        {
+          "pts": 2,
+          "reason": "L: Kroatien (2.st.1.)"
+        },
+        {
+          "pts": 2,
+          "reason": "L: England (1.st.2.)"
+        },
+        {
+          "pts": 2,
+          "reason": "🔵 Bosnien-Herz. Bester Dritter"
+        },
+        {
+          "pts": 2,
+          "reason": "🔵 Senegal Bester Dritter"
+        },
+        {
+          "pts": 2,
+          "reason": "🔵 Algerien Bester Dritter"
         }
       ]
     },
@@ -7236,7 +7701,7 @@
         ]
       },
       "submitted": "2026-06-09T18:12:22.443Z",
-      "points": 128,
+      "points": 163,
       "log": [
         {
           "pts": 1,
@@ -7428,6 +7893,18 @@
         },
         {
           "pts": 1,
+          "reason": "Jordanien-Argentinien 1:3"
+        },
+        {
+          "pts": 5,
+          "reason": "J: Argentinien 1."
+        },
+        {
+          "pts": 5,
+          "reason": "J: Österreich 2."
+        },
+        {
+          "pts": 1,
           "reason": "Usbekistan-Kolumbien 1:3"
         },
         {
@@ -7439,8 +7916,40 @@
           "reason": "Kolumbien-D.R. Kongo 1:0"
         },
         {
+          "pts": 2,
+          "reason": "K: Portugal (2.st.1.)"
+        },
+        {
+          "pts": 2,
+          "reason": "K: Kolumbien (1.st.2.)"
+        },
+        {
           "pts": 1,
           "reason": "Panama-Kroatien 0:1"
+        },
+        {
+          "pts": 2,
+          "reason": "Panama-England 0:2"
+        },
+        {
+          "pts": 4,
+          "reason": "Kroatien-Ghana 2:1"
+        },
+        {
+          "pts": 5,
+          "reason": "L: England 1."
+        },
+        {
+          "pts": 5,
+          "reason": "L: Kroatien 2."
+        },
+        {
+          "pts": 2,
+          "reason": "🔵 Ecuador Bester Dritter"
+        },
+        {
+          "pts": 2,
+          "reason": "🔵 Senegal Bester Dritter"
         }
       ]
     },
@@ -7960,7 +8469,7 @@
         ]
       },
       "submitted": "2026-06-10T16:23:43.502Z",
-      "points": 169,
+      "points": 222,
       "log": [
         {
           "pts": 1,
@@ -8168,6 +8677,26 @@
         },
         {
           "pts": 2,
+          "reason": "Algerien-Österreich 3:3"
+        },
+        {
+          "pts": 1,
+          "reason": "Jordanien-Argentinien 1:3"
+        },
+        {
+          "pts": 15,
+          "reason": "⚡ Gruppe J"
+        },
+        {
+          "pts": 5,
+          "reason": "J: Argentinien 1."
+        },
+        {
+          "pts": 5,
+          "reason": "J: Österreich 2."
+        },
+        {
+          "pts": 2,
           "reason": "Usbekistan-Kolumbien 1:3"
         },
         {
@@ -8179,8 +8708,44 @@
           "reason": "Kolumbien-D.R. Kongo 1:0"
         },
         {
+          "pts": 2,
+          "reason": "D.R. Kongo-Usbekistan 3:1"
+        },
+        {
+          "pts": 2,
+          "reason": "K: Portugal (2.st.1.)"
+        },
+        {
+          "pts": 2,
+          "reason": "K: Kolumbien (1.st.2.)"
+        },
+        {
           "pts": 1,
           "reason": "Panama-Kroatien 0:1"
+        },
+        {
+          "pts": 1,
+          "reason": "Panama-England 0:2"
+        },
+        {
+          "pts": 4,
+          "reason": "Kroatien-Ghana 2:1"
+        },
+        {
+          "pts": 5,
+          "reason": "L: England 1."
+        },
+        {
+          "pts": 5,
+          "reason": "L: Kroatien 2."
+        },
+        {
+          "pts": 2,
+          "reason": "🔵 Ecuador Bester Dritter"
+        },
+        {
+          "pts": 2,
+          "reason": "🔵 Schweden Bester Dritter"
         }
       ]
     },
@@ -8700,7 +9265,7 @@
         ]
       },
       "submitted": "2026-06-11T09:11:58.757Z",
-      "points": 127,
+      "points": 156,
       "log": [
         {
           "pts": 4,
@@ -8891,6 +9456,22 @@
           "reason": "Österreich-Jordanien 3:1"
         },
         {
+          "pts": 2,
+          "reason": "Algerien-Österreich 3:3"
+        },
+        {
+          "pts": 1,
+          "reason": "Jordanien-Argentinien 1:3"
+        },
+        {
+          "pts": 5,
+          "reason": "J: Argentinien 1."
+        },
+        {
+          "pts": 5,
+          "reason": "J: Österreich 2."
+        },
+        {
           "pts": 1,
           "reason": "Usbekistan-Kolumbien 1:3"
         },
@@ -8903,12 +9484,48 @@
           "reason": "Kolumbien-D.R. Kongo 1:0"
         },
         {
+          "pts": 2,
+          "reason": "Kolumbien-Portugal 0:0"
+        },
+        {
+          "pts": 1,
+          "reason": "D.R. Kongo-Usbekistan 3:1"
+        },
+        {
+          "pts": 2,
+          "reason": "K: Portugal (2.st.1.)"
+        },
+        {
+          "pts": 2,
+          "reason": "K: Kolumbien (1.st.2.)"
+        },
+        {
           "pts": 1,
           "reason": "Ghana-Panama 1:0"
         },
         {
           "pts": 1,
           "reason": "Panama-Kroatien 0:1"
+        },
+        {
+          "pts": 1,
+          "reason": "Panama-England 0:2"
+        },
+        {
+          "pts": 2,
+          "reason": "L: England (1.st.2.)"
+        },
+        {
+          "pts": 2,
+          "reason": "🔵 Bosnien-Herz. Bester Dritter"
+        },
+        {
+          "pts": 2,
+          "reason": "🔵 Senegal Bester Dritter"
+        },
+        {
+          "pts": 2,
+          "reason": "🔵 Ghana Bester Dritter"
         }
       ]
     },
@@ -9428,7 +10045,7 @@
       "surprise": "USA",
       "submitted": "2026-06-11T08:47:54.605Z",
       "version": "wm2026",
-      "points": 109,
+      "points": 133,
       "log": [
         {
           "pts": 4,
@@ -9592,6 +10209,14 @@
         },
         {
           "pts": 1,
+          "reason": "Jordanien-Argentinien 1:3"
+        },
+        {
+          "pts": 5,
+          "reason": "J: Argentinien 1."
+        },
+        {
+          "pts": 1,
           "reason": "Usbekistan-Kolumbien 1:3"
         },
         {
@@ -9601,6 +10226,14 @@
         {
           "pts": 1,
           "reason": "Kolumbien-D.R. Kongo 1:0"
+        },
+        {
+          "pts": 2,
+          "reason": "K: Portugal (2.st.1.)"
+        },
+        {
+          "pts": 2,
+          "reason": "K: Kolumbien (1.st.2.)"
         },
         {
           "pts": 1,
@@ -9613,6 +10246,30 @@
         {
           "pts": 2,
           "reason": "Panama-Kroatien 0:1"
+        },
+        {
+          "pts": 1,
+          "reason": "Panama-England 0:2"
+        },
+        {
+          "pts": 5,
+          "reason": "L: England 1."
+        },
+        {
+          "pts": 2,
+          "reason": "🔵 Schweden Bester Dritter"
+        },
+        {
+          "pts": 2,
+          "reason": "🔵 Senegal Bester Dritter"
+        },
+        {
+          "pts": 2,
+          "reason": "🔵 Algerien Bester Dritter"
+        },
+        {
+          "pts": 2,
+          "reason": "🔵 Ghana Bester Dritter"
         }
       ]
     }
