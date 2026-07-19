@@ -1,6 +1,6 @@
 {
   "version": "wm2026-data",
-  "lastUpdate": "2026-06-28T05:22:09.241Z",
+  "lastUpdate": "2026-07-19T22:02:44.066Z",
   "results": {
     "A_0": {
       "h": 2,
@@ -292,11 +292,25 @@
     }
   },
   "knockout": {
-    "qf": [],
-    "sf": [],
-    "first": "",
-    "second": "",
-    "third": ""
+    "qf": [
+      "Frankreich",
+      "Norwegen",
+      "Marokko",
+      "England",
+      "Spanien",
+      "Argentinien",
+      "Belgien",
+      "Schweiz"
+    ],
+    "sf": [
+      "Frankreich",
+      "England",
+      "Spanien",
+      "Argentinien"
+    ],
+    "first": "Spanien",
+    "second": "Argentinien",
+    "third": "England"
   },
   "bestThirds": [
     "D.R. Kongo",
@@ -825,7 +839,7 @@
         ]
       },
       "submitted": "2026-06-04T14:00:04.739Z",
-      "points": 157,
+      "points": 162,
       "log": [
         {
           "pts": 4,
@@ -1074,6 +1088,10 @@
         {
           "pts": 2,
           "reason": "L: England (1.st.2.)"
+        },
+        {
+          "pts": 5,
+          "reason": "⭐ Frankreich HF"
         },
         {
           "pts": 2,
@@ -1605,7 +1623,7 @@
         ]
       },
       "submitted": "2026-06-08T05:13:16.405Z",
-      "points": 167,
+      "points": 172,
       "log": [
         {
           "pts": 4,
@@ -1826,6 +1844,10 @@
         {
           "pts": 5,
           "reason": "L: Kroatien 2."
+        },
+        {
+          "pts": 5,
+          "reason": "⭐ Argentinien HF"
         },
         {
           "pts": 2,
@@ -2361,7 +2383,7 @@
         ]
       },
       "submitted": "2026-06-08T09:59:26.544Z",
-      "points": 141,
+      "points": 146,
       "log": [
         {
           "pts": 1,
@@ -2578,6 +2600,10 @@
         {
           "pts": 5,
           "reason": "L: Kroatien 2."
+        },
+        {
+          "pts": 5,
+          "reason": "⭐ Frankreich HF"
         },
         {
           "pts": 2,
@@ -3113,7 +3139,7 @@
         ]
       },
       "submitted": "2026-06-11T06:29:42.345Z",
-      "points": 157,
+      "points": 162,
       "log": [
         {
           "pts": 1,
@@ -3358,6 +3384,10 @@
         {
           "pts": 5,
           "reason": "L: Kroatien 2."
+        },
+        {
+          "pts": 5,
+          "reason": "⭐ Argentinien HF"
         },
         {
           "pts": 2,
@@ -4637,7 +4667,7 @@
         ]
       },
       "submitted": "2026-06-09T05:20:46.829Z",
-      "points": 194,
+      "points": 249,
       "log": [
         {
           "pts": 4,
@@ -4914,6 +4944,22 @@
         {
           "pts": 2,
           "reason": "L: England (1.st.2.)"
+        },
+        {
+          "pts": 15,
+          "reason": "🌟 Norwegen VF"
+        },
+        {
+          "pts": 5,
+          "reason": "⭐ Spanien HF"
+        },
+        {
+          "pts": 5,
+          "reason": "⭐ Frankreich HF"
+        },
+        {
+          "pts": 30,
+          "reason": "🥇 Spanien WM"
         },
         {
           "pts": 2,
@@ -5441,7 +5487,7 @@
         ]
       },
       "submitted": "2026-06-09T07:41:00.685Z",
-      "points": 164,
+      "points": 174,
       "log": [
         {
           "pts": 1,
@@ -5650,6 +5696,14 @@
         {
           "pts": 5,
           "reason": "L: Kroatien 2."
+        },
+        {
+          "pts": 5,
+          "reason": "⭐ Frankreich HF"
+        },
+        {
+          "pts": 5,
+          "reason": "⭐ Spanien HF"
         },
         {
           "pts": 2,
@@ -6181,7 +6235,7 @@
         ]
       },
       "submitted": "2026-06-09T08:25:32.465Z",
-      "points": 151,
+      "points": 176,
       "log": [
         {
           "pts": 4,
@@ -6410,6 +6464,14 @@
         {
           "pts": 5,
           "reason": "L: Kroatien 2."
+        },
+        {
+          "pts": 5,
+          "reason": "⭐ Argentinien HF"
+        },
+        {
+          "pts": 20,
+          "reason": "🥈 Argentinien Finalist"
         },
         {
           "pts": 2,
@@ -6933,7 +6995,7 @@
         ]
       },
       "submitted": "2026-06-09T13:52:38.888Z",
-      "points": 161,
+      "points": 196,
       "log": [
         {
           "pts": 4,
@@ -7170,6 +7232,14 @@
         {
           "pts": 2,
           "reason": "L: England (1.st.2.)"
+        },
+        {
+          "pts": 5,
+          "reason": "⭐ Spanien HF"
+        },
+        {
+          "pts": 30,
+          "reason": "🥇 Spanien WM"
         },
         {
           "pts": 2,
@@ -7701,7 +7771,7 @@
         ]
       },
       "submitted": "2026-06-09T18:12:22.443Z",
-      "points": 163,
+      "points": 193,
       "log": [
         {
           "pts": 1,
@@ -7942,6 +8012,18 @@
         {
           "pts": 5,
           "reason": "L: Kroatien 2."
+        },
+        {
+          "pts": 5,
+          "reason": "⭐ Argentinien HF"
+        },
+        {
+          "pts": 5,
+          "reason": "⭐ Spanien HF"
+        },
+        {
+          "pts": 20,
+          "reason": "🥈 Argentinien Finalist"
         },
         {
           "pts": 2,
@@ -8469,7 +8551,7 @@
         ]
       },
       "submitted": "2026-06-10T16:23:43.502Z",
-      "points": 222,
+      "points": 247,
       "log": [
         {
           "pts": 1,
@@ -8738,6 +8820,18 @@
         {
           "pts": 5,
           "reason": "L: Kroatien 2."
+        },
+        {
+          "pts": 15,
+          "reason": "🌟 Norwegen VF"
+        },
+        {
+          "pts": 5,
+          "reason": "⭐ Frankreich HF"
+        },
+        {
+          "pts": 5,
+          "reason": "⭐ Spanien HF"
         },
         {
           "pts": 2,
@@ -9265,7 +9359,7 @@
         ]
       },
       "submitted": "2026-06-11T09:11:58.757Z",
-      "points": 156,
+      "points": 161,
       "log": [
         {
           "pts": 4,
@@ -9514,6 +9608,10 @@
         {
           "pts": 2,
           "reason": "L: England (1.st.2.)"
+        },
+        {
+          "pts": 5,
+          "reason": "⭐ Spanien HF"
         },
         {
           "pts": 2,
@@ -10045,7 +10143,7 @@
       "surprise": "USA",
       "submitted": "2026-06-11T08:47:54.605Z",
       "version": "wm2026",
-      "points": 133,
+      "points": 138,
       "log": [
         {
           "pts": 4,
@@ -10254,6 +10352,10 @@
         {
           "pts": 5,
           "reason": "L: England 1."
+        },
+        {
+          "pts": 5,
+          "reason": "⭐ Spanien HF"
         },
         {
           "pts": 2,
